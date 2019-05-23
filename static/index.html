@@ -5,21 +5,63 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>webmention check</title>
+  <style>
+    body {
+      margin: 0 auto;
+      max-width: 720px;
+      font-size: 20px;
+      line-height: 1.6;
+      padding: 40px;
+      font-family: 'SFMono-Regular', Consolas, 'Liberation Mono', Menlo, Courier,
+    monospace;
+    background: #fefefe;
+    color: #212121;
+    }
+
+    a {
+      color: black;
+      text-decoration: none;
+    }
+
+    a:before {
+      content: '[';
+    }
+
+    a:after {
+      content: '](' attr(href) ')';
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    ul {
+      list-style: none;
+    }
+
+    li {
+      margin: 24px 0;
+    }
+
+    li:before {
+      content: '- ';
+      margin-left: -20px;
+    }
+  </style>
 </head>
 <body>
-  <pre>
-    This is a micro service that will check a given URL for links to other sites,
-    discover if those links support webmentions and will send a webmention POST
-    to the target.
 
-    The API is simplistic for now:
+<p>This is a micro service that will check a given URL for links to other sites,
+discover if those links support webmentions and will send a webmention POST
+to the target.
 
-    - https://wm.isthe.link/check/:url - performs a dry run, showing what will be sent
-    - https://wm.isthe.link/check/:url&doSend=1 - sends the webmention requests
+<p>The API is simplistic for now:
 
-    [Source](https://github.com/remy/wm)
+<ul><li>https://wm.isthe.link/check/:url - performs a dry run, showing what will be sent
+<li>https://wm.isthe.link/check/:url&send=1 - sends the webmention requests</ul>
 
-    Built by [@rem](https://remysharp.com)
-  </pre>
-</body>
-</html>
+<p>Please note: the current host URL is temporary for the short term.
+
+<p><a href="https://github.com/remy/wm">Source</a>
+
+<p>Built by <a href="https://remysharp.com">@rem</a>

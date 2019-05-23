@@ -11,7 +11,7 @@
     },
     {
       "src": "/",
-      "dest": "/index.html"
+      "dest": "/static/index.html"
     }
   ],
   "builds": [

@@ -1,9 +1,9 @@
 const qs = require('../lib/query-string');
 const load = require('../lib/get-links-from-url');
-const send = require('../lib/send');
+const wmSend = require('../lib/send');
 
 module.exports = async (req, res) => {
-  let { url, doSend = false } = qs(req);
+  let { url, send = false } = qs(req);
 
   if (!url) {
     res.writeHead(500);
@@ -16,8 +16,8 @@ module.exports = async (req, res) => {
 
   const urls = await load(url);
 
-  if (doSend) {
-    return Promise.all(urls.map(send)).then(reply => {
+  if (send) {
+    return Promise.all(urls.map(wmSend)).then(reply => {
       res.end(JSON.stringify(reply));
     });
   }
