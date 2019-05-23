@@ -1,5 +1,6 @@
 {
   "version": 2,
+  "alias": "wm.isthe.link",
   "routes": [
     {
       "src": "/check/(.*)",
