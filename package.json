@@ -1,13 +1,13 @@
 {
-  "name": "webmentions-out",
+  "name": "@remy/wm",
   "version": "1.0.0",
-  "description": "",
+  "description": "Web Mentions microservice sender",
   "main": "index.js",
   "scripts": {
     "update": "node lib/generate-data.js"
   },
   "engines": {
-    "node": "8.x.x"
+    "node": "^8.3.x"
   },
   "type": "module",
   "keywords": [],

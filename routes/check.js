@@ -14,6 +14,8 @@ module.exports = async (req, res) => {
     url = `http://${url}`;
   }
 
+  console.log('>> ' + url);
+
   const urls = await load(url);
 
   if (send) {
