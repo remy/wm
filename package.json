@@ -1,0 +1,23 @@
+{
+  "name": "webmentions-out",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "update": "node lib/generate-data.js"
+  },
+  "engines": {
+    "node": "8.x.x"
+  },
+  "type": "module",
+  "keywords": [],
+  "author": "Remy Sharp (https://remysharp.com)",
+  "license": "MIT",
+  "dependencies": {
+    "cheerio": "^1.0.0-rc.3",
+    "concat-stream": "^2.0.0",
+    "follow-redirects": "^1.7.0",
+    "get-webmention-url": "^2.0.0",
+    "node-fetch": "^2.6.0"
+  }
+}

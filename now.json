@@ -1,0 +1,21 @@
+{
+  "version": 2,
+  "routes": [
+    {
+      "src": "/check/(.*)",
+      "dest": "/routes/check.js?url=$1",
+      "methods": ["GET"],
+      "headers": {
+        "Access-Control-Allow-Origin": "*"
+      }
+    },
+    {
+      "src": "/",
+      "dest": "/index.html"
+    }
+  ],
+  "builds": [
+    { "src": "/routes/*.js", "use": "@now/node" },
+    { "src": "/static/index.html", "use": "@now/static" }
+  ]
+}
