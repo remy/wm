@@ -4,7 +4,6 @@ const html = require('fs')
   .readFileSync(__dirname + '/sample.html')
   .toString();
 
-const dom = require('../lib/dom');
 const links = require('../lib/links');
 const getEndpoints = require('../lib/get-wm-endpoints');
 
@@ -20,7 +19,7 @@ async function main() {
   };
 
   const urls = await Promise.all(
-    links({ ...dom(html), url }).map(async ({ permalink, links }) => {
+    (await links.get(url)).map(async ({ permalink, links }) => {
       const endpoints = await getEndpoints(links.filter(ignoreOwn));
 
       if (endpoints.length === 0) return false;

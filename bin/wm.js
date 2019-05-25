@@ -1,10 +1,14 @@
-const links = require('./links');
-const getEndpoints = require('./get-wm-endpoints');
-const parse = require('url').parse;
+#!/usr/bin/env node
+// const source = require('fs')
+//   .readFileSync(process.argv[2])
+//   .toString();
+const url = process.argv[2]; // OR?
 
-async function main(url) {
-  const host = parse(url).hostname;
+const links = require('../lib/links');
+const getEndpoints = require('../lib/get-wm-endpoints');
 
+async function main() {
+  const host = url;
   const ignoreOwn = url => {
     if (url.includes(host) || url.includes(host + '/')) {
       return false;
@@ -32,4 +36,6 @@ async function main(url) {
   return [].concat(...urls.filter(Boolean));
 }
 
-module.exports = main;
+main()
+  .then(res => console.log(JSON.stringify(res, 0, 2)))
+  .catch(e => console.log(e));

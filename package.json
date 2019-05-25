@@ -3,6 +3,9 @@
   "version": "1.0.0",
   "description": "Web Mentions microservice sender",
   "main": "index.js",
+  "bin": {
+    "wm": "./bin/wm.js"
+  },
   "scripts": {
     "update": "node lib/generate-data.js"
   },
@@ -16,8 +19,10 @@
   "dependencies": {
     "cheerio": "^1.0.0-rc.3",
     "concat-stream": "^2.0.0",
+    "debug": "^4.1.1",
     "follow-redirects": "^1.7.0",
     "get-webmention-url": "^2.0.0",
-    "node-fetch": "^2.6.0"
+    "node-fetch": "^2.6.0",
+    "rss-parser": "^3.7.0"
   }
 }

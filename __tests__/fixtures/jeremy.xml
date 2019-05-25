@@ -1,0 +1,1057 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0" xmlns:content="http://purl.org/rss/1.0/modules/content/"  xmlns:atom="http://www.w3.org/2005/Atom" xmlns:georss="http://www.georss.org/georss" xmlns:gml="http://www.opengis.net/gml">
+    <channel>
+        <title>Adactio: Journal</title>
+        <description>The online journal of Jeremy Keith, an author and web developer living and working in Brighton, England.</description>
+        <language>en</language>
+        <link>https://adactio.com/journal/</link>
+        <managingEditor>jeremy@adactio.com (Jeremy Keith)</managingEditor>
+        <webMaster>jeremy@adactio.com (Jeremy Keith)</webMaster>
+        <image>
+            <title>Adactio: Journal</title>
+            <link>https://adactio.com/journal/</link>
+            <url>https://adactio.com/images/rssbutton.gif</url>
+            <width>88</width>
+            <height>19</height>
+        </image>
+        <atom:link href="https://adactio.com/journal/rss" rel="self" type="application/rss+xml" />
+        <item>
+            <title>Beyond</title>
+            <link>https://adactio.com/journal/15216</link>
+            <description>
+<![CDATA[
+<p>After <a href="https://adactio.com/journal/15212">a fun and productive Indie Web Camp</a>, I stuck around Düsseldorf for <a href="https://beyondtellerrand.com/events/duesseldorf-2019/">Beyond Tellerand</a>. I love this event. I&#8217;ve spoken at it quite a few times, but this year it was nice to be there as an attendee. It&#8217;s simultaneously a chance to reconnect with old friends I haven&#8217;t seen in a while, and an opportunity to meet lovely new people. There was plenty of both this year.</p>
+
+<p>I think this might have been the best Beyond Tellerrand yet, and that&#8217;s saying something. It&#8217;s not just that the talks were really good—there was also a wonderful atmosphere.</p>
+
+<p><a href="https://marcthiele.com/">Marc</a> somehow manages to curate a line-up that&#8217;s equal parts creativity and code; design and development. It shouldn&#8217;t work, but it does. I love the fact that he had a legend of the industry like <a href="https://beyondtellerrand.com/events/duesseldorf-2019/speakers/david-carson">David Carson</a> on the same stage as first-time speaker like <a href="https://beyondtellerrand.com/events/duesseldorf-2019/speakers/dorobot">Dorobot</a> &#8230;and the crowd loved &#8216;em equally!</p>
+
+<p>During the event, I found out that I had a small part to play in the creation of the line-up&#8230;</p>
+
+<p>Three years ago, <a href="https://adactio.com/links/10052">I linked to a video of a talk</a> by Mike Hill:</p>
+
+<blockquote>
+  <p>A terrific analysis of industrial design in film and games …featuring a scene-setting opening that delineates the difference between pleasure and happiness.</p>
+</blockquote>
+
+<p>It&#8217;s a talk about chairs in Jodie Foster films. Seriously. It&#8217;s fantastic!</p>
+
+<p>Marc saw my link, watched the video, and decided he wanted to get <a href="http://www.mikehill.design/">Mike Hill</a> to speak at Beyond Tellerrand. After failing to get a response by email, Marc managed to corner Mike at an event in Amsterdam and get him on this year&#8217;s line-up.</p>
+
+<p>Mike gave a talk called <a href="https://beyondtellerrand.com/events/duesseldorf-2019/speakers/mike-hill"><cite>The Power of Metaphor</cite></a> and it&#8217;s absolutely brilliant. It covers the monomyth (the hero&#8217;s journey) and Jungian archetypes, illustrated with the examples <cite>Star Wars</cite>, <cite>The Dark Knight</cite>, and <cite>Jurassic Park</cite>:</p>
+
+<blockquote>
+  <p>Under the surface of their most celebrated films lies a hidden architecture that operates on an unconscious level; This talk is designed to illuminate the techniques that great storytellers use to engage a global audience on a deep and meaningful level through psychological metaphor.</p>
+</blockquote>
+
+<p>The videos from Beyond Tellerrand are already online so you can <a href="https://vimeo.com/335857004">watch the talk now</a>.</p>
+
+<div class="embed"><iframe title="The Power of Metaphor - Mike Hill" src="https://player.vimeo.com/video/335857004" width="640" height="360"></iframe></div>
+
+<p>Mike&#8217;s talk was back-to-back with a talk from <a href="https://twitter.com/carolstran">Carolyn Stransky</a> called <a href="https://beyondtellerrand.com/events/duesseldorf-2019/speakers/carolyn-stransky"><cite>Humanising Your Documentation</cite></a>:</p>
+
+<blockquote>
+  <p>In this talk, we’ll discuss how the language we use affects our users and the first steps towards writing accessible, approachable and use case-driven documentation.</p>
+</blockquote>
+
+<p>While the talk was ostensibly about documentation, I found that it was packed full of good advice for writing well in general.</p>
+
+<div class="embed"><iframe title="Humanising Your Documentation - Carolyn Stransky" src="https://player.vimeo.com/video/335856815" width="640" height="360"></iframe></div>
+
+<p>I had a thought. What if you mashed up these two talks? What if you wrote documentation through the lens of the hero&#8217;s journey?</p>
+
+<p>Think about it. When somone arrives at your documentation, they&#8217;ve crossed the threshold to the underworld. They are in the cave, facing a dragon. You are their guide, their mentor, their Obi-Wan Kenobi. You can help them conquer their demons and return to the familiar world, changed by their journey.</p>
+
+<p>Too much?</p>
+
+]]>
+            </description>
+            <pubDate>Thu, 23 May 2019 17:30:46 GMT</pubDate>
+            <guid>https://adactio.com/journal/15216</guid>
+            <category>btconf</category>
+            <category>beyondtellerrand</category>
+            <category>conference</category>
+            <category>talks</category>
+            <category>documentation</category>
+            <category>writing</category>
+            <category>stories</category>
+            <category>monomyth</category>
+            <category>narrative</category>
+            <category>structure</category>
+            <category>events</category>
+            <category>curation</category>
+            <category>medium:id=91b9fe857952</category>
+            <georss:where>
+                <gml:Point>
+                        <gml:pos>50.82106292 -0.14293720</gml:pos>
+                </gml:Point>
+            </georss:where>
+        </item>
+        <item>
+            <title>Replies</title>
+            <link>https://adactio.com/journal/15212</link>
+            <description>
+<![CDATA[
+<p>Last week was a bit of an event whirlwind. In the space of seven days I was at <a href="https://indieweb.org/2019/D%C3%BCsseldorf">Indie Web Camp</a>, <a href="https://beyondtellerrand.com/events/duesseldorf-2019/speakers">Beyond Tellerrand</a>, and <a href="https://accessibility-club.org/">Accessibility Club</a> in Düsseldorf, followed by a train ride to Utrecht for <a href="https://www.frontendunited.org/">Frontend United</a>. Phew!</p>
+
+<p><a href="https://indieweb.org/2019/D%C3%BCsseldorf">Indie Web Camp Düsseldorf</a> was—as always—excellent. Once again, Sipgate generously gave us the use of their lovely, lovely space for the weekend. We had one day of really thought-provoking discussions, followed by a day of heads-down hacking and making.</p>
+
+<p>I decided it was time for me to finally own my replies. For a while now, I&#8217;ve been <a href="https://adactio.com/notes/">posting notes on my own site</a> and syndicating to Twitter. But whenever I replied to someone else&#8217;s tweet, I did from Twitter. I wanted to change that.</p>
+
+<p>From a coding point of view, it wasn&#8217;t all that tricky. The real challenges were to do with the interface. I needed to add another field for the URL I&#8217;m replying to &#8230;but I didn&#8217;t want my nice and minimal posting interface to get too cluttered. I ended up putting the new form field inside a <code>details</code> element with a <code>summary</code> of &#8220;Reply to&#8221; so that the form field would be hidden by default, and toggled open by hitting that &#8220;Reply to&#8221; text:</p>
+
+<pre><code>&lt;details&gt;
+    &lt;summary&gt;
+        &lt;label for="replyto"&gt;Reply to&lt;/label&gt;
+    &lt;/summary&gt;
+    &lt;input type="url" id="replyto" name="replyto"&gt;
+&lt;/details&gt;
+</code></pre>
+
+<p>I sent <a href="https://adactio.com/notes/15136">my first test reply</a> to <a href="https://aaronparecki.com/2019/05/12/11/indiewebcamp-table">a post on Aaron&#8217;s website</a>. Aaron was sitting next to me at the time.</p>
+
+<p>Once that was all working, I sent <a href="https://adactio.com/notes/15138">my first reply to a tweet</a>. It was a response to <a href="https://twitter.com/t/status/1127551497200226304">a tweet from Tantek</a>. Tantek was also sitting next to me at the time.</p>
+
+<p>I spent most of the day getting that Twitter syndication to work. I had something to demo, but I foolishly decided to risk it all by attempting to create a bookmarklet so that I could post directly from a tweet page (instead of hopping back to my own site in a different tab). By canabalising the existing bookmarklet I use for posting links, I just about managed to get it working in time for the end of day demos.</p>
+
+<p>So I&#8217;m owning my replies now. At the moment, they show up in my home page feed just like any other notes I post. I&#8217;m not sure if I&#8217;ll keep it that way. They don&#8217;t make much sense out of context.</p>
+
+<p>Then again, I kind of like how wonderfully random and out-of-context they look. You can browse through <a href="https://adactio.com/notes/replies">all my replies</a> so far.</p>
+
+<p>I&#8217;m glad I got this set up. Now when Andy posts stuff on Twitter, I&#8217;m custodian of my responses:</p>
+
+<blockquote>
+  <p><a href="https://twitter.com/andybudd/status/1129380850741780481">@AndyBudd</a>: Who are your current &#8220;Design Heroes&#8221;?</p>
+
+  <p><a href="https://adactio.com/notes/15178">adactio.com</a>: I would say Falcor from Neverending Story, the big flying dog.</p>
+</blockquote>
+
+]]>
+            </description>
+            <pubDate>Wed, 22 May 2019 16:30:40 GMT</pubDate>
+            <guid>https://adactio.com/journal/15212</guid>
+            <category>indewebcamp</category>
+            <category>dusseldorf</category>
+            <category>replies</category>
+            <category>webmentions</category>
+            <category>responses</category>
+            <category>hacking</category>
+            <category>twitter</category>
+            <category>ui</category>
+            <category>medium:id=c569743909d4</category>
+            <georss:where>
+                <gml:Point>
+                        <gml:pos>50.82104555 -0.14306261</gml:pos>
+                </gml:Point>
+            </georss:where>
+        </item>
+        <item>
+            <title>Head’s role</title>
+            <link>https://adactio.com/journal/15126</link>
+            <description>
+<![CDATA[
+<p>I have a bittersweet feeling today. <a href="https://twitter.com/dhuntrods">Danielle</a> is moving on from <a href="https://clearleft.com/">Clearleft</a>.</p>
+
+<p>I used to get really down when people left. Over time I’ve learned not to take it as such a bad thing. I mean, of course it’s sad when someone moves on, but for them, it’s exciting. And I should be sharing in that excitement, not putting a damper on it.</p>
+
+<p>Besides, people tend to stay at Clearleft for years and years—in the tech world, that’s unheard of. So it’s not really so terrible when they decide to head out to pastures new. They’ll always be Clearlefties. Just look at the lovely parting words from <a href="https://www.90percentofeverything.com/2013/03/21/moving-on/">Harry</a>, <a href="https://paulrobertlloyd.com/2013/10/moving_in_moving_on">Paul</a>, <a href="https://medium.com/@eldevri/thank-you-to-the-team-at-clearleft-adf8adbd1d50">Ellen</a>, and  <a href="https://medium.com/@bensauer/so-long-and-thanks-for-all-the-beer-dfb2b1b1c931">Ben</a>:</p>
+
+<blockquote>
+  <p>Working at Clearleft was one of the best decisions I ever made. 6 years of some work that I’m most proud of, amongst some of the finest thinkers I’ve ever met.</p>
+</blockquote>
+
+<p>(Side note: I’ve been thinking about starting a podcast where I chat to ex-Clearlefties. We could reflect on the past, look to the future, and generally just have a catch-up. Would that be self indulgent or interesting? Let me know what you think.)</p>
+
+<p>So of course I’m going to miss working with Danielle, but as with other former ‘lefties, I’m genuinely excited to see what happens next for her. Clearleft has had an excellent three years of her time and now it’s another company’s turn.</p>
+
+<p>In the spirit of “one door closes, another opens,” Danielle’s departure creates an opportunity for someone else. Fancy working at Clearleft? Well, we’re looking for a <a href="https://clearleft.com/team/jobs/head-of-front-end-development">head of front-end development</a>.</p>
+
+<p>Do you remember back at the start of the year when we were hiring a front-end developer, and I wrote about <a href="https://adactio.com/journal/14693">writing job postings</a>?</p>
+
+<blockquote>
+  <p>My first instinct was to look at other job ads and take my cue from them. But, let’s face it, most job ads are badly written, and prone to turning into laundry lists. So I decided to just write like I normally would. You know, like a human.</p>
+</blockquote>
+
+<p>That worked out <em>really</em> well. We ended up hiring the ridiculously talented <a href="https://www.trysmudford.com/">Trys Mudford</a>. Success!</p>
+
+<p>So I’ve taken the same approach with <a href="https://clearleft.com/team/jobs/head-of-front-end-development">this job ad</a>. I’ve tried to paint as clear and honest a picture as I can of what this role would entail. Like it says, there are three main parts to the job:</p>
+
+<ul>
+<li>business support,</li>
+<li>technical leadership, and</li>
+<li>professional development.</li>
+</ul>
+
+<p>Now, I could easily imagine someone reading the job description and thinking, “Nope! Not for me.” Let’s face it: There Will Be Meetings. And a whole lotta context switching:</p>
+
+<blockquote>
+  <p>Within the course of one day, you might go from thinking about thorny code problems to helping someone on your team with their career plans to figuring out how to land new business in a previously uncharted area of technology.</p>
+</blockquote>
+
+<p>I can equally imagine someone reading that and thinking “Yes! This is what I’ve been waiting for.”</p>
+
+<p>Oh, and in case you’re wondering why <em>I’m</em> not taking this role …well, in the short term, I will for a while, but I’d consider myself qualified for maybe one third to one half of the required tasks. Yes, I can handle the professional development side of things (in fact, I really, really enjoy that). I can handle <em>some</em> of the technical leadership stuff—if we’re talking about HTML, CSS, JavaScript, accessibility, and performance. But all of the <a href="https://adactio.com/journal/15050#front-of-the-front-end">back-of-the-front-end</a> stuff—build tools, libraries, toolchains—is beyond me. And I think I’d be rubbish at the business support stuff, mostly because that doesn’t excite me much. But maybe it excites you! If so, you should apply.</p>
+
+<p>I can picture a few scenarios where this role could be the ideal career move…</p>
+
+<p>Suppose you’re a lead developer at a product company. You enjoy leading a team of devs, and you like setting the technical direction when it comes to the tools and techniques being used. But maybe you’re frustrated by always working on the same product with the same tech stack. The agency world, where every project is different, might be exactly what you’re looking for.</p>
+
+<p>Or maybe you’re an accomplished and experienced front-end developer, freelancing and contracting for years. Perhaps you’re less enamoured with being so hands-on with the code all the time. Maybe you’ve realised that what you really enjoy is solving problems and evaluating techologies, and you’d be absolutely fine with having someone else take care of the implementation. Moving into a lead role like this might be the perfect way to make the best use of your time and have more impact with your decisions.</p>
+
+<p>You get the idea. If any of this is sounding intriguing to you, you should definitely <a href="mailto:jeremy@clearleft.com">apply for the role</a>. What do you have to lose?</p>
+
+<p>Also, as it says in the job ad:</p>
+
+<blockquote>
+  <p>If you’re from a group that is under-represented in tech, please don’t hesitate to get in touch.</p>
+</blockquote>
+
+<!-- For legal reasons, I can't write in a job ad that we're actively seeking applicants from any particular group. So I'm not saying that I'd like to see a woman in this leadership position. I'm not saying that. Out loud.-->
+
+]]>
+            </description>
+            <pubDate>Thu, 09 May 2019 16:43:53 GMT</pubDate>
+            <guid>https://adactio.com/journal/15126</guid>
+            <category>clearleft</category>
+            <category>job</category>
+            <category>development</category>
+            <category>work</category>
+            <category>career</category>
+            <category>frontend</category>
+            <category>role</category>
+            <category>business</category>
+            <category>strategy</category>
+            <category>team</category>
+            <category>medium:id=65b57a8acb1f</category>
+            <georss:where>
+                <gml:Point>
+                        <gml:pos>50.82105978 -0.14308737</gml:pos>
+                </gml:Point>
+            </georss:where>
+        </item>
+        <item>
+            <title>Timing out</title>
+            <link>https://adactio.com/journal/15122</link>
+            <description>
+<![CDATA[
+<p>Service workers are great for creating a good user experience when someone is offline. Heck, the book I wrote about service workers is literally called <a href="https://abookapart.com/products/going-offline"><cite>Going Offline</cite></a>.</p>
+
+<p>But in some ways, the offline experience is relatively easy to handle. It’s a binary situation; either you’re online or you’re offline. What’s more challenging—and probably more common—is the situation that <a href="https://jakearchibald.com/">Jake</a> calls <a href="https://www.urbandictionary.com/define.php?term=lie-fi">Lie-Fi</a>. That’s when technically you’ve got a network connection …but it’s a shitty connection, like one bar of mobile signal. In that situation, because there’s <em>technically</em> a connection, the user gets a slow frustrating experience. Whatever code you’ve got in your service worker for handling offline situations will never get triggered. When you’re handling <code>fetch</code> events inside a service worker, there’s no automatic time-out.</p>
+
+<p>But you can make one.</p>
+
+<p>That’s what I’ve done recently here on <a href="https://adactio.com/">adactio.com</a>. Before showing you what I <em>added</em> to my service worker script to make that happen, let me walk you through my existing strategy for handling offline situations.</p>
+
+<h3>Service worker strategies</h3>
+
+<p>Alright, so in <a href="https://adactio.com/serviceworker.js">my service worker script</a>, I’ve got a block of code for handling requests from <code>fetch</code> events:</p>
+
+<pre><code>addEventListener('fetch', fetchEvent => {
+        const request = fetchEvent.request;
+    // Do something with this request.
+});</code></pre>
+
+<p>I’ve got two strategies in my code. One is for dealing with requests for <em>pages</em>:</p>
+
+<pre><code>if (request.headers.get('Accept').includes('text/html')) {
+    // Code for handling page requests.
+}</code></pre>
+
+<p>By adding an <code>else</code> clause I can have a different strategy for dealing with requests for anything else—images, style sheets, scripts, and so on:</p>
+
+<pre><code>if (request.headers.get('Accept').includes('text/html')) {
+    // Code for handling page requests.
+} else {
+    // Code for handling everthing else.
+}</code></pre>
+
+<p>For page requests, I’m going to try to go the network first:</p>
+
+<pre><code>fetchEvent.respondWith(
+    fetch(request)
+    .then( responseFromFetch => {
+        return responseFromFetch;
+    })</code></pre>
+
+<p>My logic is:</p>
+
+<blockquote>
+<p>When someone requests a page, try to fetch it from the network.</p>
+</blockquote>
+
+<p>If that doesn’t work, we’re in an offline situation. That triggers the <code>catch</code> clause. That’s where I have my offline strategy: show a custom offline page that I’ve previously cached (during the <code>install</code> event):</p>
+
+<pre><code>.catch( fetchError => {
+    return caches.match('/offline');
+})</code></pre>
+
+<p>Now my logic has been expanded to this:</p>
+
+<blockquote>
+<p>When someone requests a page, try to fetch it from the network, <strong>but if that doesn’t work, show a custom offline page instead</strong>.</p>
+</blockquote>
+
+<p>So my overall code for dealing with requests for pages looks like this:</p>
+
+<pre><code>if (request.headers.get('Accept').includes('text/html')) {
+    fetchEvent.respondWith(
+        fetch(request)
+        .then( responseFromFetch => {
+            return responseFromFetch;
+        })
+        .catch( fetchError => {
+            return caches.match('/offline');
+        })
+    );
+}</code></pre>
+
+<p>Now I can fill in the <code>else</code> statement that handles everything else—images, style sheets, scripts, and so on. Here my strategy is different. I’m looking in my caches <em>first</em>, and I only fetch the file from network if the file can’t be found in any cache:</p>
+
+<pre><code>caches.match(request)
+.then( responseFromCache => {
+    return responseFromCache || fetch(request);
+})</code></pre>
+
+<p>Here’s all that fetch-handling code put together:</p>
+
+<pre><code>addEventListener('fetch', fetchEvent => {
+    const request = fetchEvent.request;
+    if (request.headers.get('Accept').includes('text/html')) {
+        fetchEvent.respondWith(
+            fetch(request)
+            .then( responseFromFetch => {
+                return responseFromFetch;
+            })
+            .catch( fetchError => {
+                return caches.match('/offline');
+            })
+        );
+    } else {
+        caches.match(request)
+        .then( responseFromCache => {
+            return responseFromCache || fetch(request);
+        })
+    }
+});</code></pre>
+
+<p>Good.</p>
+
+<h3>Cache as you go</h3>
+
+<p>Now I want to introduce an extra step in the part of the code where I deal with requests for pages. Whenever I fetch a page from the network, I’m going to take the opportunity to squirrel it away in a cache. I’m calling that cache “<code>pages</code>”. I’m imaginative like that.</p>
+
+<pre><code>fetchEvent.respondWith(
+    fetch(request)
+    .then( responseFromFetch => {
+        const copy = responseFromFetch.clone();
+        try {
+            fetchEvent.waitUntil(
+                caches.open('pages')
+                .then( pagesCache => {
+                    return pagesCache.put(request, copy);
+                })
+            )
+        } catch(error) {
+            console.error(error);
+        }
+        return responseFromFetch;
+    })</code></pre>
+
+<p>You’ll notice that I can’t put the response itself (<code>responseFromCache</code>) into the cache. That’s a stream that I only get to use once. Instead I need to make a copy:</p>
+
+<pre><code>const copy = responseFromFetch.clone();</code></pre>
+
+<p><em>That’s</em> what gets put in the <code>pages</code> cache:</p>
+
+<pre><code>fetchEvent.waitUntil(
+    caches.open('pages')
+    .then( pagesCache => {
+        return pagesCache.put(request, copy);
+    })
+)</code></pre>
+
+<p>Now my logic for page requests has an extra piece to it:</p>
+
+<blockquote>
+<p>When someone requests a page, try to fetch it from the network <strong>and store a copy in a cache</strong>, but if that doesn’t work, show a custom offline page instead.</p>
+</blockquote>
+
+<p>Here’s my updated <code>fetch</code>-handling code:</p>
+
+<pre><code>addEventListener('fetch', fetchEvent => {
+    const request = fetchEvent.request;
+    if (request.headers.get('Accept').includes('text/html')) {
+        fetchEvent.respondWith(
+            fetch(request)
+            .then( responseFromFetch => {
+                <b>const copy = responseFromFetch.clone();
+                try {
+                    fetchEvent.waitUntil(
+                        caches.open('pages')
+                        .then( pagesCache => {
+                            return pagesCache.put(request, copy);
+                        })
+                    )
+                } catch(error) {
+                    console.error(error);
+                }</b>
+                return responseFromFetch;
+            })
+            .catch( fetchError => {
+                return caches.match('/offline');
+            })
+        );
+    } else {
+        caches.match(request)
+        .then( responseFromCache => {
+            return responseFromCache || fetch(request);
+        })
+    }
+});</code></pre>
+
+<p>I call this the cache-as-you-go pattern. The more pages someone views on my site, the more pages they’ll have cached.</p>
+
+<p>Now that there’s an ever-growing cache of previously visited pages, I can update my offline fallback. Currently, I reach straight for the custom offline page:</p>
+
+<pre><code>.catch( fetchError => {
+    return caches.match('/offline');
+})</code></pre>
+
+<p>But now I can try looking for a cached copy of the requested page first:</p>
+
+<pre><code>.catch( fetchError => {
+    caches.match(request)
+    .then( responseFromCache => {
+        return responseFromCache || caches.match('/offline');
+    })
+});</code></pre>
+
+<p>Now my offline logic is expanded:</p>
+
+<blockquote>
+<p>When someone requests a page, try to fetch it from the network and store a copy in a cache, but if that doesn’t work, <strong>first look for an existing copy in a cache</strong>, and otherwise show a custom offline page instead.</p>
+</blockquote>
+
+<p>I can also access this ever-growing cache of pages from <a href="https://adactio.com/offline">my custom offline page</a> to show people which pages they can revisit, even if there’s no internet connection.</p>
+
+<p>So far, so good. Everything I’ve outlined so far is a good robust strategy for handling offline situations. Now I’m going to deal with the lie-fi situation, and it’s that cache-as-you-go strategy that sets me up nicely.</p>
+
+<h3>Timing out</h3>
+
+<p>I want to throw this addition into my logic:</p>
+
+<blockquote>
+<p>When someone requests a page, try to fetch it from the network and store a copy in a cache, but if that doesn’t work, first look for an existing copy in a cache, and otherwise show a custom offline page instead <strong>(but if the request is taking too long, try to show a cached version of the page)</strong>.</p>
+</blockquote>
+
+<p>The first thing I’m going to do is rewrite my code a bit. If the <code>fetch</code> event is for a page, I’m going to respond with a promise:</p>
+
+<pre><code>if (request.headers.get('Accept').includes('text/html')) {
+    fetchEvent.respondWith(
+        new Promise( resolveWithResponse => {
+            // Code for handling page requests.
+        })
+    );
+}</code></pre>
+
+<p>Promises are kind of weird things to get your head around. They’re tailor-made for doing things asynchronously. You can set up two parameters; a success condition and a failure condition. If the success condition is executed, then we say the promise has <em>resolved</em>. If the failure condition is executed, then the promise <em>rejects</em>.</p>
+
+<p>In my re-written code, I’m calling the success condition <code>resolveWithResponse</code> (and I haven’t bothered with a failure condition, tsk, tsk). I’m going to use <code>resolveWithResponse</code> in my promise everywhere that I used to have a <code>return</code> statement:</p>
+
+<pre><code>addEventListener('fetch', fetchEvent => {
+    const request = fetchEvent.request;
+    if (request.headers.get('Accept').includes('text/html')) {
+        fetchEvent.respondWith(
+            new Promise( resolveWithResponse => {
+                fetch(request)
+                .then( responseFromFetch => {
+                    const copy = responseFromFetch.clone();
+                    try {
+                        fetchEvent.waitUntil(
+                            caches.open('pages')
+                            then( pagesCache => {
+                                return pagesCache.put(request, copy);
+                            })
+                        )
+                    } catch(error) {
+                        console.error(error);
+                    }
+                    <b>resolveWithResponse(responseFromFetch);</b>
+                })
+                .catch( fetchError => {
+                    caches.match(request)
+                    .then( responseFromCache => {
+                        <b>resolveWithResponse(
+                            responseFromCache || caches.match('/offline')
+                        );</b>
+                    })
+                })
+            })
+        );
+    } else {
+        caches.match(request)
+        .then( responseFromCache => {
+            return responseFromCache || fetch(request);
+        })
+    }
+});</code></pre>
+
+<p>By itself, rewriting my code as a promise doesn’t change anything. Everything’s working the same as it did before. But now I can introduce the time-out logic. I’m going to put this inside my promise:</p>
+
+<pre><code>const timer = setTimeout( () => {
+    caches.match(request)
+    .then( responseFromCache => {
+        if (responseFromCache) {
+            resolveWithResponse(responseFromCache);
+        }
+    })
+}, 3000);</code></pre>
+
+<p>If a request takes three seconds (3000 milliseconds), then that code will execute. At that point, the promise attempts to resolve with a response from the cache instead of waiting for the network. If there is a cached response, that’s what the user now gets. If there isn’t, then the wait continues for the network.</p>
+
+<p>The last thing left for me to do is cancel the countdown to timing out if a network response <em>does</em> return within three seconds. So I put this in the <code>then</code> clause that’s triggered by a successful network response:</p>
+
+<pre><code>clearTimeout(timer);</code></pre>
+
+<p>I also add the <code>clearTimeout</code> statement to the <code>catch</code> clause that handles offline situations. Here’s the final code:</p>
+
+<pre><code>addEventListener('fetch', fetchEvent => {
+    const request = fetchEvent.request;
+    if (request.headers.get('Accept').includes('text/html')) {
+        fetchEvent.respondWith(
+            new Promise( resolveWithResponse => {
+                <b>const timer = setTimeout( () => {
+                    caches.match(request)
+                    .then( responseFromCache => {
+                        if (responseFromCache) {
+                            resolveWithResponse(responseFromCache);
+                        }
+                    })
+                }, 3000);</b>
+                fetch(request)
+                .then( responseFromFetch => {
+                    <b>clearTimeout(timer);</b>
+                    const copy = responseFromFetch.clone();
+                    try {
+                        fetchEvent.waitUntil(
+                            caches.open('pages')
+                            then( pagesCache => {
+                                return pagesCache.put(request, copy);
+                            })
+                        )
+                    } catch(error) {
+                        console.error(error);
+                    }
+                    resolveWithResponse(responseFromFetch);
+                })
+                .catch( fetchError => {
+                    <b>clearTimeout(timer);</b>
+                    caches.match(request)
+                    .then( responseFromCache => {
+                        resolveWithResponse(
+                            responseFromCache || caches.match('/offline')
+                        );
+                    })
+                })
+            })
+        );
+    } else {
+        caches.match(request)
+        .then( responseFromCache => {
+            return responseFromCache || fetch(request)
+        })
+    }
+});</code></pre>
+
+<p>That’s the JavaScript translation of this logic:</p>
+
+<blockquote>
+<p>When someone requests a page, try to fetch it from the network and store a copy in a cache, but if that doesn’t work, first look for an existing copy in a cache, and otherwise show a custom offline page instead (but if the request is taking too long, try to show a cached version of the page).</p>
+
+<p>For everything else, try finding a cached version first, otherwise fetch it from the network.</p>
+</blockquote>
+
+<h3>Pros and cons</h3>
+
+<p>As with all service worker enhancements to a website, this strategy will do absolutely nothing for first-time visitors. If you’ve never visited my site before, you’ve got nothing cached. But the more you return to the site, the more your cache is primed for speedy retrieval.</p>
+
+<p>I think that serving up a cached copy of a page when the network connection is flaky is a pretty good strategy …most of the time. If we’re talking about a blog post on this site, then sure, there won’t be much that the reader is missing out on—a fixed typo or ten; maybe some additional webmentions at the end of a post. But if we’re talking about the home page, then a reader with a flaky network connection might think there’s nothing new to read when they’re served up a stale version.</p>
+
+<p>What I’d <em>really</em> like is some way to know—on the client side—whether or not the currently-loaded page came from a cache or from a network. Then I could add some kind of interface element that says, &#8220;Hey, this page might be stale—click here if you want to check for a fresher version.&#8221; I’d also need some way in the service worker to identify any requests originating from that interface element and make sure they <em>always</em> go out to the network.</p>
+
+<p>I think that should be doable somehow. If you can think of a way to do it, please share it. Write a blog post and <a href="/contact">send me the link</a>.</p>
+
+<p>But even without the option to over-ride the time-out, I’m glad that I’m at least doing <em>something</em> to handle the lie-fi situation. Perhaps I should write a sequel to <a href="https://abookapart.com/products/going-offline"><cite>Going Offline</cite></a> called <cite>Still Online But Only In Theory Because The Connection Sucks</cite>.</p>
+
+]]>
+            </description>
+            <pubDate>Wed, 08 May 2019 14:22:19 GMT</pubDate>
+            <guid>https://adactio.com/journal/15122</guid>
+            <category>serviceworkers</category>
+            <category>javascript</category>
+            <category>frontend</category>
+            <category>development</category>
+            <category>liefi</category>
+            <category>goingoffline</category>
+            <category>code</category>
+            <category>performance</category>
+            <category>timeout</category>
+            <category>medium:id=55257b0323ad</category>
+            <georss:where>
+                <gml:Point>
+                        <gml:pos>50.82108036 -0.14305626</gml:pos>
+                </gml:Point>
+            </georss:where>
+        </item>
+        <item>
+            <title>Frameworking</title>
+            <link>https://adactio.com/journal/15111</link>
+            <description>
+<![CDATA[
+<p>There are many reasons to use a JavaScript framework like Vue, Angular, or React. Last year, <a href="https://mobile.twitter.com/stubbornella/status/1050119577823113216">Nicole asked for some of those reasons</a>. Her question received many, many answers from people pointing out the benefits of using a framework. Interesingly, though, not a single one of those benefits was for end users.</p>
+
+<p>(Mind you, <a href="https://adactio.com/journal/15050#a%20welcome%20change%20with%20some%20of%20the%20bigger%20JavaScript%20frameworks">if the framework is being used on the server</a> to pre-render pages, then it&#8217;s a moot point—in that situation, it makes no difference to the end user whether you use a framework or not.)</p>
+
+<p>Hidde recently tried using a client-side JavaScript framework for the first time and <a href="https://hiddedevries.nl/en/blog/2019-02-28-component-frameworks-and-web-standards">documented the process</a>:</p>
+
+<blockquote>
+  <p>In the last few months I built my very first framework-based front-end, in Vue.js. I complemented it with a router, a store and a GraphQL library, in order to have, respectively, multiple (virtual) pages, globally shared data and a smart way to load new data in my templates. </p>
+</blockquote>
+
+<p>It&#8217;s a very even-handed write-up. I highly recommend reading it. He describes the pros and cons of using a framework and using vanilla JavaScript:</p>
+
+<blockquote>
+  <p>I am glad I tried a framework and found its features were extremely helpful in creating a consistent interface for my users. My hope is though, that I won’t forget about vanilla. It’s perfectly valid to build a website with no or few dependencies.</p>
+</blockquote>
+
+<p>Speaking of vanilla JavaScript&#8230; the blogging machine that is Chris Ferdinandi also wrote a comparison post recently, asking <a href="https://gomakethings.com/why-do-people-choose-frameworks-over-vanilla-js/"><cite>Why do people choose frameworks over vanilla JS?</a> Again, it&#8217;s very even-handed and well worth a read. He readily concedes that if you&#8217;re working at scale, a framework is almost certainly a good idea:</p>
+
+<blockquote>
+  <p>If you’re building a large scale application (literally Facebook, Twitter, QuickBooks scale), the performance wins of a framework make the overhead worth it.</p>
+</blockquote>
+
+<p>Alas, I&#8217;ve seen many, many framework-driven sites that are most definitely <em>not</em> that operating at that scale. <a href="https://www.trysmudford.com/blog/city-life/">Trys speaks the honest truth here</a>:</p>
+
+<blockquote>
+  <p>We kid ourselves into thinking we’re building groundbreakingly complex systems that require bleeding-edge tools, but in reality, much of what we build is a way to render two things: a list, and a single item. Here are some users, here is a user. Here are your contacts, here are your messages with that contact. There ain’t much more to it than that.</p>
+</blockquote>
+
+<p>Just the other day, I saw a new site launch that was mostly a marketing site—the home page weighed over five megabytes, two megabytes of which were taken up with JavaScript, and the whole thing required JavaScript to render text to the screen (I&#8217;m not going to link to it because I don&#8217;t want to engage in any kind of public shaming and finger-wagging).</p>
+
+<p>I worry that all the perfectly valid (developer experience) reasons for using a framwork are outweighing the more important (user experience) reasons for avoiding shipping your dependencies to end users. <a href="https://twitter.com/slightlylate/status/1123677668103393281">Like Alex says</a>:</p>
+
+<blockquote>
+  <p>If your conception of &#8220;DX&#8221; doesn&#8217;t include it, or isn&#8217;t subservient to the user experience, rethink.</p>
+</blockquote>
+
+<p>And yes, I am going to take this opportunity to link once again to Alex&#8217;s article <a href="https://infrequently.org/2018/09/the-developer-experience-bait-and-switch/"><cite>The “Developer Experience” Bait-and-Switch</cite></a>. Please read it if you haven&#8217;t already. Please re-read it if you have.</p>
+
+<p>Anyway, my main reason for writing this is to point you to thoughtful posts like <a href="https://hiddedevries.nl/en/blog/2019-02-28-component-frameworks-and-web-standards">Hidde&#8217;s</a> and <a href="https://gomakethings.com/why-do-people-choose-frameworks-over-vanilla-js/">Chris&#8217;s</a>. I think it&#8217;s great to see people thoughtfully weighing up the pros and cons of choosing any particular technology—I&#8217;m a bit obsessed with the topic of <a href="https://adactio.com/articles/12839">evaluating technology</a>.</p>
+
+<p>If you&#8217;re weighing up the pros and cons of using, say, a particular JavaScript library or framework, that&#8217;s wonderful. My worry is that there are people working in front-end development who aren&#8217;t putting that level of thought into their technology choices, but are instead using a particular framework because it&#8217;s what they&#8217;re used to.</p>
+
+<p>To quote <a href="https://quoteinvestigator.com/2014/11/27/always-done/">Grace Hopper</a>:</p>
+
+<blockquote>
+  <p>The most dangerous phrase in the language is, ‘We’ve always done it this way.’</p>
+</blockquote>
+
+]]>
+            </description>
+            <pubDate>Thu, 02 May 2019 15:15:44 GMT</pubDate>
+            <guid>https://adactio.com/journal/15111</guid>
+            <category>javascript</category>
+            <category>frameworks</category>
+            <category>libraries</category>
+            <category>frontend</category>
+            <category>development</category>
+            <category>evaluating</category>
+            <category>technology</category>
+            <category>medium:id=48eb1bb04fd0</category>
+            <georss:where>
+                <gml:Point>
+                        <gml:pos>50.82105645 -0.14310616</gml:pos>
+                </gml:Point>
+            </georss:where>
+        </item>
+        <item>
+            <title>Inlining SVG background images in CSS with custom properties</title>
+            <link>https://adactio.com/journal/15075</link>
+            <description>
+<![CDATA[
+<p>Here&#8217;s a tiny lesson that I picked up from <a href="https://www.trysmudford.com/">Trys</a> that I&#8217;d like to share with you&#8230;</p>
+
+<p>I was working on some upcoming changes to the <a href="https://clearleft.com/">Clearleft</a> site recently. One particular component needed some SVG background images. I decided I&#8217;d inline the SVGs in the CSS to avoid extra network requests. It&#8217;s pretty straightforward:</p>
+
+<pre><code>.myComponent {
+    background-image: url('data:image/svg+xml;utf8,&lt;svg&gt; ... &lt;/svg&gt;');
+}
+</code></pre>
+
+<p>You can basically paste your SVG in there, although you need to a little bit of URL encoding: I found that converting <code>#</code> to <code>%23</code> to was enough for my needs.</p>
+
+<p>But here&#8217;s the thing. My component had some variations. One of the variations had <em>multiple</em> background images. There was a second background image <em>in addition</em> to the first. There&#8217;s no way in CSS to add an additional background image without writing a whole <code>background-image</code> declaration:</p>
+
+<pre><code>.myComponent--variant {
+    background-image: url('data:image/svg+xml;utf8,&lt;svg&gt; ... &lt;/svg&gt;'), url('data:image/svg+xml;utf8,&lt;svg&gt; ... &lt;/svg&gt;');
+}
+</code></pre>
+
+<p>So now I&#8217;ve got the same SVG source inlined in two places. That negates any performance benefits I was getting from inlining in the first place.</p>
+
+<p>That&#8217;s where Trys comes in. He shared <a href="https://www.trysmudford.com/blog/using-css-custom-properties/">a nifty technique he uses</a> in this exact situation: put the SVG source into a custom property!</p>
+
+<pre><code>:root {
+    --firstSVG: url('data:image/svg+xml;utf8,&lt;svg&gt; ... &lt;/svg&gt;');
+    --secondSVG: url('data:image/svg+xml;utf8,&lt;svg&gt; ... &lt;/svg&gt;');
+}
+</code></pre>
+
+<p>Then you can reference those in your <code>background-image</code> declarations:</p>
+
+<pre><code>.myComponent {
+    background-image: var(--firstSVG);
+}
+.myComponent--variant {
+    background-image: var(--firstSVG), var(--secondSVG);
+}
+</code></pre>
+
+<p>Brilliant! Not only does this remove any duplication of the SVG source, it also makes your CSS nice and readable: no more big blobs of SVG source code in the middle of your style sheet.</p>
+
+<p>You might be wondering what will happen in older browsers that don&#8217;t support CSS custom properties (that would be Internet Explorer 11). Those browsers won&#8217;t get any background image. Which is fine. It&#8217;s a <em>background</em> image. Therefore it&#8217;s decoration. If it were an important image, it wouldn&#8217;t be in the background.</p>
+
+<p>Progressive enhancement, innit?</p>
+
+]]>
+            </description>
+            <pubDate>Thu, 18 Apr 2019 18:25:05 GMT</pubDate>
+            <guid>https://adactio.com/journal/15075</guid>
+            <category>tinylesson</category>
+            <category>frontend</category>
+            <category>development</category>
+            <category>css</category>
+            <category>svgs</category>
+            <category>background</category>
+            <category>images</category>
+            <category>inline</category>
+            <category>customproperties</category>
+            <category>variables</category>
+            <category>medium:id=c32adde256c3</category>
+            <georss:where>
+                <gml:Point>
+                        <gml:pos>50.82102256 -0.14280018</gml:pos>
+                </gml:Point>
+            </georss:where>
+        </item>
+        <item>
+            <title>Three more Patterns Day speakers</title>
+            <link>https://adactio.com/journal/15069</link>
+            <description>
+<![CDATA[
+<p>There are 73 days to go until <a href="https://patternsday.com/">Patterns Day</a>. Do you have your ticket yet?</p>
+
+<p>Perhaps you&#8217;ve been holding out for some more information on the line-up. Well, I&#8217;m more than happy to share the latest news with you—today there are three new speakers on the bill&#8230;</p>
+
+<p><a href="https://thatemil.com/">Emil Björklund</a>, the technical director at the Malmö outpost of Swedish agency inUse, is a super-smart person I&#8217;ve known for many years. Last year, I saw him on stage in his home town at the Confront conference sharing some of his ideas on design systems. He blew my mind! I told him there and then that he had to come to Brighton and expand on those thoughts some more. This is going to be an unmissable big-picture talk in the style of <a href="https://paulrobertlloyd.com/presentations/2017/06/patterns_day">Paul&#8217;s superb talk last year</a>.</p>
+
+<p>Speaking of superb talks from last year, <a href="https://www.craftui.com/">Alla Kholmatova</a> is back! Her closing <a href="https://vimeo.com/228200141">talk from the first Patterns Day</a> was so fantastic that it I just had to have her come back. Oh, and since then, <a href="https://www.smashingmagazine.com/design-systems-book/">her brilliant book on Design Systems</a> came out. She&#8217;s going to have a lot to share!</p>
+
+<p>The one thing that I felt was missing from <a href="https://patternsday.com/2017/">the first Patterns Day</a> was a focus on inclusive design. I&#8217;m remedying that this time. <a href="http://www.heydonworks.com/">Heydon Pickering</a>, creator of <a href="https://inclusive-components.design/">the Inclusive Components website</a>—and <a href="http://book.inclusive-components.design/">the accompanying book</a>—is speaking at Patterns Day. I&#8217;m <em>very</em> excited about this. Given that Heydon has a habit of casually dropping knowledge bombs like <a href="https://alistapart.com/article/axiomatic-css-and-lobotomized-owls/">the lobotomised owl selector</a> and <a href="http://www.heydonworks.com/article/the-flexbox-holy-albatross">the flexbox holy albatross</a>, I can&#8217;t wait to see what he unleashes on stage in Brighton on June 28th.</p>
+
+<p><figure>
+<a href="https://patternsday.com">
+<img src="https://patternsday.com/assets/img/emil.jpg" alt="Emil Björklund">
+<img src="https://patternsday.com/assets/img/alla.jpg" alt="Alla Kholmatova">
+<img src="https://patternsday.com/assets/img/heydon.jpg" alt="Heydon Pickering">
+</a>
+<figcaption>Emil, Alla, and Heydon</figcaption>
+</figure></p>
+
+<p><a href="https://patternsday.com/">Be there or be square</a>.</p>
+
+<p><a href="https://ti.to/clearleft/patterns-day-2">Tickets for Patterns Day are still available</a>, but you probably don&#8217;t want to leave it &#8216;till the last minute to get yours. Just sayin&#8217;.</p>
+
+<p>The current—still incomplete—line-up comprises:</p>
+
+<ul>
+<li><a href="https://una.im/">Una Kravets</a>,</li>
+<li><a href="https://amyhupe.co.uk/">Amy Hupe</a>,</li>
+<li><a href="https://yaili.com/">Inayaili de León Persson</a>,</li>
+<li><a href="https://thatemil.com/">Emil Björklund</a>,</li>
+<li><a href="https://www.craftui.com/">Alla Kholmatova</a>, and</li>
+<li><a href="http://www.heydonworks.com/">Heydon Pickering</a>.</li>
+</ul>
+
+<p>That isn&#8217;t even the full roster of speakers, and it&#8217;s already an unmissable event!</p>
+
+<p>I very much hope you&#8217;ll join me in the beautiful Duke of York&#8217;s cinema on June 28th for <a href="https://patternsday.com/">a great day of design system nerdery</a>.</p>
+
+]]>
+            </description>
+            <pubDate>Tue, 16 Apr 2019 14:57:48 GMT</pubDate>
+            <guid>https://adactio.com/journal/15069</guid>
+            <category>patternsday</category>
+            <category>conference</category>
+            <category>brighton</category>
+            <category>design</category>
+            <category>systems</category>
+            <category>patterns</category>
+            <category>libraries</category>
+            <category>styleguides</category>
+            <category>clearleft</category>
+            <category>events</category>
+            <category>medium:id=16494d179346</category>
+            <georss:where>
+                <gml:Point>
+                        <gml:pos>50.82105153 -0.14305808</gml:pos>
+                </gml:Point>
+            </georss:where>
+        </item>
+        <item>
+            <title>Design perception</title>
+            <link>https://adactio.com/journal/15051</link>
+            <description>
+<![CDATA[
+<p>Last week I wrote a post called <a href="https://adactio.com/journal/15011"><cite>Dev perception</cite></a>:</p>
+
+<blockquote>
+  <p>I have a suspicion that there’s a silent majority of developers who are working with “boring” technologies on “boring” products in “boring” industries …you know, healthcare, government, education, and other facets of everyday life that any other industry would value more highly than Uber for dogs.</p>
+</blockquote>
+
+<p>The sentiment I expressed resonated with a lot of people. Like, a <em>lot</em> of people.</p>
+
+<p>I was talking specifically about web development and technology choices, but I think the broader point applies to other disciplines too.</p>
+
+<p>Last month I had the great pleasure of moderating <a href="https://clearleft.com/posts/unlock-the-power-of-digital-design-and-deliver-better-work-faster">two panels on design leadership</a> at an event in London (<a href="https://adactio.com/journal/1424">I <em>love</em> moderating panels</a>, and <a href="https://adactio.com/journal/10325">I think I&#8217;m pretty darn good at it too</a>). I noticed that the panels comprised representatives from two different kinds of companies.</p>
+
+<p>There were the digital-first companies like Spotify, Deliveroo, and Bulb—companies forged in the fires of start-up culture. Then there were the older companies that had to make the move to digital (transform, if you will). I decided to get a show of hands from the audience to see which kind of company most people were from. The overwhelming majority of attendees were from more old-school companies.</p>
+
+<p>Just as most of the ink spilled in the web development world goes towards the newest frameworks and toolchains, I feel like the majority of coverage in the design world is spent on the latest outputs from digital-first companies like AirBnB, Uber, Slack, etc.</p>
+
+<p>The end result is the same. A <em>typical</em> developer or designer is left feeling that they—and their company—are behind the curve. It&#8217;s like they&#8217;re only seeing the Instagram version of their industry, all airbrushed and filtered, and they&#8217;re comparing that to their day-to-day work. That can&#8217;t be healthy.</p>
+
+<p>Personally, I&#8217;d love to hear stories from the trenches of more representative, traditional companies. I also think that would help get an important message to people working in similar companies:</p>
+
+<p>You are not alone!</p>
+
+]]>
+            </description>
+            <pubDate>Thu, 11 Apr 2019 11:30:57 GMT</pubDate>
+            <guid>https://adactio.com/journal/15051</guid>
+            <category>design</category>
+            <category>culture</category>
+            <category>digital</category>
+            <category>perception</category>
+            <category>companies</category>
+            <category>startups</category>
+            <category>designers</category>
+            <category>medium:id=3e40603fda0f</category>
+            <georss:where>
+                <gml:Point>
+                        <gml:pos>50.82103995 -0.14317085</gml:pos>
+                </gml:Point>
+            </georss:where>
+        </item>
+        <item>
+            <title>Split</title>
+            <link>https://adactio.com/journal/15050</link>
+            <description>
+<![CDATA[
+<p>When I talk about <a href="https://adactio.com/articles/12839">evaluating technology</a> for front-end development, I like to draw a distinction between two categories of technology.</p>
+
+<p>On the one hand, you&#8217;ve got the raw materials of the web: HTML, CSS, and JavaScript. This is what users will ultimately interact with.</p>
+
+<p>On the other hand, you&#8217;ve got all the tools and technologies that help you produce the HTML, CSS, and JavaScript: pre-processors, post-processors, transpilers, bundlers, and other build tools.</p>
+
+<p>Personally, I&#8217;m much more interested and excited by the materials than I am by the tools. But I think it&#8217;s right and proper that other developers are excited by the tools. A good balance of both is probably the healthiest mix.</p>
+
+<p>I&#8217;m never sure what to call these two categories. Maybe the materials are the &#8220;external&#8221; technologies, because they&#8217;re what users will interact with. Whereas all the other technologies—that mosty live on a developer&#8217;s machine—are the &#8220;internal&#8221; technologies.</p>
+
+<p>Another nice phrase is something I heard during <a href="https://adactio.com/journal/14891">Chris&#8217;s talk at An Event Apart in Seattle</a>, when he quoted <a href="http://bradfrost.com/">Brad</a>, who talked about <a href="https://adactio.com/journal/14891#Brad%20says">the front of the front end and the back of the front end</a>.</p>
+
+<p>I&#8217;m definitely more of a front-of-the-front-end kind of developer. I have opinions on the quality of the materials that get served up to users; the output should be accessible and performant. But I don&#8217;t particularly care about the tools that produced those materials on the back of the front end. Use whatever works for you (or whatever works for your team).</p>
+
+<p>As a user-centred developer, my priority is doing what&#8217;s best for end users. That&#8217;s not to say I don&#8217;t value <a href="https://jeremy.codes/blog/defining-productivity/">developer convenience</a>. I do. <a href="https://adactio.com/journal/13333">But I <em>prioritise</em> user needs over developer needs</a>. And in any case, those two needs don&#8217;t even come into conflict most of the time. Like I said, from a user&#8217;s point of view, it&#8217;s irrelevant what text editor or version control system you use.</p>
+
+<p>Now, you could make the argument that anything that is good for developer convenience is automatically good for user experience because faster, more efficient development should result in better output. While that&#8217;s true in theory, I highly recommend Alex&#8217;s post, <a href="https://infrequently.org/2018/09/the-developer-experience-bait-and-switch/"><cite>The “Developer Experience” Bait-and-Switch</cite></a>.</p>
+
+<p>Where it gets interesting is when a technology that&#8217;s designed for developer convenience is made out of the very materials being delivered to users. For example, a CSS framework like Bootstrap is <em>made</em> of CSS. That&#8217;s different to a tool like Sass which <em>outputs</em> CSS. Whether or not a developer chooses to use Sass is irrelevant to the user—the final output will be CSS either way. But if a developer chooses to use a CSS framework, that decision has a direct impact on the user experience. The user must download the framework in order for the developer to get the benefit.</p>
+
+<p>So whereas Sass sits at the back of the front end—where I don&#8217;t care what you use—Bootstrap sits at the front of the front end. For tools like that, I don&#8217;t think saying &#8220;use whatever works for you&#8221; is good enough. It&#8217;s got to be weighed against the cost to the user.</p>
+
+<p>Historically, it&#8217;s been a similar story with JavaScript libraries. They&#8217;re written in JavaScript, and so they&#8217;re going to be executed in the browser. If a developer wanted to use jQuery to make their life easier, the user paid the price in downloading the jQuery library.</p>
+
+<p>But I&#8217;ve noticed a welcome change with some of the bigger JavaScript frameworks. Whereas the initial messaging around frameworks like React touted the benefits of state management and the virtual DOM, I feel like that&#8217;s not as prevalent now. You&#8217;re much more likely to hear people—quite rightly—talk about the benefits of modularity and componentisation. If you combine that with the rise of Node—which means that JavaScript is no longer confined to the browser—then these frameworks can move from the front of the front end to the back of the front end.</p>
+
+<p>We&#8217;ve certainly seen that at <a href="https://clearleft.com/">Clearleft</a>. We&#8217;ve worked on multiple React projects, but in every case, the output was server-rendered. Developers get the benefit of working with a tool that helps them. Users don&#8217;t pay the price.</p>
+
+<p>For me, this question of whether a framework will be used on the client side or the server side is crucial.</p>
+
+<p>Let me tell you about a Clearleft project that sticks in my mind. We were working with a big international client on a product that was going to be rolled out to students and teachers in developing countries. This was right up my alley! We did plenty of research into network conditions and typical device usage. That then informed a tight <a href="https://clearleft.com/posts/responsive-design-on-a-budget">performance budget</a>. Every design decision—from web fonts to images—was informed by that performance budget. We were producing lean, mean markup, CSS, and JavaScript. But we weren&#8217;t the ones implementing the final site. That was being done by the client&#8217;s offshore software team, and they insisted on using React. &#8220;That&#8217;s okay&#8221;, I thought. &#8220;React can be used server-side so we can still output just what&#8217;s needed, right?&#8221; Alas, no. These developers did everything client side. When the final site launched, the log-in screen alone required megabytes of JavaScript just to render a form. It was, in my opinion, entirely unfit for purpose. It still pains me when I think about it.</p>
+
+<p>That was a few years ago. I think that these days it has become a lot easier to make the decision to use a framework on the back of the front end. Like I said, that&#8217;s certainly been the case on recent Clearleft projects that involved React or Vue.</p>
+
+<p>It surprises me, then, when I see the question of server rendering or client rendering treated almost like an implementation detail. It might be an implementation detail from a developer&#8217;s perspective, but it&#8217;s a key decision for the user experience. The <a href="https://medium.com/@addyosmani/the-cost-of-javascript-in-2018-7d8950fbb5d4">performance cost</a> of putting your entire tech stack into the browser can be enormous.</p>
+
+<p>Alex Sanders from the development team at The Guardian published a post recently called <a href="https://www.theguardian.com/info/2019/apr/04/revisiting-the-rendering-tier"><cite>Revisiting the rendering tier </cite></a>. In it, he describes how they&#8217;re moving to React. Now, if this were a move to <em>client</em>-rendered React, that would make a big impact on the user experience. The thing is, I couldn&#8217;t tell from the article whether React was going to be used in the browser or on the server. The article talks about &#8220;rendering&#8221;—which is something that browsers do—and &#8220;the DOM&#8221;—which is something that only exists in browsers.</p>
+
+<p><a href="https://www.theguardian.com/info/2019/apr/04/revisiting-the-rendering-tier#comment-127743952">So I asked</a>. It turns out that this plan is very much about generating HTML and CSS on the server before sending it to the browser. Excellent!</p>
+
+<p>With that question answered, I&#8217;m cool with whatever they choose to use. In this case, they&#8217;re choosing to use CSS-in-JS (although, to be pedantic, there&#8217;s no C anymore so technically it&#8217;s SS-in-JS). As long as the &#8220;JS&#8221; part is JavaScript <em>on a server</em>, then it makes no difference to the end user, and therefore no difference to me. Not my circus, not my monkeys. For users, the end result is the same whether styling is applied via a selector in an external stylesheet or, for example, via an inline style declaration (and in some situations, a server-rendered CSS-in-JS solution might be <em>better</em> for performance). And so, as a user-centred developer, this is something that I don&#8217;t need to care about.</p>
+
+<p>Except&#8230;</p>
+
+<p>I have misgivings. But just to be clear, these misgivings have <em>nothing</em> to do with users. My misgivings are entirely to do with another group of people: the people who make websites.</p>
+
+<p>There&#8217;s a second-order effect. By making React—or even JavaScript in general—a requirement for styling something on a web page, the barrier to entry is raised.</p>
+
+<p>At least, <em>I</em> think that the barrier to entry is raised. I completely acknowledge that this is a subjective judgement. In fact, the reason why a team might decide to make JavaScript a requirement for participation might well be because they believe it makes it <em>easier</em> for people to participate. Let me explain&#8230;</p>
+
+<p>It wasn&#8217;t that long ago that devs coming from a Computer Science background were deriding CSS for its simplicity, complaining that &#8220;it&#8217;s broken&#8221; and turning their noses up at it. That rhetoric, thankfully, is waning. Nowadays they&#8217;re far more likely to acknowledge that <a href="https://adactio.com/journal/12571">CSS might be simple, but it isn&#8217;t easy</a>. Concepts like the cascade and specificity are real head-scratchers, and any prior knowledge from imperative programming languages won&#8217;t help you in this declarative world—all your hard-won experience and know-how isn&#8217;t fungible. Instead, it seems as though all this cascading and specificity is butchering the modularity of your nicely isolated components.</p>
+
+<p>It&#8217;s no surprise that programmers with this kind of background would treat CSS as damage and find ways to route around it. The many flavours of CSS-in-JS are testament to this. From a programmer&#8217;s point of view, this solution has made things easier. Best of all, as long as it&#8217;s being done on the server, there&#8217;s no penalty for end users. But now the price is paid in the diversity of your team. In order to participate, a Computer Science programming mindset is now pretty much a requirement. For someone coming from a more declarative background—with really good HTML and CSS skills—everything suddenly seems needlessly complex. And <a href="https://tantek.com/2018/309/t1/complexity-reinforces-privilege">as Tantek observed</a>:</p>
+
+<blockquote>
+  <p>Complexity reinforces privilege.</p>
+</blockquote>
+
+<p>The result is a form of gatekeeping. I don&#8217;t think it&#8217;s intentional. I don&#8217;t think it&#8217;s malicious. It&#8217;s being done with the best of intentions, in pursuit of efficiency and productivity. But these code decisions are reflected in hiring practices that exclude people with different but equally valuable skills and  perspectives.</p>
+
+<p>Rachel describes <a href="https://rachelandrew.co.uk/archives/2019/01/30/html-css-and-our-vanishing-industry-entry-points/">HTML, CSS and our vanishing industry entry points</a>:</p>
+
+<blockquote>
+  <p>If we make it so that you have to understand programming to even start, then we take something open and enabling, and place it back in the hands of those who are already privileged.</p>
+</blockquote>
+
+<p>I think there&#8217;s a comparison here with toxic masculinity. Toxic masculinity is obviously terrible for women, but it&#8217;s also really shitty for men in the way it stigmatises any male behaviour that doesn&#8217;t fit its worldview. Likewise, if the only people your team is interested in hiring are traditional programmers, then those programmers are going to resent having to spend their time dealing with semantic markup, accessibility, styling, and other disciplines that they never trained in. Heydon correctly identifies this as <a href="http://www.heydonworks.com/article/reluctant-gatekeeping-the-problem-with-full-stack">reluctant gatekeeping</a>:</p>
+
+<blockquote>
+  <p>By assuming the role of the Full Stack Developer (which is, in practice, a computer scientist who also writes HTML and CSS), one takes responsibility for all the code, in spite of its radical variance in syntax and purpose, and becomes the gatekeeper of at least some kinds of code <strong>one simply doesn’t care about writing well</strong>.</p>
+</blockquote>
+
+<p>This hurts everyone. It&#8217;s bad for your team. It&#8217;s even worse for the wider development community.</p>
+
+<p>Last year, <a href="https://abookapart.com/blogs/press/get-to-know-jeremy-keith/">I was asked</a> &#8220;Is there a fear or professional challenge that keeps you up at night?&#8221; I responded:</p>
+
+<blockquote>
+  <p>My greatest fear for the web is that it becomes the domain of an elite priesthood of developers. I firmly believe that, as Tim Berners-Lee put it, “this is for everyone.” And I don’t just mean it’s for everyone to use—I believe it’s for everyone to make as well. That’s why I get very worried by anything that raises the barrier to entry to web design and web development.</p>
+</blockquote>
+
+<p>I&#8217;ve described a number of dichotomies here:</p>
+
+<ul>
+<li>Materials vs. tools,</li>
+<li>Front of the front end vs. back of the front end,</li>
+<li>User experience vs. developer experience,</li>
+<li>Client-side rendering vs. server-side rendering,</li>
+<li>Declarative languages vs. imperative languages.</li>
+</ul>
+
+<p>But the split that worries the most is this:</p>
+
+<ul>
+<li>The people who make the web vs. the people who are excluded from making the web.</li>
+</ul>
+
+]]>
+            </description>
+            <pubDate>Wed, 10 Apr 2019 14:39:52 GMT</pubDate>
+            <guid>https://adactio.com/journal/15050</guid>
+            <category>frontend</category>
+            <category>development</category>
+            <category>javascript</category>
+            <category>css</category>
+            <category>privilege</category>
+            <category>inclusion</category>
+            <category>tools</category>
+            <category>materials</category>
+            <category>exclusion</category>
+            <category>hiring</category>
+            <category>dichotomy</category>
+            <category>server</category>
+            <category>client</category>
+            <category>rendering</category>
+            <category>developer</category>
+            <category>convenience</category>
+            <category>split</category>
+            <category>divide</category>
+            <category>gatekeeping</category>
+            <category>react</category>
+            <category>cssinjs</category>
+            <category>frameworks</category>
+            <category>libraries</category>
+            <category>medium:id=24cc2f33716c</category>
+            <georss:where>
+                <gml:Point>
+                        <gml:pos>50.82108210 -0.14308959</gml:pos>
+                </gml:Point>
+            </georss:where>
+        </item>
+        <item>
+            <title>Drag&#8217;n&#8217;drop revisited</title>
+            <link>https://adactio.com/journal/15030</link>
+            <description>
+<![CDATA[
+<p>I got a message from a screen-reader user of <a href="https://thesession.org/">The Session</a> recently, letting me know of a problem they were having. I <em>love</em> getting any kind of feedback around accessibility, so this was like gold dust to me.</p>
+
+<p>They pointed out that the drag&#8217;n&#8217;drop interface for rearranging the order of <a href="https://thesession.org/tunes/sets">tunes in a set</a> was inaccessible.</p>
+
+<p><a href="https://dribbble.com/shots/2508629-Drag-And-Drop"><img src="https://cdn.dribbble.com/users/13/screenshots/2508629/drag-and-drop.png" alt="Drag and drop"></a></p>
+
+<p>Of course! I slapped my forehead. How could I have missed this?</p>
+
+<p>It had been a while since I had implemented that functionality, so before even looking at the existing code, I started to think about how I could improve the situation. Maybe I could capture keystroke events from the arrow keys and announce changes via ARIA values? That sounded a bit heavy-handed though: mess with people&#8217;s native keyboard functionality at your peril.</p>
+
+<p>Then I looked at the code. That was when I realised that the fix was going to be much, much easier than I thought.</p>
+
+<p><a href="https://adactio.com/journal/10195">I documented my process of adding the drag&#8217;n&#8217;drop functionality</a> back in 2016. Past me had his progressive enhancement hat on:</p>
+
+<blockquote>
+  <p>One of the interfaces needed for this feature was a form to re-order items in a list. So I thought to myself, “what’s the simplest technology to enable this functionality?” I came up with a series of <code>select</code> elements within a form.</p>
+</blockquote>
+
+<p><a href="https://dribbble.com/shots/2508626-Reordering"><img src="https://cdn.dribbble.com/users/13/screenshots/2508626/reordering.png" alt="Reordering"></a></p>
+
+<p>The problem was in my feature detection:</p>
+
+<blockquote>
+  <p>There’s a little bit of mustard-cutting going on: does the <code>dragula</code> object exist, and does the browser understand <code>querySelector</code>? If so, the <code>select</code> elements are hidden and the drag’n’drop is enabled.</p>
+</blockquote>
+
+<p>The logic was fine, but the execution was flawed. I was being lazy and hiding the <code>select</code> elements with <code>display: none</code>. That hides them visually, but it also hides them from screen readers. I swapped out that style declaration for one that <a href="https://a11yproject.com/posts/how-to-hide-content/">visually hides the elements</a>, but keeps them accessible and focusable.</p>
+
+<p>It was a very quick fix. I had the odd sensation of wanting to thank Past Me for making things easy for Present Me. But I don&#8217;t want to talk about time travel because if we start talking about it then we&#8217;re going to be here all day talking about it, making diagrams with straws.</p>
+
+<p>I pushed the fix, told the screen-reader user who originally contacted me, and got a reply back saying that everything was working great now. Success!</p>
+
+]]>
+            </description>
+            <pubDate>Sun, 07 Apr 2019 18:30:32 GMT</pubDate>
+            <guid>https://adactio.com/journal/15030</guid>
+            <category>accessibility</category>
+            <category>a11y</category>
+            <category>dragdrop</category>
+            <category>frontend</category>
+            <category>development</category>
+            <category>interface</category>
+            <category>ui</category>
+            <category>thesession</category>
+            <category>progressive</category>
+            <category>enhancement</category>
+            <category>forms</category>
+            <category>inputs</category>
+            <category>css</category>
+            <category>styling</category>
+            <category>hiding</category>
+            <category>screenreaders</category>
+            <category>medium:id=e764a615ba8</category>
+            <georss:where>
+                <gml:Point>
+                        <gml:pos>50.83243686 -0.11810039</gml:pos>
+                </gml:Point>
+            </georss:where>
+        </item>
+
+   </channel>
+</rss>

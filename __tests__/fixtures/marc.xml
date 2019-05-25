@@ -1,0 +1,1146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- generator="Kirby" -->
+<rss version="2.0" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:wfw="http://wellformedweb.org/CommentAPI/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:atom="http://www.w3.org/2005/Atom">
+
+  <channel>
+    <title>Feed</title>
+    <link>https://marcthiele.com</link>
+    <generator>Kirby</generator>
+    <lastBuildDate>Fri, 24 May 2019 07:53:22 +0000</lastBuildDate>
+    <atom:link href="https://marcthiele.com" rel="self" type="application/rss+xml" />
+
+        <description>The blog feed with everythings that happens.</description>
+
+        <item>
+      <title>This Looks Like a Promising Webmentions Plugin for Kirby 3</title>
+      <link>https://marcthiele.com/links/promising-webmentions-plugin-kirby-3</link>
+      <guid>links/promising-webmentions-plugin-kirby-3</guid>
+      <pubDate>Mon, 20 May 2019 21:07:00 +0000</pubDate>
+      <description><![CDATA[<p>Since Sebastiaan Andeweg announced not to have any time anymore to maintain the <a href="https://github.com/sebsel/seblog-kirby-webmentions">Kirby webmentions plugin he created</a>, I am happy to have seen, that Sebastian Greger is working on a <a href="https://github.com/sebastiangreger/kirby3-sendmentions">Sendmentions</a> plugin as well as a <a href="https://github.com/sebastiangreger/kirby3-commentions">webmention enabled commenting system</a>. Time to upgrade to Kirby 3 anyways ;)</p>]]></description>
+    </item>
+        <item>
+      <title>Interview with The Dorf</title>
+      <link>https://marcthiele.com/notes/interview-with-the-dorf</link>
+      <guid>notes/interview-with-the-dorf</guid>
+      <pubDate>Fri, 10 May 2019 00:00:00 +0000</pubDate>
+      <description><![CDATA[<p>A few days ago I met with Ole and Louisa from <a href="https://thedorf.de/gesichter/zu-tisch-mit/marc-thiele-beyond-tellerrand/">The Dorf</a> for a nice conversation about my little beyond tellerrand event in and in front of the Capitol Theater. Thanks to both of them for the lovely chat. And man, I know how to look <em>good</em> on photos! 😂</p>
+<p><a href="https://thedorf.de/gesichter/zu-tisch-mit/marc-thiele-beyond-tellerrand/">Full story here</a></p>]]></description>
+    </item>
+        <item>
+      <title>A Nice Little Setup to Live Stream and Record an Event</title>
+      <link>https://marcthiele.com/notes/nice-little-setup-to-live-stream-and-record-an-event</link>
+      <guid>notes/nice-little-setup-to-live-stream-and-record-an-event</guid>
+      <pubDate>Wed, 08 May 2019 09:25:00 +0000</pubDate>
+      <description><![CDATA[<p>I also use the <a href="https://www.blackmagicdesign.com/uk/products/atemtelevisionstudio">ATEM Television Studio HD</a> for my stage setup. I always am thinking about how to enhance it to also being able to record the whole show. I guess I have to speak to <a href="https://aaronparecki.com">Aaron Parecki</a> and see how he setups up his stuff. Not sure, if I’d manage to use my gear on stage and simultaneously record an event, but let’s find out.</p>
+<p>Anyways, Aaron <a href="https://www.youtube.com/watch?v=epKA84wK9ls">recorded a lovely little video</a> of how he is setting up at an event with many useful insights. A bit of information overload for me, to be honest, but lovely to watch (I guess I have to re-watch, as soon as I am done with beyond tellerrand in Düsseldorf). Nice addition to this is the explanation of his workflow, cutting the videos onsite to more or less directly publish them on YouTube (or Vimeo).</p>
+<figure class="video"><iframe src="//youtube.com/embed/epKA84wK9ls" frameborder="0" webkitallowfullscreen="true" mozallowfullscreen="true" allowfullscreen="true"></iframe></figure>
+<p>In addition to this video, I’d love to see the following information:</p>
+<ul>
+<li>A list of the gear that is used (maybe with a price overview as well)</li>
+<li>A schematic setup plan</li>
+</ul>
+<p>Maybe Aaron already has prepared something like this and I only have to search on his website ;)</p>]]></description>
+    </item>
+        <item>
+      <title>Flash On The Beach &#8211; Reasons To</title>
+      <link>https://marcthiele.com/notes/flash-on-the-beach</link>
+      <guid>notes/flash-on-the-beach</guid>
+      <pubDate>Wed, 24 Apr 2019 02:20:00 +0000</pubDate>
+      <description><![CDATA[<p>When I arrived back home from San Francisco, I read that my friend <a href="https://reasons.to">John decided to end his event</a>. I chatted to him followed social media and wanted to write something here, on my blog.</p>
+<p>Well, it is like always, finding excuses not to do something, but honestly, only a bit more than two weeks and my own show – where John owns a big part of – takes place. I just feel, I can’t lose more time to write it and I always say how important friendship is and people are. Therefore I just hope I hold all the deadlines and manage to get everything done in time. <strong>John, this is for you.</strong></p>
+<p>I have been out tonight and on my way back I thought about many ways of starting to write about my friend ending what his passion always was. How to find the right way to express what it means to me. What it might mean to him. Like me, John ran the whole show on his own support by many wonderful people like Andy, Chris, and, of course, his wife Jo.</p>
+<p>Those of you, who know me and my event and have attended one, know that I always also thank John at the end of the show. Reason to do so is, that he is my trash can like I am his. We have ideas, we have opinions and we ask each other, what the other one thinks about it. We agree, we disagree and we have saved each other many times from doing the wrong thing.</p>
+<p>Over the last two or three years those moments haven’t been as regular as they used to. I have seen my good friend struggling. Trying to read, trying to understand what was happening. Actually ever since he <em>simply</em> renamed his event from <strong>Flash On The Beach</strong> to <strong>Reasons To</strong>. I understand why Brendan Dawes writes:</p>
+<blockquote>
+<p>[…] and whilst it was successful I never felt it had the same vibe for me personally […]</p>
+</blockquote>
+<p>For me the key here is <em>personally</em>. So many people I met at Flash On The Beach had a real personal connection to this event.  Therefore this event became something were they met, where they knew, that <em>everybody else would be there</em>. </p>
+<p>For a certain reason exactly his got lost when John changed the name of the event. Identification. People loved the event, but John gave his very best to reming people that, if they won’t tell anybody about the event if they liked it, no one would. This is what we live of: people doing the <em>marketing</em> we don’t have the money for. Plus many other factors in addition … (John, we had so many nights chatting about exactly this – I enjoyed any minute of it)</p>
+<p>Now, I would easily fill your day with great, wonderful, personal stories about John’s event, but I guess you understand how much I loved it anyways. I have been there every damn year. I loved meeting the people I know and meeting people I had never seen before. Broken leg or not. But I also have seen my friend worrying. </p>
+<p>As much as I am sad about the end of Reasons To I am looking forward to what John maybe enjoys doing next. I don’t think he is done with events, but he is taking a well deserved break to maybe come back with what he loves: gathering a wonderful and inspiring group of people to inspire and motivate us.</p>
+<p>Thanks so much, John, for 12 exceptional years in Brighton, New York and London.</p>]]></description>
+    </item>
+        <item>
+      <title>Selbstzweifel &#8211; Self-Doubt</title>
+      <link>https://marcthiele.com/notes/selbstzweifel-self-doubt</link>
+      <guid>notes/selbstzweifel-self-doubt</guid>
+      <pubDate>Fri, 12 Apr 2019 23:20:00 +0000</pubDate>
+      <description><![CDATA[<p>A couple of months ago I was watching a documentary in which the conductor Hossein Pishkar appeared. At one point he said …</p>
+<blockquote>
+<p>Ich zweifle ständig und andauernd an mir. Selbstzweifel. Immer wieder. Nur beim Machen, da darf man keine haben!</p>
+</blockquote>
+<p>… which translates into something like …</p>
+<blockquote>
+<p>I keep doubting myself constantly. Self-doubt. Again and again. Only when acting, you must not have any!</p>
+</blockquote>
+<p>I think if you decide to act and to do/make something you have to forget this constant self-doubt. It would block you and you can question yourself afterwards again (which you will). In <em>the moment</em>, just go with it. Give 100% and be confident.</p>]]></description>
+    </item>
+        <item>
+      <title>Accessible Brand Colors</title>
+      <link>https://marcthiele.com/links/accessible-brand-colours</link>
+      <guid>links/accessible-brand-colours</guid>
+      <pubDate>Tue, 19 Mar 2019 10:40:00 +0000</pubDate>
+      <description><![CDATA[<p><a href="https://abc.useallfive.com">This is a tool</a> that shows you how <strong>ADA compliant</strong> your colours are in relation to each other. By adding your brand’s colours one by one, you can generate a chart to see how they can be used together for accessibility, see, where they don’t work, and find similar colours that work better.</p>]]></description>
+    </item>
+        <item>
+      <title>Album Released by Tobi Lessnow aka Baldower</title>
+      <link>https://marcthiele.com/notes/album-by-baldower-aka-tobi-lessnow</link>
+      <guid>notes/album-by-baldower-aka-tobi-lessnow</guid>
+      <pubDate>Fri, 01 Mar 2019 18:30:00 +0000</pubDate>
+      <description><![CDATA[<p>Tobi Lessnow, my long-time friend, partner in crime and <del>lover</del> mental support after beyond tellerrand did it. So …</p>
+<p>Ladies and gentlemen, here it is! The long awaited album by <a href="http://baldower.de">Baldower</a> is here.</p>
+<p>I don’t bloody care if you like his music or not, but you gonna click <a href="https://baldower.bandcamp.com/releases">this link</a>, visit Bandcamp and buy his damn album. <strong>The whole album! NOW!</strong> </p>
+<figure><a href="https://baldower.bandcamp.com/releases"><img src="https://marcthiele.com/content/01-notes/20190301-album-by-baldower-aka-tobi-lessnow/baldower-cover.jpg" alt="Image is showing the album cover of Tobi Lessnow’s album on Bandcamp"></a></figure>]]></description>
+    </item>
+        <item>
+      <title>Brendan Dawes Is Seeking Alternative Rectangles</title>
+      <link>https://marcthiele.com/notes/brendan-dawes-is-seeking-alternative-rectangles</link>
+      <guid>notes/brendan-dawes-is-seeking-alternative-rectangles</guid>
+      <pubDate>Thu, 28 Feb 2019 08:30:00 +0000</pubDate>
+      <description><![CDATA[<p><a href="http://brendandawes.com/blog/seeking-alternative-rectangles">In a recent blog post Brendan Dawes stated</a>, that he switched off all his notifications. On phone and desktop. He says …</p>
+<blockquote>
+<p>It started with me killing dead all notifications, not just on my phone but on my desktop too. I now live in a state of ignorant bliss, free from knowing if somebody from just liked a tweet or my latest stupid Instagram post. If I decide to fire up either of these that's my decision. With notifications it's the other way round — your phone is controlling you — telling you what to do with your time.</p>
+</blockquote>
+<p>… and I totally agree to the statement that phones – or mobile devices in general – are controlling us more and more. I see this day by day, watching my kids during their days.</p>
+<p>I for myself, though, try to simply don’t let this happen. Maybe it would be easier to switch off my notifications as well, but then I see it as part of my job as doing support for beyond tellerrand and being reachable for <em>customers</em>. I am in a totally different role here though, surely. What I learned though, over the years, is to not react to any damn notification anymore. I learned to ignore or overlook them and reply to questions quick, but when I find the time.</p>
+<p>How are you thinking about this? What is your way of dealing with more and more distractive <em>noise</em> around you? Would be interesting to hear this (replies recently only work via Twitter and <a href="https://webmention.io">webmention</a> or <a href="mailto:info@marcthiele.com">email of course</a>).</p>
+<p><strong><a href="http://brendandawes.com/blog/seeking-alternative-rectangles">Here is Brendan’s full blog post</a></strong>.</p>]]></description>
+    </item>
+        <item>
+      <title>Sponsorships Offer Benefits</title>
+      <link>https://marcthiele.com/notes/sponsorships-offer-benefits</link>
+      <guid>notes/sponsorships-offer-benefits</guid>
+      <pubDate>Tue, 19 Feb 2019 09:15:00 +0000</pubDate>
+      <description><![CDATA[<p>Part of <a href="https://brizk.com">Kai Brach’s</a> introduction text to his latest edition of the newsletter <a href="https://www.densediscovery.com/issues/24">Dense Discovery</a> states this:</p>
+<blockquote>
+<p>I still believe that, if done well, sponsorships offer benefits that go beyond easy-to-measure performance metrics. While anyone can buy more visits, sponsorships are forged with a mutual understanding that both parties can benefit from each other’s reputation. Conferences, community events, open-source software, and a plethora of creative endeavours (many of which inspire critical thought) only exist because of the generous support by organisations that believe in the value of affiliation. Let’s hope that spirit outlives our obsession with the measurable.</p>
+</blockquote>
+<p>I can’t say more, but I totally agree to this!</p>]]></description>
+    </item>
+        <item>
+      <title>Did I Miss Something on Medium?</title>
+      <link>https://marcthiele.com/notes/did-i-miss-something-on-medium</link>
+      <guid>notes/did-i-miss-something-on-medium</guid>
+      <pubDate>Sun, 17 Feb 2019 00:00:00 +0000</pubDate>
+      <description><![CDATA[<figure><img src="https://marcthiele.com/content/01-notes/20190217-did-i-miss-something-on-medium/medium.jpg" alt="A screenshot of a message that you get on the Medium App for Phone stating I have two more articles to read for free"></figure>
+<p>I must have missed that Medium limits the free to read stories now. Or what is this about?</p>]]></description>
+    </item>
+        <item>
+      <title>Meagan Fisher on Motivations and Struggles Behind Redesigning Her Website</title>
+      <link>https://marcthiele.com/links/meagan-fisher-motivations-and-struggles-behind-redesigning-her-website</link>
+      <guid>links/meagan-fisher-motivations-and-struggles-behind-redesigning-her-website</guid>
+      <pubDate>Fri, 15 Feb 2019 18:00:00 +0000</pubDate>
+      <description><![CDATA[<p><a href="https://owltastic.com">Meagan Fisher</a> has redesigned her website recently. I reckon you have heard this already as it was spoken about quite a lot. Now she has written about <em>the motivations and struggles</em> with this. I find this quite interesting and I bet you will find yourself in this 8 minute read as well ;)</p>]]></description>
+    </item>
+        <item>
+      <title>Making Future Interfaces: Inline SVG</title>
+      <link>https://marcthiele.com/notes/making-future-interfaces-inline-svg</link>
+      <guid>notes/making-future-interfaces-inline-svg</guid>
+      <pubDate>Thu, 14 Feb 2019 14:35:00 +0000</pubDate>
+      <description><![CDATA[<p>Heydon Pickering has released <a href="https://www.youtube.com/watch?v=1CDTw_UpQoQ&amp;index=4&amp;list=PL2sukhHU1gzbJgEodn1haQ2HtfA_rdoge">another episode of his Making Future Interfaces videos</a>, <a href="https://marcthiele.com/notes/heydon-on-algorithmic-layouts">I was talking about earlier</a>. This time: Inline SVG. Another one I watch with a big smile on my face – superb, Heydon.</p>
+<figure class="video"><iframe src="//youtube.com/embed/1CDTw_UpQoQ" frameborder="0" webkitallowfullscreen="true" mozallowfullscreen="true" allowfullscreen="true"></iframe></figure>
+<p>Or watch on YouTube: <a href="https://www.youtube.com/watch?v=1CDTw_UpQoQ&amp;index=4&amp;list=PL2sukhHU1gzbJgEodn1haQ2HtfA_rdoge">Making Future Interfaces: Inline SVG</a></p>]]></description>
+    </item>
+        <item>
+      <title>Thanks for the Mention, Sebastian</title>
+      <link>https://marcthiele.com/notes/thanks-for-the-mention-sebastian</link>
+      <guid>notes/thanks-for-the-mention-sebastian</guid>
+      <pubDate>Tue, 12 Feb 2019 10:15:00 +0000</pubDate>
+      <description><![CDATA[<p>Sebastian Greger mentioned my beyond tellerrand events <a href="https://sebastiangreger.net/2019/02/events-germany-summer-2019/">in a nice list of events for 2019</a> – thanks a lot!</p>]]></description>
+    </item>
+        <item>
+      <title>On Table Design</title>
+      <link>https://marcthiele.com/links/table-design</link>
+      <guid>links/table-design</guid>
+      <pubDate>Mon, 11 Feb 2019 10:40:00 +0000</pubDate>
+      <description><![CDATA[<p>Hui Jing has written an article about table design patterns over there at Smashing Magazine. It is a nice to read article that shows CSS only options an JavaScript <em>enhanced</em> options.</p>]]></description>
+    </item>
+        <item>
+      <title>On Covering Webcams by John Gruber</title>
+      <link>https://marcthiele.com/links/security-reminder</link>
+      <guid>links/security-reminder</guid>
+      <pubDate>Mon, 11 Feb 2019 10:30:00 +0000</pubDate>
+      <description><![CDATA[<p>A short article by John Gruber, that simply reminds me of checking that my computer’s and phone’s system is up to date.</p>]]></description>
+    </item>
+        <item>
+      <title>This Was New Adventures Conference 2019</title>
+      <link>https://marcthiele.com/notes/this-was-new-adventures-conference-2019</link>
+      <guid>notes/this-was-new-adventures-conference-2019</guid>
+      <pubDate>Thu, 31 Jan 2019 16:30:00 +0000</pubDate>
+      <description><![CDATA[<p>I was lying down with fever and a cold, which I have already felt coming in Nottingham. Friday evening I crashed and crawled out of bed yesterday. Email, to do’s and work is piling up, but if I wont write this personal review of the event now – which I’d like to as I like <a href="http://hellogeri.com">Geri Coady</a> and <a href="https://colly.com">Simon Collison (aka Colly)</a> – I will never do it.</p>
+<figure><img src="https://marcthiele.com/content/01-notes/20190131-this-was-new-adventures-conference-2019/ethan.jpg" alt="Photo showing Ethan Marcotte on stage at New Adventures conference"><figcaption>Ethan closing the event with his talk</figcaption></figure>
+<p>When I attend an event, I always wear two hats: the hat of an attendee and the other hat of someone who organises and runs events myself. Some of the details I sometimes see are not what usually attendees see on a first view. And also often I have to remind myself, that I might have seen speakers multiple times already, where some of the delegates just attend their very first event. A very important factor – if not most important for me personally – is, if I leave the event with an overall good impression. Not <em>just</em> the talks where good. Not <em>just</em> the organisation was well done. Not <em>just</em> the atmosphere was friendly and welcoming. But: all this together has been a great package.</p>
+<p>For those who don’t like to read longer texts: <strong>New Adventures had all this above and more!</strong></p>
+<h2>The Fear of Not Selling Out – and How This Does Not Matter for New Adventures</h2>
+<p>I have been at all four New Adventures conferences. From 2011 to 2013 and now in 2019. It took Geri and Simon a long time and really a lot of thoughts (and guts!) before they decided to bring New Adventures back to life. Not only are a lot of events suffering from not selling tickets as quick as they used to, but bringing an event back after six years, an event with a very hight reputation … chances are high you can only loose. People who were at the old edition might compare the event with the <em>good old time</em>, where new attendees who heard “<em>how great the old edition of this event were”</em> are coming with such a high expectation already. So the pressure surely is high.</p>
+<p>I have had a couple of conversations with Colly and early after announcing the event and and starting to sell tickets, he had the feeling as if tickets would not sell as they used to in former years. Colly is a person, I think like me, who has a good gut feeling about things like this and therefore he made sure to be prepared to go an extra mile to draw attention to this <em>new event</em>. Yes, a new event, as six years in <em>internet time</em> mean that there might be a lot of people who might have still played with Lego or Playmobil back when the first year happened. People who used to come might have gotten children, moved away for job reasons and to on.</p>
+<p>In short: how do you advertise and sell tickets to a group of people that mixes of past delegates and (hopefully) new people who like to come?</p>
+<p>I certainly know the fear of not selling out. Even if I am fortuned enough to sell out for the past 8 years, I never, as I often say, take it for granted that the next show is going to sell out again. I always fear <em>Will I sell enough tickets to pay the bills at least?</em> I can only imagine, all the things that Simon and Geri planned to do for the attendees and how they have to re-think their ideas and plans every now and then, when they hit the next level to being able to pay something they wanted to do for the people at the event.</p>
+<p>Because of the headline you might wonder: <strong>was it sold out or not?</strong></p>
+<p>No, it was not. And where I wish it would have been, to get both organisers the money they deserve, for the event itself it was of no interest. I have been at events, where empty seats create a strange atmosphere. Where it feels as if the room is empty and the certain spark of enthusiasm and love does not jump over from the stage to the audience, but in Nottingham? No. <strong>It did not matter at all</strong>, that a few seats were empty. But it felt wonderfully warm and <strong>the atmosphere was positive and great</strong>!</p>
+<h2>The Opportunity to Curate a Full Day of Topics</h2>
+<p>I won’t write about every single presentation and other people have done a great job here already (<a href="https://shanehudson.net/2019/01/29/new-adventures-2019">here</a>, <a href="https://polytechnic.co.uk/blog/2019/01/the-return-of-new-adventures">here</a> and <a href="https://ethanmarcotte.com/wrote/a-new-adventure/">here</a> for example), but I wanted to quickly say, that Simon had a good mix of well respected and known speakers and new faces on stage. When I have seen the first round of announced speakers in the beginning I was a bit sceptical, but I was wrong. Topics and presentation quality were excellent and did not disappoint at all. Most of the talks had a great message, pushing everybody into a positive future, but making us aware, that we have a job, where we are responsible for what we design and create, but also that we are builders and creators of things, which means, that we have the option, the tools and – hell yes – the obligation to change things!</p>
+<p>So well done with choosing some very important and motivational topics for this day!</p>
+<h2>The Fun of Being the Host</h2>
+<figure><img src="https://marcthiele.com/content/01-notes/20190131-this-was-new-adventures-conference-2019/cupcakes.jpg" alt="Photo showing a lot of cupcakes which were given out at the event"><figcaption>Cupcakes!</figcaption></figure>
+<p>One part that I hugely enjoy also is, to be the host of an event. As much stress and work as it is, it pays so much back, to have the opportunity to welcome people from all around the world and create a welcoming and friendly space and atmosphere for them.</p>
+<p>Also here, I can only say that Geri and Simon made a fantastic job. All the fringe events around the main event, the care and – of course – their friendly personality have shined through.</p>
+<h2>Not in a Million Years Aka Maybe</h2>
+<p>So, was that a one-off show or will New Adventures return? If you ask the attendees, I bet there is an overwhelming majority of those who directly say <em>yes, bring it back</em>. </p>
+<p>When I asked Simon on an evening before the event he said …</p>
+<blockquote>
+<p>Not in a million years!</p>
+</blockquote>
+<p>… which over the time of the event and until after the event turned into a subtle <em>Maybe. Let’s see how we feel afterwards and if people would come back.</em> </p>
+<p>All delegates gave feedback to the question, if they would return next year. But those things have to be taken carefully of course. Everybody at the event is on an emotional high and surely tends to say yes. An event’s organiser now has to evaluate the answers and come up with an interpretation on which she/he can base a decision to run or not run another edition next year. One year is a lot of time and many things can change, which might lead to a different answer than the one given on the piece of paper, when Simon asked.</p>
+<p>But if you ask me, New Adventures should be back. We need more events like this, who inspire and motivate. Where the people behind the event care. And New Adventures just hit a time to come back, where running events is not the easiest thing you can do and times are a bit difficult (for too many reasons to write about this right here).</p>
+<p>Next to this, I have had a fantastic time and I met so many people I know since years, plus I had the chance – and used  it – to meet many new people and chat about a lot of different topics. Wonderful.</p>
+<p><strong>So yes, Geri and Simon, bring back the show next year. I love kicking off the year in Nottingham. At New Adventures!</strong></p>]]></description>
+    </item>
+        <item>
+      <title>First Things Brendan Installs on a New Mac</title>
+      <link>https://marcthiele.com/notes/first-things-brendan-installs-on-his-new-mac</link>
+      <guid>notes/first-things-brendan-installs-on-his-new-mac</guid>
+      <pubDate>Thu, 31 Jan 2019 11:45:00 +0000</pubDate>
+      <description><![CDATA[<p>I like these quick and easy to read lists of little helpers for your daily work. In <em><a href="http://brendandawes.com/blog/macfirstintsall">First Things Brendan Installs on a New Mac</a></em> Brendan Dawes shows a few programs, which he installs on a fresh computer, helping him to be quicker and more productive on his machine. </p>
+<p>My list would nearly look the same. I haven’t heard of <a href="https://stclairsoft.com/DefaultFolderX/?utm_source=MarcThiele&amp;utm_medium=website&amp;utm_campaign=blogpost">Default Folder</a> before though and will have a look at it.</p>
+<p>I’d like to add <a href="https://textexpander.com/?utm_source=MarcThiele&amp;utm_medium=website&amp;utm_campaign=blogpost">TextExpander</a> to his list in addition. For me a fantastic tool to define shortcuts for returning text snippets, coding tasks and even writing emails.</p>]]></description>
+    </item>
+        <item>
+      <title>Taking Your Newsletter to the Next Level &#8211; a Newsletter Guide</title>
+      <link>https://marcthiele.com/links/newsletter-guide</link>
+      <guid>links/newsletter-guide</guid>
+      <pubDate>Thu, 31 Jan 2019 00:00:00 +0000</pubDate>
+      <description><![CDATA[<p>If you plan to or run a newsletter, maybe this guide holds some useful tips for you as well.</p>]]></description>
+    </item>
+        <item>
+      <title>Off To Nottingham!</title>
+      <link>https://marcthiele.com/notes/off-to-nottingham</link>
+      <guid>notes/off-to-nottingham</guid>
+      <pubDate>Mon, 21 Jan 2019 00:00:00 +0000</pubDate>
+      <description><![CDATA[<p>After six years I packed my bags again to travel to Nottingham for New Adventures Conference (naconf in short). Very much looking forward to meeting a lot of nice people and kicking off the <em>event year</em>.</p>]]></description>
+    </item>
+        <item>
+      <title>How Comes, That I See Myself so Much in This Quote?</title>
+      <link>https://marcthiele.com/notes/i-see-myself-addressed-in-this-quote</link>
+      <guid>notes/i-see-myself-addressed-in-this-quote</guid>
+      <pubDate>Thu, 17 Jan 2019 18:45:00 +0000</pubDate>
+      <description><![CDATA[<p>I just read <a href="https://www.themessymiddle.com/">“The Messy Middle: Finding Your Way Through the Hardest and Most Crucial Part of Any Bold Venture</a> by <a href="http://www.scottbelsky.com/">Scott Belsky</a> and while I was reading it, I made a few notes here and there, which I go through right now. Especially these days, I catch myself in this situation very often:</p>
+<blockquote>
+<p>Over the years, I have come to recognize the amount of time I spend checking things: Daily sales data, website traffic trends, what people are saying on Twitter, analytics for our customers, team progress on projects, the list goes on. For you, it might be diving into a spreadsheet to manipulate budget numbers or scanning through your unanswered emails again and again. When you’re anxious about your business, there is no easier quick-relief antidote than checking things. The problem is that you could spend all day checking things and fail to do anything to change things.</p>
+</blockquote>
+<p>And when I catch myself doing this, than this is what makes me angry: <em>“The problem is that you could spend all day checking things and fail to do anything to change things.”</em> I am angry with myself then and think, that I could have done so much better today. </p>
+<p>On the other hand, after being angry with me, I tell myself, that it is ok. It is part of me and my way of <em>working</em>. But is it? If I’d accept this reason or answer, I would not get angry with me the next time again.</p>
+<p>How about you?</p>]]></description>
+    </item>
+        <item>
+      <title>Off to Berlin Again</title>
+      <link>https://marcthiele.com/notes/off-to-berlin-for-more-venues</link>
+      <guid>notes/off-to-berlin-for-more-venues</guid>
+      <pubDate>Wed, 16 Jan 2019 07:30:00 +0000</pubDate>
+      <description><![CDATA[<p>And once more I am on my way to Berlin to check possible options as a new home for <a href="http://beyondtellerrand.berlin">beyond tellerrand in Berlin</a>.</p>]]></description>
+    </item>
+        <item>
+      <title>Kirby 3 is Here</title>
+      <link>https://marcthiele.com/notes/kirby-3-is-here</link>
+      <guid>notes/kirby-3-is-here</guid>
+      <pubDate>Tue, 15 Jan 2019 16:05:00 +0000</pubDate>
+      <description><![CDATA[<p>First of all: congratulations to <a href="https://twitter.com/bastianallgeier">Bastian Allgeier</a> and his team. Today is the day they were working so hard for and spend so much time on. Finally the new version, which is <a href="https://a.paddle.com/v2/click/1129/38462?link=1170">Kirby 3</a> is here!</p>
+<h2>What’s New</h2>
+<p>So much is new in Kirby 3, which you can all read in detail on the <a href="https://a.paddle.com/v2/click/1129/38462?link=1170">fresh and new site for and about Kirby 3</a>. But here is a list of the new and updated features:</p>
+<ul>
+<li>a completely overhauled new panel
+<ul>
+<li>sections and tabs</li>
+<li>better user account management</li>
+<li>a Vue.js UI kit</li>
+<li>improved fields</li>
+</ul></li>
+<li>drafts and custom publishing workflows</li>
+<li>a brand new plugin system</li>
+<li>REST API and Headless CMS</li>
+<li>virtual pages and external data sources</li>
+<li>an asynchronous media API</li>
+<li>shared collections</li>
+<li>a new email engine to easily send emails</li>
+<li>better caching</li>
+<li>… <a href="https://getkirby.com/v3">and much more</a></li>
+</ul>
+<h2>Congrats!</h2>
+<p>I had so many conversation with Bastian over the years and I think I can say, that I know how he is feeling today. But you know what, Bastian? You made it. I hope the new version takes off as it deserves it. I myself am already looking forward to updating my websites to the latest version soon (planned for February). Thanks for your work and effort, of pushing Kirby to what it is.</p>]]></description>
+    </item>
+        <item>
+      <title>I Switched to Mozilla Firefox As Main Browser</title>
+      <link>https://marcthiele.com/notes/switched-to-mozilla-firefox</link>
+      <guid>notes/switched-to-mozilla-firefox</guid>
+      <pubDate>Mon, 14 Jan 2019 12:30:00 +0000</pubDate>
+      <description><![CDATA[<p>This morning I switched to <a href="https://www.mozilla.org">Mozilla Firefox</a> as my main browser on all my devices. I was using Chrome and I don’t have a real reason, other than not wanting Chrome to gain the absolute monopoly. So far I have to say, that Firefox feels so much faster than Chrome and I am impressed. I don’t get why not all extensions and the way I define my look for the browser is synced to all other devices, but I spent an hour to set it up on all my devices (including iPhone and iPad) and give it a chance now.</p>]]></description>
+    </item>
+        <item>
+      <title>The Right Attitude and Spirit</title>
+      <link>https://marcthiele.com/notes/the-right-attitude</link>
+      <guid>notes/the-right-attitude</guid>
+      <pubDate>Fri, 11 Jan 2019 13:20:00 +0000</pubDate>
+      <description><![CDATA[<p>Just started reading the latest edition of <a href="https://veerle.duoh.com/inspiration">the excellent and inspiring newsletter of Veerle Pieters</a>. In her intro she says:</p>
+<blockquote>
+<p>[…] Each bicycle ride was in boring grey skies and usually wet, dirty greasy muddy roads. Excellent times to test out bike cleaning tools and soaps :)</p>
+</blockquote>
+<p>That made me smile, as I – a second before that – just thought who dull and grey it is outside during the last days or weeks and how I dislike this.</p>
+<p>Good, that Veerle reminded me of what I often tell people: <strong>there is something positive in anything shit/negative</strong>. For Veerle it is, that she can test out her bike cleaning tools and soaps because of the shitty weather. That is the right attitude to go with ;)</p>]]></description>
+    </item>
+        <item>
+      <title>Heydon Talking About Making Future Interfaces</title>
+      <link>https://marcthiele.com/notes/heydon-on-algorithmic-layouts</link>
+      <guid>notes/heydon-on-algorithmic-layouts</guid>
+      <pubDate>Tue, 08 Jan 2019 17:15:00 +0000</pubDate>
+      <description><![CDATA[<p>Heydon Pickering always hits the right nerve for me to catch my attention. I love his books, I love his way of explaining things, I really love his talks and now he started a video series on <a href="https://www.youtube.com/watch?v=eCHt8zsbCT4&amp;list=PL2sukhHU1gzbJgEodn1haQ2HtfA_rdoge">Making Future Interfaces</a>.</p>
+<p>If you want to learn something and giggle and laugh while doing this, you definitely should check this series. So far he published:</p>
+<ul>
+<li><a href="https://www.youtube.com/watch?v=eCHt8zsbCT4&amp;list=PL2sukhHU1gzbJgEodn1haQ2HtfA_rdoge">Unusual Shapes</a></li>
+<li><a href="https://www.youtube.com/watch?v=k-v7lmmF7kc&amp;list=PL2sukhHU1gzbJgEodn1haQ2HtfA_rdoge&amp;index=2">Custom Properties</a></li>
+<li><a href="https://www.youtube.com/watch?v=qOUtkN6M52M&amp;list=PL2sukhHU1gzbJgEodn1haQ2HtfA_rdoge&amp;index=3">Algorithmic Interfaces</a></li>
+</ul>
+<p>Having watched these, I am <strong>even more</strong> happy that he is part of the upcoming <a href="https://beyondtellerrand.com/events/duesseldorf-2019/speakers/heydon-pickering">Düsseldorf edition of beyond tellerrand</a> after being part in Berlin a few years ago. </p>
+<p>Keep on this great stuff, Heydon! And thanks for producing all this …</p>]]></description>
+    </item>
+        <item>
+      <title>Using the iPad Pro as Main Computer</title>
+      <link>https://marcthiele.com/links/using-the-ipad-pro-as-main-computer</link>
+      <guid>links/using-the-ipad-pro-as-main-computer</guid>
+      <pubDate>Tue, 08 Jan 2019 00:00:00 +0000</pubDate>
+      <description><![CDATA[<p>Jon has written a good post about his personal experience using an iPad Pro as his main computer. What I like is, that he describes how he got there and since when and what else he tried. I see a lot of things similar to what he describes. I was totally tempted to do exactly what he says and skip a computer update and get an iPad Pro (or a Surface earlier and heard what he says about this way too often sadly). The downsides he mentiones about using it for web related work are a reason not to do it right now. Still tempting … ;)</p>
+<p><em>(I am typing this on an iPad Air 2 while having breakfast btw)</em></p>]]></description>
+    </item>
+        <item>
+      <title>Hello 2019</title>
+      <link>https://marcthiele.com/notes/hello-2019</link>
+      <guid>notes/hello-2019</guid>
+      <pubDate>Fri, 04 Jan 2019 13:50:00 +0000</pubDate>
+      <description><![CDATA[<p>Hello dear 2019. I am happy you are here, as 2018 left a strange taste. I can’t complain about your past really, but for some reason – which I can’t describe or grab – 2018 felt not good and everything felt heavy, clumsy and harder as usual. </p>
+<p>Therefore I am happy that you are here, to hopefully change this again. I am looking forward to a year full of great things again. Another – hopefully – lovely <a href="https://beyondtellerrand.com/events/duesseldorf-2019">event in Düsseldorf</a>, a new home for <a href="https://beyondtellerrand.com/events/berlin-2019">Berlin’s 2019 edition</a> and many other interesting things in the pipeline. </p>
+<p>Not to forget my role as chairman of the Smashing Magazine supervisory board in which I am looking forward to being part of events in <a href="https://smashingconf.com/sf-2019/?utm_source=marcthiele&amp;utm_medium=blogpost&amp;utm_campaign=hello2019">San Francisco</a>, <a href="https://smashingconf.com/toronto-2019/?utm_source=marcthiele&amp;utm_medium=blogpost&amp;utm_campaign=hello2019">Toronto</a>, <a href="https://smashingconf.com/freiburg-2019/?utm_source=marcthiele&amp;utm_medium=blogpost&amp;utm_campaign=hello2019">Freiburg</a> (even though not completely as my youngest nephew is going to get married) and <a href="https://smashingconf.com/ny-2019/?utm_source=marcthiele&amp;utm_medium=blogpost&amp;utm_campaign=hello2019">New York</a>. I am looking forward to meeting Vitaly and the team again and get those things kicked off. Some of the team, including me, have <a href="https://www.smashingmagazine.com/2018/12/a-smashing-year-2018/?utm_source=marcthiele&amp;utm_medium=blogpost&amp;utm_campaign=hello2019">written a short end-of-year note</a> as well.</p>
+<figure><img src="https://marcthiele.com/content/01-notes/20190104-hello-2019/faculty-insta-story.jpg" alt="Collage of photos showing a set of lovely presents I got from Chris Shiflett"><figcaption>A lovely surprise this morning – presents from Chris Shiflett’s Faculty</figcaption></figure>
+<p>Yesterday I had the first day looking at emails after two weeks again and today I wanted to work on my taxes. The door bell rang and I got a lovely present of <a href="http://shiflett.org/blog/2017/faculty/?utm_source=marcthiele&amp;utm_medium=blogpost&amp;utm_campaign=hello2019">Faculty, Chris Shiflett’s new-ish studio</a>. What a lovely way to get back to work. ;)</p>
+<p>Oh … and where we speak about kicking things off, when I made plans of running beyond tellerrand in Munich <strong>in January</strong> 2018, I have <a href="https://beyondtellerrand.com/blog/another-journey-beyond-telerrand-munich">written about Simon and how much I liked his New Adventures as kick off for the year</a>. Well, if you haven’t gotten any notice yet (you must live on the moon!): <strong><a href="https://newadventuresconf.com/2019/?utm_source=marcthiele&amp;utm_medium=blogpost&amp;utm_campaign=hello2019">it’s back!!</a></strong>. In less than three weeks I am going to be in Nottingham and am sooo much looking forward to great talks and workshops. But mostly to meet all those people for the first time in 2019 and make the first new friends in this fresh and new year. <strong><a href="https://newadventuresconf.com/2019/tickets/?utm_source=marcthiele&amp;utm_medium=blogpost&amp;utm_campaign=hello2019">There are still tickets left and you should get one to be part of it</a></strong>. </p>
+<p>Anyways. Whether we meet at <a href="https://newadventuresconf.com/2019/?utm_source=marcthiele&amp;utm_medium=blogpost&amp;utm_campaign=hello2019">New Adventures</a> or anywhere else, I am seriously looking forward to conversations and stories from everybody I meet in the upcoming year.</p>]]></description>
+    </item>
+        <item>
+      <title>Building an Accessible Color System</title>
+      <link>https://marcthiele.com/links/building-an-accessible-color-system</link>
+      <guid>links/building-an-accessible-color-system</guid>
+      <pubDate>Wed, 19 Dec 2018 10:55:00 +0000</pubDate>
+      <description><![CDATA[<p>Last month I was trying to make my sites more accessible. One problem was my choice of colours. And even though some of them are not as I wanted them to be in the first place, accessibility was more important.</p>
+<p><a href="https://uxdesign.cc/my-struggle-with-colors-part-ii-ed71bff6302a">This article</a> is a nice read about how to build an accessible color system from scratch.</p>]]></description>
+    </item>
+        <item>
+      <title>Animation That Adds Value</title>
+      <link>https://marcthiele.com/links/animation-that-adds-value</link>
+      <guid>links/animation-that-adds-value</guid>
+      <pubDate>Wed, 19 Dec 2018 10:30:00 +0000</pubDate>
+      <description><![CDATA[<p>Animation certainly can be annoying when over-used and not used, where it makes sense. Even worse is, when it prevents the users from actually using what they are trying to use. In <a href="https://uxplanet.org/animation-that-matters-adding-value-to-your-interface-65496fe4c182">this Medium article</a> Vernon Joyce has collected useful tips and examples to explain useful and subtle use of animation, that can actually add value to your website and/or interfaces.</p>]]></description>
+    </item>
+        <item>
+      <title>Event FAQs</title>
+      <link>https://marcthiele.com/links/event-faq</link>
+      <guid>links/event-faq</guid>
+      <pubDate>Tue, 18 Dec 2018 13:30:00 +0000</pubDate>
+      <description><![CDATA[<p>Maria Keenan has written a 14-part FAQ with the most common questions about events and organising events for Tito. Obviously not everything fits to every event, but it is a nice, general overview.</p>]]></description>
+    </item>
+        <item>
+      <title>A Wonderful Morning</title>
+      <link>https://marcthiele.com/notes/a-wonderful-morning</link>
+      <guid>notes/a-wonderful-morning</guid>
+      <pubDate>Wed, 12 Dec 2018 11:25:00 +0000</pubDate>
+      <description><![CDATA[<p>You wake up at 6:25 and are in a pretty grumpy mood. All kids leave the house, you take the little one to kindergarten and <a href="https://www.instagram.com/p/BrR7OdZgaBW/">get out into the forest to walk the dog</a>. </p>
+<p>Back from the walk, you get yourself a coffee and sit down in front of your computer to start working on emails. Tweetbot pings you that people mention your event and I start smiling.</p>
+<p>What a great morning if your Twitter timeline is full of people “complaining” about having to wear and use <a href="https://beyondtellerrand.com">@btconf</a> swag. hahaha … love you people 😘</p>
+<figure><a href="https://twitter.com/flokosiol/status/1072526572542967808"><img src="https://marcthiele.com/content/01-notes/20181212-a-wonderful-morning/swag.jpg" alt="Screenshot showing a conversation on Twitter with people dressed in beyond tellerrand t-shirts"></a></figure>]]></description>
+    </item>
+        <item>
+      <title>Off to Berlin to Check a Couple of Venues That Are in My Closer Selection</title>
+      <link>https://marcthiele.com/notes/venue-scouting-in-berlin</link>
+      <guid>notes/venue-scouting-in-berlin</guid>
+      <pubDate>Tue, 11 Dec 2018 05:35:00 +0000</pubDate>
+      <description><![CDATA[<p>4:30 in the morning is certainly not my time to get up. At the airport visit Berlin for the day. Having appointments at a few venues to check if anything fits to be the new home for <a href="http://beyondtellerrand.berlin">beyond tellerrand in Berlin</a>.</p>
+<p>Anyone fancy breakfast or a coffee around 8:30 or 9:00 somewhere close to Neukölln? <a href="marc@beyondtellerrand.com">Ping me</a></p>]]></description>
+    </item>
+        <item>
+      <title>Think About! Conference</title>
+      <link>https://marcthiele.com/notes/think-about-conference</link>
+      <guid>notes/think-about-conference</guid>
+      <pubDate>Mon, 10 Dec 2018 18:20:00 +0000</pubDate>
+      <description><![CDATA[<p>I had a nice chat to Jakob of the <a href="https://think-about.io/en/about-us.html">organising team</a> of this new event and it really sounds interesting, what they are planning. I got caught by the line …</p>
+<blockquote>
+<p>Event about Technology, Design and their impact on Society</p>
+</blockquote>
+<p>… and I am really interested to see what this means and how it turns out. The line-up looks promising and if you are interested in finding out more, I suggest you <a href="https://think-about.io/en/">check their website</a> and/or follow them <a href="https://twitter.com/thinkaboutconf">on Twitter</a>. And as <a href="https://twitter.com/thinkaboutconf">Think About!</a> is taking place <strong>after</strong> my 2019 <a href="https://beyondtellerrand.com/events/duesseldorf-2019">Düsseldorf edition</a>, I am definitley going to check it out.</p>
+<p>Will we meet?</p>]]></description>
+    </item>
+        <item>
+      <title>An Alfred Workflow for WebPageTest</title>
+      <link>https://marcthiele.com/links/alfred-web-page-test-workflow</link>
+      <guid>links/alfred-web-page-test-workflow</guid>
+      <pubDate>Mon, 10 Dec 2018 17:30:00 +0000</pubDate>
+      <description><![CDATA[<p>If you are using <a href="https://www.alfredapp.com">Alfred</a>, like I do, this <a href="https://timkadlec.com/remembers/2018-12-06-using-webpagetest-with-alfred/">WebPageTest workflow for Alfred</a> comes in super handy.</p>]]></description>
+    </item>
+        <item>
+      <title>Risking a Homogeneous Web</title>
+      <link>https://marcthiele.com/links/risking-a-homogeneous-web</link>
+      <guid>links/risking-a-homogeneous-web</guid>
+      <pubDate>Mon, 10 Dec 2018 15:30:00 +0000</pubDate>
+      <description><![CDATA[<blockquote>
+<p>The big concern here is we’ve lost another voice from an engine perspective.</p>
+</blockquote>
+<p>What Tim says!</p>]]></description>
+    </item>
+        <item>
+      <title>CSS Animation 101</title>
+      <link>https://marcthiele.com/links/css-animation-101</link>
+      <guid>links/css-animation-101</guid>
+      <pubDate>Mon, 10 Dec 2018 15:20:00 +0000</pubDate>
+      <description><![CDATA[<p>Practical and theoretical lessons in this free book about CSS Animation.</p>]]></description>
+    </item>
+        <item>
+      <title>State of CSS Resets in 2018</title>
+      <link>https://marcthiele.com/links/state-of-css-resets-in-2018</link>
+      <guid>links/state-of-css-resets-in-2018</guid>
+      <pubDate>Wed, 05 Dec 2018 00:00:00 +0000</pubDate>
+      <description><![CDATA[<p><a href="https://bitsofco.de">Ire Aderinokun</a> hat a look at the state of CSS resets in 2018 and what we use these days. I found this an interesting read.</p>]]></description>
+    </item>
+        <item>
+      <title>Flickr Not Providing and Invoice or Receipt</title>
+      <link>https://marcthiele.com/notes/no-invoice-provided</link>
+      <guid>notes/no-invoice-provided</guid>
+      <pubDate>Tue, 04 Dec 2018 10:40:00 +0000</pubDate>
+      <description><![CDATA[<p>I just extended my subscription on Flickr for another two year. I guess only, because I have not managed to backup all my photos and those of the beyond tellerrand pool. I pay for their product and they don’t event provide a receipt or invoice. Poor.</p>
+<p>What is so difficult with this? A PDF that states:</p>
+<ul>
+<li>What I paid</li>
+<li>What for I paid</li>
+<li>Their address</li>
+<li>My address</li>
+</ul>
+<p>That’s more or less it. That can be <strong>easily</strong> automated and I think for a company like this, it is quite poor. I had <a href="https://twitter.com/marcthiele/status/1003909620522504192">a similar experience lately with IPvanish</a> and I think that is really bad.</p>
+<p>I already made the decision to leave Flickr and currently look into what I can use or maybe, if it is even enough to host the photos on my own site. But this really just makes me regretting I even paid for the two-year subscription recently.</p>]]></description>
+    </item>
+        <item>
+      <title>Tipps for Public Speaking and Presenting</title>
+      <link>https://marcthiele.com/links/tipps-for-public-speaking-and-presenting</link>
+      <guid>links/tipps-for-public-speaking-and-presenting</guid>
+      <pubDate>Sun, 02 Dec 2018 00:00:00 +0000</pubDate>
+      <description><![CDATA[<p>At Notist, you’ll get tipps for public speaking and presenting during December. <a href="https://be.noti.st/2018/visit-the-room">First post</a> titled “Visit The Room” is online and more should be listed in their <a href="https://be.noti.st/blog/category/advent-speaker-tips">advent speaker tips</a> section soon.</p>]]></description>
+    </item>
+        <item>
+      <title>IndieWebCamp Berlin 2018</title>
+      <link>https://marcthiele.com/notes/indiewebcamp-berlin-2018</link>
+      <guid>notes/indiewebcamp-berlin-2018</guid>
+      <pubDate>Wed, 28 Nov 2018 13:40:00 +0000</pubDate>
+      <description><![CDATA[<p>For a long time, Joschi is taking care of organising an <a href="https://indieweb.org/">IndieWeb</a> Camp with changing partners right before <a href="https://beyondtellerrand.com">beyond tellerrand</a> in Düsseldorf and Berlin. I love this idea to run an IndieWeb Camp right before beyond tellerrand and am happy that Joschi, Stefan, Tantek, Aaron, Jeremy and others take care of this. I do my best to help as well and am organising catering and venue often time, as well as sponsoring of travel budget. The downside of running them <em>before</em> my own event is, that I never really can attend and I would love to do this. Solution: I have to get to one in Nuremberg or elsewhere to finally get further with this for my own websites. I included web mentions already, but would love to automate some of the things, when posting on my website.</p>
+<p>For <a href="https://indieweb.org/2018/Berlin">Berlin’s edition</a>, there are a few wrap-up blog posts and photos, that I’d like to point you to:</p>
+<ul>
+<li>Calum Rian <a href="https://calumryan.com/blog/indiewebcamp-berlin-2018/">has written about his experience on his blog</a></li>
+<li>Juliane Schütz has taken photos of <a href="https://www.flickr.com/photos/tollwerk/sets/72157703142292825">day one</a> and <a href="https://www.flickr.com/photos/tollwerk/sets/72157703054537654">day two</a></li>
+<li>Jeremy Keith has written two posts related to this. One called <a href="https://adactio.com/journal/14509">Webmentions at Indie Web Camp Berlin</a> and another one titled <a href="https://adactio.com/journal/14511">Push without notifications</a></li>
+</ul>
+<p>And here you can find the <a href="https://indieweb.org/2018/Berlin">page of the event itself</a> at the Indie Web Site.</p>
+<p>Why don’t you join us right before <a href="https://beyondtellerrand.com/events/duesseldorf-2019">beyond tellerrand in Düsseldorf next year</a>? Dates will be May 11 and 12 on Saturday and Sunday. Attending, or better, joining does not cost a penny and it is always great fun. All information on the beyond tellerrand website soon or at the <a href="https://indieweb.org/2019/D%C3%BCsseldorf">Indie Web Website</a>.</p>
+<p>See you there!</p>]]></description>
+    </item>
+        <item>
+      <title>A Look Behind Kai&#8217;s Dense Discovery</title>
+      <link>https://marcthiele.com/links/a-look-behind-dense-discovery</link>
+      <guid>links/a-look-behind-dense-discovery</guid>
+      <pubDate>Thu, 22 Nov 2018 00:00:00 +0000</pubDate>
+      <description><![CDATA[<p>I like how open <a href="https://brizk.com">Kai Brach</a> is about all his project. Whether it is the calculation behind Offscreen a he has written about a while ago or the <a href="https://www.offscreenmag.com/blog/indie-magonomics">process behind producing and shipping Offscreen</a>, I simply like reading those things. Also because I find myself and what I am doing with <a href="https://beyondtellerrand.com">beyond tellerrand</a> in those texts a lot of times.</p>
+<p>Now Kai’s Offscreen is on a break and he focuses an his newsletter called <a href="https://densediscovery.com">Dense Discovery</a>. He has <a href="https://medium.com/@kaibrach/creating-a-fully-customised-weekly-newsletter-b7c31d580b4e">written about the process, how he built the email template, what he uses for shipping and so forth, on Medium</a>. Thanks Kai. A good read once more ;)</p>]]></description>
+    </item>
+        <item>
+      <title>beyond tellerrand // BERLIN 2018 Wrap-Up</title>
+      <link>https://marcthiele.com/links/beyond-tellerrand-berlin-2018-wrap-up</link>
+      <guid>links/beyond-tellerrand-berlin-2018-wrap-up</guid>
+      <pubDate>Wed, 21 Nov 2018 00:00:00 +0000</pubDate>
+      <description><![CDATA[<p>Yesterday evening I managed to finish <a href="https://beyondtellerrand.com/blog/wrap-up-and-coverage-berlin-2018">the first version of the #btconf Berlin Wrap-Up post</a>. All material and coverage, as well as some background information included and updated as long as I get/find new stuff.</p>
+<p>No I am off to focus on:</p>
+<ol>
+<li>Post-conference stuff for Berlin 2018 (maybe for the next week)</li>
+<li>Finding a new venue for the Berlin edition</li>
+<li><strong><a href="https://beyondtellerrand.com/events/duesseldorf-2019/">beyond tellerrand // DÜSSELDORF 2019</a>!</strong></li>
+</ol>
+<p>See you!</p>]]></description>
+    </item>
+        <item>
+      <title>Newsletters I Have Subscribed To</title>
+      <link>https://marcthiele.com/notes/newsletters</link>
+      <guid>notes/newsletters</guid>
+      <pubDate>Fri, 16 Nov 2018 12:00:00 +0000</pubDate>
+      <description><![CDATA[<p>Let’s face it: how many newsletter are you subscribed to, where you simply hit “read” or delete it the second it enters your inbox? I am guilty of that too. Especially in busy times, like last week, when running <a href="https://beyondtellerrand.com">beyond tellerrand</a> in Berlin. I tried to keep those newsletters unread to get back to them at a later point. This mostly ended with deleting them anyways in the end.</p>
+<p>This list here is a short list of a few of the newsletter that I have subscribed to and that I read. There is many more and I guess there will be a second part of this kind of email, but these few here are the ones that came to my mind first, when I thought about which one to list.</p>
+<h2>Really Good Emails</h2>
+<figure class="img-small-round-left"><img src="https://marcthiele.com/content/01-notes/20181116-newsletters/really-good-emails.png" alt="Image showing the head of the newsletter called Really Good Email"></figure>
+<p>This is a nice and quick to read newsletter about email marketing and design, that is lovely to read also if you are in a rush. A short scan often is enough to see, if the latest edition has something interesting for you or not. Next to interesting reads about marketing topics, it often has inspiring email templates. The first edition went out in 2015 and about 29.000 people are subscribed. </p>
+<ul>
+<li><a href="https://reallygoodemails.com">Website</a></li>
+<li><a href="https://reallygoodemails.com/newsletter/">Newsletter subscription</a></li>
+</ul>
+<h2>Responsive Design Weekly</h2>
+<figure class="img-small-round-right"><img src="https://marcthiele.com/content/01-notes/20181116-newsletters/responsive-design.png" alt="Image showing the head of the newsletter called Responsive Design Weekly"></figure>
+<p>Justin Avery sends out this weekly email to everybody who interested not only in responsive design, but all that matter around web design and development. A good weekly wrap-up, often with some conference/event related news as well. Not too long, good to read. Justin just sent edition 335 of his weekly newsletter.</p>
+<ul>
+<li><a href="https://responsivedesign.is">Website and subscription (at bottom)</a></li>
+</ul>
+<h2>Veerle's Weekly EDITION</h2>
+<figure class="img-small-round-left"><img src="https://marcthiele.com/content/01-notes/20181116-newsletters/veerle.png" alt="Image showing the head of the newsletter called Veerle’s Weekly Edition"></figure>
+<p>I am following the work of Veerle Pieters for many, many years now and am a huge fan of her work. She also attended beyond tellerrand already, but I never could convince her so far, to get onto my stage. One day maybe ;) Anyways, to me it seems that she launched her newsletter just one week ago, but that is, because time flies. She actually is at her 101st edition of her weekly inspiration boost already! I like that her newsletter is very visual, a good length to <em>quickly</em> read it and that it always has a very personal touch.</p>
+<ul>
+<li><a href="https://veerle.duoh.com">Website</a></li>
+<li><a href="https://veerle.duoh.com/newsletter">Newsletter subscription</a></li>
+</ul>
+<h2>Web Development Reading List (WDRL)</h2>
+<figure class="img-small-round-right"><img src="https://marcthiele.com/content/01-notes/20181116-newsletters/wdrl.png" alt="Image showing the head of the newsletter called Web Development Reading List"></figure>
+<p>Also this newsletter feels, as if it arrives in my inbox since just some weeks ago, but actually Anselm Hannemann sends out his weekly sum up about what’s going on in web development since 2013 already. Now, 246 editions later, he still funds his newsletter solely by donations and puts quite some work into its curation.</p>
+<ul>
+<li><a href="https://wdrl.info">Website and subscription</a></li>
+</ul>
+<h2>Dense Discovery</h2>
+<figure class="img-small-round-left"><img src="https://marcthiele.com/content/01-notes/20181116-newsletters/dense-discovery.png" alt="Image showing the head of the newsletter called Dense Discovery"></figure>
+<p>This is a pretty new newsletter, where the first edition was sent in September this year. Even though Kai Brach, the person behind this newsletter is not new to this busyness. Kai is known for his print magazine called <a href="https://offscreenmag.com">Offscreen</a> and he started sending a newsletter a while ago already. First he released a newsletter that was called <em>The Modern Desk</em> and later, since mit 2016, he called it <em>Offscreen Dispatch</em>. Now, with <em>Dense Discovery</em> he disconnected it from Offscreen again, but with the same Kai Brach spin as always: design and technology spiced up with app and hardware recommendations and hu emphasis on humanity.</p>
+<ul>
+<li><a href="https://www.densediscovery.com/">Website and subscription</a></li>
+</ul>
+<p>As said: this is only a short excerpt of what arrives at my inbox every week and I am sure, that I can easily fill a second post with more newsletters, I’d like to recommend. Stay tuned, if you want to read more and feel free to <a href="mailto:info@marcthiele.com">send me your list of favourite newsletters</a>.</p>]]></description>
+    </item>
+        <item>
+      <title>One Leg in Berlin, the Other Leg in Dusseldorf</title>
+      <link>https://marcthiele.com/notes/one-leg-in-berlin-the-other-leg-in-dusseldorf</link>
+      <guid>notes/one-leg-in-berlin-the-other-leg-in-dusseldorf</guid>
+      <pubDate>Thu, 15 Nov 2018 10:30:00 +0000</pubDate>
+      <description><![CDATA[<figure><a href="https://www.instagram.com/p/BqKBKU7Axc_/"><img src="https://marcthiele.com/content/01-notes/20181115-one-leg-in-berlin-the-other-leg-in-dusseldorf/autumn.jpg" alt="3 small photos showing the forest in which I live with colourful leaves as it is Autumn"></a><figcaption>Autumn is a beautiful time of the year, if it is sunny – I love sorting my thoughts on long walks with the dog</figcaption></figure>
+<p>No idea, if you have this: you <em>finished</em> one project, which was exhausting, yet fulfilling and you are on the way to the next project. In my case I, of course, speak about events. And I just finished my <a href="https://beyondtellerrand.com/events/berlin-2018/">Berlin show</a>. It was wonderful and I am currently working on the post-conference things to be done: emails, invoices, tidying up, sorting tech, left over swag etc. Now my head is already (and for a longer time already) into organising the next <a href="https://beyondtellerrand.com/events/duesseldorf-2019">Düsseldorf event</a>. Surely you can’t always make a clear cut, but my brain and what I do during the last few days jumps from one to the other event and it seems like not having a plan <em>at all</em>. Plus I have written a couple of venues for Berlin, as <a href="https://beyondtellerrand.com/blog/last-time-in-this-berlin-venue">I have to find a new home for beyond tellerrand Berlin</a>.</p>
+<p>I mean, <a href="https://marcthiele.com/notes/my-head-is-so-full">I have written about my head being so full</a>, but you know, maybe this post is a way to get this problem out of my head again and I am happy to live in a forest, where I can take a walk with <a href="https://www.instagram.com/p/Bg0Ri_OAws5/">our new-ish dog</a>.</p>
+<p>I am bursting to get all the new ideas for upcoming events out and to reality and still want to finish Berlin 2018 in a nice and lovely way for everybody with nice and friendly emails for example. But if I only knew where to start ;)</p>]]></description>
+    </item>
+        <item>
+      <title>Emptiness</title>
+      <link>https://marcthiele.com/notes/emptiness</link>
+      <guid>notes/emptiness</guid>
+      <pubDate>Thu, 08 Nov 2018 18:50:00 +0000</pubDate>
+      <description><![CDATA[<p>After a last day with a workshop at Erik Spiekermann’s letterpress workshop, <a href="https://beyondtellerrand.com/events/berlin-2018">beyond tellerrand</a> Berlin, which was the fifth one in Berlin, comes to an end. I am sitting in my hotel room on the bed and emptiness and loneliness, next to a sad feeling hit me. As I run this event for quite a while now, I know that this is happening and what keeps me up right now are all the lovely things many, many people said to me during and after the event. Thanks so much for letting me know that you appreciate this show and have fund at what I have created. It is pure joy for me, especially when I know that so many people take something with them. I am also sad as this was the final edition in the Admiralspalast, but I am doing my very best to find a good a nice new home for us in Berlin next time!</p>
+<p>See you there and once more: <strong>THANK YOU!</strong></p>]]></description>
+    </item>
+        <item>
+      <title>Short trip to New York &#8211; back soon! &#8211; and good bye Admiralspalast</title>
+      <link>https://marcthiele.com/notes/in-new-york-back-soon</link>
+      <guid>notes/in-new-york-back-soon</guid>
+      <pubDate>Fri, 19 Oct 2018 07:50:00 +0000</pubDate>
+      <description><![CDATA[<p>In two weeks from now, I will be on my way to Berlin to run the <a href="https://beyondtellerrand.com/events/berlin-2018">fifth beyond tellerrand in Berlin</a>. This event is sold out (<a href="https://beyondtellerrand.com/events/berlin-2018/workshops">workshops still available!</a>) and it will be <a href="https://beyondtellerrand.com/blog/last-time-in-this-berlin-venue">the last time I am able to run the Berlin show in the Admiralspalast’s Studio</a>. For five shows the Admiralspalast was our home and I actually enjoyed being there. </p>
+<figure><img src="https://marcthiele.com/content/01-notes/20181019-in-new-york-back-soon/admiralspalast-studio.jpg" alt="3 small photos showing the Admiralspalast’s Studio from different positions"><figcaption>A wonderful home for five beyond tellerrand editions in Berlin</figcaption></figure>
+<p>I remember, when I was on the hunt for a venue in Berlin in 2013, when I made the decision to run a second edition and I came into the Studio of the Admiralspalast. I was not too impressed, I have to say. Well, considering my Capitol Theater Club, which I learned to love over the three years before adding Berlin, it was … well … <em>different</em>. But then, after the first Berlin show kicked off and went so smoothly and great, I started to really like the place. Despite being in the third floor (many stairs, I know) and having not as much exhibition space as in Düsseldorf (which I loooove!), it has a good vibe. I also always liked, that there was <strong>no stage</strong>. People are sitting on a staircase-like seating and look onto the stage-area from above. With this, this natural border – which the stage is – is lost and puts speakers and attendees automatically and physically on the same level. During the five shows in Berlin, many people came to me and mentioned, that they like those random conversations with the speaks that happen, as they leave their seats for a drink or fresh air and bump into the speaker <em>on stage</em>. One of those lucky accidents that happens when running an event like this, I guess.</p>
+<p>Now, after this year’s beyond tellerrand in Berlin, this is going to be history. Thanks to the staff at the Admiralspalast, especially Ingo, Markus and Antonia! I had a lovely time with you and there.</p>
+<figure><a href="https://www.instagram.com/p/BpEU4obFSi8/"><img src="https://marcthiele.com/content/01-notes/20181019-in-new-york-back-soon/a380.jpg" alt="Instagram photo showing an A380 at Frankfurt airport in parking position"></a><figcaption>Our home for the next seven or eight hours on our way to New York</figcaption></figure>
+<p>But right before Berlin kicks off, I am hopping over to New York quickly to be with <a href="https://smashingconf.com/ny-2018">the SmashingConf</a> team. Also I use this chance, as we have a Autumn school break in our area in Germany, to bring my two oldest kids to New York for the first time – exciting times ahead. I am very much looking forward to the New York Conference, I love New York, but I must not forget, that I have just a <em>little more</em> than two weeks left to sort out <strong>everything that is left</strong> for Berlin … and that is still a lot!</p>
+<p>Looking forward to meeting you, whether it is in Berlin, in New York or anywhere else where …</p>]]></description>
+    </item>
+        <item>
+      <title>Thank you! (once more)</title>
+      <link>https://marcthiele.com/notes/thank-you-once-more</link>
+      <guid>notes/thank-you-once-more</guid>
+      <pubDate>Mon, 01 Oct 2018 00:00:00 +0000</pubDate>
+      <description><![CDATA[<p>I am humbled and thankful once more. Thanks a lot for your trust in my <a href="https://beyondtellerrand.com">beyond tellerrand</a> events. Early birds went fast again and I‘m sorry for those who did not get one. Looing forward to another show in Düsseldorf. But: Berlin first ;)</p>]]></description>
+    </item>
+        <item>
+      <title>No beyond tellerrand in Munich in January</title>
+      <link>https://marcthiele.com/links/no-beyond-tellerrand-in-munich-in-january</link>
+      <guid>links/no-beyond-tellerrand-in-munich-in-january</guid>
+      <pubDate>Thu, 27 Sep 2018 00:00:00 +0000</pubDate>
+      <description><![CDATA[<p>I have already stated in my Munich Wrap-Up from last January, that it is likely that this year no beyond tellerrand in Munich in 2019. Well, I have really enjoyed organising and running Munich’s edition a lot and I will definitely be back, but as you can see from the announcement of Düsseldorf and the ticket sales for Düsseldorf starting next Monday, there won’t be a January(!) edition.</p>]]></description>
+    </item>
+        <item>
+      <title>Preparing a Conference Talk &#8211; Jeremy Keith</title>
+      <link>https://marcthiele.com/links/preparing-a-conference-talk</link>
+      <guid>links/preparing-a-conference-talk</guid>
+      <pubDate>Wed, 26 Sep 2018 00:00:00 +0000</pubDate>
+      <description><![CDATA[<p><a href="https://adactio.com">Jeremy Keith</a> is speaking so much, I can easily say he is one of the old rabbits <em>(hehehe … in Germany we say someone “Ein alter Hase”, if he is around for a long time – I think “to be an old hand” is the English term for it)</em> is in the event landscape and he is one of the people you are able to learn a lot from.</p>
+<p>In this post Jeremy shares how he starts to prepare a new talk and I found many similarities to how I start doing this. Mostly starting on paper is what I also do and what helps me to sort the many loose ideas and <em>sketches</em> I have in my head. Therefore, I can recommend reading his post, even if you are used to speaking at events. You never know if changing your habits and trying something new is leading to a different experience when preparing a presentation.</p>]]></description>
+    </item>
+        <item>
+      <title>13 Years Ago</title>
+      <link>https://marcthiele.com/notes/years-ago</link>
+      <guid>notes/years-ago</guid>
+      <pubDate>Sat, 22 Sep 2018 00:00:00 +0000</pubDate>
+      <description><![CDATA[<p>13 years ago today, I had to stop during our <em>Macromedia Studio 8 and Flashforum</em> tour in Düsseldorf, after Berlin, Hamburg and Düsseldorf’s show and had to skip the Munich stop. My son was born during that night and Sascha, Stefan, Greg , Saban and the rest had to do Munich without me. 13 years later I am still and always happy, proud, in love (you can add more here).</p>
+<p>Good memories!</p>]]></description>
+    </item>
+        <item>
+      <title>Reasons.to Opening Titles by dina Amin</title>
+      <link>https://marcthiele.com/notes/opening-titles-by-dina-amin</link>
+      <guid>notes/opening-titles-by-dina-amin</guid>
+      <pubDate>Wed, 19 Sep 2018 15:10:00 +0000</pubDate>
+      <description><![CDATA[<p>Check the opening titles for this year’s <a href="https://reasons.to">Reasons.To</a> in Brighton. <a href="https://instagram.com/dina.a.amin/">dina Amin</a> created lovely, sometimes spooky characters for every speaker and created these stop motion opening titles.</p>
+<figure class="video"><iframe src="//player.vimeo.com/video/290718319" frameborder="0" webkitallowfullscreen="true" mozallowfullscreen="true" allowfullscreen="true"></iframe></figure>]]></description>
+    </item>
+        <item>
+      <title>Underestimating the power of gratitude</title>
+      <link>https://marcthiele.com/notes/underestimating-the-power-of-gratitude</link>
+      <guid>notes/underestimating-the-power-of-gratitude</guid>
+      <pubDate>Wed, 19 Sep 2018 15:10:00 +0000</pubDate>
+      <description><![CDATA[<p>I recently stumbled over a short article by <a href="http://psychologywriter.org.uk">Christian Jarrett</a> which was titles <em><a href="https://digest.bps.org.uk/2018/07/18/underestimating-the-power-of-gratitude-recipients-of-thank-you-letters-are-more-touched-than-we-expect/">”Underestimating the power of gratitude – recipients of thank-you letters are more touched than we expect”</a></em>. It made me stop and think about how important that actually is for me always. It is not even much of an effort to say thank you in a short email to my attendees, partner and speaker at <a href="https://beyondtellerrand.com">beyond tellerrand</a>. I am happy that many of those I have written a short note to actually come back to me and thank me for this note then again. Partners (other people also say sponsors) tell me, they are surprised to get such a lovely note with a short wrap-up about my impression of their booth and that I even picked some photos for them. I think that is the way it should be, isn’t it?</p>
+<blockquote>
+<p>[…] our fear of awkwardness can lead us to misjudge what is in our own best interests, such as underestimating how much we will enjoy interacting with strangers.</p>
+</blockquote>
+<p>In the article, I read, that often misjudgement and underestimation of what those short emails can do are the reason for the possible sender not to send those emails.</p>
+<p>I can only encourage you to simply start doing this, if you not already do it. It is not much work to quickly write a short thank you in an email, tweet, blog post … whatever. Even a short call, if you think that you <em>should</em> get in touch to say thanks was never easier than these das: pick up your mobile phone and do it. You’ll be surprised how much a positive reaction to your action will give you.</p>]]></description>
+    </item>
+        <item>
+      <title>Speaking at WWRUHR meetup in Essen</title>
+      <link>https://marcthiele.com/notes/wwruhr-meetup</link>
+      <guid>notes/wwruhr-meetup</guid>
+      <pubDate>Tue, 18 Sep 2018 13:00:00 +0000</pubDate>
+      <description><![CDATA[<p>Earlier this year, I had the pleasure of speaking alongside my friend <a href="https://bastianallgeier.com">Bastian Allgeier</a>, who is the mastermind behind <a href="https://getkirby.com">Kirby</a>, a CMS, which I love and use, whenever possible.</p>
+<p>When I chat to Bastian, it always amazes me, how much our <em>Products</em> have in common. Sure, his is a CMS, a product he sells and where people work with and create their website and I run an event – not a product really. But you know, the problems we face, the questions we ask ourselves when sitting in our studios and thinking about how to improve and move our product forward … all this is quite similar. Maybe because we both care so much about what we do and love to see our <em>little babies</em> grow and see that other people like what we do. But I also think that any product or business, if you run it on your own, faces the same things: problems, questions, tasks and more. Every time I speak to <a href="http://brizk.com">Kai Brach</a>, who publishes a magazine called <a href="https://offscreenmag.com">Offscreen</a>, it is quite similar.</p>
+<p>Maybe this also is the reason why people keep asking me to speak about what I do and that there are people who also listen to what we speak about ;) – they are maybe facing the same things.</p>
+<p>Anyways, I am very happy, excited and humbled that <a href="http://fernmuendli.ch">Maik Wagner</a> invited me to speak at <a href="https://www.meetup.com/wwruhr/events/253677588/">his event</a>. Especially along with Basti, who’s work and passion I admire and I always enjoy sharing the stage with him.</p>
+<p>The <a href="https://www.meetup.com/wwruhr/events/253677588/">WWRUHR meetup</a> is taking place on Thursday 27th (next week that is) and it would be lovely to see many people to chat with and share ideas and experiences (talks are going to be in German!). See you there …</p>
+<p><strong><a href="https://www.meetup.com/wwruhr/events/253677588/">Information and registration</a></strong></p>]]></description>
+    </item>
+        <item>
+      <title>Live Conversations</title>
+      <link>https://marcthiele.com/notes/live-conversations</link>
+      <guid>notes/live-conversations</guid>
+      <pubDate>Fri, 14 Sep 2018 11:20:00 +0000</pubDate>
+      <description><![CDATA[<p>Got a call from someone with an app for my partners at @btconf to get in touch with the attendees and to start and lead conversations. 🙄</p>
+<p>I really prefer if they chat from face to face. Attendees to each other or also to partners. No need for an app to do this! </p>
+<p>Sorry for being old-fashioned …</p>]]></description>
+    </item>
+        <item>
+      <title>My Photos From Smashing Conference in Freiburg 2018</title>
+      <link>https://marcthiele.com/notes/smashing-conference-freiburg-2018</link>
+      <guid>notes/smashing-conference-freiburg-2018</guid>
+      <pubDate>Thu, 13 Sep 2018 17:30:00 +0000</pubDate>
+      <description><![CDATA[<p>On my short stopover here in the studio, before leaving for Paris, I managed to get all photos from Smashing Conference Freiburg 2018 ready to be published. It was the 7th edition in Freiburg since Vitaly and I started this event and I still in love with Freiburg and the Historical Merchants' Hall there, which is the venue for the home party of SmashingConf.</p>
+<figure><a href="https://btco.nf/smashingconffrbrg2018"><img src="https://marcthiele.com/content/01-notes/20180913-smashing-conference-freiburg-2018/opening-day2.jpg" alt="Photos show the band El Flecha Negra and the audience dancing to their performance"></a><figcaption>El Flecha Negra was the fantastic band kicking off day two – click to get to the full album</figcaption></figure>
+<p>The weather played well for us and we had three lovely days during the event. Not only does this play towards the general mood of the attendees, but also the light in the venue is wonderful. With just under 300 participants, the audience is a bit smaller than in New York or San Francisco, which makes making contacts even easier. The friendly and good atmosphere shined through and I am already looking forward to the next edition in New York.</p>
+<p><strong><a href="https://btco.nf/smashingconffrbrg2018">Find my impressions of SmashingConf Freiburg 2018</a></strong></p>]]></description>
+    </item>
+        <item>
+      <title>On the Road Again</title>
+      <link>https://marcthiele.com/notes/on-the-road-again</link>
+      <guid>notes/on-the-road-again</guid>
+      <pubDate>Tue, 04 Sep 2018 23:00:00 +0000</pubDate>
+      <description><![CDATA[<p>Summer break is over. You can see this on <a href="https://colloq.io/">those many events</a> taking place since with the end of August and beginning of September. I myself love travelling to meet people I know and to make new friends. And – of course – to attend events with inspiring and enlightening talks.</p>
+<p>Tomorrow morning I am off to Brighton for <a href="https://reasons.to/">ReasonsTo</a>, an event of my long-time friend John. I love the show John sets up and am very much looking forward to meeting a lot of people I know (I have already seen so many people posting, they are in the UK and Brighton already) and I am excited to see those, I haven’t met before – on stage and next to it! Not to forget, that I love Brighton and being there more than once a year since about 13 years now.</p>
+<p>After this, I am straight off to Freiburg for <a href="https://smashingconf.com/freiburg-2018">SmashingConf</a> in Freiburg. This is the hometown party of Smashing Magazine since 2012 and the place, where it all started – the magazine and the conference. It is close to sell out (by the time I write this, one ticket is left) and I am looking forward to be back in Freiburg, the lovely medieval town in the Breisgau. </p>
+<p>From there, I pick up my kids and we are off to Paris to meet Mozilla and others for three days. Excited to be there as well ;)</p>
+<p>Are you at any of those destinations? If so: let’s meet. You should know my email address and also easily find me on any of the social media marketplaces. Ping me and I am looking forward to a chat and meeting you.</p>]]></description>
+    </item>
+        <item>
+      <title>Free JavaScript Skillshare Class</title>
+      <link>https://marcthiele.com/links/free-javascript-skillshare-class</link>
+      <guid>links/free-javascript-skillshare-class</guid>
+      <pubDate>Tue, 04 Sep 2018 00:00:00 +0000</pubDate>
+      <description><![CDATA[<p>Christian Heilmann‘s Skillshare JavaScript class is available for free, if you sign up for a two month trial at Skillshare. No credit card needed. Simple login is enough.</p>]]></description>
+    </item>
+        <item>
+      <title>The End of an Era: No Typo Conference Anymore</title>
+      <link>https://marcthiele.com/notes/the-end-of-an-era-no-typo-conference-anymore</link>
+      <guid>notes/the-end-of-an-era-no-typo-conference-anymore</guid>
+      <pubDate>Fri, 31 Aug 2018 12:10:00 +0000</pubDate>
+      <description><![CDATA[<p>I have been at a good number of Typo conferences in Berlin. Often times it clashed with my own event or other events I wanted to attend in May. But in 2005, when I still organised the <a href="https://www.macwelt.de/news/Erste-Flashkonferenz-in-Muenchen-2769223.html">Flashforum Konferenz</a>, I attended my first Typo with the subtitle “Change”. A few more followed and especially the last four years, I attended Typo, also because the Berlin event scene came closer to me, since I run <a href="https://beyondtellerrand.com">beyond tellerrand</a> in Berlin for 4 years now.</p>
+<figure><img src="https://marcthiele.com/content/01-notes/20180831-the-end-of-an-era-no-typo-conference-anymore/typo-berlin-2005.png" alt="Graphic showing the advert of Typo Berlin 2005 with the subtitle Change"><figcaption>The look for Typo Berlin in 2005 – with a Flash based website</figcaption></figure>
+<p>A few weeks back first rumours made the round, that this year’s Typo could have been the last one. Looking back, I can say, that the atmosphere this year has not been the same as in the years before. The exhibition felt empty and not filled with lively booths and activities as in the years before. There is still no official announcement on the <a href="https://typotalks.com">Typo website</a>, but 4 days ago already the Page magazine has written a short article with the title “Keine TYPO Berlin 2019” (translated: “No TYPO Berlin in 2019”) and now <a href="https://twitter.com/bennozwitschert">Benno Rudolf</a>, the Event Marketing Manager of Typo, posted <a href="https://www.facebook.com/100000327650554/posts/1982923155061920/">a note on Facebook</a> titled “End of TYPO Berlin”.</p>
+<p>So, bit by bit it is clear, that another well-established event with tradition ends. Benno writes:</p>
+<blockquote>
+<p>In mid-June, as part of its efficiency program, Monotype announced its intention to part with some unprofitable products, services and initiatives, including the events organized from Berlin, with the TYPO Berlin conference as its flagship.</p>
+</blockquote>
+<p>An attempt to organise the event with a different team and approach was started, but up to now led to nothing and time plays against anyone, who thinks about organising and running a Typo event in 2019. Benno says:</p>
+<blockquote>
+<p>Due to the advanced time and the fact that the TYPO team and me are leaving Monotype, we at the moment see no chance for a TYPO 2019, nor can we predict whether a TYPO or a resulting new design event will later continue the 23-year tradition.</p>
+</blockquote>
+<p>For me personally, it always was a great pleasure speaking to <a href="https://twitter.com/jr_siebert">Jürgen</a> and exchanging about speakers, new ideas and plans we had for future events – but I am sure with the loss of Typo this is something that stays. I enjoyed meeting a lot of people in Berlin each year – often only at Typo Berlin. Now it is on me to keep these connection alive!</p>
+<p>This leaves me with saying <strong>thank you</strong> to the team that was responsible for running Typo. I cross my fingers, that leaving the Monotype team will lead you into a good future.</p>]]></description>
+    </item>
+        <item>
+      <title>Inclusive Components: The Book</title>
+      <link>https://marcthiele.com/notes/inclusive-components-the-book</link>
+      <guid>notes/inclusive-components-the-book</guid>
+      <pubDate>Tue, 28 Aug 2018 11:00:00 +0000</pubDate>
+      <description><![CDATA[<p><a href="https://heydonworks.com">Heydon Pickering</a> has turned his blog about <a href="https://inclusive-components.design/">Inclusive Components</a> into a book. If you think <em>”Why should I buy the book, if it is just the blog turned into a book?”</em> – well, it is not just the blog. The content is updated and demos are different and new. Plus you support a great person with buying the book. He has written the well-sold <a href="https://smashingmagazine.com/printed-books/inclusive-front-end-design-patterns/">Inclusive Design Patterns</a> book and whenever I see him speaking, he is one of my favourite speakers during an event.</p>
+<figure><a href="http://book.inclusive-components.design"><img src="https://marcthiele.com/content/01-notes/20180828-inclusive-components-the-book/inclusive-components-the-book.png" alt="Screenshot of Heydon’s website showing the book graphic and a portrait of Heydon"></a><figcaption>Inclusive Components: The Book by Heydon Pickering</figcaption></figure>
+<p>Heydon himself says about the content of this book:</p>
+<blockquote>
+<p>Inclusive design is not about wrong and right, but bad to better. You'll learn plenty of tips from Inclusive Components, but you'll also adopt the mindset to go on and make even better components.</p>
+</blockquote>
+<p>I think he has done a great job with this book. A small book, full with practical tips and advice. And my advice for you is: <strong><a href="http://book.inclusive-components.design/">Go and buy this book!</a></strong></p>]]></description>
+    </item>
+        <item>
+      <title>Combining Fonts by Matej Latin</title>
+      <link>https://marcthiele.com/links/combining-fonts</link>
+      <guid>links/combining-fonts</guid>
+      <pubDate>Fri, 24 Aug 2018 00:00:00 +0000</pubDate>
+      <description><![CDATA[<p>One of the hardest decision always is (at least for me) choosing typefaces. <a href="https://betterwebtype.com/combining-fonts-guide">Matej has written a guide</a> to help you (and me).</p>]]></description>
+    </item>
+        <item>
+      <title>Yes, You Can Also Find Me on Mastodon Now</title>
+      <link>https://marcthiele.com/notes/mastodon</link>
+      <guid>notes/mastodon</guid>
+      <pubDate>Wed, 22 Aug 2018 19:00:00 +0000</pubDate>
+      <description><![CDATA[<p>As I am always curious, I of course have Mastodon accounts now:</p>
+<ul>
+<li>Marc Thiele -&gt; <a href="https://mastodon.social/@marcthiele">@marcthiele@mastodon.social</a></li>
+<li>beyond tellerrand -&gt; <a href="https://mastodon.social/@btconf">@btconf@mastodon.social</a></li>
+</ul>
+<p>I was wondering which the kind of social media icon would be that someone adds in the footer. <a href="https://files.mastodon.social/media_attachments/files/000/167/959/original/af2710f4835278fe.PNG">This one</a> or <a href="https://upload.wikimedia.org/wikipedia/commons/thumb/4/48/Mastodon_Logotype_%28Simple%29.svg/2000px-Mastodon_Logotype_%28Simple%29.svg.png">this one</a> or a completely different one? ;)</p>
+<p>Anyways. You find me and <a href="https://mastodon.social/@btconf">beyond tellerrand</a> there as well now, if you prefer Mastodon.</p>]]></description>
+    </item>
+        <item>
+      <title>Going Offline by Jeremy Keith</title>
+      <link>https://marcthiele.com/notes/going-offline</link>
+      <guid>notes/going-offline</guid>
+      <pubDate>Thu, 16 Aug 2018 10:30:00 +0000</pubDate>
+      <description><![CDATA[<figure><a href="https://abookapart.com/products/going-offline"><img src="https://marcthiele.com/content/01-notes/20180816-going-offline/going-offline.jpg" alt="Photo showing the book “Going Offline” and a cup of coffee on a wooden table"></a><figcaption>Going Offline by Jeremy Keith</figcaption></figure>
+<p>I know, I am late to the game, as <a href="https://adactio.com">Jeremy’s</a> book called <em><a href="https://abookapart.com/products/going-offline">Going Offline</a></em> was released in April already. I just simply never found the time to go and read it. Now, having had three weeks away and <a href="https://marcthiele.com/notes/summer-vacation-2018">being in Italy’s Tuscany</a>, I finally got the time to read it.</p>
+<p>I did not expect anything else than a good read, to be honest, as I know Jeremy for quite some time now and know that he cares about what he does. Would it be running/organising events, like <a href="https://2015.dconstruct.org">dConstruct</a> or <a href="http://responsiveconf.com">Responsive Day Out</a>, <a href="https://saltercane.com">making music with his band</a>, or – of course – writing books and articles.</p>
+<p>The books from <a href="https://abookapart.com">A Book Apart</a> are short books on a specific topic. Usually you can <em>eat</em> them within a day or two. Same with <em>Going Offline</em>. It took me a little more than one day to read it and even though I don’t have any clients to work for anymore, hence I am not involved in any projects, I try to keep myself up to date. </p>
+<p>Jeremy’s way of writing certainly helps, as a specialised or technical book on a topic like Service Workers, could certainly be one, that bores you to death with dry written explanations. But Jeremy has a friendly, fresh and entertaining way of writing books. Sometimes I caught myself with a grin on my face reading things like …</p>
+<blockquote>
+<p>Comments are a great way of leaving reminders for your future self, like Guy Pearce in Memento or Arnold Schwarzenegger in Total Recall.</p>
+</blockquote>
+<p>… or …</p>
+<blockquote>
+<p>You could even write the whole thing on one line if you want to be the James Joyce of JavaScript.</p>
+</blockquote>
+<p>… just to mention two examples.</p>
+<p>The book starts at the very basics of working with Service Workers and gives you a really good starting point if you never done anything with Service Workers, or even have never heard about it. It also might help you to get rid of some prejudices you might have about using Service Workers, in case you have any. Jeremy divided the book into 9 chapters, starting with a basic introduction into the concept and starting with and preparing your website for Service Workers:</p>
+<ol>
+<li>Introducing Service Workers</li>
+<li>Preparing for Offline</li>
+<li>Making Fetch Happen</li>
+<li>Cache Me If You Can</li>
+<li>Service Worker Strategies</li>
+<li>Refining Your Service Worker</li>
+<li>Tidying Up</li>
+<li>The Offline User Experience</li>
+<li>Progressive Web Apps</li>
+</ol>
+<p>All chapters are coming with a lot of code examples and tips and explanations on how to get to your first Progressive Web App. No matter if your visitors are in a city with great internet connection or somewhere, where – like for me in Tuscany – is nearly no reception and no wifi.</p>
+<p>In short: <a href="https://abookapart.com/products/going-offline">go and read <em>Going Offline</em></a>!</p>]]></description>
+    </item>
+        <item>
+      <title>Summer 2018</title>
+      <link>https://marcthiele.com/notes/summer-vacation-2018</link>
+      <guid>notes/summer-vacation-2018</guid>
+      <pubDate>Sat, 04 Aug 2018 11:30:00 +0000</pubDate>
+      <description><![CDATA[<figure><a href="https://btco.nf/2MorigJ"><img src="https://marcthiele.com/content/01-notes/20180804-summer-vacation-2018/tuscany.jpg" alt="Three photos showing landscape of Tuscany in Italy, where I spend my holidays"></a><figcaption>Tuscany, Italy</figcaption></figure>
+<p>In case you wonder, why I am slow with emails these days: <a href="https://btco.nf/2MorigJ">vacation</a>!</p>]]></description>
+    </item>
+        <item>
+      <title>Creative Mornings Theme: Community</title>
+      <link>https://marcthiele.com/notes/creative-morning-community</link>
+      <guid>notes/creative-morning-community</guid>
+      <pubDate>Wed, 01 Aug 2018 11:30:00 +0000</pubDate>
+      <description><![CDATA[<figure><a href="https://creativemornings.com/themes/community"><img src="https://marcthiele.com/content/01-notes/20180801-creative-morning-community/cm-august-2018.png" alt="Image showing an illustration for the Creative Mornings theme for August"></a><figcaption>Theme for August’s Creative Mornings is “Community”</figcaption></figure>
+<p>I love the <a href="https://creativemornings.com/">Creative Mornings</a> theme for my birth month. It is <em>#community</em> and I always emphasise, how important this is for me and <a href="https;//beyondtellerrand.com">beyond tellerrand</a>. Looking forward to see who is speaking at <a href="https://creativemornings.com/cities/dus">Creative Mornings Düsseldorf</a>.</p>]]></description>
+    </item>
+        <item>
+      <title>Tinker Hatfield</title>
+      <link>https://marcthiele.com/notes/tinker-hatfield</link>
+      <guid>notes/tinker-hatfield</guid>
+      <pubDate>Fri, 20 Jul 2018 23:40:00 +0000</pubDate>
+      <description><![CDATA[<p>Today, after a run, I decided to take a bath. Right now, it is too hot for a bath usually, but I did a longer run and thought, I’d just enjoy a beer while being in the bath tub and watch an episode of the <a href="https://marcthiele.com/notes/abstract-the-art-of-design">Abstract series on Netflix</a>, that I haven’t watched before. It was the second of eight episodes featuring Tinker Hatfield. I have to admit – shame on me – I haven’t heard of him before. I just wonder why. Loved the episode and his approach on designing shoes. And he ended with a sentence that stuck with me – even though you heard similar things maybe …</p>
+<blockquote>
+<p>“If people don‘t either love or hate your work, you just haven‘t done all that much.”<br />
+<strong><em>– Tinker Hatfield</em></strong></p>
+</blockquote>
+<p>Tried to find out how to get in touch with him to simply state how much I liked the episode and him in it and being emotional when presenting the <em>Jordan XV</em>. Did not succeed. So, Tinker, if you ever stumble across these lines: Thanks ;)</p>]]></description>
+    </item>
+        <item>
+      <title>Event Tip: &#8220;Victor Papanek: The Politics of Design&#8221;</title>
+      <link>https://marcthiele.com/notes/victor-papanek-the-politics-of-design</link>
+      <guid>notes/victor-papanek-the-politics-of-design</guid>
+      <pubDate>Tue, 17 Jul 2018 13:00:00 +0000</pubDate>
+      <description><![CDATA[<p>I got and email from <a href="https://medium.com/@monteiro">Mike</a> yesterday night. He suggest that we both go and visit an exhibition in the <a href="https://design-museum.de">Vitra Design Museum</a> dealing with <a href="https://en.wikipedia.org/wiki/Victor_Papanek">Vitor Papanek’s</a> work.</p>
+<p>The exhibition is called <em><a href="https://design-museum.de/en/exhibitions/detailpages/victor-papanek-the-politics-of-design.html">Victor Papanek: The Politics of Design</a></em>. If his name rings a bell, it might be, because he has written <em><a href="https://www.amazon.de/Design-Real-World-Ecology-Social/dp/0500273588/">Design for the Real World</a></em>, up to the date one the most widely read book about design that was ever published. And even though the book was published in 1971, I think it never has been more relevant than these days, as it deals with topics like inclusion and social justice for design. His socially and ecologically oriented approach to design in the 1960’s is timeless and reading his books, as the one mentioned above or <em><a href="https://www.amazon.com/Things-Dont-Work-Victor-Papanek/dp/039473324X">How Things Don’t Work</a></em> (1977) and <em><a href="https://www.amazon.de/Design-Human-Scale-Victor-Papenak/dp/0442276168/">Design for Human Scale</a></em> (1983), will still and definitely help you to be a better designer.</p>
+<p>In the exhibition, <strong>taking place from 29 September 2018 to 10 March 2019</strong>, drawings, manuscripts, films, prints and much more – some of them never presented before – will be exhibited.</p>
+<p>So, I guess, I have one more thing to do in this year. With or without Mike ;)</p>
+<p><strong><a href="https://www.design-museum.de/en/exhibitions/detailpages/victor-papanek-the-politics-of-design.html">Read the full description for the exhibition “Victor Papanek: The Politics of Design”</a></strong></p>]]></description>
+    </item>
+        <item>
+      <title>Error Messages the Wrong Way &#8211; KLM</title>
+      <link>https://marcthiele.com/notes/error-messages-the-wrong-way</link>
+      <guid>notes/error-messages-the-wrong-way</guid>
+      <pubDate>Tue, 17 Jul 2018 12:00:00 +0000</pubDate>
+      <description><![CDATA[<figure><img src="https://marcthiele.com/content/01-notes/20180717-error-messages-the-wrong-way/klm-error.png" alt="Screeshot showing an error message from KLM while I was booking a flight"><figcaption>You get, what was going wrong, right?</figcaption></figure>
+<p>I wish error messages would be more readable and understandable. This one here is from the KLM website during a flight booking. WTF?!</p>]]></description>
+    </item>
+        <item>
+      <title>An App for Your Event</title>
+      <link>https://marcthiele.com/notes/an-app-for-your-event</link>
+      <guid>notes/an-app-for-your-event</guid>
+      <pubDate>Fri, 13 Jul 2018 00:00:00 +0000</pubDate>
+      <description><![CDATA[<p><strong>An email from X:</strong> <em>“My name is X, I represent ABC-company - mobile app for conferences and expos https://…<br />
+Could you guide me please with whom I can discuss partnership opportunites?”</em></p>
+<p><strong>Me (knowing what he actually wants):</strong> <em>“That would be me. I attached my Partnership Document for your information. Cheers and have a lovely Friday.”</em></p>
+<p><strong>X:</strong> <em>“Thank you for your answer. Unfortunetly you didn't understand me correctly. We offer our service to events like yours. May we make skype-call I will show to you our service and discribe how you can earn with ABC-company.”</em></p>
+<p><strong>Me:</strong> <em>“Ah ok. Sorry, not interested.”</em></p>
+<p><strong>X:</strong> <em>“Are you not interested to earn more?”</em></p>
+<p><strong>Me:</strong> <em>“Of course. But not interested in using a mobile app at my events. I wish nobody would even use a mobile phone during the event to focus on what is happening onsite and enjoy the event and chatting to other people.”</em></p>
+<p>…</p>
+<p>Why do I even reply to such emails 🙄</p>
+<p>😂</p>]]></description>
+    </item>
+        <item>
+      <title>Notes to Myself</title>
+      <link>https://marcthiele.com/notes/notes-to-myself</link>
+      <guid>notes/notes-to-myself</guid>
+      <pubDate>Thu, 05 Jul 2018 14:00:00 +0000</pubDate>
+      <description><![CDATA[<p>My friend Brendan Dawes created a notebook. But if you know Bren, you know that it is not only a standard notebook.</p>
+<figure><a href="https://www.flickr.com/photos/marcthiele/albums/72157668804999057"><img src="https://marcthiele.com/content/01-notes/20180705-notes-to-myself/notes-to-myself.jpg" alt="Photo showing a collage of shots I took of the notebook by Brendan"></a><figcaption>“Notes to Myself” by Brendan Dawes – click for more photos</figcaption></figure>
+<p>Brendan sees this notebook as <em>as creative inspiration and interruption</em> as it is not just a blank notebook, but comes with a selection of his thoughts on making things. A lot of the pages furthermore come with grids, generated by <a href="https://gist.github.com/brendandawes/6724d1935caee5363a5c7532a9784cb4">his GridMaker</a>. The whole package also contains three pencils as well as a poster with more things Brendan learned during the years running his business.</p>
+<p><strong><a href="https://producedforuse.com/products/notestomyself">Check the product page for <em>Notes to Myself</em> for further detailed information</a></strong></p>
+<p><strong><a href="https://www.flickr.com/photos/marcthiele/albums/72157668804999057">See my set of photos of <em>Notes to Myself</em></a></strong></p>]]></description>
+    </item>
+        <item>
+      <title>Longitude Gin</title>
+      <link>https://marcthiele.com/notes/longitude-gin</link>
+      <guid>notes/longitude-gin</guid>
+      <pubDate>Thu, 05 Jul 2018 10:10:00 +0000</pubDate>
+      <description><![CDATA[<figure><a href="https://www.instagram.com/p/Bk18WnZF7ZL"><img src="https://marcthiele.com/content/01-notes/20180705-longitude-gin/longitude-gin.jpg" alt="Photo showing Longitude Gin in three bottles"></a><figcaption>A new family member in my gin collection</figcaption></figure>
+<p>New gin family member: <a href="http://longitude-gin.com">Longitude Gin</a>. Just picked it up only a street away from my place. Something I look forward to try with <a href="https://keirwhitaker.com">Keir Whitaker</a> visiting me in a few days.</p>]]></description>
+    </item>
+        <item>
+      <title>My Photos From Smashing Conference in Toronto</title>
+      <link>https://marcthiele.com/notes/smashing-conference-toronto-2018</link>
+      <guid>notes/smashing-conference-toronto-2018</guid>
+      <pubDate>Wed, 04 Jul 2018 16:10:00 +0000</pubDate>
+      <description><![CDATA[<p>It was a bit silent over here lately. One reason is my work on beyond tellerrand in Berlin, but another reason is, that I was away for a week and spend my time at the first <a href="https://smashingconf.com/toronto-2018/">Smashing Conference in Toronto</a>.</p>
+<figure><a href="https://www.flickr.com/photos/marcthiele/albums/72157670813337918"><img src="https://marcthiele.com/content/01-notes/20180704-smashing-conference-toronto-2018/smashingconf-toronto.jpg" alt="Image shows a collage of photos from Smashing Conference in Toronto"></a><figcaption>Impressions of the first SmashingConf in Toronto – click to get to the full album</figcaption></figure>
+<p>Not only was it the first event for Smashing Magazine in Toronto, but also the first one with a new concept to be tested. Vitaly asked the speakers to <strong>not have slides</strong> while presenting. It was allowed to use the projector for other reasons, maybe to live draw or live code during your session, but not simply for slides. Except for a ver few speakers, everyone followed this task and even though I heard critical opinions before the event (I was sceptical as well), the majority of the presenters not using slides, as well as the attendees really enjoyed the different way of presenting.</p>
+<p><a href="https://www.flickr.com/photos/marcthiele/sets/72157670813337918/">I created a set of photos</a> with impressions of the main event as well as the workshops and the jam sessions, on the evening before the conference. The overall atmosphere at the <a href="https://www.tiff.net/visit/">TIFF Bell Lightbox</a> was really good. Not only the cinema, which was used as the main theatre for the talks, but also the <a href="https://www.flickr.com/photos/marcthiele/41383171360/in/album-72157670813337918/">sponsors and breakout area</a> and the <a href="https://www.flickr.com/photos/marcthiele/43193443751/in/album-72157670813337918/">lunch and learn</a> room was well visited. The lovely weather and Toronto added to the overall good vibe.</p>
+<p><strong><a href="https://www.flickr.com/photos/marcthiele/sets/72157670813337918/">Have a look at my impressions of SmashingConf Toronto 2018</a></strong></p>]]></description>
+    </item>
+        <item>
+      <title>The Worlds First Cyber Attack</title>
+      <link>https://marcthiele.com/notes/worlds-first-cyber-attack</link>
+      <guid>notes/worlds-first-cyber-attack</guid>
+      <pubDate>Mon, 18 Jun 2018 11:00:00 +0000</pubDate>
+      <description><![CDATA[<p>In the 1790’s the world’s first national data network was constructed in France and it was a mechanical telegraph system made of a chain towers to communicate with each other.</p>
+<p>Two bankers <em>hacked</em> this system and classified the first <em>cyber attack</em> with their acting. It was a clever <em>hack</em> and and showed one things that counts today still:</p>
+<blockquote>
+<p>[…] regardless of the technology, security is like a chain and humans are always the weakest link.</p>
+</blockquote>
+<p><a href="https://www.1843magazine.com/technology/rewind/the-crooked-timber-of-humanity">A short read</a> of about 3–4 minutes worth reading.</p>]]></description>
+    </item>
+        <item>
+      <title>Smashing Book #6</title>
+      <link>https://marcthiele.com/notes/smashing-book-6</link>
+      <guid>notes/smashing-book-6</guid>
+      <pubDate>Wed, 13 Jun 2018 23:30:00 +0000</pubDate>
+      <description><![CDATA[<figure><a href="https://www.smashingmagazine.com/2018/06/meet-smashing-book-6/"><img src="https://marcthiele.com/content/01-notes/20180613-smashing-book-6/smashingbook.jpg" alt="Photo showing the design of the Smashing Book 6"></a><figcaption>The Smashing Book 6 design by Chiara Aliotta</figcaption></figure>
+<p>Today the <a href="https://www.smashingmagazine.com/2018/06/meet-smashing-book-6/">Smashing Book #6</a> was pre-released and announced and yes, you could say, I am part of the Smashing Magazine team and therefore I am biased, but let me just say a couple of things: </p>
+<ul>
+<li>the announced content looks absolutely promising</li>
+<li>the value for money is ace</li>
+<li>if you like practical books, that one is yours</li>
+</ul>
+<h2>Content</h2>
+<p>Let me just list the chapters and people who have written the chapters to show you what I mean, when I say it is a practical book:</p>
+<ul>
+<li>Making design systems work in real-life – <em>by Laura Elizabeth</em></li>
+<li>Accessibility in times of SPAs – <em>by Marcy Sutton</em></li>
+<li>Production-ready CSS Grid layouts – <em>by Rachel Andrew</em></li>
+<li>Strategic guide to CSS Custom Properties – <em>by Mike Riethmueller</em></li>
+<li>Taming performance bottlenecks – <em>by Harry Roberts</em></li>
+<li>Building an advanced service worker – <em>by Lyza Gardner</em></li>
+<li>Loading assets on the web – <em>by Yoav Weiss</em></li>
+<li>Conversation interface design patterns – <em>by Adrian Zumbrunnen</em></li>
+<li>Building chatbots and designing for watches – <em>by Greg Nudelman</em></li>
+<li>Cross Reality and the web (AR/VR) – <em>by Ada Rose Cannon</em></li>
+<li>Bringing personality back to the web – <em>by Vitaly Friedman</em></li>
+</ul>
+<p>Looks good? I think it does.</p>
+<h2>Price</h2>
+<p>If you pre-order the book is $29 instead of $39, the e-book $14,90 instead of $19. Already a great price. But <strong>what I really can’t see</strong> in Vitaly’s post in Smashing Magazine is, that, if you are <a href="https://www.smashingmagazine.com/membership">a Smashing Member</a>, you <strong>save another damn $10</strong> (I think that is with the highest plan – but you can definitely save money with the lowest plan as well), so that the whole package only is $19. That, for a printed book, is a lovely price, in my personal opinion.</p>
+<p>Do I get any money for this shameless advertising plug? Nope, but I am happy to advertise for something, where I think it is good value for money.</p>
+<p>So, my tip: become a <a href="https://www.smashingmagazine.com/membership">Smashing Member</a> and use the benefits of that throughout the year, like the money you save on this book and many more benefits.</p>]]></description>
+    </item>
+        <item>
+      <title>I Like This One of Claire and Me</title>
+      <link>https://marcthiele.com/notes/i-like-this-one-of-theuniverse-and-me</link>
+      <guid>notes/i-like-this-one-of-theuniverse-and-me</guid>
+      <pubDate>Tue, 12 Jun 2018 12:20:00 +0000</pubDate>
+      <description><![CDATA[<figure><a href="https://www.flickr.com/photos/damndirty/41263254704/in/pool-beyondtellerrand/"><img src="https://marcthiele.com/content/01-notes/20180612-i-like-this-one-of-theuniverse-and-me/claire-and-me.jpg" alt="Photo showing Claire L. Evans and me sitting next to the stage during beyond tellerrand 2018 in Düsseldorf."></a><figcaption>Claire and me sitting next to the stage during beyond tellerrand 2018 in Düsseldorf. Photo by Florian Ziegler.</figcaption></figure>
+<p>I like this photo of <a href="https://clairelevans.com">Claire</a> (<a href="@theuniverse"><a href="https://twitter.com/theuniverse">https://twitter.com/theuniverse</a></a>) and me a lot. Dreaming and smiling ;)</p>
+<p>Just stumbled over it while looking for a few photos for the partners. Thanks again Florian for taking the photos!</p>]]></description>
+    </item>
+        <item>
+      <title>Apogee Duet 2 and Skype</title>
+      <link>https://marcthiele.com/notes/apogee-duet-2-and-skype</link>
+      <guid>notes/apogee-duet-2-and-skype</guid>
+      <pubDate>Wed, 06 Jun 2018 00:40:00 +0000</pubDate>
+      <description><![CDATA[<p>I just tweeted <a href="https://twitter.com/marcthiele/status/1004125000872415235">this</a>:</p>
+<blockquote>
+<p>I can’t get my <a href="https://twitter.com/apogeedigital">@apogeedigital</a> Duet 2 USB to work with the latest <a href="https://twitter.com/Skype">@Skype</a> version. On none of my Macs. Anyone having an idea? It used to work back in the past and I only updated Skype and not the Duet 2 or its software/firmware. Thanks for help!</p>
+</blockquote>
+<p>This morning – actually yesterday morning – I was setting up a podcast recording for my <a href="https://twumble.com">twumble podcast</a> with <a href="https://bastianallgeier.com">Bastian Allgeier</a>. I used to use an USB mic for that, but recently got a new Sure SM 7B and am selling my Rhode USB Podcaster (I’ll write about this later). I connected my <a href="http://www.apogeedigital.com/products/duet">Duet 2</a>, opened Skype and picked the <em>Duet USB</em> in the audio preferences of Skype. No input signal …</p>
+<p>I recorded the conversation with Bastian using another input device for Skype and locally recorded my own track with Quicktime (since I could not record anything with Audition when using Skype – but that is another story).</p>
+<p>After our conversation, I spent a lot of time searching the Web, tried everything, I could think of, but I did not find a solution. A few hours back I have written the Apogee support, as well as I posted a question in the Skype support forums.</p>
+<p>Now the Apogee support got back to me with the following, very simple answer:</p>
+<blockquote>
+<p>Skype is considered a 1 input, 2 output software in terms of audio. This means that you would only get signal from input 1 on Duet. Do you have your microphone attached to input 1, or input 2 on Duet? When you have Duet selected as the audio input within Skype's audio preferences menu, and your microphone attached to input 1, do you see signal on Skype's meters?</p>
+</blockquote>
+<p>Doooohhhh … this really is the <strong>only</strong> thing I did <strong>not</strong> try to do. I connected my Duet to all my macs, but always had the mic connected to the second input. Now, that I connected it to the first one, it works. </p>
+<p>This did cost me a lot of time today and maybe this post saves another person a bit of time, when finding it, while searching the Web for a solution.</p>
+<p>Many thanks to the support of Apogee though!</p>]]></description>
+    </item>
+        <item>
+      <title>Calibre &#8211; Convert E-books</title>
+      <link>https://marcthiele.com/notes/calibre</link>
+      <guid>notes/calibre</guid>
+      <pubDate>Tue, 05 Jun 2018 10:00:00 +0000</pubDate>
+      <description><![CDATA[<p>I did not use my Kindle a lot up to now, but with my move out of my office (my daughter wanted my studio) down to the ground floor, I do not have as much space for my books and decided to only really buy <em>pretty</em> physical books and anything tutorial or tech related, I am trying to get digitally. </p>
+<p>I recently purchased an e-book in the ePUB format and sent it to my Kindle e-mail, just to find out, that Kindle does not like the ePUB version of a book. I quickly checked, what’s there to convert e-books and stumbled over <a href="https://calibre-ebook.com">Calibre</a>. Downloaded the software <a href="https://calibre-ebook.com/download_osx">for my Mac</a> (also available for <a href="https://calibre-ebook.com/download_windows">Windows 32bit</a>, <a href="https://calibre-ebook.com/download_windows64">Windows 64bit</a> and <a href="https://calibre-ebook.com/download_linux">Linux</a>), installed it and it directly worked perfectly. </p>
+<p>Thanks <a href="https://calibre-ebook.com">Calibre</a>!</p>]]></description>
+    </item>
+        <item>
+      <title>Holding the Door Open for Others</title>
+      <link>https://marcthiele.com/links/holding-the-door-open-for-others</link>
+      <guid>links/holding-the-door-open-for-others</guid>
+      <pubDate>Mon, 04 Jun 2018 00:00:00 +0000</pubDate>
+      <description><![CDATA[<p>My friend <a href="http://brendandawes.com">Brendan Dawes</a> publishes on his own website and encourages you to do as well.</p>]]></description>
+    </item>
+        <item>
+      <title>Eifel Sunset</title>
+      <link>https://marcthiele.com/notes/sunset-eifel</link>
+      <guid>notes/sunset-eifel</guid>
+      <pubDate>Fri, 01 Jun 2018 12:00:00 +0000</pubDate>
+      <description><![CDATA[<figure><a href="https://www.instagram.com/p/Bjekqd-Fjh2/"><img src="https://marcthiele.com/content/01-notes/20180601-sunset-eifel/sunset.jpg" alt="Photo showing a sunset in above a forest."></a></figure>
+<p>Sunset in the Eifel. Staying in a hunting lodge somewhere in the nowhere in the middle of a forest.</p>]]></description>
+    </item>
+        <item>
+      <title>Meeting People in Berlin</title>
+      <link>https://marcthiele.com/notes/meeting-people-in-berlin</link>
+      <guid>notes/meeting-people-in-berlin</guid>
+      <pubDate>Fri, 18 May 2018 10:00:00 +0000</pubDate>
+      <description><![CDATA[<figure><a href="https://www.instagram.com/p/Bi4mQwHFhFs/"><img src="https://marcthiele.com/content/01-notes/20180518-meeting-people-in-berlin/berlin.jpg" alt="Photo showing Tantek, me, David and Joschi in Berlin. All smiling."></a></figure>
+<p>Meeting a lovely group of people in Berlin. Not even at the event I am at. Hey <a href="https://jkphl.is">Joschi</a>, <a href="http://tantek.com">Tantek</a> and David.</p>]]></description>
+    </item>
+        <item>
+      <title>Workshops with Eva-Lotta Lamm</title>
+      <link>https://marcthiele.com/notes/workshops-with-eva-lotta-lamm</link>
+      <guid>notes/workshops-with-eva-lotta-lamm</guid>
+      <pubDate>Tue, 15 May 2018 16:40:00 +0000</pubDate>
+      <description><![CDATA[<p>My good friend <a href="https://www.sketchnotesbook.com/">Eva-Lotta Lamm</a> is organising two <strong>workshops in London</strong> on <strong>May 31st</strong> and <strong>June 1st</strong>. They are titled “Sketching Interfaces” and “Sketching for Visual Thinking &amp; Sketchnoting”. If that sounds like anything for you, I can highly recommend checking <a href="https://www.sketchnotesbook.com/blog/2018/5/1/sketching-workshops-in-london">the long description</a>, as I know you’ll have a good day with Eva-Lotta.</p>
+<p><strong><a href="https://www.sketchnotesbook.com/blog/2018/5/1/sketching-workshops-in-london">Read workshop description</a></strong>.</p>]]></description>
+    </item>
+        <item>
+      <title>Thanks for beyond tellerrand D&#252;sseldorf</title>
+      <link>https://marcthiele.com/notes/thanks-for-dusseldorf</link>
+      <guid>notes/thanks-for-dusseldorf</guid>
+      <pubDate>Fri, 11 May 2018 19:30:00 +0000</pubDate>
+      <description><![CDATA[<p>As usual I will write a longer wrap-up post at the <a href="https://beyondtellerrand.com/blog">beyond tellerrand blog</a> shortly, but I am absolutely overwhelmed by the lovely, friendly and kind words for beyond tellerrand in Düsseldorf. Thanks so much!</p>
+<figure><a href="https://www.instagram.com/p/BipRk1GF4sG"><img src="https://marcthiele.com/content/01-notes/20180511-thanks-for-dusseldorf/presents.jpg" alt="Presents I got in Düsseldorf"></a><figcaption>Lovely presents I got during beyond tellerrand 2018 in Düsseldorf</figcaption></figure>
+<p>Thanks also for the lovely presents I got at <a href="https://beyondtellerrand.com">beyond tellerrand</a> in Düsseldorf to <a href="https://meiert.com/">Jens Meiert</a>, <a href="http://tomascaspers.de">Tomas Caspers</a>, <a href="http://ankemehlert.de">Anke Mehlert</a>, <a href="https://christianheilmann.com">Chris Heilmann</a>, <a href="https://fettblog.eu">Stefan Baumgartner</a>, <a href="https://andreasnebiker.com">Andreas Nebiker</a>, <a href="http://responsivedesignweekly.com/">Justin Avery</a>, <a href="https://dinaaamin.com">dina Amin</a>, <a href="http://levitated.guru/">Jared Tarbell</a> and <a href="http://viclee.co.uk">Vic Lee</a> (I hope I did not forget anyone). Anke (and Chris) even did the 2016 Düsseldorf design in a 90x90cm Lego piece! And look at this gorgeous print by Vic Lee. No words.</p>
+<p><em>BTW: I also like single malt whisky ;)</em></p>]]></description>
+    </item>
+        <item>
+      <title>Print Stylesheets 2018</title>
+      <link>https://marcthiele.com/links/print-stylesheets-2018</link>
+      <guid>links/print-stylesheets-2018</guid>
+      <pubDate>Thu, 03 May 2018 10:20:00 +0000</pubDate>
+      <description><![CDATA[<p>A well written overview about the state of print stylesheets in 2018. Posted by <a href="https://rachelandrew.co.uk/">Rachel Andrew</a> on <a href="https://www.smashingmagazine.com/2018/05/print-stylesheets-in-2018/">Smashing Magazine</a></p>]]></description>
+    </item>
+        <item>
+      <title>Interview with Confdays</title>
+      <link>https://marcthiele.com/notes/interview-with-confdays</link>
+      <guid>notes/interview-with-confdays</guid>
+      <pubDate>Thu, 12 Apr 2018 13:20:00 +0000</pubDate>
+      <description><![CDATA[<p>A little while ago I sat down with Gilles Vauvarin, who asked me, if I’d be up for an <a href="https://confdays.com/blog/marc-thiele-beyond-tellerrand">interview</a> about running my event. We met in <a href="https://bastianallgeier.com">Bastian Allgeier’s</a> Slack channels for <a href="https://getkirby.com/next">Kirby Next</a>, as Gilles uses Kirby to run his website. It was lovely chatting with Gilles and I hope you like us talking about event planning, reasons for starting an event in the first place and dealing with problems.</p>
+<p><strong>Read: <a href="https://confdays.com/blog/marc-thiele-beyond-tellerrand">Marc Thiele – beyond tellerrand</a></strong></p>]]></description>
+    </item>
+        <item>
+      <title>Braille Neue &#8211; Braille for everyone</title>
+      <link>https://marcthiele.com/notes/braille-neue</link>
+      <guid>notes/braille-neue</guid>
+      <pubDate>Fri, 06 Apr 2018 11:00:00 +0000</pubDate>
+      <description><![CDATA[<figure><a href="http://brailleneue.com"><img src="https://marcthiele.com/content/01-notes/20180406-braille-neue/braille_neue_system.png" alt="Illustration showing how Braille and type turn into Braille Neue"></a></figure>
+<p>I really like how easy it gets with <a href="http://brailleneue.com">Braille Neue</a> to ready Braille. Especially for sighted people. I mean yes, the idea to combine Braille with a typeface is not new, but I somehow like the  aesthetics of this approach and that it is not only planned to be for latin alphabets, but also for Japanese fonts.</p>]]></description>
+    </item>
+        <item>
+      <title>Hobby No. 215 B</title>
+      <link>https://marcthiele.com/notes/hobby-no-215-b</link>
+      <guid>notes/hobby-no-215-b</guid>
+      <pubDate>Thu, 05 Apr 2018 09:50:00 +0000</pubDate>
+      <description><![CDATA[<figure><a href="https://www.instagram.com/p/BhLk1LvFNYD/"><img src="https://marcthiele.com/content/01-notes/20180405-hobby-no-215-b/hobby-215-b.jpg" alt="Photo showing an old package of fishing equipment"></a></figure>
+<p>I remembered this gem in my basement a while ago and always wanted to shoot it for <a href="https://www.instagram.com/purveyors_of_packaging/">@purveyors_of_packaging</a> as I love their packaging shots and encourage you to follow them. Now I simply shot it with my phone. Got this fishing equipment many, many years ago from my uncle (RIP), when I was twelve or so. Still working, still beautiful.</p>
+<h2>Links for Purveyors of Packaging</h2>
+<ul>
+<li><a href="http://purveyorsofpackaging.com">Website</a></li>
+<li><a href="https://www.instagram.com/purveyors_of_packaging/">Instagram</a></li>
+<li><a href="https://twitter.com/ThePurveyors">Twitter</a></li>
+<li><a href="https://www.facebook.com/purveyorsofpackaging">Facebook</a></li>
+</ul>]]></description>
+    </item>
+        <item>
+      <title>IFTTT Workflow with Instagram and Kirby</title>
+      <link>https://marcthiele.com/links/ifttt-instagram-kirby</link>
+      <guid>links/ifttt-instagram-kirby</guid>
+      <pubDate>Wed, 21 Mar 2018 13:20:00 +0000</pubDate>
+      <description><![CDATA[<p>A few days back I asked my friend <a href="http://brendandawes.com">Brendan Dawes</a> via a DM on Twitter, how he publishes <a href="https://instagram.com/brendandawes/">his Instagram pictures</a> to his blog. He said:</p>
+<blockquote>
+<p>(A) combo of ifttt and a script I’ve written. I can feel a blog post coming on…</p>
+</blockquote>
+<p>Now he has written this post and explains how he uses <a href="https://ifttt.com">IFTTT</a> and a webhook to post from Instagram to his own blog. You can easily take his example and adapt this to many other services. Thanks Bren for writing this.</p>]]></description>
+    </item>
+        <item>
+      <title>If you don&#8217;t want it to be negative, change it</title>
+      <link>https://marcthiele.com/notes/if-youi-dont-want-it-to-be-negativ-change-it</link>
+      <guid>notes/if-youi-dont-want-it-to-be-negativ-change-it</guid>
+      <pubDate>Thu, 15 Mar 2018 00:00:00 +0000</pubDate>
+      <description><![CDATA[<p>I recently stumbled over another blog post, where someone was complaining about Twitter and how negative this platform, or better, its users nowadays are. And I don’t mean people like <a href="http://mikemonteiro.com">Mike Monteiro</a>, who is complaining about the people behind Twitter, for a reason. And I also agree, that more and more people use Twitter to simply chuck up their bad experiences/day/thoughts … you name it. </p>
+<p>If you now decide to leave Twitter as a platform, as you can’t stand it anymore, that is fine. I myself have to say, that I still use it a lot. On one hand it still helps me with <a href="https://beyondtellerrand.com">my business</a> a lot. I announce, advertise and discuss my event related things on <a href="https://twitter.com/btconf">@btconf</a>. On the other hand I chat and stay in touch with friends at <a href="https://twitter.com/marcthiele">@marcthiele</a>. I like the way of thinking about and using it, like I learned when learning about the <em><a href="https://indieweb.org">IndieWeb movement</a></em>. But I still like to use it.</p>
+<p>If you don’t leave Twitter, why not starting to focus on the positive. Try not to post all your negative crap, but every time something positive happens to you or something where you think it might help or motivate other people you go and broadcast that. </p>
+<p>I think if we are not satisfied with something and how it is, <strong>we are the ones who have to change it</strong>, if it is of interest for us. Again: if it is not, you are right, when you maybe better simply leave it. But, please, do this then instead of adding to the negative noise.</p>]]></description>
+    </item>
+        <item>
+      <title>Events are not Dead</title>
+      <link>https://marcthiele.com/notes/events-are-not-dead</link>
+      <guid>notes/events-are-not-dead</guid>
+      <pubDate>Wed, 14 Mar 2018 00:00:00 +0000</pubDate>
+      <description><![CDATA[<p>Mid January I have read an interesting post on <a href="https://marco.org/2018/01/17/end-of-conference-era">the website of Marco Arment</a> called <em>”The end of the conference era”</em> and even though Marco is referring to <em>small Apple-ish developer-ish conferences</em>, I left the tab open, as I wanted to write my thoughts on this concerning web conferences or web events, like I prefer to call it.</p>
+<p>Marco mentions a few interesting aspects, why he thinks that those smaller events are at their end. One reason he mentions is <em>cost</em> as one factor, why people would not attend anymore, where I think, if you keep prices affordable, there is still room for travel, accommodation and even food. This, though, is surely very subjective, as allocating a budget for events in a company is very different depending on where you work. Two weeks ago I had an apprentice from an agency writing me, asking for discounts. I first wrote back and explained how the ticket price is calculated in my case, to show, where the money goes to. But furthermore I had a look at her agencies website and only saw big names on the client list. My question was, if her boss would not have any money/budget planned for events for their employees. Sadly they had not, even with their size of agency. I have seen really good examples, where the <em>value</em> of attending events is very clear for the company. <a href="https://www.sipgate.de/">sipgate</a> for example have a wall, where employees can add the event they want to attend at and, I think, up to a certain budget, it does not matter even, were this is (I will check again, how this exactly works for them and also bring photos, as I really like how they dealt with it). I agree, though, that there are events out there charging way too much for what you get (where others charging quite some money also really package a great deal with a lot for the money they charge).</p>
+<p>Marco also says</p>
+<blockquote>
+<p>It’s getting increasingly difficult for organizers to sell tickets, in part because it’s hard to get big-name speakers without the budget to pay them much (which would significantly drive up ticket costs, which exacerbates other problems), but also because conferences now have much bigger competition in connecting people to their colleagues or audiences.</p>
+</blockquote>
+<p>Though I agree, that competition got harder as more and more events pop up weekly, I don’t agree with what he says about big-name speakers. Sure: <em>big-name speakers</em> is a matter of definition again. Maybe he thinks of bigger names than I do, but I furthermore think, that the content and finding new talent is more important than having <em>big names</em> on your list. Yes, I do also think of course, that a good mix of well-known speakers and new findings is always the best recipe. </p>
+<p>As said before, he maybe refers to other events for a different target audience, but talks about <em>fixing conferences</em> when he says</p>
+<blockquote>
+<p>I don’t know how to fix conferences, but the first place I’d start on that whiteboard is by getting rid of all of the talks, then trying to find different ways to bring people together — and far more of them than before.</p>
+</blockquote>
+<p>Again: I think, that events are not <em>broken</em>. When I look at my <a href="https://beyondtellerrand.com">beyond tellerrand</a> events, I see 500 <em>knowledge and inspiration hungry</em> people at each edition. Attendees, which are hungry for new inspiration, different views and opinions on things, exchanging with other people and most importantly to spend time with all the other people at the event. I agree, when he says that talks are not the most important reason for attending an event, but I think they are part of it, as they set the spark for conversations in the breaks after the talks and in the evening, when the attendees meet for food and drinks.</p>
+<p>I furthermore answer his following assumption with <strong>no</strong> </p>
+<blockquote>
+<p>Or maybe we’ve already solved these problems with social networks, Slack groups, podcasts, and YouTube, and we just haven’t fully realized it yet.</p>
+</blockquote>
+<p>I think anything online – even an online conference – will never be able to replace an event, where people meet face to face, have conversations, plan their next side project, speak about their latest findings or ask for help during a chat. For me, being with all the other people and the conversations that evolve from this is the real juice of attending events.</p>
+<p>So, no, I don’t see the end of a conference era.</p>]]></description>
+    </item>
+        <item>
+      <title>RIP Stephen Hawking</title>
+      <link>https://marcthiele.com/notes/rip-stephen-hawking</link>
+      <guid>notes/rip-stephen-hawking</guid>
+      <pubDate>Wed, 14 Mar 2018 00:00:00 +0000</pubDate>
+      <description><![CDATA[<blockquote>
+<p>Intelligence is the ability to adapt to change.</p>
+</blockquote>
+<p><em>Stephen Hawking</em></p>
+<p>Rest in Piece.</p>]]></description>
+    </item>
+        <item>
+      <title>Learn CSS Variables</title>
+      <link>https://marcthiele.com/links/learn-css-variables</link>
+      <guid>links/learn-css-variables</guid>
+      <pubDate>Fri, 02 Mar 2018 13:10:00 +0000</pubDate>
+      <description><![CDATA[<p>A <a href="https://scrimba.com/g/gcssvariables">free course</a> teaching CSS Variables in 8 chapters by <a href="https://twitter.com/perborgen">Per Harald Borgen</a>.</p>]]></description>
+    </item>
+        <item>
+      <title>Tips for Running Workshops</title>
+      <link>https://marcthiele.com/links/tips-for-running-workshops</link>
+      <guid>links/tips-for-running-workshops</guid>
+      <pubDate>Tue, 27 Feb 2018 15:50:00 +0000</pubDate>
+      <description><![CDATA[<p>In <a href="https://timkadlec.com/remembers/2018-02-21-running-workshops/">this little post</a>, Tim give a few handy tips for planning and running a workshop. Even if he states _“An important caveat: this is what works for me.” I am sure, that many people find some useful bits and pieces in there.</p>
+<p><strong>Read: <a href="https://timkadlec.com/remembers/2018-02-21-running-workshops/">Tips for Running Workshops</a></strong></p>]]></description>
+    </item>
+        <item>
+      <title>Conversation with Vasilis about Design, Quality and Positivity</title>
+      <link>https://marcthiele.com/notes/conversation-with-vasilis-about-design-quality-and-positivity</link>
+      <guid>notes/conversation-with-vasilis-about-design-quality-and-positivity</guid>
+      <pubDate>Mon, 26 Feb 2018 00:00:00 +0000</pubDate>
+      <description><![CDATA[<p>Last week I had been in Amsterdam to meet friends and to attend FITC. When I tweeted about it, <a href="https://vasilis.nl">Vasilis van Gemert</a> asked, if we should meet for a coffee. Of course I said yes, not only as Vasilis is a lovely bloke, but also as it is wonderful, if you have the chance to meet your friends when an opportunity is given.</p>
+<p>When we sorted out where to meet, he asked me if I'd like to be a guest on his podcast, called <a href="https://vasilis.nl/gbi/">The Good, The Bad, The Interesting</a>. Now he released <a href="https://vasilis.nl/gbi/2018/02/24/marc-thiele/">our conversation</a>, which turned out to end in a nice chat about design, quality and positivity. Ignore the fakt, that I use the word “like” a lot and I think it is an episode worth the time listening to.</p>
+<p>Thanks a lot Vasilis, for the lovely opportunity to be a guest in you podcast, even though very spontaneously.</p>
+<p><strong><a href="https://vasilis.nl/gbi/2018/02/24/marc-thiele/">Listen to The Good, The Bad, The Interesting with … well … me ;]</a></strong></p>]]></description>
+    </item>
+        <item>
+      <title>What Chris Says About My Little Event</title>
+      <link>https://marcthiele.com/notes/what-chris-says-about-my-little-event</link>
+      <guid>notes/what-chris-says-about-my-little-event</guid>
+      <pubDate>Sun, 18 Feb 2018 19:30:00 +0000</pubDate>
+      <description><![CDATA[<p><a href="https://christianheilmann.com">Christian Heilmann</a> and I know each other for a long time. We have been at demo parties in the 90’s, he joined us for the Flashforum Konferenz about 10 years ago and he ha spoken at a couple of the beyond tellerrand events. After an event is over I ask a few people, also all the speakers, for a short quote about their experience at beyond tellerrand and with the audience, who usually is such a lovely group of people. Those short quotes go into the header of the <a href="https://beyondtellerrand.com">beyond tellerrand website</a>. After the last edition in Munich Chris sent me the following quote, which won’t fit in the header, but which I’ll use on the <a href="https://beyondtellerrand.com/about">about page</a> in a new section called <em>”What Other People Say”</em>. And it was so nice and heart warming (for me at least) in one of these darker periods in someones life, that I really wanted to quickly also publish it here and say <strong>Thank you, Chris</strong>.</p>
+<blockquote>
+<p>beyond tellerrand is a conference that stands on its own. There is no faceless group of people running it, but it is Marc Thiele’s show. He has an incredible knack to always find new and surprising speakers. This is a conference where what happens in between the talks and the networking amongst the attendees is as important as what happens on stage. Don’t be surprised if amongst the conference volunteers you find film makers and amazingly creative designers. I have yet to meet a grumpy person or a diva presenter at beyond tellerrand. It is always a joy to attend and I leave brimming with ideas what to do next. This is the kind of event I missed for a long time, back in the days when web conferences were still a several-month-wait-time affair. beyond tellerrand is a community without trying to be one and forcing you into a portal or a slack channel. People network because they can’t help themselves. As a speaker, you are treated top-notch but not overwhelmed and the demands the conference has for you are sensible and I for one am happy to give my best there. The quality of the video recordings is great, there are always transcripts and nothing beats a live DJ mixing each talk into a pumping tune right after it finished.</p>
+</blockquote>]]></description>
+    </item>
+        <item>
+      <title>Speaking at Pop-Up Studio in Dortmund in March</title>
+      <link>https://marcthiele.com/notes/speaking-at-pop-up-studio-in-march</link>
+      <guid>notes/speaking-at-pop-up-studio-in-march</guid>
+      <pubDate>Thu, 15 Feb 2018 15:30:00 +0000</pubDate>
+      <description><![CDATA[<figure><a href="http://popupstudio.de"><img src="https://marcthiele.com/content/01-notes/20180215-speaking-at-pop-up-studio-in-march/popup-studio.jpg" alt="The teaser image of Pop-Up Studio in March"></a></figure>
+<p>During the last days <a href="https://bastianallgeier.com">Bastian Allgeier</a> contacted me and asked, if I’d be interested to speak next to him in Dortmund at the <a href="http://popupstudio.de">Pop-Up Studio</a> in March. I said yes and therefore I am speaking next to him about my project/work/passion … you name it. </p>
+<p>Bastian himself is speaking about his main – and right now only – project as well: <a href="https://getkirby.com">Kirby</a>.</p>
+<p>Each of the talks is going to be around 45 minutes long and held in German (one of the first talks ever, I give in German).  The event is completely free and you are <a href="https://www.facebook.com/events/1908050012840797/">invited to join</a>. Would be lovely to see you there.</p>]]></description>
+    </item>
+        <item>
+      <title>dina Amin on Smashing TV</title>
+      <link>https://marcthiele.com/notes/dina-amin-on-smashing-tv</link>
+      <guid>notes/dina-amin-on-smashing-tv</guid>
+      <pubDate>Wed, 14 Feb 2018 10:00:00 +0000</pubDate>
+      <description><![CDATA[<figure><a href="https://www.smashingmagazine.com/smashing-tv/the-state-of-web-design-in-egypt/"><img src="https://marcthiele.com/content/01-notes/20180214-dina-amin-on-smashing-tv/dina-smashing-tv.jpg" alt="A screenshot of Smashing TV showing dina Amin’s date for the show – 27 February"></a></figure>
+<p>One morning, between coffee, getting kids ready for school and kindergarten, I was doing my usual <em>I stroll around in social media and my RSS feeds</em> round, I stumbled over <a href="https://instagram.com/dina.a.amin/">dina Amin’s Instagram account</a> and followed her. I liked her work. A lot.</p>
+<p>Later then I was checking <a href="https://dinaaamin.com">her website</a> and other sources to see, if she ever spoke at any events. I have seen that she gives workshops and thought, I simply ask her, if she wants to join my first <a href="https://beyondtellerrand.com">beyond tellerrand</a> event in Munich. Not only did this turn out into a great fit – topic wise and from being a wonderful human being – but it also created so many memorable moments. For her, me, the attendees and many of the other speakers (I could write a lot about this … wonderful memories).</p>
+<figure><a href="https://www.flickr.com/groups/beyondtellerrand/pool/"><img src="https://marcthiele.com/content/01-notes/20180214-dina-amin-on-smashing-tv/dina-in-munich.jpg" alt="A photo showing dina speaking in Munich"></a><figcaption>dina on stage in Munich – photo by Stefan Nitzsche</figcaption></figure>
+<p>She gave a great talk about her work, about her work and being from Egypt, about her work and being from Egypt and being a woman. It turned out to be much more than what I thought of.</p>
+<p>I love that she now is showing up at other events to talk about her work and herself. On <strong>February 27th</strong> she is guest on <a href="http://smashing.tv">Smashing TV</a> and I can highly recommend joining this live session. She has a great story to tell and if you are, by any means interested in stop motion and tinkering with the things you have or being excited to do and create something – <a href="https://smashingmagazine.com/smashing-tv/the-state-of-web-design-in-egypt/">drop in</a>. Her actual topic on Smashing TV is <strong>”The State Of (Web) Design In Egypt”</strong>.</p>
+<p>And here comes a handy tip: as you can see on the screenshot above it is $49 to join for the day and dina’s session on Smashing TV. Do this: simply join the Smashing family and become a <a href="https://smashingmagazine.com/membership">Smashing Member</a>. For $5 you get access to all the Smashing TV episodes as well as many other things (not to forget that ads disappear from Smashing Magazine). And even if you cancel after a while, the $49 to attend this one episode at Smashing TV with dina mean 10 months of access to much more. But I see, I sound like I am selling it to you. ;)</p>
+<p>What I really want to say: go and see what <a href="https://dinaaamin.com">dina</a> has to say (and – if you like – become a <a href="https://smashingmagazine.com/membership">Smashing Member</a>). And if you want to see dina live again, you can do this at the upcoming <a href="https://beyondtellerrand.com/events/duesseldorf-2018/speakers/dina-amin">beyond tellerrand in Düsseldorf</a>.</p>]]></description>
+    </item>
+        <item>
+      <title>Photos of SmashingConf London</title>
+      <link>https://marcthiele.com/links/photos-of-smashingconf-london</link>
+      <guid>links/photos-of-smashingconf-london</guid>
+      <pubDate>Tue, 13 Feb 2018 09:00:00 +0000</pubDate>
+      <description><![CDATA[<p><a href="http://btco.nf/SmashingConfLondon2018">My set of photos</a> of the first SmashingConf in London</p>
+<figure><a href="http://btco.nf/SmashingConfLondon2018"><img src="https://marcthiele.com/content/02-links/20180213-photos-of-smashingconf-london/vitaly.jpg" alt=""></a><figcaption>Vitaly and his cake</figcaption></figure>
+<p>During the event Vitaly had birthday. Happy Birthday ;)</p>]]></description>
+    </item>
+        <item>
+      <title>Use Google Analytics in your Kirby Panel</title>
+      <link>https://marcthiele.com/links/google-analytics-for-kirby-panel</link>
+      <guid>links/google-analytics-for-kirby-panel</guid>
+      <pubDate>Tue, 06 Feb 2018 12:40:00 +0000</pubDate>
+      <description><![CDATA[<p>This <a href="https://github.com/gearsdigital/kirby-analytics-dashboard">little plugin</a> extends your Kirby dashboard with Google Analytics stats and reports.</p>]]></description>
+    </item>
+        <item>
+      <title>First Photos of SmashingConf London</title>
+      <link>https://marcthiele.com/links/first-photos-of-smashingconf-london</link>
+      <guid>links/first-photos-of-smashingconf-london</guid>
+      <pubDate>Tue, 06 Feb 2018 12:20:00 +0000</pubDate>
+      <description><![CDATA[<p>First photos of SmashingConf in London dropping in. Today: Workshop with Vitaly Friedman.</p>
+<p><a href="http://btco.nf/SmashingConfLondon2018">Follow this album to get more photos during the next days</a>.</p>]]></description>
+    </item>
+        <item>
+      <title>I am glad that my Mum did not listen to me</title>
+      <link>https://marcthiele.com/notes/glad-thst-my-mum-did-not-listen-to-me</link>
+      <guid>notes/glad-thst-my-mum-did-not-listen-to-me</guid>
+      <pubDate>Sun, 04 Feb 2018 23:40:00 +0000</pubDate>
+      <description><![CDATA[<p>When I moved out of my mother’s house, about 23 or 24 years ago, my mum asked me, if I would like to take my old school stuff or drawings I made when I was a child. I said I don’t need this stuff anymore, but today, I am happy and glad she did not listen to me.</p>
+<p>When my mother died a little more than a month ago, I knew that the days where coming, when we had to empty and clear her flat. Since our two brothers are already gone it is mainly the job of my sister and me. And even though it was is very sad, to – in some way – erase someones life, someones trails off this earth, by having to throw away a lot of stuff, there are moments of laughter and lovely memories, I share with my sister. Today was one of the days, where we started to empty our mother’s cupboards and had to decide what to keep and what to give away. It was a long day and I have a very strange feeling after this day is over. I can’t really describe it, but it feels heavy aas if someone put a rock on both of my shoulders. </p>
+<p>Of course there was a lot of stuff, where we asked us <em>Why the hell did she keep this? For which case?</em>, but there was one moment amongst a few today, where I though, that I was glad, that she did not listen to me and kept something.</p>
+<figure><img src="https://marcthiele.com/content/01-notes/20180204-glad-thst-my-mum-did-not-listen-to-me/scroll.jpg" alt="A paper scroll with a lot of drawing from my friends as me when we were children"></figure>
+<p>When I was a kid, some of my friends and I started drawing picture of knights and armies and ships and castles and so forth, that we decided to glue together piece by piece, so that it became a gigantic, big scroll with a lot of drawings. A continuous story, which we started about 1984 or 1983 and where one of the last drawings is dated to 1987. Short before I moved out of my mother’s house, we had a pipe burst in the cellar and the paper roll got wet. Not soaked, but wet enough, that I thought I ave to throw it away, which I told my mum to do, when I moved out. She never told me anything and from time to time I was thinking back to this long-time project of my friends and me, thinking, that it is sad that this personal <em>piece of history</em> was lost for me. I mean, I know that this might not mean anything to anyone, but for me this was a huge project as at leat 5 of my friends and me, we were working on it.</p>
+<p>Today, after we decided to call it a day for today, we quickly checked our mother’s garage to see, what is left to do here and there it was: my roll of drawings. She did not listen to me and just kept this bloody thing – which I love her for. I guess, neither my kids not my wife really understand, what this means to me, but for me this is pure gold. This is my childhood and plain, unfiltered memories to so many wonderful days, I had when I was a little boy.</p>
+<p><strong>Thanks mum for not listening to me!</strong></p>
+<figure><img src="https://marcthiele.com/content/01-notes/20180204-glad-thst-my-mum-did-not-listen-to-me/drawing.jpg" alt="A paper scroll with a lot of drawing from my friends as me when we were children"></figure>]]></description>
+    </item>
+        <item>
+      <title>C64 Mini</title>
+      <link>https://marcthiele.com/links/c64-mini</link>
+      <guid>links/c64-mini</guid>
+      <pubDate>Fri, 02 Feb 2018 08:10:00 +0000</pubDate>
+      <description><![CDATA[<figure><img src="https://marcthiele.com/content/02-links/20180202-c64-mini/c64-mini.jpg" alt=""><figcaption>The new C64 Mini – an homage to the original C64</figcaption></figure>
+<p>I mean, I still have a couple of <em>real</em> C64 in my house, but maybe a nice thing and if only for the good memories. ;)</p>
+<p>The C64 Mini is announced to be coming in March.</p>]]></description>
+    </item>
+
+  </channel>
+</rss>

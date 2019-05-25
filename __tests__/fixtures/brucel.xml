@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>Bruce Lawson&#039;s  personal site</title>
+	<atom:link href="https://www.brucelawson.co.uk/feed/" rel="self" type="application/rss+xml" />
+	<link>https://www.brucelawson.co.uk</link>
+	<description></description>
+	<lastBuildDate>Wed, 22 May 2019 10:19:47 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.2.1</generator>
+	<item>
+		<title>Structured data and Google</title>
+		<link>https://www.brucelawson.co.uk/2019/structured-data-and-google/</link>
+				<comments>https://www.brucelawson.co.uk/2019/structured-data-and-google/#comments</comments>
+				<pubDate>Tue, 21 May 2019 11:56:28 +0000</pubDate>
+		<dc:creator><![CDATA[Bruce]]></dc:creator>
+				<category><![CDATA[accessibility  web standards]]></category>
+		<category><![CDATA[HTML5]]></category>
+		<category><![CDATA[microformats]]></category>
+
+		<guid isPermaLink="false">/?p=11375</guid>
+				<description><![CDATA[Domain-specific markup for fun and profit It doesn&#8217;t come as a surprise to Dull Old Web Farts (DOWFs) like me to learn last month that Google gives a search boost to sites that use structured data (as well as rewarding sites for being performant and mobile-friendly). Google has brilliant heuristics for analysing the content of [&#8230;]]]></description>
+								<content:encoded><![CDATA[<h3>Domain-specific markup for fun and profit</h3>
+<p>It doesn&#8217;t come as a surprise to Dull Old Web Farts (DOWFs) like me to learn last month that Google gives a search boost to sites that use structured data (as well as rewarding sites for being performant and mobile-friendly). Google has brilliant heuristics for analysing the content of sites, but developers being explicit and marking up their content using subject-specific vocabularies means more robust results. </p>
+<p>For the first time (to my knowledge), Google has published some numbers on <a href="https://developers.google.com/search/case-studies/overview">how structured data affects business</a>. The headlines:</p>
+<ul>
+<li>Jobrapido’s overall organic traffic grew by 115%, and they have seen a 270% increase in new user registrations from organic traffic</li>
+<li>After the launch of job posting structured data, Google organic traffic to ZipRecruiter job pages converted at a rate three times higher than organic traffic from other search engines. The Google organic conversion rate on job pages was also more than 4.5 times higher than it had been previously, and the bounce rate for Google visitors to job pages dropped by over 10%.</li>
+<li>In the month following implementation, Eventbrite saw roughly a 100-percent increase in the typical year-over-year growth of traffic from Google Search</li>
+<li>Traffic to all Rakuten Recipe pages from search engines soared 2.7 times, and the average session duration was now 1.5 times longer than before.</li>
+</ul>
+<p>Impressive, indeed. So how do you do it? For this site, I chose a vocabulary from <a href="https://schema.org/">schema.org</a>:</p>
+<blockquote><p>These vocabularies cover entities, relationships between entities and actions, and can easily be extended through a well-documented extension model. Over 10 million sites use Schema.org to markup their web pages and email messages. Many applications from Google, Microsoft, Pinterest, Yandex and others already use these vocabularies to power rich, extensible experiences.</p></blockquote>
+<p>Because this is a blog, I chose the <a href="https://schema.org/BlogPosting">BlogPosting schema</a>, and I use the HTML5 microdata syntax. So each article is marked up like this:</p>
+<pre><code>&lt;article <mark>itemscope itemtype="http://schema.org/BlogPosting"</mark>&gt;
+  &lt;header>
+  &lt;h2 <mark>itemprop="headline"</mark> id="post-11378">The HTML Treasure Hunt&lt;/h2>
+  &lt;time <mark>itemprop="dateCreated pubdate datePublished"</mark>
+    datetime="2019-05-20">Monday 20 May 2019&lt;/time>
+  &lt;/header>
+    ...
+&lt/article></code>
+</pre>
+<p>The values for the microdata attributes are specified in the schema vocabulary, except the <code>pubdate</code> value on <code>itemprop</code> which isn&#8217;t from schema.org, but is required by Apple for WatchOS because, well, <a href="/2018/content-needs-a-publication-date/">Apple likes to be different</a>.</p>
+<p>And that&#8217;s basically it. All of this, of course, is taken care of by one WordPress template, so it&#8217;s automatic.</p>
+<h3>Metadata partial copy-paste necrosis for misery and loss</h3>
+<p>One thing puzzles me, however; <a href="https://developers.google.com/search/docs/guides/intro-structured-data#structured-data-format">Google documentation</a> says that Google Search supports structured data in any of three formats: JSON-LD, RDFa and microdata formats, but notes &#8220;Google recommends using JSON-LD for structured data whenever possible&#8221;. </p>
+<p>However, no reason is given for preferring JSON-LD except &#8220;Google can read JSON-LD data when it is dynamically injected into the page&#8217;s contents, such as by JavaScript code or embedded widgets in your content management system&#8221;. I guess this could be an advantage, but one of the other &#8220;features&#8221; of JSON-LD is, in my opinion, a bug:</p>
+<blockquote><p>The markup is not interleaved with the user-visible text</p></blockquote>
+<p>I strongly feel that metadata that is separated from the user-visible data associated with it highly susceptible to <i>metadata partial copy-paste necrosis</i>. User-visible text is also developer-visible text. When devs copy/ paste that, it&#8217;s very easy to forget to copy any associated metadata that&#8217;s not interleaved, leading to errors. (And <a href="https://developers.google.com/search/docs/guides/sd-policies">Google will penalise errors</a>: structured data will not show up in search results  if &#8220;The structured data is not representative of the main content of the page, or is potentially misleading&#8221;.)</p>
+<p>An example of <i>metadata partial copy-paste necrosis</i> can be seen in the commonly-recommended accessible form pattern:</p>
+<pre><code>&lt;label for="my-input">Your name:&lt;/label>
+&lt;input id="my-input"/>
+</code></pre>
+<p>As <a href="https://twitter.com/tcaspers/status/1125012275587428352">Thomas Caspars wrote</a></p>
+<blockquote class="twitter-tweet" data-partner="tweetdeck">
+<p lang="en" dir="ltr">I’ve lost track how many times I found broken ids, duplicate id/for, ids with two or more values and much more, so I prefer the implicit / wrapped variant.</p>
+<p>&mdash; Klar Name (@tcaspers) <a href="https://twitter.com/tcaspers/status/1125012275587428352?ref_src=twsrc%5Etfw">May 5, 2019</a></p></blockquote>
+<p>I&#8217;ve contacted chums in Google to ask why JSON-LD is preferred, but had no reply. (I may go as far as trying to &#8220;reach out&#8221; next time.)</p>
+<p><a href="https://www.brucelawson.co.uk/2019/reading-list-229/#comment-3838936">Andrew wrote</a></p>
+<blockquote><p>I’m pretty sure Google prefers JSON-LD over microdata because it’s easier for them to stealborrow the data for their own use in that format. When I was working on a screen-scraping project a few years ago, I found that to be the case. Since then, I’ve come to believe that schema.org is really about making it easier for the big guys to profit from data collection instead of helping site owners improve their SEO. But I’m probably just being a conspiracy theorist.</p></blockquote>
+<p>Speculation and conspiracy theories aside, until there&#8217;s a clear reason why I should use JSON-LD over interleaved microdata, I&#8217;m keeping it as it is.</p>
+<h3>Google replies</h3>
+<p><b>Updated 23 May:</b> Dan Brickley, a Google employee who is Lord of Schema.org, wrote this thread on Twitter:</p>
+<blockquote class="twitter-tweet" data-conversation="none" data-lang="en">
+<p lang="en" dir="ltr">1st conversations about <a href="https://t.co/ooIuC1elTy">https://t.co/ooIuC1elTy</a> in JSON came up via Gmail&#39;s &quot;smart mail&quot; features, e.g. Flight boarding passes being marked up to show up in Google Now, smart watches etc.</p>
+<p>&mdash; Dan Brickley (@danbri) <a href="https://twitter.com/danbri/status/1131136594554048513?ref_src=twsrc%5Etfw">May 22, 2019</a></p></blockquote>
+<p><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script></p>
+]]></content:encoded>
+							<wfw:commentRss>https://www.brucelawson.co.uk/2019/structured-data-and-google/feed/</wfw:commentRss>
+		<slash:comments>4</slash:comments>
+							</item>
+		<item>
+		<title>The HTML Treasure Hunt</title>
+		<link>https://www.brucelawson.co.uk/2019/the-html-treasure-hunt/</link>
+				<comments>https://www.brucelawson.co.uk/2019/the-html-treasure-hunt/#respond</comments>
+				<pubDate>Mon, 20 May 2019 13:41:14 +0000</pubDate>
+		<dc:creator><![CDATA[Bruce]]></dc:creator>
+				<category><![CDATA[accessibility  web standards]]></category>
+		<category><![CDATA[Speaking]]></category>
+
+		<guid isPermaLink="false">/?p=11378</guid>
+				<description><![CDATA[Here are my slides for The HTML Treasure Hunt, my keynote at the International JavaScript Conference last week. They probably don&#8217;t make much sense on their own, unfortunately, as I use slides as pointers for me to ramble about the subject, but a video is coming soon, and I&#8217;ll post it here. Given that one [&#8230;]]]></description>
+								<content:encoded><![CDATA[<p>Here are my slides for <a href="https://speakerdeck.com/brucel/ijs-conference">The HTML Treasure Hunt</a>, my keynote at the <a href="https://javascript-conference.com/">International JavaScript Conference</a> last week. They probably don&#8217;t make much sense on their own, unfortunately, as I use slides as pointers for me to ramble about the subject, but a video is coming soon, and I&#8217;ll post it here.</p>
+<p>Given that one of my themes was &#8220;write less JS and more HTML&#8221;, feedback was great! Attendees gave me 4.8 out of 5 for &#8220;Quality of the presentation&#8221; (against a conference average of 4.0) and 4.9 for &#8220;Speaker’s knowledge of the subject&#8221; (against an average of 4.5). Comments included:</p>
+<blockquote><p>great talk! reminding of the basics we often forget.</p></blockquote>
+<blockquote><p>amazing way to start the second day of this conference. inspiring to say the least. great job Bruce</p></blockquote>
+<blockquote><p>very entertaining and great message. excellent speaker</p></blockquote>
+<blockquote><p>Thanks, that was a talk a lot of us needed.</p></blockquote>
+<blockquote><p>Remarkable presentation. Thought provoking, backed with statistics. Well presented.</p></blockquote>
+<blockquote><p>Very experienced and inspiring speaker. I would really like to incorporate this new ideas (for me) in my code</p></blockquote>
+<blockquote><p>I think there’s a room full of people going to re-learn HTML after that inspiring talk!</p></blockquote>
+<p>If you&#8217;d like me to talk at your event, give training at your organisation, or help CTO your next development project, <a href="mailto:bruce@brucelawson.co.uk">get in touch</a>!</p>
+]]></content:encoded>
+							<wfw:commentRss>https://www.brucelawson.co.uk/2019/the-html-treasure-hunt/feed/</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+							</item>
+		<item>
+		<title>Reading List 230</title>
+		<link>https://www.brucelawson.co.uk/2019/reading-list-230/</link>
+				<comments>https://www.brucelawson.co.uk/2019/reading-list-230/#respond</comments>
+				<pubDate>Fri, 03 May 2019 14:12:42 +0000</pubDate>
+		<dc:creator><![CDATA[Bruce]]></dc:creator>
+				<category><![CDATA[accessibility  web standards]]></category>
+		<category><![CDATA[reading list]]></category>
+
+		<guid isPermaLink="false">/?p=11358</guid>
+				<description><![CDATA[Gab is forking Brave, and Brave is forking furious &#8211; the Twitter clone for right-wing &#8220;free speech&#8221; zealots &#8220;is creating its own web browser using Brave’s open-source code, scrapping the BAT token, &#038; replacing it with Bitcoin Lightning Network integration.&#8221; Details / Summary Are Not [insert control here] &#8211; wise Uncle Adrian on GitHub&#8217;s mis-use [&#8230;]]]></description>
+								<content:encoded><![CDATA[<ul>
+<li><a href="https://decryptmedia.com/6719/gab-forking-brave">Gab is forking Brave, and Brave is forking furious</a> &#8211; the Twitter clone for right-wing &#8220;free speech&#8221; zealots &#8220;is creating its own web browser using Brave’s open-source code, scrapping the BAT token, &#038; replacing it with Bitcoin Lightning Network integration.&#8221;</li>
+<li><a href="http://adrianroselli.com/2019/04/details-summary-are-not-insert-control-here.html">Details / Summary Are Not [insert control here]</a> &#8211; wise Uncle Adrian on GitHub&#8217;s mis-use of <code>&lt;details&gt;</code> to be a modal dialog</li>
+<li><a href="https://www.smashingmagazine.com/2019/05/display-box-generation/">Digging Into The Display Property: Box Generation</a> &#8211; Auntie Rachel on <code>display:none</code> and <code>display:contents</code>.</li>
+<li><a href="https://wptavern.com/wpcampus-gutenberg-accessibility-audit-finds-significant-and-pervasive-accessibility-problems">WPCampus’ Gutenberg Accessibility Audit Finds “Significant and Pervasive Accessibility Problems”</a> &#8211; &#8220;The audit found that Gutenberg fails to comply with all 30 of the WCAG 2.1 Success Criteria &hellip; Gutenberg has significant and pervasive accessibility problems, the likes of which amount to a step backwards for users with disabilities over the legacy editor.&#8221;</li>
+<li><a href="https://medium.freecodecamp.org/a-guide-to-understanding-css-houdini-with-the-help-of-cartoons-f40af2540093">A guide to understanding CSS Houdini with the help of cartoons</a></li>
+<li><a href="https://webplatform.news/issues/2019-04-29">AMP news roundup: AMP as a service, signed exchanges, Bento, CSS tree shaking</a> &#8211; in case you&#8217;re an AMP-tramp</li>
+<li><a href="https://www.theguardian.com/media/2019/may/01/guardian-breaks-even-helped-by-success-of-supporter-strategy">Guardian breaks even helped by success of supporter strategy</a> &#8211; &#8220;Record online traffic and financial contributions from readers play key part in putting GNM on sustainable path&#8221; &#8211; Encouraging news for those of us who worry about the future of journalism.</li>
+<li><a href="http://blog.chriszacharias.com/a-conspiracy-to-kill-ie6">A Conspiracy To Kill IE6</a> &#8211; &#8220;the story of how, ten years ago, a small team of web developers conspired to kill IE6 from inside YouTube and got away with it.&#8221;</li>
+<li><a href="https://www.newyorker.com/news/news-desk/inside-the-team-at-facebook-that-dealt-with-the-christchurch-shooting">Inside the Team at Facebook That Dealt with the Christchurch Shooting</a> &#8211; &#8220;the Christchurch shooting may demonstrate that, as long as social media exists, some amount of horror is bound to slip through the cracks&#8221;. Fascinating, balanced article.</li>
+</ul>
+]]></content:encoded>
+							<wfw:commentRss>https://www.brucelawson.co.uk/2019/reading-list-230/feed/</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+							</item>
+		<item>
+		<title>Reading List 229</title>
+		<link>https://www.brucelawson.co.uk/2019/reading-list-229/</link>
+				<comments>https://www.brucelawson.co.uk/2019/reading-list-229/#comments</comments>
+				<pubDate>Fri, 26 Apr 2019 12:15:12 +0000</pubDate>
+		<dc:creator><![CDATA[Bruce]]></dc:creator>
+				<category><![CDATA[accessibility  web standards]]></category>
+		<category><![CDATA[reading list]]></category>
+
+		<guid isPermaLink="false">/?p=11347</guid>
+				<description><![CDATA[Link O&#8217; The Week: Art Direction For The Web Using CSS Shapes by Andy Clarke Enriching Search Results Through Structured Data &#8211; SURPRISE! Structured data and semantic markup help SEO. Now with BIZ NUMBERS from Google. With unjustified recommendation to use JSON-LD, which I&#8217;ll blog about when I get more info about why they prefer [&#8230;]]]></description>
+								<content:encoded><![CDATA[<ul>
+<li>Link O&#8217; The Week: <a href="https://www.smashingmagazine.com/2019/04/art-direction-for-the-web-using-css-shapes/">Art Direction For The Web Using CSS Shapes</a> by Andy Clarke</li>
+<li><a href="https://webmasters.googleblog.com/2019/04/enriching-search-results-structured-data.html">Enriching Search Results Through Structured Data</a> &#8211; SURPRISE! Structured data and semantic markup help SEO. Now with BIZ NUMBERS from Google. With unjustified recommendation to use JSON-LD, which I&#8217;ll blog about when I get more info about why they prefer that to HTML5 microdata</li>
+<li><a href="https://www.scottohara.me/blog/2017/04/14/inclusively-hidden.html">Inclusively Hidden</a> &#8211; methods of hiding content and the accessibility impacts of each, newly-updated by Scott O&#8217;Hara</li>
+<li><a href="https://www.w3.org/TR/2019/WD-css-nav-1-20190423/">CSS Spatial Navigation Level 1</a> &#8211; &#8220;a general model for navigating the focus using the arrow keys, as well as related CSS, JavaScript features and Events&#8221;. N.B. Draft spec only.</li>
+<li><a href="https://humanwhocodes.com/blog/2019/01/stop-using-default-exports-javascript-module/">Why I&#8217;ve stopped exporting defaults from my JavaScript modules</a> by Nicholas Zakas</li>
+<li><a href="https://css-tricks.com/accessibility-events/">Accessibility Events</a> &#8211; on the problems Apple&#8217;s choice to detect Assistive Technology use can cause, by Mat Marquis</li>
+<li><a href="https://youtu.be/VqSq4kW3LK4 ">What JavaScript can learn from CSS</a> &#8211; a nice 26 min talk by Jed Watson</li>
+<li><a href="https://component.kitchen/blog/posts/a-history-of-the-html-slot-element">A history of the HTML slot element</a> &#8211; &#8220;illustrates the complexity of producing standards, the importance of talking with people face-to-face, and the value of compromise.&#8221;</li>
+<li><a href="https://www.theregister.co.uk/2019/04/23/hertz_accenture_lawsuit/">Accenture sued over website redesign so bad it Hertz: Car hire biz demands $32m+ for &#8216;defective&#8217; cyber-revamp</a> &#8211; botched website redesign. Not responsive, no design system, poor code, and more.</li>
+<li><a href="https://frontendmasters.com/books/front-end-handbook/2019/">Front-end Developer Handbook 2019</a> &#8211; a really cool resource if you know someone who&#8217;s starting out, or if you need to explain to friends/ family what you do!</li>
+<li><a href="https://internethealthreport.org/2019/taxing-social-media-in-africa/">Taxing social media in Africa</a>  &#8211; governments taxing access to web services makes it even harder for the less well-off to get online.</li>
+<li><a href="https://www.thecagecage.com/">WELCOME TO THE CAGE CAGE</a> &#8211; &#8220;This is a VR simulation of what it&#8217;s like to be trapped in a cage and forced to watch Nic Cage movies.&#8221;</li>
+</ul>
+]]></content:encoded>
+							<wfw:commentRss>https://www.brucelawson.co.uk/2019/reading-list-229/feed/</wfw:commentRss>
+		<slash:comments>2</slash:comments>
+							</item>
+		<item>
+		<title>Reading List 228</title>
+		<link>https://www.brucelawson.co.uk/2019/reading-list-228/</link>
+				<comments>https://www.brucelawson.co.uk/2019/reading-list-228/#respond</comments>
+				<pubDate>Fri, 12 Apr 2019 14:31:43 +0000</pubDate>
+		<dc:creator><![CDATA[Bruce]]></dc:creator>
+				<category><![CDATA[accessibility  web standards]]></category>
+		<category><![CDATA[reading list]]></category>
+
+		<guid isPermaLink="false">/?p=11308</guid>
+				<description><![CDATA[Link O’The Week: Common accessibility issue: moving to a page section without shifting keyboard focus &#8211; and some good tips on testing Split &#8211; &#8220;the split that worries the most is this: The people who make the web vs. the people who are excluded from making the web&#8221; by Jeremy Keith Inline SVG… Cached &#8211; [&#8230;]]]></description>
+								<content:encoded><![CDATA[<ul>
+<li>Link O’The Week: <a href="https://christianheilmann.com/2019/04/09/common-accessibility-issue-moving-to-a-page-section-without-shifting-keyboard-focus/">Common accessibility issue: moving to a page section without shifting keyboard focus</a> &#8211; and some good tips on testing</li>
+<li><a href="https://adactio.com/journal/15050">Split</a> &#8211; &#8220;the split that worries the most is this: The people who make the web vs. the people who are excluded from making the web&#8221; by Jeremy Keith</li>
+<li><a href="https://css-tricks.com/inline-svg-cached/">Inline SVG… Cached</a> &#8211; neat trick from Chris Coyier, building on work by Scott Jehl</li>
+<li><a href="https://broadlygenderphotos.vice.com/">The Gender Spectrum Collection</a> &#8211; &#8220;a stock photo library featuring images of trans and non-binary models that go beyond the clichés&#8221;.</li>
+<li><a href="https://www.theregister.co.uk/2019/04/12/heliumfilled_disk_drives_stored_black_hole_data/">So you&#8217;ve &#8216;seen&#8217; the black hole. Now for the interesting bit – how all that raw data was stored</a></li>
+<li><a href="https://www.aymen-loukil.com/en/blog-en/optimize-content-google-discover/">Optimize your content for Google Discover</a></li>
+<li><a href="https://unlikekinds.com/article/google-amp-page-speed">Google AMP lowered our page speed, and there&#8217;s no choice but to use it</a> &#8211; &#8220;AMP isn’t about speed. It’s about control. AMP is an open source project. That evokes images of open, honest, collaboration amongst equals. But that’s not what’s happening.&#8221;</li>
+<li><a href="https://www.fonearena.com/blog/279829/how-to-enable-dual-sim-feature-on-google-pixel-3-on-android-q.html">How to enable Dual SIM feature on Google Pixel 3 on Android Q Beta</a></li>
+<li><a href="https://www.smashingmagazine.com/2019/04/display-two-value/">Digging Into The Display Property: The Two Values Of Display</a> &#8211; Auntie Rachel explains that CSS is moving into two values for the display property: one defines how an element behaves in the page, the other ow its children behave</li>
+<li><a href="https://chodounsky.net/2019/03/24/progressive-web-application-as-a-share-option-in-android/">Progressive web application as a share option in Android</a> &#8211; &#8220;any Android application can share directly to your web app through the standard native sharing dialog&#8221;</li>
+<li><a href="https://addyosmani.com/blog/lazy-loading/">Native image lazy-loading for the web!</a> &#8211; Chrome-only, so far, but it&#8217;s a progressive enhancement so use it already!</li>
+<li><a href="https://youtu.be/gM_EqpSuodY">How to Work With the Raw HTML for Emails You Receive</a> &#8211; I&#8217;ve had the misfortune to edit some HTML emails lately, and wanted to know how they work. Here&#8217;s a short video that shows how to get and manipulate the source of any HTML mail you receive, to experiment</li>
+<li><a href="https://www.bloomberg.com/news/features/2019-04-02/youtube-executives-ignored-warnings-letting-toxic-videos-run-rampant">YouTube Executives Ignored Warnings, Letting Toxic Videos Run Rampant</a> -&#8220;Proposals to change recommendations and curb conspiracies were sacrificed for engagement, staff say.&#8221;</li>
+<li><a href="https://medium.com/@onutadrian/tailored-design-thinking-and-process-for-at-scale-engagements-87217f9adc07?sk=9e9cf0d030aef0d81d12165555ad8404">Tailored design thinking and process for at scale engagements</a></li>
+<li><a href="https://www.bbc.co.uk/news/uk-47800378">Student jailed for blackmailing porn users worldwide</a> &#8211; he booked ad space on legal porn sites. when user clicked through, unpatched systems were infected with ransomware. He shifted more than £4M through crypto-currency platforms.</li>
+<li><a href="https://shanehudson.net/2019/04/09/clowns-jokers-and-echo-chambers">Clowns, Jokers, and Echo Chambers</a> by Shane Hudson</li>
+<li><a hef="https://www.washingtonpost.com/technology/2019/04/10/tracking-your-pregnancy-an-app-may-be-more-public-than-you-think/">Is your pregnancy app sharing your intimate data with your boss?</a> &#8211; &#8220;As apps to help moms monitor their health proliferate, employers and insurers pay to keep tabs on the vast and valuable data&#8221;</li>
+<li><a href="https://www.theguardian.com/news/2019/apr/11/china-hi-tech-war-on-muslim-minority-xinjiang-uighurs-surveillance-face-recognition">China’s hi-tech war on its Muslim minority</a> &#8211; &#8220;Smartphones and the internet gave the Uighurs a sense of their own identity – but now the Chinese state is using technology to strip them of it&#8221;. An awful story.</li>
+</ul>
+]]></content:encoded>
+							<wfw:commentRss>https://www.brucelawson.co.uk/2019/reading-list-228/feed/</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+							</item>
+		<item>
+		<title>Reading List 227</title>
+		<link>https://www.brucelawson.co.uk/2019/reading-list-227/</link>
+				<comments>https://www.brucelawson.co.uk/2019/reading-list-227/#respond</comments>
+				<pubDate>Fri, 29 Mar 2019 15:03:38 +0000</pubDate>
+		<dc:creator><![CDATA[Bruce]]></dc:creator>
+				<category><![CDATA[accessibility  web standards]]></category>
+		<category><![CDATA[reading list]]></category>
+
+		<guid isPermaLink="false">/?p=11298</guid>
+				<description><![CDATA[Planning for Responsive Images with some magical CSS Grid What’s new on iOS 12.2 for Progressive Web Apps by Maximiliano Firtman Bit, a distributed virtual component repository for projects built in a modular way (open source) Standardizing WASI: A system interface to run WebAssembly outside the web by Lin Clark HTTP State Tokens &#8211; draft [&#8230;]]]></description>
+								<content:encoded><![CDATA[<ul>
+<li><a href="https://css-tricks.com/planning-for-responsive-images/">Planning for Responsive Images</a> with some magical CSS Grid</li>
+<li><a href="https://medium.com/@firt/whats-new-on-ios-12-2-for-progressive-web-apps-75c348f8e945">What’s new on iOS 12.2 for Progressive Web Apps</a> by Maximiliano Firtman</li>
+<li><a href="https://bit.dev/">Bit</a>, a distributed virtual component repository for projects built in a modular way (open source)</li>
+<li><a href="https://hacks.mozilla.org/2019/03/standardizing-wasi-a-webassembly-system-interface/">Standardizing WASI: A system interface to run WebAssembly outside the web</a> by Lin Clark
+</li>
+<li><a href="https://mikewest.github.io/http-state-tokens/draft-west-http-state-tokens.html">HTTP State Tokens</a> &#8211; draft spec by Mike West (Google) on a mechanism for&#8221;better cookies&#8221;</li>
+<li><a href="https://arstechnica.com/gadgets/2019/03/google-brings-amp-to-email-turning-your-inbox-into-an-app/?comments=1">HTML email reborn, as Google brings AMP to your inbox</a> -&#8220;With AMP embeds, email can now contain rich interactivity, not just text and pictures&#8221;. Whoop-de-fucking-doo.</li>
+<li><a href="https://www.bbc.co.uk/news/business-47735043">Grindr &#8216;up for sale on security grounds&#8217;</a> &#8211; &#8220;US authorities expressed concern that [Kunlun Group] the firm&#8217;s ownership of the US-based firm is a national security risk&#8221;. Kunlun is the leading partner in the consortium that own Opera browsers.</li>
+<li><a href="https://htmlparser.info/">Idiosyncracies of the HTML parser</a>  &#8211; a fabulously geeky book by Simon Pieters</li>
+<li><a href="http://aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa.com/">aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa.com</a> &#8211; a useful URL lengthener</li>
+</ul>
+]]></content:encoded>
+							<wfw:commentRss>https://www.brucelawson.co.uk/2019/reading-list-227/feed/</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+							</item>
+	</channel>
+</rss>
