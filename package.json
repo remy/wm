@@ -24,5 +24,8 @@
     "get-webmention-url": "^2.0.0",
     "node-fetch": "^2.6.0",
     "rss-parser": "^3.7.0"
+  },
+  "devDependencies": {
+    "@now/node": "^0.7.3"
   }
 }
