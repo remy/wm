@@ -1,7 +1,7 @@
 {
   "name": "@remy/wm",
   "version": "1.0.0",
-  "description": "Web Mentions microservice sender",
+  "description": "Web Mentions sender",
   "main": "index.js",
   "bin": {
     "wm": "./bin/wm.js"
@@ -18,14 +18,17 @@
   "license": "MIT",
   "dependencies": {
     "cheerio": "^1.0.0-rc.3",
-    "concat-stream": "^2.0.0",
-    "debug": "^4.1.1",
+    "clui": "^0.3.6",
     "follow-redirects": "^1.7.0",
     "get-webmention-url": "^2.0.0",
     "node-fetch": "^2.6.0",
+    "optimist": "^0.6.1",
     "rss-parser": "^3.7.0"
   },
   "devDependencies": {
-    "@now/node": "^0.7.3"
+    "@now/build-utils": "0.5.5-canary.1",
+    "micro": "^9.3.4",
+    "micro-dev": "^3.0.0",
+    "serve-handler": "^6.0.0"
   }
 }

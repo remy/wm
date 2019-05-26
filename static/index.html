@@ -1,67 +1,49 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>webmention check</title>
-  <style>
-    body {
-      margin: 0 auto;
-      max-width: 720px;
-      font-size: 20px;
-      line-height: 1.6;
-      padding: 40px;
-      font-family: 'SFMono-Regular', Consolas, 'Liberation Mono', Menlo, Courier,
-    monospace;
-    background: #fefefe;
-    color: #212121;
-    }
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>WebMention check</title>
+    <link async href="https://fonts.googleapis.com/css?family=Rubik" rel="stylesheet">
+    <link rel="stylesheet" href="/static/style.css">
+  </head>
+  <body>
+    <main>
+      <div id="app" class="flex-grow">
+        <div class="flex">
+          <h1>webmention.app</h1>
+          <div class="flex-grow">
+            <p>This is a micro service and command line utility that will check a given URL for links to other sites, discover if those links support webmentions and will send a webmention POST to the target.</p>
 
-    a {
-      color: black;
-      text-decoration: none;
-    }
+            <p>The <abbr title="cross origin resource sharing">CORS</abbr> supported API is simplistic:</p>
 
-    a:before {
-      content: '[';
-    }
-
-    a:after {
-      content: '](' attr(href) ')';
-    }
-
-    a:hover {
-      text-decoration: underline;
-    }
-
-    ul {
-      list-style: none;
-    }
-
-    li {
-      margin: 24px 0;
-    }
-
-    li:before {
-      content: '- ';
-      margin-left: -20px;
-    }
-  </style>
-</head>
-<body>
-
-<p>This is a micro service that will check a given URL for links to other sites,
-discover if those links support webmentions and will send a webmention POST
-to the target.
-
-<p>The API is simplistic for now:
-
-<ul><li>https://wm.isthe.link/check/:url - performs a dry run, showing what will be sent
-<li>https://wm.isthe.link/check/:url&send=1 - sends the webmention requests</ul>
-
-<p>Please note: the current host URL is temporary for the short term.
-
-<p><a href="https://github.com/remy/wm">Source</a>
-
-<p>Built by <a href="https://remysharp.com">@rem</a>
+            <ul><li>https://webmention.app/check/:url<br>Perform a dry run, discovering all links and valid Webmention endpoints</li>
+            <li>https://webmention.app/check/:url&send=1<br>Sends the full webmention requests</li></ul>
+          </div>
+          <div>
+            <hr>
+            <h3>Scan a website</h3>
+            <form @submit="findMentions">
+              <div class="flex-fields">
+                <label class="label" for="url">URL:</label>
+                <input v-model="url" type="url" id="url">
+                <button type="submit" v-bind:class="{ loading: loading, btn: true }">Start</button>
+              </div>
+            </form>
+            <ol id="mentions">
+              <li v-for="mention in mentions">
+                <span>source=</span><a v-bind:href="mention.source">{{ mention.source }}</a><br>
+                <span>target=</span><a v-bind:href="mention.target">{{ mention.target }}</a>
+              </li>
+            </ol>
+          </div>
+          <footer>
+            <p>Built by <a href="https://remysharp.com">@rem</a> <span class="sep">//</span> <a href="https://github.com/remy/wm">Source</a></p>
+          </footer>
+        </div>
+    </main>
+    <script src="/static/vue.js"></script>
+    <script src="/static/check.js"></script>
+  </body>
+</html>

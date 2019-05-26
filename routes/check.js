@@ -6,7 +6,7 @@ module.exports = async (req, res) => {
   let { url, send = false } = qs(req);
 
   if (!url) {
-    res.writeHead(500);
+    // res.writeHead(500);
     return res.end('Bad request');
   }
 

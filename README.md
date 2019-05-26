@@ -2,8 +2,8 @@ This is a micro service that will check a given URL for links to other sites, di
 
 The API is simplistic for now:
 
-- https://wm.isthe.link/check/:url - performs a dry run, showing what will be sent
-- https://wm.isthe.link/check/:url&send=1 - sends the webmention requests
+- https://webmention.app/check/:url - performs a dry run, showing what will be sent
+- https://webmention.app/check/:url&send=1 - sends the webmention requests
 
 Please note: the current host URL is temporary for the short term.
 

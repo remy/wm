@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "alias": "wm.isthe.link",
+  "alias": "webmention.app",
   "routes": [
     {
       "src": "/check/(.*)",
@@ -17,6 +17,6 @@
   ],
   "builds": [
     { "src": "/routes/*.js", "use": "@now/node" },
-    { "src": "/static/index.html", "use": "@now/static" }
+    { "src": "/static/*", "use": "@now/static" }
   ]
 }

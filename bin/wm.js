@@ -1,41 +1,23 @@
 #!/usr/bin/env node
-// const source = require('fs')
-//   .readFileSync(process.argv[2])
-//   .toString();
-const url = process.argv[2]; // OR?
+const opts = require('optimist')
+  .usage('Parse and send WebMentions\n\n$0 <url|file>')
+  .default('limit', 10)
+  .default('send', false);
 
-const links = require('../lib/links');
-const getEndpoints = require('../lib/get-wm-endpoints');
+const argv = opts.argv;
 
-async function main() {
-  const host = url;
-  const ignoreOwn = url => {
-    if (url.includes(host) || url.includes(host + '/')) {
-      return false;
-    }
-    return true;
-  };
-
-  const urls = await Promise.all(
-    (await links.get(url)).map(async ({ permalink, links }) => {
-      const endpoints = await getEndpoints(links.filter(ignoreOwn));
-
-      if (endpoints.length === 0) return false;
-
-      // this is a bit confusing…maybe refactor?
-      return endpoints.map(({ url: target, endpoint }) => {
-        return {
-          endpoint,
-          source: permalink,
-          target,
-        };
-      });
-    })
-  );
-
-  return [].concat(...urls.filter(Boolean));
+if (argv._.length == 0) {
+  opts.showHelp();
+  process.exit(1);
 }
 
-main()
-  .then(res => console.log(JSON.stringify(res, 0, 2)))
-  .catch(e => console.log(e));
+const existsSync = require('fs').existsSync;
+const target = argv._[0]; // OR?
+const load = require('../lib/get-links-from-url');
+
+if (existsSync(target)) {
+} else {
+  load(target)
+    .then(res => console.log(JSON.stringify(res, 0, 2)))
+    .catch(e => console.log(e));
+}
