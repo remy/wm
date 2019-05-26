@@ -6,9 +6,13 @@ module.exports = async (request, response) => {
 };
 
 module.exports = (req, res) => {
+  console.log(req.url);
+
   if (req.url.startsWith('/check')) {
-    const [a, b] = req.url.split('/check/');
-    req.url = a + '/check?url=' + b;
+    if (!req.url.includes('?')) {
+      const [a, b] = req.url.split('/check/');
+      req.url = a + '/check?url=' + b;
+    }
     return check(req, res);
   }
 

@@ -6,6 +6,8 @@
   line-height: 32px;
 }
 
+[v-cloak] { display: none; }
+
 pre,
 code {
   font-family: 'Ubuntu mono', 'SFMono-Regular', Consolas, 'Liberation Mono',
@@ -109,7 +111,8 @@ footer * {
 
 html,
 body,
-#__next {
+#__nuxt,
+#__layout {
   min-height: 100%;
   height: 100%;
   margin: 0;
@@ -267,8 +270,8 @@ details > div {
   transform: fill 500ms ease-out;
 }
 
-a:hover .logo-accent {
-  fill: hsl(308, 100%, 66%);
+li span {
+  color: #616161;
 }
 
 details strong {
@@ -393,4 +396,22 @@ li {
   display: flex;
   flex-direction: column;
   min-height: 100%;
+}
+
+footer ul {
+  list-style: none;
+  padding: 0;
+  margin: 20px 0;
+  display: flex;
+}
+
+footer li:after {
+  content: ' // ';
+  margin: 0 16px;
+  color: #9e9e9e;
+  display: inline-block;
+}
+
+footer li:last-child:after {
+  content: none;
 }

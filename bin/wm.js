@@ -1,6 +1,6 @@
 #!/usr/bin/env node
 const opts = require('optimist')
-  .usage('Parse and send WebMentions\n\n$0 <url|file>')
+  .usage('Parse and send webmentions\n\n$0 <url|file>')
   .default('limit', 10)
   .default('send', false);
 

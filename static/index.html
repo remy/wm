@@ -15,32 +15,40 @@
         <div class="flex">
           <h1>webmention.app</h1>
           <div class="flex-grow">
+
             <p>This is a micro service and command line utility that will check a given URL for links to other sites, discover if those links support webmentions and will send a webmention POST to the target.</p>
 
             <p>The <abbr title="cross origin resource sharing">CORS</abbr> supported API is simplistic:</p>
 
-            <ul><li>https://webmention.app/check/:url<br>Perform a dry run, discovering all links and valid Webmention endpoints</li>
-            <li>https://webmention.app/check/:url&send=1<br>Sends the full webmention requests</li></ul>
+            <ul><li>https://webmention.app/check/:url<br><span>Perform a dry run, discovering all links and valid Webmention endpoints</span></li>
+            <li>https://webmention.app/check/:url&send=1<br><span>Sends the full webmention requests</span></li></ul>
+
+            <p>📘 <a href="/docs">Documentation</a></p>
           </div>
           <div>
             <hr>
-            <h3>Scan a website</h3>
-            <form @submit="findMentions">
+            <h3>Scan a website or blog post</h3>
+            <form @submit="findMentions" method="GET" action="/check">
               <div class="flex-fields">
                 <label class="label" for="url">URL:</label>
-                <input v-model="url" type="url" id="url">
-                <button type="submit" v-bind:class="{ loading: loading, btn: true }">Start</button>
+                <input v-model="url" name="url" type="url" id="url">
+                <button type="submit" class="btn" v-bind:class="{ loading: loading, btn: true }">Start</button>
               </div>
             </form>
-            <ol id="mentions">
+            <ol v-cloak id="mentions">
               <li v-for="mention in mentions">
                 <span>source=</span><a v-bind:href="mention.source">{{ mention.source }}</a><br>
                 <span>target=</span><a v-bind:href="mention.target">{{ mention.target }}</a>
               </li>
             </ol>
+
           </div>
           <footer>
-            <p>Built by <a href="https://remysharp.com">@rem</a> <span class="sep">//</span> <a href="https://github.com/remy/wm">Source</a></p>
+            <ul>
+              <li>Built by <a href="https://remysharp.com">@rem</a></li>
+              <li><a href="/about">About</a></li>
+              <li><a href="https://github.com/remy/wm">Source on Github</a></li>
+            </ul>
           </footer>
         </div>
     </main>
