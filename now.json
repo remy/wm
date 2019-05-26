@@ -12,7 +12,11 @@
     },
     {
       "src": "/(.*)",
-      "dest": "/static/$1"
+      "dest": "/static/$1.html"
+    },
+    {
+      "src": "/",
+      "dest": "/static/index.html"
     }
   ],
   "builds": [
