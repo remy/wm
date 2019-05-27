@@ -18,11 +18,13 @@
   "author": "Remy Sharp (https://remysharp.com)",
   "license": "MIT",
   "dependencies": {
+    "@mdx-js/vue-loader": "^1.0.20",
     "cheerio": "^1.0.0-rc.3",
     "clui": "^0.3.6",
     "follow-redirects": "^1.7.0",
     "get-webmention-url": "^2.0.0",
     "node-fetch": "^2.6.0",
+    "nuxt": "^2.7.1",
     "optimist": "^0.6.1",
     "rss-parser": "^3.7.0"
   },

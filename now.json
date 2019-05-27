@@ -5,7 +5,7 @@
     {
       "src": "/check/(.*)",
       "dest": "/routes/check.js?url=$1",
-      "methods": ["GET"],
+      "methods": ["GET", "POST"],
       "headers": {
         "Access-Control-Allow-Origin": "*"
       }

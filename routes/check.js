@@ -1,9 +1,9 @@
 const qs = require('../lib/query-string');
-const load = require('../lib/get-links-from-url');
+const load = require('../lib/get-webmentions');
 const wmSend = require('../lib/send');
 
 module.exports = async (req, res) => {
-  let { url, send = false } = qs(req);
+  let { url } = qs(req);
 
   if (!url) {
     // res.writeHead(500);
@@ -18,7 +18,7 @@ module.exports = async (req, res) => {
 
   const urls = await load(url);
 
-  if (send) {
+  if (req.method === 'post') {
     return Promise.all(urls.map(wmSend)).then(reply => {
       res.end(JSON.stringify(reply));
     });
