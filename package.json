@@ -1,24 +1,22 @@
 {
-  "name": "@remy/wm",
+  "name": "@remy/webmention",
   "version": "1.0.0",
   "description": "Web Mentions sender",
-  "main": "index.js",
+  "main": "./lib/webmention.js",
   "bin": {
-    "wm": "./bin/wm.js"
+    "wm": "./bin/wm.js",
+    "webmention": "./bin/wm.js"
   },
   "scripts": {
-    "update": "node lib/generate-data.js",
-    "dev": "nuxt"
+    "update": "node lib/generate-data.js"
   },
   "engines": {
     "node": "^8.3.x"
   },
-  "type": "module",
   "keywords": [],
   "author": "Remy Sharp (https://remysharp.com)",
   "license": "MIT",
   "dependencies": {
-    "@mdx-js/vue-loader": "^1.0.20",
     "cheerio": "^1.0.0-rc.3",
     "clui": "^0.3.6",
     "follow-redirects": "^1.7.0",
@@ -29,7 +27,6 @@
     "rss-parser": "^3.7.0"
   },
   "devDependencies": {
-    "@now/build-utils": "0.5.5-canary.1",
     "micro": "^9.3.4",
     "micro-dev": "^3.0.0",
     "serve-handler": "^6.0.0"

@@ -1,6 +1,6 @@
 #!/usr/bin/env node
 const opts = require('optimist')
-  .usage('Parse and send webmentions\n\n$0 <url|file>')
+  .usage('Parse, discover and send webmentions\n\n$0 <url|file>')
   .default('limit', 10)
   .default('send', false);
 
@@ -11,22 +11,52 @@ if (argv._.length == 0) {
   process.exit(1);
 }
 
+const ui = require('clui');
+
+var Progress = ui.Progress;
+
+const progressBar = new Progress(20);
 const existsSync = require('fs').existsSync;
 const readFileSync = require('fs').readFileSync;
-const target = argv._[0]; // OR?
-const load = require('../lib/get-webmentions');
+const target = argv._[0];
+const Webmention = require('../lib/webmention');
+
+const { limit } = argv;
+const wm = new Webmention({ limit });
+
+let todo = 0;
+let done = 0;
+
+wm.on('error', e => console.log(e));
+wm.on('progress', e => {
+  const [[key, value]] = Object.entries(e);
+
+  if (key === 'endpoints') {
+    todo = value;
+  }
+
+  if (key === 'endpoints-resolved') {
+    done = value;
+  }
+
+  process.stdout.clearLine();
+  process.stdout.cursorTo(0);
+  process.stdout.write(progressBar.update(done, todo));
+});
+// wm.on('log', e => console.log(e));
+wm.on('end', res => {
+  process.stdout.clearLine();
+  process.stdout.cursorTo(0);
+
+  res.map(res => {
+    console.log('source= ' + res.source);
+    console.log('target= ' + res.target);
+    console.log('');
+  });
+});
 
 if (existsSync(target)) {
-  const p = require('../lib/links').getFromContent(
-    readFileSync(argv._[0], 'utf8'),
-    null,
-    argv.limit
-  );
-  load(null, argv.limit, p)
-    .then(res => console.log(JSON.stringify(res, 0, 2)))
-    .catch(e => console.log(e));
+  wm.load(readFileSync(argv._[0], 'utf8'));
 } else {
-  load(target, argv.limit)
-    .then(res => console.log(JSON.stringify(res, 0, 2)))
-    .catch(e => console.log(e));
+  wm.fetch(target);
 }

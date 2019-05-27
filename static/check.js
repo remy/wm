@@ -6,6 +6,7 @@ var app = new Vue({
     mentions: [],
     url: '',
     loading: false,
+    hasResult: false,
   },
   methods: {
     async findMentions(event) {
@@ -15,6 +16,7 @@ var app = new Vue({
       const json = await res.json();
       this.mentions = json;
       this.loading = false;
+      this.hasResult = true;
     },
   },
 });

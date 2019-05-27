@@ -27,6 +27,10 @@ h2 {
   /* overflow: hidden; */
 }
 
+#docs h2 {
+  text-align: left;
+}
+
 h3 {
   margin: 16px 0;
 }
@@ -46,9 +50,9 @@ strong {
 
 pre {
   overflow: scroll;
-  /* border: 1px solid #ccc; */
-  /* padding: 1rem; */
-  /* padding-right: 2rem; */
+  border-left: 4px solid #ccc;
+  padding: 16px;
+  padding-right: 32px;
 }
 
 pre code {
@@ -56,6 +60,8 @@ pre code {
 }
 
 pre .prompt {
+  font-family: inherit;
+  font-size: inherit;
   user-select: none;
   opacity: 0.5;
 }
@@ -323,6 +329,10 @@ details div:last-child pre {
   transition: background-color 100ms ease-out, color 100ms ease-out;
 }
 
+:disabled {
+  cursor: wait;
+}
+
 .btn.loading {
   transition: opacity 0.3s ease;
   background-size: 30px 30px;
@@ -414,4 +424,10 @@ footer li:after {
 
 footer li:last-child:after {
   content: none;
+}
+
+.cta {
+  background: #03A9F4;
+  margin: 0 auto;
+  display: block;
 }

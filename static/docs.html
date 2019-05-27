@@ -9,13 +9,21 @@
     <link async href="https://fonts.googleapis.com/css?family=Rubik" rel="stylesheet">
     <link rel="stylesheet" href="/static/style.css">
   </head>
-  <body>
+  <body id="docs">
     <main>
       <div id="app" class="flex-grow">
         <div class="flex">
           <div class="flex-grow">
             <h1>Documentation</h1>
-            <p>Bad I know, but TODO and coming v.soon.</p>
+            <h2>Platform agnostic webmentions</h2>
+            <h2>How to check for webmentions</h2>
+            <h2>How to send webmentions automatically</h2>
+            <h2>Using the command line</h2>
+            <p>The command line doesn't rely on https://webmention.app at all - so you can run it locally with the knowledge that if your site outlives this one, the tool will stil work.</p>
+            <p>The tool uses <a href="https://nodejs.com">nodejs</a> and is installed using:</p>
+            <pre><code><span class="prompt">$ </span>npm install -g @remy/webmention</code></pre>
+            <p>This a global executable under the command <code>webmention</code> (also available as <code>wm</code>). Default usage allows you to pass a file (like a newly generated RSS feed) or a specific URL. It will default to the 10 most recent entries found (using <code>item</code> for RSS and <code>h-entry</code> for HTML).</p>
+
           </div>
           <footer>
             <ul>
