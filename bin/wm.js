@@ -1,4 +1,5 @@
 #!/usr/bin/env node
+/* eslint-disable node/no-unpublished-bin */
 const opts = require('optimist')
   .usage('Parse, discover and send webmentions\n\n$0 <url|file>')
   .default('limit', 10)
@@ -39,14 +40,18 @@ wm.on('progress', e => {
     done = value;
   }
 
-  process.stdout.clearLine();
-  process.stdout.cursorTo(0);
-  process.stdout.write(progressBar.update(done, todo));
+  if (process.stdout.isTTY) {
+    process.stdout.clearLine();
+    process.stdout.cursorTo(0);
+    process.stdout.write(progressBar.update(done, todo));
+  }
 });
 // wm.on('log', e => console.log(e));
 wm.on('end', res => {
-  process.stdout.clearLine();
-  process.stdout.cursorTo(0);
+  if (process.stdout.isTTY) {
+    process.stdout.clearLine();
+    process.stdout.cursorTo(0);
+  }
 
   res.map(res => {
     console.log('source= ' + res.source);

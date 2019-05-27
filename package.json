@@ -1,12 +1,17 @@
 {
   "name": "@remy/webmention",
-  "version": "1.0.0",
+  "version": "1.0.2",
   "description": "Web Mentions sender",
   "main": "./lib/webmention.js",
   "bin": {
     "wm": "./bin/wm.js",
     "webmention": "./bin/wm.js"
   },
+  "files": [
+    "lib/**/*",
+    "bin/wm.js",
+    "generated/*"
+  ],
   "scripts": {
     "update": "node lib/generate-data.js"
   },
@@ -22,7 +27,6 @@
     "follow-redirects": "^1.7.0",
     "get-webmention-url": "^2.0.0",
     "node-fetch": "^2.6.0",
-    "nuxt": "^2.7.1",
     "optimist": "^0.6.1",
     "rss-parser": "^3.7.0"
   },
