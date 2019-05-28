@@ -11,20 +11,18 @@
       }
     },
     {
-      "src": "/static/(.*)",
-      "dest": "/static/$1"
+      "methods": ["GET"],
+      "src": "^/",
+      "dest": "/dist/index.html"
     },
     {
-      "src": "/",
-      "dest": "/static/index.html"
-    },
-    {
-      "src": "/(.*)",
-      "dest": "/static/$1.html"
+      "methods": ["GET"],
+      "src": "^/(.*)",
+      "dest": "/dist/$1"
     }
   ],
   "builds": [
     { "src": "/routes/*.js", "use": "@now/node" },
-    { "src": "/static/*", "use": "@now/static" }
+    { "src": "/dist/*", "use": "@now/static" }
   ]
 }

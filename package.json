@@ -13,7 +13,9 @@
     "generated/*"
   ],
   "scripts": {
-    "update": "node lib/generate-data.js"
+    "update": "node lib/generate-data.js",
+    "dev": "nuxt",
+    "build": "nuxt generate"
   },
   "engines": {
     "node": "^8.3.x"
@@ -31,8 +33,7 @@
     "rss-parser": "^3.7.0"
   },
   "devDependencies": {
-    "micro": "^9.3.4",
-    "micro-dev": "^3.0.0",
-    "serve-handler": "^6.0.0"
+    "@nuxtjs/markdownit": "^1.2.4",
+    "nuxt": "^2.7.1"
   }
 }
