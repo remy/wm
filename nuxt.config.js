@@ -20,13 +20,18 @@ module.exports = {
   modules: ['@nuxtjs/markdownit'],
   plugins: ['~/plugins/md-it'],
 
+  markdownit: {
+    preset: 'default',
+    linkify: true,
+    html: true,
+    use: ['markdown-it-task-lists'],
+  },
+
+  devtools: true,
   /*
    ** Build configuration
    */
   build: {
-    /*
-     ** You can extend webpack config here
-     */
     extend(config, ctx) {},
   },
 };

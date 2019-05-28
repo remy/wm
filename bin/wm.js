@@ -3,6 +3,7 @@
 const opts = require('optimist')
   .usage('Parse, discover and send webmentions\n\n$0 <url|file>')
   .default('limit', 10)
+  .default('verbose', false)
   .default('send', false);
 
 const argv = opts.argv;
@@ -22,7 +23,7 @@ const readFileSync = require('fs').readFileSync;
 const target = argv._[0];
 const Webmention = require('../lib/webmention');
 
-const { limit } = argv;
+const { limit, verbose } = argv;
 const wm = new Webmention({ limit });
 
 let todo = 0;
@@ -40,17 +41,25 @@ wm.on('progress', e => {
     done = value;
   }
 
-  if (process.stdout.isTTY) {
+  if (!verbose && process.stdout.isTTY) {
     process.stdout.clearLine();
     process.stdout.cursorTo(0);
     process.stdout.write(progressBar.update(done, todo));
   }
+
+  if (verbose) {
+    console.log('%s = %s', key, value, JSON.stringify(e.data));
+  }
 });
-// wm.on('log', e => console.log(e));
+if (verbose) wm.on('log', e => console.log(e));
 wm.on('end', res => {
   if (process.stdout.isTTY) {
     process.stdout.clearLine();
     process.stdout.cursorTo(0);
+  }
+
+  if (verbose && res.length === 0) {
+    console.log('- no webmentions found');
   }
 
   res.map(res => {

@@ -4,7 +4,7 @@
     <div class="flex-grow">
       <p>This is a micro service that will check a given URL for links to other sites, discover if those links support webmentions and will send a webmention POST to the target.</p>
 
-      <p>The supported API is simplistic:</p>
+      <p>The API is reasonably simplistic:</p>
 
       <ul>
         <li>
@@ -19,7 +19,10 @@
         </li>
       </ul>
 
-      <p>📘 Documentation coming v. soon.</p>
+      <p>
+        📘
+        <n-link to="/docs">Documentation &amp; usage</n-link>
+      </p>
     </div>
     <div>
       <hr>

@@ -37,6 +37,7 @@
   },
   "devDependencies": {
     "@nuxtjs/markdownit": "^1.2.4",
+    "markdown-it-task-lists": "^2.1.1",
     "nuxt": "^2.7.1"
   }
 }

@@ -2,7 +2,7 @@
   <form @submit="findMentions" method="GET" action="/check">
     <div class="flex-fields">
       <label class="label" for="url">URL:</label>
-      <input v-model="url" name="url" type="url" id="url">
+      <input v-model="url" name="url" type="text" id="url">
       <button
         type="submit"
         class="btn"
