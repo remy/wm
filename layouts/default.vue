@@ -42,7 +42,6 @@ export default {
         href: "https://fonts.googleapis.com/css?family=Rubik",
         rel: "stylesheet"
       },
-      { href: "/style.css", as: "style", rel: "preload" },
       { href: "/style.css", rel: "stylesheet" }
     ]
     // script: [{ defer: true, async: true, src: "/check.js" }]
