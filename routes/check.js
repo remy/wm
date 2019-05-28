@@ -1,5 +1,5 @@
 const qs = require('../lib/query-string');
-const load = require('../lib/get-webmentions');
+const Webmention = require('../lib/webmention');
 const send = require('../lib/send');
 
 module.exports = async (req, res) => {
@@ -16,13 +16,25 @@ module.exports = async (req, res) => {
 
   console.log('>> ' + url);
 
-  const urls = await load(url);
+  const wm = new Webmention();
+  wm.on('error', e => {
+    res.end(JSON.stringify({ error: true, message: e.message }));
+  });
+  wm.on('end', urls => {
+    if (req.method === 'post') {
+      return Promise.all(urls.map(send)).then(reply => {
+        res.end(JSON.stringify(reply));
+      });
+    }
 
-  if (req.method === 'post') {
-    return Promise.all(urls.map(send)).then(reply => {
-      res.end(JSON.stringify(reply));
-    });
-  }
+    res.end(JSON.stringify(urls));
+  });
 
-  res.end(JSON.stringify(urls));
+  wm.fetch(url);
 };
+
+if (!module.parent) {
+  require('http')
+    .createServer(module.exports)
+    .listen(3000);
+}

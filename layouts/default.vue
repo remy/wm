@@ -8,27 +8,18 @@
     </div>
 
     <footer>
-      <ul>
-        <li>
-          Built by
-          <a href="https://remysharp.com">@rem</a>
-        </li>
-        <li>
-          <n-link to="/about">About</n-link>
-        </li>
-        <li>
-          <a href="https://github.com/remy/wm">Source on Github</a>
-        </li>
-      </ul>
+      <Footer/>
     </footer>
   </main>
 </template>
 
 <script>
 import Navigation from "../components/Navigation";
+import Footer from "../components/Footer";
 export default {
   components: {
-    Navigation
+    Navigation,
+    Footer
   },
   head: {
     title: "webmention.app",

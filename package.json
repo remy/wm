@@ -1,6 +1,6 @@
 {
   "name": "@remy/webmention",
-  "version": "1.0.2",
+  "version": "1.0.4",
   "description": "Web Mentions sender",
   "main": "./lib/webmention.js",
   "bin": {
@@ -23,7 +23,11 @@
   "engines": {
     "node": "^8.3.x"
   },
-  "keywords": [],
+  "keywords": [
+    "webmention",
+    "webmentions",
+    "indieweb"
+  ],
   "author": "Remy Sharp (https://remysharp.com)",
   "license": "MIT",
   "dependencies": {

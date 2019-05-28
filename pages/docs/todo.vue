@@ -7,6 +7,8 @@
 - [ ] Provide `require('@remy/webmention')` support
 - [ ] More docs?!
 
+[Please help and contribute with pull requests ❤️](https://github.com/remy/wm)
+
 </template>
 
 <script>

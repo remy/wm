@@ -370,8 +370,8 @@ details div:last-child pre {
   color: rgb(66, 66, 66);
 }
 
-input[type="text"],
-input[type="url"] {
+input[type='text'],
+input[type='url'] {
   width: 100%;
   border-radius: 4px;
   border: 1px solid #ccc;
@@ -453,4 +453,9 @@ footer li:last-child:after {
 #navigation .logo a span {
   font-size: 12px;
   line-height: 14px;
+}
+
+.contains-task-list {
+  list-style: none;
+  padding: 0;
 }

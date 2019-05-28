@@ -10,15 +10,24 @@
         v-bind:class="{ loading: loading, btn: true }"
       >Start</button>
     </div>
-    <ol v-cloak id="mentions">
-      <li v-bind:key="mention.target" v-for="mention in mentions">
-        <span>source=</span>
-        <a v-bind:href="mention.source">{{ mention.source }}</a>
-        <br>
-        <span>target=</span>
-        <a v-bind:href="mention.target">{{ mention.target }}</a>
-      </li>
-    </ol>
+    <div v-cloak>
+      <p v-if="hasResult">
+        <strong>{{ mentions.length === 0 ? 'No' : mentions.length }} webmentions found.</strong>
+      </p>
+
+      <ol id="mentions">
+        <li v-bind:key="mention.target" v-for="mention in mentions">
+          <span>source=</span>
+          <a v-bind:href="mention.source">{{ mention.source }}</a>
+          <br>
+          <span>target=</span>
+          <a v-bind:href="mention.target">{{ mention.target }}</a>
+        </li>
+      </ol>
+      <p v-if="hasResult & mentions.length">
+        <button :click="sendMentions" class="btn cta">Send all webmentions</button>
+      </p>
+    </div>
   </form>
 </template>
 
@@ -28,16 +37,25 @@ export default {
   data: () => ({
     url: "",
     loading: false,
-    mentions: []
+    mentions: [],
+    hasResult: false
   }),
   methods: {
+    async sendMentions(event) {
+      event.preventDefault();
+      const res = await fetch("https://webmention.app/check/" + this.url, {
+        mehod: "post"
+      });
+    },
     async findMentions(event) {
       event.preventDefault();
       this.loading = true;
-      const res = await fetch("/check/" + this.url);
+      this.hasResult = false;
+      const res = await fetch("https://webmention.app/check/" + this.url);
       const json = await res.json();
       this.mentions = json;
       this.loading = false;
+      this.hasResult = true;
     }
   }
 };

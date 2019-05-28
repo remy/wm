@@ -1,12 +1,23 @@
 #!/usr/bin/env node
 /* eslint-disable node/no-unpublished-bin */
+const pkg = require('../package.json');
 const opts = require('optimist')
-  .usage('Parse, discover and send webmentions\n\n$0 <url|file>')
+  .usage(
+    'Parse, discover and send webmentions\n\n$0 <url|file>\nVersion: ' +
+      pkg.version
+  )
   .default('limit', 10)
+  .boolean('version')
+  .describe('version')
   .default('verbose', false)
   .default('send', false);
 
 const argv = opts.argv;
+
+if (argv.version) {
+  console.log(pkg.version);
+  process.exit(0);
+}
 
 if (argv._.length == 0) {
   opts.showHelp();
