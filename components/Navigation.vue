@@ -7,7 +7,7 @@
         </n-link>
       </li>
       <li>
-        <n-link to="/check">Check</n-link>
+        <n-link to="/check">Check a URL</n-link>
       </li>
       <li>
         <n-link to="/docs">Docs</n-link>

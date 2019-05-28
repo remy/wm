@@ -15,7 +15,10 @@
   "scripts": {
     "update": "node lib/generate-data.js",
     "dev": "nuxt",
-    "build": "nuxt generate"
+    "deploy": "npm run build && now --target production",
+    "build": "nuxt generate",
+    "now-build": "nuxt generate",
+    "now-dev": "nuxt"
   },
   "engines": {
     "node": "^8.3.x"
