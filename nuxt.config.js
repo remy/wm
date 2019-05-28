@@ -5,6 +5,9 @@ module.exports = {
 
   generate: {
     // routes: ['/', '/about', '/scan'],
+    minify: {
+      removeRedundantAttributes: false,
+    },
   },
 
   /*
