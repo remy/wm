@@ -4,7 +4,7 @@ module.exports = {
   mode: 'universal',
 
   generate: {
-    routes: ['/', '/about', '/scan'],
+    // routes: ['/', '/about', '/scan'],
   },
 
   /*
