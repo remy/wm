@@ -20,10 +20,7 @@ The tool uses [nodejs](https://nodejs.com) and is installed using:
 
 This a global executable under the command `webmention` (also available as `wm`). Default usage allows you to pass a file (like a newly generated RSS feed) or a specific URL. It will default to the 10 most recent entries found (using `item` for RSS and `h-entry` for HTML).
 
-<pre><code><span class="prompt">$</span> webmention example.com/feed.xml
-
-
-</code></pre>
+<pre><code><span class="prompt">$</span> webmention example.com/feed.xml --limit 1</code></pre>
 
 ## Further reading
 
