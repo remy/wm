@@ -1,27 +1,28 @@
 <template>
   <div>
     <h1>webmention.app</h1>
+    <h2>Automatically notify others of your webmentions</h2>
     <div class="flex-grow">
-      <p>This is a micro service that will check a given URL for links to other sites, discover if those links support webmentions and will send a webmention POST to the target.</p>
+      <p>This is a platform agnositc service that will check a given URL for links to other sites, discover if they support webmentions, then send a webmention to the target.</p>
 
       <p>The API is reasonably simplistic:</p>
 
       <ul>
         <li>
-          GET https://webmention.app/check/:url
-          <br>
-          <span>Perform a dry run, discovering all links and valid Webmention endpoints</span>
-        </li>
-        <li>
           POST https://webmention.app/check/:url
           <br>
-          <span>Sends the full webmention requests</span>
+          <span>Finds all links in your given URL, discovers those with valid Webmention endpoints, and sends the full webmention notifications</span>
+        </li>
+        <li>
+          GET https://webmention.app/check/:url
+          <br>
+          <span>Perform a dry run, reporting on all discovered Webmention endpoints</span>
         </li>
       </ul>
 
       <p>
-        📘
-        <n-link to="/docs">Documentation &amp; usage</n-link>
+        If you don't want to rely on an online service, you can alternatively use the
+        <n-link to="/docs#using-the-command-line">command line tool</n-link>.
       </p>
     </div>
     <div>

@@ -59,6 +59,7 @@ pre {
   border-left: 4px solid #ccc;
   padding: 16px;
   padding-right: 32px;
+  line-height: 20px;
 }
 
 pre code {

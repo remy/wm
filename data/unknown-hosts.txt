@@ -38,3 +38,9 @@ www.wired.com
 www.youtube.com
 www.youtube.com
 youtu.be
+www.facebook.com
+www.linkedin.com
+github.com
+gitlab.com
+www.google.com
+google.com

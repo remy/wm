@@ -4,14 +4,16 @@
 const pkg = require('../package.json');
 const opts = require('optimist')
   .usage(
-    'Parse, discover and send webmentions\n\n$0 <url|file>\nVersion: ' +
+    'Parse, discover and send webmentions\n\n$ $0 [ url | file ]\n\nversion: ' +
       pkg.version
   )
-  .default('limit', 10)
   .boolean('version')
+  .describe('send', 'send webmention notifications')
+  .default('limit', 10)
+  .default('send', false)
+  .describe('limit', 'int: entries to discover')
   .describe('version')
-  .default('verbose', false)
-  .default('send', false);
+  .describe('debug');
 
 const argv = opts.argv;
 
@@ -33,7 +35,7 @@ const readFileSync = require('fs').readFileSync;
 const target = argv._[0];
 const Webmention = require('../lib/webmention');
 
-const { limit, verbose } = argv;
+const { limit, debug, send } = argv;
 const wm = new Webmention({ limit });
 
 const clearLine = () => {
@@ -45,6 +47,11 @@ const clearLine = () => {
 
 let todo = 0;
 let done = 0;
+
+if (debug) {
+  console.log('limit = ' + limit);
+  console.log('send = ' + send);
+}
 
 wm.on('error', e => console.log(e));
 wm.on('progress', e => {
@@ -58,30 +65,39 @@ wm.on('progress', e => {
     done = value;
   }
 
-  if (!verbose && process.stdout.isTTY) {
+  if (!debug && process.stdout.isTTY) {
     clearLine();
     process.stdout.write(progressBar.update(done, todo));
   }
 
-  if (verbose) {
+  if (debug) {
     console.log(
       `${key} = ${value}${e.data ? ' ' + JSON.stringify(e.data) : ''}`
     );
   }
 });
-if (verbose) wm.on('log', e => console.log(e));
-wm.on('end', res => {
-  clearLine();
+if (debug) wm.on('log', e => console.log(e));
+wm.on('endpoints', clearLine);
+if (!send) {
+  wm.on('endpoints', res => {
+    if (debug && res.length === 0) {
+      console.log('- no active webmention endpoints found');
+    }
 
-  if (verbose && res.length === 0) {
-    console.log('- no active webmention endpoints found');
-  }
-
-  res.map(res => {
-    console.log('source= ' + res.source);
-    console.log('target= ' + res.target);
-    console.log('');
+    res.map(res => {
+      console.log('source = ' + res.source);
+      console.log('target = ' + res.target);
+      console.log('');
+    });
   });
+}
+
+wm.on('sent', res => {
+  console.log('source   = ' + res.source);
+  console.log('endpoint = ' + res.endpoint);
+  console.log('target   = ' + res.target);
+  console.log('status   = ' + res.status);
+  console.log('');
 });
 
 if (existsSync(target)) {
@@ -89,3 +105,5 @@ if (existsSync(target)) {
 } else {
   wm.fetch(target);
 }
+
+if (send) wm.sendWebMentions();

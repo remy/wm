@@ -1,6 +1,6 @@
 {
   "name": "@remy/webmention",
-  "version": "1.0.4",
+  "version": "1.1.0",
   "description": "Web Mentions sender",
   "main": "./lib/webmention.js",
   "bin": {
@@ -31,16 +31,18 @@
   "author": "Remy Sharp (https://remysharp.com)",
   "license": "MIT",
   "dependencies": {
-    "cheerio": "^1.0.0-rc.3",
+    "cheerio": "0.22.0",
     "clui": "^0.3.6",
     "follow-redirects": "^1.7.0",
     "get-webmention-url": "^2.0.0",
+    "microformat-node": "^2.0.1",
     "node-fetch": "^2.6.0",
     "optimist": "^0.6.1",
     "rss-parser": "^3.7.0"
   },
   "devDependencies": {
     "@nuxtjs/markdownit": "^1.2.4",
+    "markdown-it-named-headings": "^1.1.0",
     "markdown-it-task-lists": "^2.1.1",
     "nuxt": "^2.7.1"
   }

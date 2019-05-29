@@ -34,7 +34,7 @@ module.exports = {
     preset: 'default',
     linkify: true,
     html: true,
-    use: ['markdown-it-task-lists'],
+    use: ['markdown-it-task-lists', 'markdown-it-named-headings'],
   },
 
   devtools: true,
