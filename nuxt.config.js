@@ -10,6 +10,13 @@ module.exports = {
     },
   },
 
+  vue: {
+    config: {
+      productionTip: false,
+      devtools: true,
+    },
+  },
+
   /*
    ** Customize the progress-bar color
    */

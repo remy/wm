@@ -1,4 +1,5 @@
 #!/usr/bin/env node
+/* eslint-disable no-process-exit */
 /* eslint-disable node/no-unpublished-bin */
 const pkg = require('../package.json');
 const opts = require('optimist')
@@ -25,9 +26,7 @@ if (argv._.length == 0) {
 }
 
 const ui = require('clui');
-
-var Progress = ui.Progress;
-
+const Progress = ui.Progress;
 const progressBar = new Progress(20);
 const existsSync = require('fs').existsSync;
 const readFileSync = require('fs').readFileSync;
@@ -36,6 +35,13 @@ const Webmention = require('../lib/webmention');
 
 const { limit, verbose } = argv;
 const wm = new Webmention({ limit });
+
+const clearLine = () => {
+  if (process.stdout.isTTY) {
+    process.stdout.clearLine();
+    process.stdout.cursorTo(0);
+  }
+};
 
 let todo = 0;
 let done = 0;
@@ -53,24 +59,22 @@ wm.on('progress', e => {
   }
 
   if (!verbose && process.stdout.isTTY) {
-    process.stdout.clearLine();
-    process.stdout.cursorTo(0);
+    clearLine();
     process.stdout.write(progressBar.update(done, todo));
   }
 
   if (verbose) {
-    console.log('%s = %s', key, value, JSON.stringify(e.data));
+    console.log(
+      `${key} = ${value}${e.data ? ' ' + JSON.stringify(e.data) : ''}`
+    );
   }
 });
 if (verbose) wm.on('log', e => console.log(e));
 wm.on('end', res => {
-  if (process.stdout.isTTY) {
-    process.stdout.clearLine();
-    process.stdout.cursorTo(0);
-  }
+  clearLine();
 
   if (verbose && res.length === 0) {
-    console.log('- no webmentions found');
+    console.log('- no active webmention endpoints found');
   }
 
   res.map(res => {

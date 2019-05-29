@@ -2,6 +2,7 @@
 # TODO
 
 - [ ] Support XML RPC?
+- [ ] Add backend db (firebase?) to prevent re-sending same mentions
 - [ ] Atom?
 - [ ] Process: reads local RSS file, compares to live RSS file, delta has web mention send applied
 - [ ] Provide `require('@remy/webmention')` support

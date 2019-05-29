@@ -12,7 +12,7 @@
     </div>
     <div v-cloak>
       <p v-if="hasResult">
-        <strong>{{ mentions.length === 0 ? 'No' : mentions.length }} webmentions found.</strong>
+        <strong>{{ mentions.length === 0 ? 'No' : mentions.length }} webmention supported links found.</strong>
       </p>
 
       <ol id="mentions">
@@ -24,7 +24,7 @@
           <a v-bind:href="mention.target">{{ mention.target }}</a>
         </li>
       </ol>
-      <p v-if="hasResult & mentions.length">
+      <p v-if="hasResult && mentions.length">
         <button :click="sendMentions" class="btn cta">Send all webmentions</button>
       </p>
     </div>
