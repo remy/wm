@@ -1,16 +1,16 @@
 const tap = require('tap');
 const fs = require('fs');
 const Webmention = require('../lib/webmention');
+const read = f => fs.readFileSync(__dirname + f, 'utf8');
 
 tap.test('atom', t => {
   t.plan(1);
   const wm = new Webmention({ limit: 2 });
   wm.on('end', () => {
-    t.ok(wm.mentions.length);
-
+    t.notEqual(wm.mentions.length, 0);
     t.end();
   });
-  wm.load(fs.readFileSync(__dirname + '/fixtures/simon-all-atom.xml', 'utf8'));
+  wm.load(read('/fixtures/simon-links-atom.xml'));
 });
 
 tap.test('local html', t => {
@@ -27,15 +27,15 @@ tap.test('local html', t => {
     }
     t.end();
   });
-  wm.load(fs.readFileSync(__dirname + '/fixtures/but.html', 'utf8'));
+  wm.load(read('/fixtures/but.html'));
 });
 
-tap.skip('local rss', t => {
+tap.test('local rss', t => {
   t.plan(3);
   const wm = new Webmention();
   wm.on('end', () => {
     t.equal(wm.mentions.length, 10);
-    const found = wm.endpoints.find(_ => _.source.includes('paulrobertlloyd'));
+    const found = wm.endpoints.find(_ => _.target.includes('paulrobertlloyd'));
     t.equal(found.endpoint.type, 'webmention');
     t.equal(
       found.endpoint.url,
@@ -44,10 +44,10 @@ tap.skip('local rss', t => {
 
     t.end();
   });
-  wm.load(fs.readFileSync(__dirname + '/fixtures/jeremy.xml', 'utf8'));
+  wm.load(read('/fixtures/jeremy.xml'));
 });
 
-tap.skip('local non-h-entry', t => {
+tap.only('local non-h-entry', t => {
   t.plan(1);
   const wm = new Webmention();
   wm.on('end', () => {
@@ -57,5 +57,5 @@ tap.skip('local non-h-entry', t => {
 
     t.end();
   });
-  wm.load(__dirname + '/fixtures/alt-but.html');
+  wm.load(read('/fixtures/alt-but.html'));
 });

@@ -13,7 +13,6 @@
     "generated/*"
   ],
   "scripts": {
-    "update": "node lib/generate-data.js",
     "dev": "nuxt",
     "deploy": "npm run build && now --target production",
     "build": "nuxt generate",
