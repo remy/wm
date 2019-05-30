@@ -20,7 +20,8 @@ module.exports = async (req, res) => {
   wm.on('error', e => {
     res.end(JSON.stringify({ error: true, message: e.message }));
   });
-  wm.on('end', urls => {
+
+  wm.on('endpoints', urls => {
     if (req.method === 'post') {
       return Promise.all(urls.map(send)).then(reply => {
         res.end(JSON.stringify(reply));
