@@ -450,7 +450,14 @@ footer li:last-child:after {
   flex-direction: column;
   align-items: center;
   color: black;
+  justify-content: inherit;
+  place-items: flex-start;
 }
+
+#navigation .logo a:hover img {
+  background: red;
+}
+
 #navigation .logo a span {
   font-size: 12px;
   line-height: 14px;

@@ -3,7 +3,7 @@
     <ul>
       <li class="logo">
         <n-link to="/">
-          <img src="/logo.svg" width="36px">
+          <Logo width="36px"/>
         </n-link>
       </li>
       <li>
@@ -15,3 +15,10 @@
     </ul>
   </nav>
 </template>
+
+<script>
+import Logo from "./Logo.vue";
+export default {
+  components: { Logo }
+};
+</script>
