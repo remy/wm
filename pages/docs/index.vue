@@ -5,9 +5,11 @@
 
 webmention.app relies entirely on your markup and not your software, so no matter how your content is generated, you can notify other web sites of their webmentions.
 
+Supported formats include: plain HTML, `h-entry` (and `hentry`) Microformat markup, RSS and Atom.
+
 ## Using the web service
 
-You can send either URLs with HTML or RSS feeds. The service supports single entries and multiple entries. Multiple entries are found with wellformed markup, specifically using [`.h-entry`](https://indieweb.org/h-entry) classnames.
+You can send either URLs with HTML or RSS feeds. The service supports single entries and multiple entries. Multiple entries are found with well formed markup, specifically using [`.h-entry`](https://indieweb.org/h-entry) classnames.
 
 ## Using the command line
 
