@@ -1,6 +1,6 @@
 {
   "name": "@remy/webmention",
-  "version": "1.1.0",
+  "version": "1.2.0",
   "description": "Web Mentions sender",
   "main": "./lib/webmention.js",
   "bin": {
@@ -18,7 +18,8 @@
     "deploy": "npm run build && now --target production",
     "build": "nuxt generate",
     "now-build": "nuxt generate",
-    "now-dev": "nuxt"
+    "now-dev": "nuxt",
+    "test": "tap"
   },
   "engines": {
     "node": "^8.3.x"
@@ -35,6 +36,7 @@
     "clui": "^0.3.6",
     "follow-redirects": "^1.7.0",
     "get-webmention-url": "^2.0.0",
+    "li": "^1.3.0",
     "microformat-node": "^2.0.1",
     "node-fetch": "^2.6.0",
     "optimist": "^0.6.1",
@@ -44,6 +46,7 @@
     "@nuxtjs/markdownit": "^1.2.4",
     "markdown-it-named-headings": "^1.1.0",
     "markdown-it-task-lists": "^2.1.1",
-    "nuxt": "^2.7.1"
+    "nuxt": "^2.7.1",
+    "tap": "^14.2.0"
   }
 }
