@@ -36,7 +36,7 @@ const target = argv._[0];
 const Webmention = require('../lib/webmention');
 
 const { limit, debug, send } = argv;
-const wm = new Webmention({ limit });
+const wm = new Webmention({ limit, send });
 
 const clearLine = () => {
   if (process.stdout.isTTY) {
@@ -87,6 +87,7 @@ if (!send) {
     res.map(res => {
       console.log('source = ' + res.source);
       console.log('target = ' + res.target);
+      console.log(`endpoint = ${res.endpoint.url} (${res.endpoint.type})`);
       console.log('');
     });
   });
@@ -94,9 +95,10 @@ if (!send) {
 
 wm.on('sent', res => {
   console.log('source   = ' + res.source);
-  console.log('endpoint = ' + res.endpoint);
+  console.log(`endpoint = ${res.endpoint.url} (${res.endpoint.type})`);
   console.log('target   = ' + res.target);
-  console.log('status   = ' + res.status);
+  console.log(`status   = ${res.status} ${res.status < 400 ? '✓' : '✗'}`); // ✖︎✓✔︎✗
+  if (res.error) console.log('error    = ' + res.error);
   console.log('');
 });
 
@@ -105,5 +107,3 @@ if (existsSync(target)) {
 } else {
   wm.fetch(target);
 }
-
-if (send) wm.sendWebMentions();
