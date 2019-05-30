@@ -44,7 +44,6 @@ export default {
       },
       { href: "/style.css", rel: "stylesheet" }
     ]
-    // script: [{ defer: true, async: true, src: "/check.js" }]
   }
 };
 </script>

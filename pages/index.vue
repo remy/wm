@@ -3,7 +3,7 @@
     <h1>webmention.app</h1>
     <h2>Automatically notify others of your webmentions</h2>
     <div class="flex-grow">
-      <p>This is a platform agnositc service that will check a given URL for links to other sites, discover if they support webmentions, then send a webmention to the target.</p>
+      <p>This is a platform agnostic service that will check a given URL for links to other sites, discover if they support webmentions, then send a webmention to the target.</p>
 
       <p>The API is reasonably simplistic:</p>
 
