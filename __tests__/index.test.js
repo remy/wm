@@ -1,41 +1,49 @@
-console.clear();
+const tap = require('tap');
+const fs = require('fs');
+const Webmention = require('../lib/webmention');
 
-const html = require('fs')
-  .readFileSync(__dirname + '/sample.html')
-  .toString();
+// tap.test('local html', t => {
+//   t.plan(2);
+//   const wm = new Webmention();
+//   wm.on('end', () => {
+//     const found = wm.endpoints.find(_ => _.source.includes('remysharp'));
 
-const links = require('../lib/links');
-const getEndpoints = require('../lib/get-wm-endpoints');
+//     t.equal(found.endpoint.type, 'pingback');
+//     t.equal(found.endpoint.url, 'https://rems.life/xmlrpc.php');
 
-async function main() {
-  const url = 'https://adactio.com';
-  const host = url;
-  const ignoreOwn = url => {
-    if (url.includes(host) || url.includes(host + '/')) {
-      return false;
-    }
+//     t.end();
+//   });
+//   wm.load(fs.readFileSync(__dirname + '/fixtures/but.html', 'utf8'));
+// });
 
-    return true;
-  };
+// tap.test('local rss', t => {
+//   t.plan(3);
+//   const wm = new Webmention();
+//   wm.on('end', () => {
+//     t.equal(wm.mentions.length, 10);
+//     const found = wm.endpoints.find(_ => _.source.includes('paulrobertlloyd'));
+//     console.log(wm.endpoints);
 
-  const urls = await Promise.all(
-    (await links.get(url)).map(async ({ permalink, links }) => {
-      const endpoints = await getEndpoints(links.filter(ignoreOwn));
+//     t.equal(found.endpoint.type, 'webmention');
+//     t.equal(
+//       found.endpoint.url,
+//       'https://webmention.io/paulrobertlloyd.com/webmention'
+//     );
 
-      if (endpoints.length === 0) return false;
+//     t.end();
+//   });
+//   wm.load(fs.readFileSync(__dirname + '/fixtures/jeremy.xml', 'utf8'));
+// });
 
-      // this is a bit confusing…maybe refactor?
-      return endpoints.map(({ url: target, endpoint }) => {
-        return {
-          endpoint,
-          source: permalink,
-          target,
-        };
-      });
-    })
-  );
+tap.only('local non-h-entry', t => {
+  t.plan(1);
+  const wm = new Webmention();
+  wm.on('end', () => {
+    console.warn(wm.mentions);
 
-  return [].concat(...urls.filter(Boolean));
-}
+    t.equal(wm.mentions.length, 10);
 
-main();
+    t.end();
+  });
+  wm.load(__dirname + '/fixtures/alt-but.html');
+});

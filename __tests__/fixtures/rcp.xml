@@ -1,0 +1,8 @@
+<?xml version="1.0"?>
+<methodCall>
+  <methodName>pingback.ping</methodName>
+  <params>
+    <param><value><string>https://remysharp.com/2017/08/12/but</string></value></param>
+    <param><value><string>https://rems.life/but/</string></value></param>
+  </params>
+</methodCall>

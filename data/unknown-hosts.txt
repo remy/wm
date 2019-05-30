@@ -3,7 +3,6 @@ api.mapbox.com
 aws.amazon.com
 bit.ly
 clearleft.com
-convertkit.com
 developer.mozilla.org
 flickr.com
 gist.github.com
