@@ -1,7 +1,6 @@
 <template lang="md">
 # TODO
 
-- [ ] Support wordpress `hentry` (not "valid" microformat)
 - [ ] [web] Auth / token
 - [ ] Add backend db (firebase?) to prevent re-sending same mentions
 - [ ] Allow self mentions & pings
@@ -13,6 +12,7 @@
 
 ## As of v1.2.0 / 2019-05-30
 
+- [x] Support wordpress `hentry` (not "valid" microformat)
 - [x] Atom
 - [x] Better feedback on non-200 requests
 - [x] Support XML RPC pingbacks
