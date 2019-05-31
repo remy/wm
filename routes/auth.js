@@ -18,5 +18,8 @@ module.exports = (req, res) => {
     res.writeHead(302, { location: url });
     res.end();
   };
-  auth(req, res);
+  auth(req, res, () => {
+    console.log('called next somehow');
+    res.redirect('/');
+  });
 };
