@@ -19,14 +19,15 @@ module.exports = async (req, res) => {
 
   const last = new Date().toJSON();
 
-  db.ref(`jobs/${parse(url).hostname.replace(/\./g, '-')}`).transaction(
-    value => {
+  db.ref(`jobs/${parse(url).hostname.replace(/\./g, '-')}`)
+    .transaction(value => {
       if (!value) {
         return { count: 0, last };
       }
       return { count: value.count + 1, last };
-    }
-  );
+    })
+    .then(() => console.log('updated okay'))
+    .catch(e => console.log(e));
 
   // get token and validate
 

@@ -41,7 +41,8 @@
     "optimist": "^0.6.1",
     "passport": "^0.4.0",
     "passport-github2": "^0.1.11",
-    "rss-parser": "^3.7.0"
+    "rss-parser": "^3.7.0",
+    "uuid": "^3.3.2"
   },
   "devDependencies": {
     "@nuxtjs/markdownit": "^1.2.4",

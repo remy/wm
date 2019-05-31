@@ -1,6 +1,6 @@
 const micro = require('micro');
-const check = require('./check');
-const auth = require('./auth');
+const check = require('./routes/check');
+const auth = require('./routes/auth');
 const { send } = micro;
 
 const dev = async (req, res) => {
