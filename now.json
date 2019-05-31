@@ -1,9 +1,6 @@
 {
   "version": 2,
   "alias": "webmention.app",
-  "env": {
-    "API": "https://webmention.app/api"
-  },
   "routes": [
     {
       "src": "/api/check",
@@ -32,7 +29,8 @@
   "build": {
     "env": {
       "GITHUB_CLIENT_ID": "@wm-github-id",
-      "GITHUB_CLIENT_SECRET": "@wm-github-secret"
+      "GITHUB_CLIENT_SECRET": "@wm-github-secret",
+      "API": "https://webmention.app/api"
     }
   },
   "builds": [
