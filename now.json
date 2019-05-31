@@ -3,7 +3,7 @@
   "alias": "webmention.app",
   "routes": [
     {
-      "src": "/api/check",
+      "src": "/api/check/?.*",
       "dest": "/routes/check.js",
       "methods": ["GET", "POST"],
       "headers": {
