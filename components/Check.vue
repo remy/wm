@@ -33,6 +33,7 @@
 
 
 <script>
+const API = "https://webmention.app/api"; //process.env.API;
 export default {
   data: () => ({
     url: "",
@@ -43,18 +44,15 @@ export default {
   methods: {
     async sendMentions(event) {
       event.preventDefault();
-      const res = await fetch(
-        `${process.env.API}/check/?url=${escape(this.url)}`,
-        { method: "post" }
-      );
+      const res = await fetch(`${API}/check/?url=${escape(this.url)}`, {
+        method: "post"
+      });
     },
     async findMentions(event) {
       event.preventDefault();
       this.loading = true;
       this.hasResult = false;
-      const res = await fetch(
-        `${process.env.API}/check/?url=${escape(this.url)}`
-      );
+      const res = await fetch(`${API}/check/?url=${escape(this.url)}`);
       const json = await res.json();
       this.mentions = json;
       this.loading = false;
