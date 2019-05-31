@@ -33,6 +33,11 @@
       "API": "https://webmention.app/api"
     }
   },
+  "env": {
+    "GITHUB_CLIENT_ID": "@wm-github-id",
+    "GITHUB_CLIENT_SECRET": "@wm-github-secret",
+    "API": "https://webmention.app/api"
+  },
   "builds": [
     { "src": "/routes/**/*.js", "use": "@now/node" },
     {
