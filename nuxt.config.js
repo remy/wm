@@ -1,10 +1,7 @@
-const pkg = require('./package');
-
 module.exports = {
   mode: 'universal',
 
   generate: {
-    // routes: ['/', '/about', '/scan'],
     minify: {
       removeRedundantAttributes: false,
     },
@@ -12,7 +9,7 @@ module.exports = {
 
   vue: {
     config: {
-      productionTip: false,
+      // productionTip: false,
       devtools: true,
     },
   },
@@ -22,10 +19,11 @@ module.exports = {
    */
   loading: { color: '#03A9F4' },
 
-  /*
-   ** Global CSS
-   */
   css: [],
+
+  env: {
+    API: process.env.API || 'http://localhost:3030/api',
+  },
 
   modules: ['@nuxtjs/markdownit'],
   plugins: ['~/plugins/md-it'],

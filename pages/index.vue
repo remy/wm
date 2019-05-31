@@ -9,12 +9,16 @@
 
       <ul>
         <li>
-          POST https://webmention.app/check/:url
-          <br>
-          <span>Finds all links in your given URL, discovers those with valid Webmention endpoints, and sends the full webmention notifications</span>
+          POST https://webmention.app/api/check/?url=:url
+          <p>Finds all links in your given URL, discovers those with valid Webmention endpoints, and sends the full webmention notifications.</p>
+          <p>
+            The URL should be escaped (though the protocol is not required), and an
+            optional token (coming soon)
+            {{" "}}can be used to avoid the rate limit.
+          </p>
         </li>
         <li>
-          GET https://webmention.app/check/:url
+          GET https://webmention.app/api/check/?url=:url
           <br>
           <span>Perform a dry run, reporting on all discovered Webmention endpoints</span>
         </li>

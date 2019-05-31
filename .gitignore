@@ -3,3 +3,5 @@ node_modules
 dist
 .nuxt
 .nyc_output
+.env
+.env.*

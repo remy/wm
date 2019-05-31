@@ -1,12 +1,13 @@
+const parse = require('url').parse;
 const qs = require('../lib/query-string');
 const Webmention = require('../lib/webmention');
 const send = require('../lib/send');
+const db = require('../lib/db');
 
 module.exports = async (req, res) => {
   let { url } = qs(req);
 
   if (!url) {
-    // res.writeHead(500);
     return res.end('Bad request');
   }
 
@@ -15,6 +16,22 @@ module.exports = async (req, res) => {
   }
 
   console.log('>> ' + url);
+
+  const last = new Date().toJSON();
+
+  db.ref(`jobs/${parse(url).hostname.replace(/\./g, '-')}`).transaction(
+    value => {
+      if (!value) {
+        return { count: 0, last };
+      }
+      return { count: value.count + 1, last };
+    }
+  );
+
+  // get token and validate
+
+  // if no token, then check if this url has been requested recently
+  // and if so, return 429 - too many requests
 
   const wm = new Webmention();
   wm.on('error', e => {
@@ -33,9 +50,3 @@ module.exports = async (req, res) => {
 
   wm.fetch(url);
 };
-
-if (!module.parent) {
-  require('http')
-    .createServer(module.exports)
-    .listen(3000);
-}

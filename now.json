@@ -1,15 +1,23 @@
 {
   "version": 2,
   "alias": "webmention.app",
+  "env": {
+    "API": "https://webmention.app/api"
+  },
   "routes": [
     {
-      "src": "/check/(.*)",
-      "dest": "/routes/check.js?url=$1",
+      "src": "/api/check",
+      "dest": "/routes/check.js",
       "methods": ["GET", "POST"],
       "headers": {
         "Access-Control-Allow-Origin": "*"
       }
     },
+    {
+      "src": "/api/token",
+      "dest": "/routes/token.js"
+    },
+    { "src": "/auth/?.*", "dest": "/routes/auth.js" },
     {
       "methods": ["GET"],
       "src": "^/",
@@ -21,8 +29,14 @@
       "dest": "/dist/$1"
     }
   ],
+  "build": {
+    "env": {
+      "GITHUB_CLIENT_ID": "@wm-github-id",
+      "GITHUB_CLIENT_SECRET": "@wm-github-secret"
+    }
+  },
   "builds": [
-    { "src": "/routes/*.js", "use": "@now/node" },
+    { "src": "/routes/**/*.js", "use": "@now/node" },
     {
       "src": "package.json",
       "use": "@now/static-build",
