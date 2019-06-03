@@ -13,13 +13,12 @@ module.exports = (req, res) => {
   req.query = qs(req);
 
   res.redirect = url => {
-    console.log(req.user);
-
     res.writeHead(302, { location: url });
     res.end();
   };
-  auth(req, res, () => {
-    console.log('called next somehow');
+  auth(req, res, data => {
+    console.log(data);
+
     res.redirect('/');
   });
 };

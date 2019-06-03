@@ -1,11 +1,22 @@
-const parse = require('url').parse;
 const qs = require('../lib/query-string');
 const Webmention = require('../lib/webmention');
-const send = require('../lib/send');
+const sendMention = require('../lib/send');
 const db = require('../lib/db');
+const ms = require('ms');
+
+const rateWindow = 1000 * 60 * 60 * 4; // 4 hours
 
 module.exports = async (req, res) => {
-  let { url } = qs(req);
+  let { url, token } = qs(req);
+
+  const now = new Date();
+
+  // Server-Timing: miss, db;dur=53, app;dur=47.2 (ms)
+  const timings = {
+    db: 0,
+    webmention: 0,
+    send: 0,
+  };
 
   if (!url) {
     return res.end('Bad request');
@@ -15,38 +26,71 @@ module.exports = async (req, res) => {
     url = `http://${url}`;
   }
 
-  console.log('>> ' + url);
+  const validToken = token ? await db.updateTokenRequestCount(token) : null;
 
-  const last = new Date().toJSON();
+  if (!validToken) {
+    // only allow one hit a day
+    const data = await db.getRequestCount(url);
 
-  db.ref(`jobs/${parse(url).hostname.replace(/\./g, '-')}`)
-    .transaction(value => {
-      if (!value) {
-        return { count: 0, last };
-      }
-      return { count: value.count + 1, last };
+    const delta =
+      now.getTime() - rateWindow - new Date(data.lastRequested).getTime();
+
+    if (delta < 0) {
+      res.writeHead(429);
+      return res.end(
+        JSON.stringify({
+          error: 'Too many requests',
+          message: `Too many requests in time window. Try again in ${ms(
+            delta * -1,
+            { long: true }
+          )}.`,
+        })
+      );
+    }
+  }
+
+  const dbUpdate = db
+    .updateRequestCount(url)
+    .then(() => {
+      console.log('db count ok');
+
+      timings.db = Date.now() - now.getTime();
     })
-    .then(() => console.log('updated okay'))
     .catch(e => console.log(e));
 
-  // get token and validate
+  const send = data => {
+    dbUpdate
+      .then(() => {
+        res.setHeader(
+          'Server-Timing',
+          Object.keys(timings).map(key => {
+            return `${key};dur=${timings[key].toFixed(2)}`;
+          })
+        );
+        res.end(data);
+      })
+      .catch(e => {
+        res.end(e.message);
+      });
+  };
 
-  // if no token, then check if this url has been requested recently
-  // and if so, return 429 - too many requests
+  console.log('>> ' + url);
 
   const wm = new Webmention();
   wm.on('error', e => {
-    res.end(JSON.stringify({ error: true, message: e.message }));
+    send(JSON.stringify({ error: true, message: e.message }));
   });
 
   wm.on('endpoints', urls => {
+    timings.webmention = Date.now() - now.getTime();
     if (req.method === 'post') {
-      return Promise.all(urls.map(send)).then(reply => {
-        res.end(JSON.stringify(reply));
+      return Promise.all(urls.map(sendMention)).then(reply => {
+        timings.send = Date.now() - now.getTime();
+        send(JSON.stringify(reply));
       });
     }
 
-    res.end(JSON.stringify(urls));
+    send(JSON.stringify(urls));
   });
 
   wm.fetch(url);
