@@ -26,6 +26,15 @@
       "dest": "/dist/$1"
     }
   ],
+  "build": {
+    "env": {
+      "GITHUB_CLIENT_ID": "@wm-github-id",
+      "GITHUB_CLIENT_SECRET": "@wm-github-secret",
+      "DB_KEY_ID": "@wm-aws-key-id",
+      "DB_ACCESS_KEY": "@wm-aws-access-key",
+      "API": "https://webmention.app/api"
+    }
+  },
   "env": {
     "GITHUB_CLIENT_ID": "@wm-github-id",
     "GITHUB_CLIENT_SECRET": "@wm-github-secret",
