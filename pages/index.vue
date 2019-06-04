@@ -13,7 +13,7 @@
           <p>Finds all links in your given URL, discovers those with valid Webmention endpoints, and sends the full webmention notifications.</p>
           <p>
             The URL should be escaped (though the protocol is not required), and an
-            optional token (coming soon)
+            <n-link to="/token">optional token</n-link>
             {{" "}}can be used to avoid the rate limit.
           </p>
         </li>

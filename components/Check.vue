@@ -33,7 +33,8 @@
 
 
 <script>
-const API = "https://webmention.app/api"; //process.env.API;
+// TODO handle errors / 429 etc
+const API = process.env.API;
 export default {
   data: () => ({
     url: "",

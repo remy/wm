@@ -1,54 +1,223 @@
-<template lang="md">
-# Documentation
+<template>
+  <div>
+    <h1>Documentation</h1>
+    <h2>Platform agnostic webmentions</h2>
+    <p>webmention.app relies entirely on your markup and not your software, so no matter how your content is generated, you can notify other web sites of their webmentions.</p>
+    <p>
+      Supported formats include: plain HTML,
+      <code>h-entry</code> (and
+      <code>hentry</code>) Microformat markup, RSS and Atom.
+    </p>
 
-## Platform agnostic webmentions
+    <details>
+      <summary>
+        <h2>Send webmentions using the web service</h2>
+      </summary>
+      <div>
+        <p>
+          You can send either URLs with HTML or RSS feeds. The service supports single entries and multiple entries. Multiple entries are found with well formed markup, specifically using
+          <a
+            href="https://indieweb.org/h-entry"
+          >
+            <code>.h-entry</code>
+          </a> classes.
+        </p>
+        <p>
+          You need to find a way to request a URL, in this example, we'll use the command line tool
+          <code>curl</code>:
+        </p>
+        <pre><code><span class="prompt">$</span> curl http://localhost:3030/api/check?url=https://adactio.com/journal/15254
+[{"endpoint":{"url":"https://webmention.io/indiewebcamp/webmention","type":"webmention"},"source":"https://adactio.com/journal/15254","target":"https://indieweb.org/Homebrew_Website_Club"},{"endpoint":{"url":"https://webmention.io/indiewebcamp/webmention","type":"webmention"},"source":"https://adactio.com/journal/15254","target":"https://indieweb.org/2019/Brighton"},{"endpoint":{"url":"https://brid.gy/publish/webmention","type":"webmention"},"source":"https://adactio.com/journal/15254","target":"https://benjamin.parry.is/"},{"endpoint":{"url":"https://webmention.io/remysharp.com/webmention","type":"webmention"},"source":"https://adactio.com/journal/15254","target":"https://remysharp.com/"}]
+</code></pre>
 
-webmention.app relies entirely on your markup and not your software, so no matter how your content is generated, you can notify other web sites of their webmentions.
+        <p>
+          If your URL has any query string parameters (such as
+          <code>?slug=my-great-post</code>) make sure to properly
+          <a href="https://meyerweb.com/eric/tools/dencoder/">encode</a> the URL.
+        </p>
 
-Supported formats include: plain HTML, `h-entry` (and `hentry`) Microformat markup, RSS and Atom.
+        <p>
+          Remember to claim
+          <n-link to="/token">a token</n-link>
+          {{' '}}so that your requests are not rate limited.
+        </p>
+      </div>
+    </details>
 
-## Using the web service
+    <details>
+      <summary>
+        <h2>How to integrate with Netlify</h2>
+      </summary>
+      <div>
+        <p>Netlify is a great platform for hosting static sites, and you can use webmention.app as part of your build process, or more simply if you also generate an RSS feed for you website you can provide a "deploy notification".</p>
+        <p>
+          Navigate to your Netlify project, and from the
+          <strong>Build &amp; Deploy</strong> menu, find
+          <strong>Deploy Notifications</strong>. Add a new notification, selecting
+          <strong>Outgoing webhook</strong>:
+        </p>
+        <p>
+          <img src="/netlify.png">
+        </p>
+        <p>
+          Select the
+          <strong>Deploy succeeded</strong> event, and the URL to notify is:
+        </p>
+        <pre><code><span>https://webmention.app/api/check?token=</span><a href="/token">[your-token]</a>&limit=1&url=[your-feed-url]</code></pre>
+        <p>Now upon every new post you release, webmention.app will automatically handle your webmentions for you.</p>
+      </div>
+    </details>
 
-You can send either URLs with HTML or RSS feeds. The service supports single entries and multiple entries. Multiple entries are found with well formed markup, specifically using [`.h-entry`](https://indieweb.org/h-entry) classnames.
+    <details>
+      <summary>
+        <h2>How to use use a feed as source</h2>
+      </summary>
+      <div>
+        <p>You can use either the web service or the command line method to request a feed. You pass the URL of the feed to webmention.app just as you would any other URL.</p>
 
-## Using the command line
+        <p>
+          Note that both RSS and Atom feeds are supported. If you have another format in mind, please
+          <a
+            href="https://github.com/remy/wm/issues/new"
+          >open an issue with details</a>.
+        </p>
 
-The command line doesn't rely on https://webmention.app at all - so you can run it locally with the knowledge that if your site outlives this one, the tool will still work.
+        <p>
+          By default, the service will
+          only look at
+          <strong>the first 10 items</strong> found in the feed.
+        </p>
+      </div>
+    </details>
 
-The tool uses [nodejs](https://nodejs.com) and once nodejs installed, you can install the tool using:
-
-<pre><code><span class="prompt">$</span> npm install @remy/webmention</code></pre>
-
-This provides an executable under the command `webmention` (also available as `wm`). Default usage allows you to pass a file (like a newly generated RSS feed) or a specific URL. It will default to the 10 most recent entries found (using `item` for RSS and `h-entry` for HTML).
-
-By default, the command will perform a dry-run/discovery only on the latest 10 entries found.
-
-The options available are:
-
-- `--send` (default: false) send the webmention to all valid endpoints
-- `--limit n` (default: 10) limit to `n` entries found
-- `--debug` (default: false) print internal debugging
-
-Using `npx` you can invoke the tool to read the latest entry in your RSS feed:
-
-<pre><code><span class="prompt">$</span> npx webmention https://yoursite.com/feed.xml --limit 1 --send</code></pre>
-
-Altneratively, you can make the tool part of your build workflow and have it execute during a `postbuild` phase:
-
-```
-{
+    <details>
+      <summary>
+        <h2>Using the command line</h2>
+      </summary>
+      <div>
+        <p>The command line doesn't rely on webmention.app at all and doesn't require a token - so you can run it locally with the knowledge that if your site outlives this one, the tool will still work.</p>
+        <p>
+          The tool uses
+          <a href="https://nodejs.com">nodejs</a> and once nodejs is installed, you can install the tool using:
+        </p>
+        <pre><code><span class="prompt">$</span> npm install @remy/webmention</code></pre>
+        <p>
+          This provides an executable under the command
+          <code>webmention</code> (also available as
+          <code>wm</code>). Default usage allows you to pass a filename (like a newly generated RSS feed) or a specific URL. It will default to the 10 most recent entries found (using
+          <code>item</code> for RSS and
+          <code>h-entry</code> for HTML).
+        </p>
+        <p>
+          By default, the command will perform a dry-run/discovery only. To complete the notification of webmentions use the
+          <code>--send</code> flag.
+        </p>
+        <p>The options available are:</p>
+        <ul>
+          <li>
+            <code>--send</code> (default: false) send the webmention to all valid endpoints
+          </li>
+          <li>
+            <code>--limit n</code> (default: 10) limit to
+            <code>n</code> entries found
+          </li>
+          <li>
+            <code>--debug</code> (default: false) print internal debugging
+          </li>
+        </ul>
+        <p>
+          Using
+          <code>npx</code> you can invoke the tool to read the latest entry in your RSS feed:
+        </p>
+        <pre><code><span class="prompt">$</span> npx webmention https://yoursite.com/feed.xml --limit 1 --send</code></pre>
+        <p>
+          Alternatively, you can make the tool part of your build workflow and have it execute during a
+          <code>postbuild</code> phase:
+        </p>
+        <pre><code>{
   "scripts": {
     "postbuild": "webmention dist/feed.xml --limit 1 --send"
   }
 }
-```
+</code></pre>
+      </div>
+    </details>
 
-## Further reading
+    <details>
+      <summary>
+        <h2>
+          How can you scan
+          <u>every</u> item in a feed or page?
+        </h2>
+      </summary>
+      <div>
+        <p>
+          Using
+          <code>--limit 0</code> will tell the software to ignore any limits.
+        </p>
+        <p>
+          If you're using the web service, include a query parameter of
+          <code>&limit=0</code>.
+        </p>
+      </div>
+    </details>
 
-- [TODO](/docs/todo)
-- [Issues](https://github.com/remy/wm/issues)
-- [Source code](https://github.com/remy/wm/)
+    <details>
+      <summary>
+        <h2>
+          How can you
+          <u>receive</u> webmentions?
+        </h2>
+      </summary>
+      <div>
+        <p>webmention.app is only used to notify of webmentions. However, I can recommend the following websites:</p>
+        <ul>
+          <li>
+            <a href="https://webmention.io">webmention.io</a> - a service you can use to accept inbound webmention notifications (I use this on
+            <a
+              href="https://remysharp.com"
+            >my own blog</a>)
+          </li>
+          <li>
+            <a href="https://brid.gy/">bridgy</a> - a service to gather and send notifications from sources such as Twitter
+          </li>
+          <li>
+            <a href="https://mxb.dev/blog/using-webmentions-on-static-sites">Using Webmentions</a> - Max Böck's excellent article on how to start showing webmentions on your own website
+          </li>
+        </ul>
+      </div>
+    </details>
+
+    <h2>Further reading</h2>
+    <ul>
+      <li>
+        <a href="/docs/todo">TODO / Work in progress</a>
+      </li>
+      <li>
+        <a href="https://github.com/remy/wm/issues">Found an issue?</a>
+      </li>
+      <li>
+        <a href="https://github.com/remy/wm/">Source code</a>
+      </li>
+    </ul>
+  </div>
 </template>
+
+<style scoped>
+img {
+  max-width: 100%;
+  border-radius: 4px;
+}
+
+details[open] summary h2 {
+  color: black;
+}
+
+details[open] div {
+  margin-bottom: 64px;
+}
+</style>
+
 
 <script>
 export default {

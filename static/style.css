@@ -233,13 +233,29 @@ ul {
   /* list-style-type: square; */
 }
 
-details {
+summary {
+  cursor: pointer;
+}
+
+summary h2 {
+  display: inline;
+}
+
+summary::-webkit-details-marker {
+  color: rgb(158, 158, 158);
+}
+
+details,
+summary + div {
+  margin-top: 20px;
+}
+
+/* details {
   margin: 20px 0;
   border: 1px solid rgb(238, 238, 238);
   border-radius: 4px;
 }
 
-/* Hide the marker completely. */
 summary::-webkit-details-marker {
   display: none;
 }
@@ -261,11 +277,11 @@ summary {
 summary .subject {
   flex: 1;
   min-width: 100%;
-}
+} */
 
-details > div {
+/* details > div {
   margin: 20px;
-}
+} */
 
 .label {
   color: #717171;
@@ -291,7 +307,6 @@ li span {
 }
 
 details strong {
-  text-transform: uppercase;
   color: black;
 }
 

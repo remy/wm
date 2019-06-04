@@ -1,7 +1,7 @@
 <template>
   <div>
     <h1>Your token</h1>
-    <p>Including a token in your requests allows you to avoid rate limits on sources.</p>
+    <p>Including a token in your requests allows you to avoid rate limits on requests. The anonymous requests are currently limited to once per 4 hours per unique URL.</p>
 
     <div v-if="token">
       <p class="token">
@@ -14,21 +14,24 @@
       <h2>Usage</h2>
       <p>Include your token as a URL parameter in your calls to the check API:</p>
       <pre><code>curl -X POST https://webmention.app?token=<span>{{ token }}</span>&amp;url=…</code></pre>
-      <p>
-        Remember, if you use the
-        <abbr title="command line interface">CLI</abbr> tool you don't need a token as it runs entirely on your own machine.
-      </p>
     </div>
     <div v-else>
       <p>
-        <a href="/auth">Sign in using Github</a>
-        - the sign in process asks for no private data (nor email) and is used to assign you a unique token that will allow you to make as many request as you need against this service.
+        <center>
+          <a class="btn" href="/auth">Sign in using Github</a>
+        </center>
       </p>
+      <p>The sign in process does not ask for any private data (nor email) and is only used to assign you a unique token that will allow you to make as many request as you need against this service.</p>
     </div>
+    <hr>
+    <p>Remember, if you use the command line tool you don't need a token as it runs entirely on your own machine.</p>
   </div>
 </template>
 
 <style scoped>
+.btn {
+  font-size: 18px;
+}
 .token {
   display: flex;
   flex-direction: row;
