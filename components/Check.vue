@@ -14,6 +14,9 @@
       <p v-if="hasResult">
         <strong>{{ mentions.length === 0 ? 'No' : mentions.length }} webmention supported links found.</strong>
       </p>
+      <p v-if="error">
+        <strong>{{error}}</strong>
+      </p>
 
       <ol id="mentions">
         <li v-bind:key="mention.target" v-for="mention in mentions">
@@ -40,7 +43,8 @@ export default {
     url: "",
     loading: false,
     mentions: [],
-    hasResult: false
+    hasResult: false,
+    error: null
   }),
   methods: {
     async sendMentions(event) {
@@ -53,11 +57,21 @@ export default {
       event.preventDefault();
       this.loading = true;
       this.hasResult = false;
+      this.mentions = [];
       const res = await fetch(`${API}/check/?url=${escape(this.url)}`);
-      const json = await res.json();
-      this.mentions = json;
-      this.loading = false;
-      this.hasResult = true;
+
+      if (res.status === 200) {
+        const json = await res.json();
+        this.mentions = json;
+        this.loading = false;
+        this.hasResult = true;
+      } else {
+        this.loading = false;
+        if (res.status === 429) {
+          const json = await res.json();
+          this.error = json.message;
+        }
+      }
     }
   }
 };

@@ -5,5 +5,11 @@
 
 The service is currently free, and will remain so, as it is able to run one a single server with little to zero maintenance.
 
-Still want to say thanks or support the project? **[You can buy (some) drinks](https://www.paypal.me/rem/usd) ❤️**
+If you want to contact there's a few ways:
+
+- For bugs, issues and software feedback: [github](https://github.com/remy/wm/issues)
+- For private/offline message: [my website](https://remysharp.com/feedback/?product=webmention.app)
+- To hire me for custom development: [my working details](https://remysharp.com/work)
+
+If you want to say thanks to support the project: **[You can buy (some) drinks](https://www.paypal.me/rem/usd) ❤️**
 </template>

@@ -26,6 +26,14 @@ module.exports = async (req, res) => {
     url = `http://${url}`;
   }
 
+  const { origin = '' } = req.headers;
+
+  if (origin.includes('localhost') || origin === 'webmention.app') {
+    // note that this token is rotated on a random basis, if you want to pinch
+    // it, you can, but don't trust it'll continue to work.
+    if (!token) token = '089edc08-9677-48fd-947c-06f9e2d90148-site';
+  }
+
   const validToken = token ? await db.updateTokenRequestCount(token) : null;
 
   if (!validToken) {
@@ -54,8 +62,6 @@ module.exports = async (req, res) => {
   const dbUpdate = db
     .updateRequestCount(url)
     .then(() => {
-      console.log('db count ok');
-
       timings.db = Date.now() - now.getTime();
     })
     .catch(e => console.log(e));

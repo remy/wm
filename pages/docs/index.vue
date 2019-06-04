@@ -6,10 +6,10 @@
     <p>
       Supported formats include: plain HTML,
       <code>h-entry</code> (and
-      <code>hentry</code>) Microformat markup, RSS and Atom.
+      <code>hentry</code>) Microformat markup, RSS and Atom. For backward compatibility both webmention and pingback protocols are supported.
     </p>
 
-    <details>
+    <details id="send-webmentions-using-the-web-service">
       <summary>
         <h2>Send webmentions using the web service</h2>
       </summary>
@@ -26,7 +26,7 @@
           You need to find a way to request a URL, in this example, we'll use the command line tool
           <code>curl</code>:
         </p>
-        <pre><code><span class="prompt">$</span> curl http://localhost:3030/api/check?url=https://adactio.com/journal/15254
+        <pre><code><span class="prompt">$</span> curl -X POST http://localhost:3030/api/check?url=https://adactio.com/journal/15254
 [{"endpoint":{"url":"https://webmention.io/indiewebcamp/webmention","type":"webmention"},"source":"https://adactio.com/journal/15254","target":"https://indieweb.org/Homebrew_Website_Club"},{"endpoint":{"url":"https://webmention.io/indiewebcamp/webmention","type":"webmention"},"source":"https://adactio.com/journal/15254","target":"https://indieweb.org/2019/Brighton"},{"endpoint":{"url":"https://brid.gy/publish/webmention","type":"webmention"},"source":"https://adactio.com/journal/15254","target":"https://benjamin.parry.is/"},{"endpoint":{"url":"https://webmention.io/remysharp.com/webmention","type":"webmention"},"source":"https://adactio.com/journal/15254","target":"https://remysharp.com/"}]
 </code></pre>
 
@@ -37,6 +37,12 @@
         </p>
 
         <p>
+          In the example above, the
+          <code>-X POST</code> curl argument is being use to ensure the request is a POST which notifies. If you want to perform a dry-run to see what would be sent, perform a GET request (and remove the
+          <code>-X POST</code>).
+        </p>
+
+        <p>
           Remember to claim
           <n-link to="/token">a token</n-link>
           {{' '}}so that your requests are not rate limited.
@@ -44,7 +50,7 @@
       </div>
     </details>
 
-    <details>
+    <details id="how-to-integrate-with-netlify">
       <summary>
         <h2>How to integrate with Netlify</h2>
       </summary>
@@ -68,7 +74,7 @@
       </div>
     </details>
 
-    <details>
+    <details id="how-to-use-use-a-feed-as-source">
       <summary>
         <h2>How to use use a feed as source</h2>
       </summary>
@@ -90,7 +96,7 @@
       </div>
     </details>
 
-    <details>
+    <details id="using-the-command-line">
       <summary>
         <h2>Using the command line</h2>
       </summary>
@@ -143,7 +149,7 @@
       </div>
     </details>
 
-    <details>
+    <details id="how-can-you-scan-every-item-in-a-feed-or-page">
       <summary>
         <h2>
           How can you scan
@@ -162,7 +168,7 @@
       </div>
     </details>
 
-    <details>
+    <details id="how-can-you-receive-webmentions">
       <summary>
         <h2>
           How can you
@@ -188,16 +194,16 @@
       </div>
     </details>
 
-    <h2>Further reading</h2>
+    <h2 id="further-reading">Further reading</h2>
     <ul>
       <li>
         <a href="/docs/todo">TODO / Work in progress</a>
       </li>
       <li>
-        <a href="https://github.com/remy/wm/issues">Found an issue?</a>
+        <a href="https://github.com/remy/wm/issues">Found an issue or want to make an improvement?</a>
       </li>
       <li>
-        <a href="https://github.com/remy/wm/">Source code</a>
+        <a href="https://github.com/remy/wm/">Source code on Github</a>
       </li>
     </ul>
   </div>
@@ -221,6 +227,12 @@ details[open] div {
 
 <script>
 export default {
+  mounted() {
+    if (window.location.hash) {
+      const details = document.querySelector(window.location.hash);
+      if (details) details.open = true;
+    }
+  },
   head() {
     return { bodyAttrs: { id: "docs" }, title: "docs :: webmention.app" };
   }
