@@ -42,6 +42,9 @@ import Check from "../components/Check";
 export default {
   components: {
     Check
+  },
+  head() {
+    return { bodyAttrs: { id: "index" } };
   }
 };
 </script>

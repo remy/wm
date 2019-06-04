@@ -25,7 +25,7 @@ module.exports = {
     API: process.env.API || 'http://localhost:3030/api',
   },
 
-  modules: ['@nuxtjs/markdownit'],
+  modules: ['@nuxtjs/markdownit', 'cookie-universal-nuxt'],
   plugins: ['~/plugins/md-it'],
 
   markdownit: {

@@ -2,13 +2,6 @@ const passport = require('passport');
 const qs = require('../lib/query-string');
 passport.use('github', require('../lib/passport').github);
 
-const auth = passport.authenticate('github', {
-  scope: ['gist'],
-  session: false,
-  failureRedirect: '/token-failure',
-  successRedirect: '/',
-});
-
 module.exports = (req, res) => {
   req.query = qs(req);
 
@@ -16,9 +9,18 @@ module.exports = (req, res) => {
     res.writeHead(302, { location: url });
     res.end();
   };
-  auth(req, res, data => {
-    console.log(data);
 
+  passport.authenticate('github', (err, user) => {
+    if (err) {
+      console.log(err);
+      return res.redirect('/token-failure');
+    }
+
+    if (!user) {
+      return res.redirect('/token-failure');
+    }
+
+    res.setHeader('Set-Cookie', 'token=' + user + '; Path=/');
     res.redirect('/');
-  });
+  })(req, res);
 };

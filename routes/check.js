@@ -32,20 +32,22 @@ module.exports = async (req, res) => {
     // only allow one hit a day
     const data = await db.getRequestCount(url);
 
-    const delta =
-      now.getTime() - rateWindow - new Date(data.lastRequested).getTime();
+    if (data) {
+      const delta =
+        now.getTime() - rateWindow - new Date(data.lastRequested).getTime();
 
-    if (delta < 0) {
-      res.writeHead(429);
-      return res.end(
-        JSON.stringify({
-          error: 'Too many requests',
-          message: `Too many requests in time window. Try again in ${ms(
-            delta * -1,
-            { long: true }
-          )}.`,
-        })
-      );
+      if (delta < 0) {
+        res.writeHead(429);
+        return res.end(
+          JSON.stringify({
+            error: 'Too many requests',
+            message: `Too many requests in time window. Try again in ${ms(
+              delta * -1,
+              { long: true }
+            )}.`,
+          })
+        );
+      }
     }
   }
 
