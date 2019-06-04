@@ -21,6 +21,6 @@ module.exports = (req, res) => {
     }
 
     res.setHeader('Set-Cookie', 'token=' + user + '; Path=/');
-    res.redirect('/');
+    res.redirect('/token');
   })(req, res);
 };
