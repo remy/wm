@@ -4,7 +4,7 @@ const sendMention = require('../lib/send');
 const db = require('../lib/db');
 const ms = require('ms');
 
-const rateWindow = 1000 * 60 * 60 * 4; // 4 hours
+const rateWindow = 1000 * 60; // * 60 * 4; // 4 hours
 
 module.exports = async (req, res) => {
   let { url, token } = qs(req);
