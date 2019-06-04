@@ -91,7 +91,8 @@ module.exports = async (req, res) => {
 
   wm.on('endpoints', urls => {
     timings.webmention = Date.now() - now.getTime();
-    if (req.method === 'post') {
+
+    if (req.method.toLowerCase() === 'post') {
       return Promise.all(urls.map(sendMention)).then(reply => {
         timings.send = Date.now() - now.getTime();
         send(JSON.stringify(reply));

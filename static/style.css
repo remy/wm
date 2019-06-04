@@ -485,3 +485,22 @@ footer li:last-child:after {
   list-style: none;
   padding: 0;
 }
+
+.status {
+  border-radius: 4px;
+  font-size: 80%;
+  padding: 0px 6px;
+  background: #2196F3;
+  color: white;
+  text-align: center;
+  display: inline-block;
+  line-height: 22px;
+}
+
+.status-2, .status-200,.status-201 {
+  background: green;
+}
+
+.status-4, .status-5 {
+  background: #B71C1C;
+}

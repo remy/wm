@@ -11,6 +11,9 @@
       >Start</button>
     </div>
     <div v-cloak>
+      <p v-if="sent">
+        <strong>Sent {{ mentions.map(_ => _.status < 400).length }} webmention notifications.</strong>
+      </p>
       <p v-if="hasResult">
         <strong>{{ mentions.length === 0 ? 'No' : mentions.length }} webmention supported links found.</strong>
       </p>
@@ -24,15 +27,28 @@
           <a v-bind:href="mention.source">{{ mention.source }}</a>
           <br>
           <span>target=</span>
+          <span v-if="mention.status">
+            <span
+              :class="['status', 'status-' + mention.status.toString().slice(0, 1) ]"
+            >{{ mention.status }}</span>
+          </span>
           <a v-bind:href="mention.target">{{ mention.target }}</a>
+          <span v-if="mention.error">
+            <br>
+            {{ mention.error }}
+          </span>
         </li>
       </ol>
       <p v-if="hasResult && mentions.length">
-        <button :click="sendMentions" class="btn cta">Send all webmentions</button>
+        <button v-on:click="sendMentions" class="btn cta">Send all webmentions</button>
       </p>
     </div>
   </form>
 </template>
+
+<style scoped>
+</style>
+
 
 
 <script>
@@ -43,18 +59,25 @@ export default {
     url: "",
     loading: false,
     mentions: [],
+    sent: false,
     hasResult: false,
     error: null
   }),
   methods: {
     async sendMentions(event) {
       event.preventDefault();
+      this.loading = true;
       const res = await fetch(`${API}/check/?url=${escape(this.url)}`, {
         method: "post"
       });
+      this.loading = false;
+      this.mentions = await res.json();
+      this.hasResult = false;
+      this.sent = true;
     },
     async findMentions(event) {
       event.preventDefault();
+      this.sent = false;
       this.loading = true;
       this.hasResult = false;
       this.mentions = [];
