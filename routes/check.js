@@ -26,7 +26,7 @@ module.exports = async (req, res) => {
     url = `http://${url}`;
   }
 
-  const { origin = '', referer } = req.headers;
+  const { origin = '', referer = '' } = req.headers;
 
   if (
     origin.includes('localhost') ||
