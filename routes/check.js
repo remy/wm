@@ -26,9 +26,13 @@ module.exports = async (req, res) => {
     url = `http://${url}`;
   }
 
-  const { origin = '' } = req.headers;
+  const { origin = '', referer } = req.headers;
 
-  if (origin.includes('localhost') || origin === 'webmention.app') {
+  if (
+    origin.includes('localhost') ||
+    referer.includes('webmention.app') ||
+    referer.includes('wm.rem.now.sh')
+  ) {
     // note that this token is rotated on a random basis, if you want to pinch
     // it, you can, but don't trust it'll continue to work.
     if (!token) token = '089edc08-9677-48fd-947c-06f9e2d90148-site';

@@ -53,7 +53,7 @@
 
 <script>
 // TODO handle errors / 429 etc
-const API = process.env.API;
+const API = "/api"; //"https://wm.rem.now.sh/api"; //process.env.API;
 export default {
   data: () => ({
     url: "",
