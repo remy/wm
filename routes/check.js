@@ -56,7 +56,7 @@ module.exports = async (req, res) => {
             message: `Too many requests in time window. Try again in ${ms(
               delta * -1,
               { long: true }
-            )}.`,
+            )}, or use a free token for no rate limits.`,
           })
         );
       }
