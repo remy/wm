@@ -7,7 +7,7 @@ const ms = require('ms');
 const rateWindow = 1000 * 60 * 60 * 4; // 4 hours
 
 module.exports = async (req, res) => {
-  let { url, token } = qs(req);
+  let { url, token, limit } = qs(req);
 
   const now = new Date();
 
@@ -88,7 +88,7 @@ module.exports = async (req, res) => {
 
   console.log('>> ' + url);
 
-  const wm = new Webmention();
+  const wm = new Webmention({ limit });
   wm.on('error', e => {
     send(JSON.stringify({ error: true, message: e.message }));
   });
