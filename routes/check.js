@@ -4,7 +4,7 @@ const sendMention = require('../lib/send');
 const db = require('../lib/db');
 const ms = require('ms');
 
-const rateWindow = 1000 * 60 * 60 * 4; // 4 hours
+const rateWindow = 1000 * 60; // * 60 * 4; // 4 hours
 
 module.exports = async (req, res) => {
   let { url, token, limit } = qs(req);
@@ -26,7 +26,7 @@ module.exports = async (req, res) => {
     url = `http://${url}`;
   }
 
-  const { origin = '', referer } = req.headers;
+  const { origin = '', referer = '' } = req.headers;
 
   if (
     origin.includes('localhost') ||
