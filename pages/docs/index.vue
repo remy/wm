@@ -2,7 +2,7 @@
   <div>
     <h1>Documentation</h1>
     <h2>Platform agnostic webmentions</h2>
-    <p>webmention.app relies entirely on your markup and not your software, so no matter how your content is generated, you can notify other web sites of their webmentions.</p>
+    <p>webmention.app relies entirely on your markup and not your software, so no matter how your content is generated, you can send outgoing webmentions to other web sites.</p>
     <p>
       Supported formats include: plain HTML,
       <code>h-entry</code> (and
@@ -67,7 +67,7 @@
         </p>
         <p>
           Select the
-          <strong>Deploy succeeded</strong> event, and the URL to notify is:
+          <strong>Deploy succeeded</strong> event, and the URL to send outgoing webmentions is:
         </p>
         <pre><code><span>https://webmention.app/api/check?token=</span><a href="/token">[your-token]</a>&limit=1&url=[your-feed-url]</code></pre>
         <p>Now upon every new post you release, webmention.app will automatically handle your webmentions for you.</p>
@@ -176,7 +176,7 @@
         </h2>
       </summary>
       <div>
-        <p>webmention.app is only used to notify of webmentions. However, I can recommend the following websites:</p>
+        <p>webmention.app is only used to notify of outgoing webmentions. However, I can recommend the following websites:</p>
         <ul>
           <li>
             <a href="https://webmention.io">webmention.io</a> - a service you can use to accept inbound webmention notifications (I use this on
