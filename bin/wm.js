@@ -80,8 +80,8 @@ if (debug) wm.on('log', e => console.log(e));
 wm.on('endpoints', clearLine);
 if (!send) {
   wm.on('endpoints', res => {
-    if (debug && res.length === 0) {
-      console.log('- no active webmention endpoints found');
+    if (res.length === 0) {
+      console.log('No active webmention endpoints found');
     }
 
     res.map(res => {
