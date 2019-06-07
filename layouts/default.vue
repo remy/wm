@@ -29,7 +29,7 @@ export default {
       {
         hid: "description",
         name: "description",
-        content: "Home page description"
+        content: "Platform agnostic webmention notification service"
       }
     ],
     link: [
