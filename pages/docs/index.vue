@@ -26,7 +26,7 @@
           You need to find a way to request a URL, in this example, we'll use the command line tool
           <code>curl</code>:
         </p>
-        <pre><code><span class="prompt">$</span> curl -X POST http://localhost:3030/api/check?url=https://adactio.com/journal/15254
+        <pre><code><span class="prompt">$</span> curl -X POST https://webmention.app/api/check?url=https://adactio.com/journal/15254
 [{"endpoint":{"url":"https://webmention.io/indiewebcamp/webmention","type":"webmention"},"source":"https://adactio.com/journal/15254","target":"https://indieweb.org/Homebrew_Website_Club"},{"endpoint":{"url":"https://webmention.io/indiewebcamp/webmention","type":"webmention"},"source":"https://adactio.com/journal/15254","target":"https://indieweb.org/2019/Brighton"},{"endpoint":{"url":"https://brid.gy/publish/webmention","type":"webmention"},"source":"https://adactio.com/journal/15254","target":"https://benjamin.parry.is/"},{"endpoint":{"url":"https://webmention.io/remysharp.com/webmention","type":"webmention"},"source":"https://adactio.com/journal/15254","target":"https://remysharp.com/"}]
 </code></pre>
 
