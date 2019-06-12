@@ -2,10 +2,8 @@
 # TODO
 
 - [ ] Allow self mentions & pings
-- [ ] Process: reads local RSS file, compares to live RSS file, delta has web mention send applied
 - [ ] Provide `require('@remy/webmention')` support
-- [ ] [web] Add open-connection/comet style chunks for progress
-- [ ] Support JSON Feed (╯°□°)╯︵ ┻━┻
+- [ ] Support JSON feed (if there's requests for it)
 
 ## As of 2019-06-04
 
