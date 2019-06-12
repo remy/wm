@@ -30,7 +30,16 @@ export default {
         hid: "description",
         name: "description",
         content: "Platform agnostic outgoing webmention service"
-      }
+      },
+      { name: "twitter:creator", content: "@rem" },
+      { name: "twitter:title", content: "webmention.app" },
+      { name: "twitter:site", content: "@rem" },
+      { name: "twitter:domain", content: "webmention.app" },
+      {
+        name: "twitter:image:src",
+        content: "https://webmention.app/webmention-app-card.jpg"
+      },
+      { name: "twitter:card", content: "summary_large_image" }
     ],
     link: [
       {
