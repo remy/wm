@@ -56,21 +56,23 @@
 const API = ""; //"https://wm.rem.now.sh/api"; //process.env.API;
 export default {
   props: {
-    url: String,
+    query: String
   },
-  data: () => ({
-    // url: "",
-    loading: false,
-    mentions: [],
-    sent: false,
-    hasResult: false,
-    error: null
-  }),
+  data: function () {
+    return {
+      url: this.query,
+      loading: false,
+      mentions: [],
+      sent: false,
+      hasResult: false,
+      error: null
+    };
+  },
   methods: {
     async sendMentions(event) {
       event.preventDefault();
       this.loading = true;
-      const res = await fetch(`${API}/check/?url=${escape(this.url)}`, {
+      const res = await fetch(`${API}/check/?url=${encodeURIComponent(this.url)}`, {
         method: "post"
       });
       this.loading = false;
@@ -91,7 +93,7 @@ export default {
       this.hasResult = false;
       this.error = null;
       this.mentions = [];
-      const res = await fetch(`${API}/check/?url=${escape(this.url)}`);
+      const res = await fetch(`${API}/check/?url=${encodeURIComponent(this.url)}`);
 
       if (res.status === 200) {
         const json = await res.json();
@@ -110,7 +112,9 @@ export default {
         } catch (e) {
           console.log(e);
 
-          this.error = 'Something went wrong trying to capture the contents of the check request. Please try again or please report this error with the URL you are testing - thank you\n\n' + e;
+          this.error =
+            "Something went wrong trying to capture the contents of the check request: " +
+            e;
         }
       }
     }

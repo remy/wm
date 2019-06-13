@@ -3,6 +3,7 @@ const Webmention = require('../lib/webmention');
 const sendMention = require('../lib/send');
 const db = require('../lib/db');
 const ms = require('ms');
+const parse = require('url').parse;
 
 const rateWindow = 1000 * 60; // * 60 * 4; // 4 hours
 
@@ -31,6 +32,9 @@ module.exports = async (req, res) => {
   if (!url.startsWith('http')) {
     url = `http://${url}`;
   }
+
+  // ensure the url is properly encoded
+  url = parse(url).href;
 
   const { origin = '', referer = '' } = req.headers;
 

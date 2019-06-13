@@ -1,7 +1,6 @@
 <template lang="md">
 # TODO
 
-- [ ] Support proper host encoding, so https://i❤️.ws works
 - [ ] Allow self mentions & pings
 - [ ] Provide `require('@remy/webmention')` support
 - [ ] Support JSON feed (if there's requests for it)
@@ -9,6 +8,7 @@
 
 ## As of v1.3.1 / 2019-06-13
 
+- [x] Support proper host encoding, so https://i❤️.ws works
 - [x] If both pingback & webmention found, prioritise webmention
 - [x] Support nested `h-entry` (such as nested in `h-feed`s)
 
