@@ -4,6 +4,12 @@
 - [ ] Allow self mentions & pings
 - [ ] Provide `require('@remy/webmention')` support
 - [ ] Support JSON feed (if there's requests for it)
+- [ ] Support other sign in methods, such as indieauth
+
+## As of v1.3.0 / 2019-06-13
+
+- [x] Support nested `h-entry` (such as nested in `h-feed`s)
+
 
 ## As of 2019-06-04
 

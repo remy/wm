@@ -19,7 +19,7 @@
       <p class="center">
         <a class="btn" href="/auth">Sign in using Github</a>
       </p>
-      <p>The sign in process does not ask for any private data (nor email) and is only used to assign you a unique token that will allow you to make as many request as you need against this service.</p>
+      <p><strong>Important:</strong> the sign in process does not ask for any private data (nor email) and is only used to assign you a unique token that will allow you to make as many request as you need against this service.</p>
     </div>
     <hr>
     <p>Remember, if you use the command line tool you don't need a token as it runs entirely on your own machine.</p>

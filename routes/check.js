@@ -19,10 +19,10 @@ module.exports = async (req, res) => {
   };
 
   if (!url) {
-    res.writeHead(400);
+    res.writeHead(412);
     return res.end(
       JSON.stringify({
-        error: 'Bad request',
+        error: true,
         message: 'A valid URL is required to test against.',
       })
     );
@@ -58,7 +58,7 @@ module.exports = async (req, res) => {
         res.writeHead(429);
         return res.end(
           JSON.stringify({
-            error: 'Too many requests',
+            error: true,
             message: `Too many requests in time window. Try again in ${ms(
               delta * -1,
               { long: true }
@@ -88,7 +88,7 @@ module.exports = async (req, res) => {
         res.end(data);
       })
       .catch(e => {
-        res.end(e.message);
+        res.end({ error: true, message: e.message });
       });
   };
 
@@ -105,11 +105,22 @@ module.exports = async (req, res) => {
     if (req.method.toLowerCase() === 'post') {
       return Promise.all(urls.map(sendMention)).then(reply => {
         timings.send = Date.now() - now.getTime();
-        send(JSON.stringify(reply));
+        send(JSON.stringify({ urls: reply }));
       });
     }
 
-    send(JSON.stringify(urls));
+    if (urls.length === 0 && wm.mentions.length > 0) {
+      return send(
+        JSON.stringify({
+          error: true,
+          message: `No webmentions found on ${
+            wm.mentions.length
+          } discovered entries`,
+        })
+      );
+    }
+
+    send(JSON.stringify({ urls }));
   });
 
   wm.fetch(url);

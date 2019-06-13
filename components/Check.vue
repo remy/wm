@@ -71,28 +71,43 @@ export default {
         method: "post"
       });
       this.loading = false;
-      this.mentions = await res.json();
+      const json = await res.json();
+      if (!json.error) {
+        this.mentions = json.urls;
+        this.sent = true;
+      } else {
+        this.mentions = [];
+        this.error = json.message;
+      }
       this.hasResult = false;
-      this.sent = true;
     },
     async findMentions(event) {
       event.preventDefault();
       this.sent = false;
       this.loading = true;
       this.hasResult = false;
+      this.error = null;
       this.mentions = [];
       const res = await fetch(`${API}/check/?url=${escape(this.url)}`);
 
       if (res.status === 200) {
         const json = await res.json();
-        this.mentions = json;
+        if (json.error) {
+          this.error = json.message;
+        } else {
+          this.mentions = json.urls;
+          this.hasResult = true;
+        }
         this.loading = false;
-        this.hasResult = true;
       } else {
         this.loading = false;
-        if (res.status >= 400) {
+        try {
           const json = await res.json();
           this.error = json.message;
+        } catch (e) {
+          console.log(e);
+
+          this.error = 'Something went wrong trying to capture the contents of the check request. Please try again or please report this error with the URL you are testing - thank you\n\n' + e;
         }
       }
     }

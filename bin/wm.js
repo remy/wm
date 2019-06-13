@@ -81,7 +81,14 @@ wm.on('endpoints', clearLine);
 if (!send) {
   wm.on('endpoints', res => {
     if (res.length === 0) {
-      console.log('No active webmention endpoints found');
+      if (wm.mentions.length) {
+        console.log(
+          'No active webmention endpoints found on %s entries found (try increasing with --limit N)',
+          wm.mentions.length
+        );
+      } else {
+        console.log('No active webmention endpoints found');
+      }
     }
 
     res.map(res => {
