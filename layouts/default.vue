@@ -22,7 +22,7 @@ export default {
     Footer
   },
   head: {
-    title: "webmention.app",
+    title: "Automate your outgoing webmentions",
     meta: [
       { charset: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
@@ -32,7 +32,7 @@ export default {
         content: "Platform agnostic outgoing webmention service"
       },
       { name: "twitter:creator", content: "@rem" },
-      { name: "twitter:title", content: "webmention.app" },
+      { name: "twitter:title", content: "Automate your outgoing webmentions" },
       { name: "twitter:site", content: "@rem" },
       { name: "twitter:domain", content: "webmention.app" },
       {
