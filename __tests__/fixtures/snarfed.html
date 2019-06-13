@@ -1,0 +1,571 @@
+
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width" />
+<title>snarfed.org | Ryan Barrett&#039;s blog</title>
+<link rel="profile" href="http://gmpg.org/xfn/11" />
+<link rel="pingback" href="https://snarfed.org/w/xmlrpc.php" />
+<!--[if lt IE 9]>
+<script src="https://snarfed.org/w/wp-content/themes/ryu/js/html5.js" type="text/javascript"></script>
+<![endif]-->
+
+<title>snarfed.org &#8211; Ryan Barrett&#039;s blog</title>
+<link rel='dns-prefetch' href='//s0.wp.com' />
+<link rel='dns-prefetch' href='//fonts.googleapis.com' />
+<link rel='dns-prefetch' href='//s.w.org' />
+<link rel="alternate" type="application/rss+xml" title="snarfed.org &raquo; Feed" href="https://snarfed.org/feed" />
+<link rel="alternate" type="application/rss+xml" title="snarfed.org &raquo; Comments Feed" href="https://snarfed.org/comments/feed" />
+		<script type="text/javascript">
+			window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/12.0.0-1\/72x72\/","ext":".png","svgUrl":"https:\/\/s.w.org\/images\/core\/emoji\/12.0.0-1\/svg\/","svgExt":".svg","source":{"concatemoji":"https:\/\/snarfed.org\/w\/wp-includes\/js\/wp-emoji-release.min.js?ver=5.2.1"}};
+			!function(a,b,c){function d(a,b){var c=String.fromCharCode;l.clearRect(0,0,k.width,k.height),l.fillText(c.apply(this,a),0,0);var d=k.toDataURL();l.clearRect(0,0,k.width,k.height),l.fillText(c.apply(this,b),0,0);var e=k.toDataURL();return d===e}function e(a){var b;if(!l||!l.fillText)return!1;switch(l.textBaseline="top",l.font="600 32px Arial",a){case"flag":return!(b=d([55356,56826,55356,56819],[55356,56826,8203,55356,56819]))&&(b=d([55356,57332,56128,56423,56128,56418,56128,56421,56128,56430,56128,56423,56128,56447],[55356,57332,8203,56128,56423,8203,56128,56418,8203,56128,56421,8203,56128,56430,8203,56128,56423,8203,56128,56447]),!b);case"emoji":return b=d([55357,56424,55356,57342,8205,55358,56605,8205,55357,56424,55356,57340],[55357,56424,55356,57342,8203,55358,56605,8203,55357,56424,55356,57340]),!b}return!1}function f(a){var c=b.createElement("script");c.src=a,c.defer=c.type="text/javascript",b.getElementsByTagName("head")[0].appendChild(c)}var g,h,i,j,k=b.createElement("canvas"),l=k.getContext&&k.getContext("2d");for(j=Array("flag","emoji"),c.supports={everything:!0,everythingExceptFlag:!0},i=0;i<j.length;i++)c.supports[j[i]]=e(j[i]),c.supports.everything=c.supports.everything&&c.supports[j[i]],"flag"!==j[i]&&(c.supports.everythingExceptFlag=c.supports.everythingExceptFlag&&c.supports[j[i]]);c.supports.everythingExceptFlag=c.supports.everythingExceptFlag&&!c.supports.flag,c.DOMReady=!1,c.readyCallback=function(){c.DOMReady=!0},c.supports.everything||(h=function(){c.readyCallback()},b.addEventListener?(b.addEventListener("DOMContentLoaded",h,!1),a.addEventListener("load",h,!1)):(a.attachEvent("onload",h),b.attachEvent("onreadystatechange",function(){"complete"===b.readyState&&c.readyCallback()})),g=c.source||{},g.concatemoji?f(g.concatemoji):g.wpemoji&&g.twemoji&&(f(g.twemoji),f(g.wpemoji)))}(window,document,window._wpemojiSettings);
+		</script>
+		<style type="text/css">
+img.wp-smiley,
+img.emoji {
+	display: inline !important;
+	border: none !important;
+	box-shadow: none !important;
+	height: 1em !important;
+	width: 1em !important;
+	margin: 0 .07em !important;
+	vertical-align: -0.1em !important;
+	background: none !important;
+	padding: 0 !important;
+}
+</style>
+	<link rel='stylesheet' id='openid-css'  href='https://snarfed.org/w/wp-content/plugins/openid/f/openid.css?ver=519' type='text/css' media='all' />
+<link rel='stylesheet' id='the-neverending-homepage-css'  href='https://c0.wp.com/p/jetpack/7.4/modules/infinite-scroll/infinity.css' type='text/css' media='all' />
+<link rel='stylesheet' id='wp-block-library-css'  href='https://c0.wp.com/c/5.2.1/wp-includes/css/dist/block-library/style.min.css' type='text/css' media='all' />
+<link rel='stylesheet' id='semantic-linkbacks-css-css'  href='https://snarfed.org/w/wp-content/plugins/semantic-linkbacks/css/semantic-linkbacks.css?ver=3.8.1' type='text/css' media='all' />
+<link rel='stylesheet' id='jetpack-carousel-css'  href='https://c0.wp.com/p/jetpack/7.4/modules/carousel/jetpack-carousel.css' type='text/css' media='all' />
+<link rel='stylesheet' id='tiled-gallery-css'  href='https://c0.wp.com/p/jetpack/7.4/modules/tiled-gallery/tiled-gallery/tiled-gallery.css' type='text/css' media='all' />
+<link rel='stylesheet' id='mediaelement-css'  href='https://c0.wp.com/c/5.2.1/wp-includes/js/mediaelement/mediaelementplayer-legacy.min.css' type='text/css' media='all' />
+<link rel='stylesheet' id='wp-mediaelement-css'  href='https://c0.wp.com/c/5.2.1/wp-includes/js/mediaelement/wp-mediaelement.min.css' type='text/css' media='all' />
+<link rel='stylesheet' id='genericons-css'  href='https://c0.wp.com/p/jetpack/7.4/_inc/genericons/genericons/genericons.css' type='text/css' media='all' />
+<link rel='stylesheet' id='ryu-style-css'  href='https://snarfed.org/w/wp-content/themes/snarfed-ryu/style.css?ver=5.2.1' type='text/css' media='all' />
+<link rel='stylesheet' id='ryu-lato-css'  href='https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900,100italic,300italic,400italic,700italic,900italic&#038;subset=latin,latin-ext' type='text/css' media='all' />
+<link rel='stylesheet' id='ryu-playfair-display-css'  href='https://fonts.googleapis.com/css?family=Playfair+Display:400,700,900,400italic,700italic,900italic&#038;subset=latin,latin-ext' type='text/css' media='all' />
+<link rel='stylesheet' id='syndication-style-css'  href='https://snarfed.org/w/wp-content/plugins/syndication-links/css/syn.min.css?ver=4.1.2' type='text/css' media='all' />
+<script type='text/javascript' src='https://c0.wp.com/c/5.2.1/wp-includes/js/jquery/jquery.js'></script>
+<script type='text/javascript' src='https://c0.wp.com/c/5.2.1/wp-includes/js/jquery/jquery-migrate.min.js'></script>
+<script type='text/javascript' src='https://c0.wp.com/p/jetpack/7.4/_inc/build/spin.min.js'></script>
+<script type='text/javascript' src='https://c0.wp.com/p/jetpack/7.4/_inc/build/jquery.spin.min.js'></script>
+<script type='text/javascript' src='https://c0.wp.com/p/jetpack/7.4/_inc/build/tiled-gallery/tiled-gallery/tiled-gallery.min.js'></script>
+<script type='text/javascript'>
+var mejsL10n = {"language":"en","strings":{"mejs.install-flash":"You are using a browser that does not have Flash player enabled or installed. Please turn on your Flash player plugin or download the latest version from https:\/\/get.adobe.com\/flashplayer\/","mejs.fullscreen-off":"Turn off Fullscreen","mejs.fullscreen-on":"Go Fullscreen","mejs.download-video":"Download Video","mejs.fullscreen":"Fullscreen","mejs.time-jump-forward":["Jump forward 1 second","Jump forward %1 seconds"],"mejs.loop":"Toggle Loop","mejs.play":"Play","mejs.pause":"Pause","mejs.close":"Close","mejs.time-slider":"Time Slider","mejs.time-help-text":"Use Left\/Right Arrow keys to advance one second, Up\/Down arrows to advance ten seconds.","mejs.time-skip-back":["Skip back 1 second","Skip back %1 seconds"],"mejs.captions-subtitles":"Captions\/Subtitles","mejs.captions-chapters":"Chapters","mejs.none":"None","mejs.mute-toggle":"Mute Toggle","mejs.volume-help-text":"Use Up\/Down Arrow keys to increase or decrease volume.","mejs.unmute":"Unmute","mejs.mute":"Mute","mejs.volume-slider":"Volume Slider","mejs.video-player":"Video Player","mejs.audio-player":"Audio Player","mejs.ad-skip":"Skip ad","mejs.ad-skip-info":["Skip in 1 second","Skip in %1 seconds"],"mejs.source-chooser":"Source Chooser","mejs.stop":"Stop","mejs.speed-rate":"Speed Rate","mejs.live-broadcast":"Live Broadcast","mejs.afrikaans":"Afrikaans","mejs.albanian":"Albanian","mejs.arabic":"Arabic","mejs.belarusian":"Belarusian","mejs.bulgarian":"Bulgarian","mejs.catalan":"Catalan","mejs.chinese":"Chinese","mejs.chinese-simplified":"Chinese (Simplified)","mejs.chinese-traditional":"Chinese (Traditional)","mejs.croatian":"Croatian","mejs.czech":"Czech","mejs.danish":"Danish","mejs.dutch":"Dutch","mejs.english":"English","mejs.estonian":"Estonian","mejs.filipino":"Filipino","mejs.finnish":"Finnish","mejs.french":"French","mejs.galician":"Galician","mejs.german":"German","mejs.greek":"Greek","mejs.haitian-creole":"Haitian Creole","mejs.hebrew":"Hebrew","mejs.hindi":"Hindi","mejs.hungarian":"Hungarian","mejs.icelandic":"Icelandic","mejs.indonesian":"Indonesian","mejs.irish":"Irish","mejs.italian":"Italian","mejs.japanese":"Japanese","mejs.korean":"Korean","mejs.latvian":"Latvian","mejs.lithuanian":"Lithuanian","mejs.macedonian":"Macedonian","mejs.malay":"Malay","mejs.maltese":"Maltese","mejs.norwegian":"Norwegian","mejs.persian":"Persian","mejs.polish":"Polish","mejs.portuguese":"Portuguese","mejs.romanian":"Romanian","mejs.russian":"Russian","mejs.serbian":"Serbian","mejs.slovak":"Slovak","mejs.slovenian":"Slovenian","mejs.spanish":"Spanish","mejs.swahili":"Swahili","mejs.swedish":"Swedish","mejs.tagalog":"Tagalog","mejs.thai":"Thai","mejs.turkish":"Turkish","mejs.ukrainian":"Ukrainian","mejs.vietnamese":"Vietnamese","mejs.welsh":"Welsh","mejs.yiddish":"Yiddish"}};
+</script>
+<script type='text/javascript' src='https://c0.wp.com/c/5.2.1/wp-includes/js/mediaelement/mediaelement-and-player.min.js'></script>
+<script type='text/javascript' src='https://c0.wp.com/c/5.2.1/wp-includes/js/mediaelement/mediaelement-migrate.min.js'></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var _wpmejsSettings = {"pluginPath":"\/w\/wp-includes\/js\/mediaelement\/","classPrefix":"mejs-","stretching":"responsive"};
+/* ]]> */
+</script>
+<link rel='https://api.w.org/' href='https://snarfed.org/wp-json/' />
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="https://snarfed.org/w/wp-includes/wlwmanifest.xml" />
+
+			<link rel="openid2.provider" href="https://snarfed.org/w/?openid=server" />
+			<link rel="openid2.local_id" href="https://snarfed.org/author/ryan" />
+			<link rel="openid.server" href="https://snarfed.org/w/?openid=server" />
+			<link rel="openid.delegate" href="https://snarfed.org/author/ryan" />
+<link rel='dns-prefetch' href='//i0.wp.com'/>
+<link rel='dns-prefetch' href='//i1.wp.com'/>
+<link rel='dns-prefetch' href='//i2.wp.com'/>
+<link rel='dns-prefetch' href='//c0.wp.com'/>
+<style type='text/css'>img#wpstats{display:none}</style>	<style type="text/css">
+			.site-title,
+		.site-description {
+			position: absolute;
+			clip: rect(1px 1px 1px 1px); /* IE6, IE7 */
+			clip: rect(1px, 1px, 1px, 1px);
+		}
+		.header-image {
+			margin-bottom: 0;
+		}
+		</style>
+				<style type="text/css">
+				/* If html does not have either class, do not show lazy loaded images. */
+				html:not( .jetpack-lazy-images-js-enabled ):not( .js ) .jetpack-lazy-image {
+					display: none;
+				}
+			</style>
+			<script>
+				document.documentElement.classList.add(
+					'jetpack-lazy-images-js-enabled'
+				);
+			</script>
+
+<!-- Jetpack Open Graph Tags -->
+<meta property="og:type" content="website" />
+<meta property="og:title" content="snarfed.org" />
+<meta property="og:description" content="Ryan Barrett&#039;s blog" />
+<meta property="og:url" content="https://snarfed.org/" />
+<meta property="og:site_name" content="snarfed.org" />
+<meta property="og:image" content="https://snarfed.org/iraq_square.jpg" />
+<meta property="og:locale" content="en_US" />
+<meta name="twitter:site" content="@schnarfed" />
+<meta name="twitter:image" content="https://snarfed.org/iraq_square.jpg" />
+
+<!-- End Jetpack Open Graph Tags -->
+<link rel="micropub_media" href="https://snarfed.org/wp-json/micropub/1.0/media" />
+<link rel="micropub" href="https://snarfed.org/wp-json/micropub/1.0/endpoint" />
+<link rel="authorization_endpoint" href="https://indieauth.com/auth" />
+<link rel="token_endpoint" href="https://tokens.indieauth.com/token" />
+<link rel="webmention" href="https://snarfed.org/wp-json/webmention/1.0/endpoint" />
+<link rel="http://webmention.org/" href="https://snarfed.org/wp-json/webmention/1.0/endpoint" />
+</head>
+
+<body class="home blog hfeed h-feed">
+
+
+<div id="page" class="site">
+		<div id="widgets-wrapper" class="toppanel hide">
+		<div id="secondary" role="complementary" class="wrap clear one">
+		<div id="top-sidebar-one" class="widget-area" role="complementary">
+		<aside id="custom_html-2" class="widget_text widget widget_custom_html"><div class="textwidget custom-html-widget"><div class="h-card vcard">
+<div id="my-header">
+I'm <a id="my-name" rel="me" href="/about" class="p-name fn">Ryan Barrett</a>.<br />
+I <a href="/house">live</a>, <a href="/resume">work</a>, and <a href="/pictures">play</a> in
+ <span class="p-locality locality">San Francisco</span><abbr class="p-region region" style="display: none">California</abbr>.<br />
+I <a href="/software">code</a>, <a href="/tag/essay">write</a>, and post <a href="/pictures">pictures</a> here.
+</div>
+
+<span style="display: none">
+<img class="jetpack-lazy-image" alt="Ryan" src="/ryan_profile_medium.jpg" data-lazy-src="/ryan_profile_medium.jpg?is-pending-load=1" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"><noscript><img class="u-photo photo" alt="Ryan" src="/ryan_profile_medium.jpg" /></noscript>
+<a href="mailto:public&#64;ryanb&#46;org" rel="me" class="u-email">public&#64;ryanb&#46;org</a>
+<a class="u-key" href="/pubkey.txt">public PGP key</a>
+</span>
+
+<ul id="my-icons">
+  <li class="home-link">
+    <a href="/" class="genericon url u-url u-uid" title="Home">
+      <span class="screen-reader-text">Home</span>
+    </a>
+  </li>
+  <li class="search-trigger">
+    <a href="#" class="genericon" title="Search">
+      <span class="screen-reader-text">Search</span>
+    </a>
+  </li>
+  <li class="archives-link">
+    <a href="/archive" class="genericon" title="Archives">
+      <span class="screen-reader-text">Archives</span>
+    </a>
+  </li>
+  <li class="twitter-link">
+    <a rel="me noopener noreferrer" href="https://twitter.com/schnarfed" class="genericon" title="Twitter" target="_blank">
+      <span class="screen-reader-text">Twitter</span>
+    </a>
+  </li>
+  <li class="facebook-link">
+    <a rel="me noopener noreferrer" href="https://www.facebook.com/snarfed.org/about" class="genericon" title="Facebook" target="_blank">
+      <span class="screen-reader-text">Facebook</span>
+    </a>
+  </li>
+  <li class="instagram-link">
+    <a rel="me noopener noreferrer" href="https://www.instagram.com/snarfed/" class="genericon" title="Instagram" target="_blank">
+      <span class="screen-reader-text">Instagram</span>
+    </a>
+  </li>
+  <li class="google-link">
+    <a rel="me noopener noreferrer" href="https://plus.google.com/+RyanBarrett" class="genericon" title="Google+" target="_blank">
+      <span class="screen-reader-text">Google+</span>
+    </a>
+  </li>
+  <li class="github-link">
+    <a rel="me noopener noreferrer" href="https://github.com/snarfed" class="genericon" title="GitHub" target="_blank">
+      <span class="screen-reader-text">GitHub</span>
+    </a>
+  </li>
+  <li class="feed-link">
+    <a href="/feed" class="genericon" title="RSS Feed">
+      <span class="screen-reader-text">RSS Feed</span>
+    </a>
+  </li>
+  <li class="micro-blog-link" style="display: none">
+    <a rel="me noopener noreferrer" href="https://micro.blog/snarfed" class="genericon" title="micro.blog" target="_blank">
+      <span class="screen-reader-text">micro.blog</span>
+    </a>
+  </li>
+  <li class="mastodon-link" style="display: none">
+    <a rel="me noopener noreferrer" href="https://mastodon.technology/@snarfed" class="genericon" title="Mastodon" target="_blank">
+      <span class="screen-reader-text">Mastodon</span>
+    </a>
+  </li>
+</ul>
+</div>
+
+<link rel="microsub" href="https://baffle.tech/newsblur/snarfed">
+<link rel="authorization_endpoint" href="https://indieauth.com/auth">
+<link rel="token_endpoint" href="https://tokens.indieauth.com/token"></div></aside>	</div><!-- #first .widget-area -->
+
+
+
+	</div><!-- #secondary -->	</div>
+
+
+	<div id="search-wrapper" class="toppanel hide">
+
+<form method="get" id="searchform" class="searchform" action="https://snarfed.org/" role="search">
+	<label for="s" class="screen-reader-text">Search</label>
+	<input type="search" class="field" name="s" value="" id="s" placeholder="Search &hellip;" />
+	<input type="submit" class="submit" id="searchsubmit" value="Search" />
+</form>	</div>
+
+	<div id="triggers-wrapper">
+		<ul class="triggers clear">
+						<li class="widgets-trigger">
+				<a href="#" class="theme-genericon" title="Widgets">
+					<span class="screen-reader-text">Widgets</span>
+				</a>
+			</li>
+
+
+			<li class="search-trigger">
+				<a href="#" class="theme-genericon" title="Search">
+					<span class="screen-reader-text">Search</span>
+				</a>
+			</li>
+		</ul>
+	</div>
+
+	<header id="masthead" class="site-header" role="banner">
+		<div class="wrap">
+
+							<a class="site-logo"  href="https://snarfed.org/" title="snarfed.org" rel="home">
+					<img src="https://snarfed.org/w/wp-content/uploads/2013/06/copy-cropped-iraq_bar.jpg" width="1500" height="213" alt="" class="no-grav header-image" />
+				</a>
+
+			<hgroup class="p-name">
+				<h1 class="site-title"><a href="https://snarfed.org/" title="snarfed.org" rel="home">snarfed.org</a></h1>
+				<h2 class="site-description">Ryan Barrett&#039;s blog</h2>
+			</hgroup>
+		</div><!-- .wrap -->
+
+			</header><!-- #masthead -->
+
+	<div id="main" class="site-main">
+	<div id="primary" class="content-area">
+		<div id="content" class="site-content" role="main">
+
+
+
+
+<article id="post-37547" class="clear post-37547 post type-post status-publish format-standard category-uncategorized h-entry hentry">
+	<div class="entry-wrap wrap clear">
+
+		<header class="entry-header">
+			<span class="categories-links"><a href="https://snarfed.org/category/uncategorized" rel="category tag">Uncategorized</a></span><h1 class="entry-title"><a href="https://snarfed.org/2019-06-13_37547" rel="bookmark"><span class='p-name'></span></a></h1>		</header><!-- .entry-header -->
+
+		<footer class="entry-meta">
+			<span class="entry-date"><a class="u-url" href="https://snarfed.org/2019-06-13_37547" title="7:10am" rel="bookmark"><time class="dt-published" datetime="2019-06-13T07:10:04-07:00">June 13, 2019</time></a><span class="syn-text"></span><ul class="relsyn"><li><a aria-label="twitter" class="u-syndication syn-link" href="https://twitter.com/schnarfed/status/1139171042323156994"> <span class="svg-icon svg-twitter" style="display: inline-block; max-width: 1rem; margin: 2px;" aria-hidden="true" aria-label="twitter" title="twitter" ><svg role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>Twitter icon</title><path d="M23.954 4.569c-.885.389-1.83.654-2.825.775 1.014-.611 1.794-1.574 2.163-2.723-.951.555-2.005.959-3.127 1.184-.896-.959-2.173-1.559-3.591-1.559-2.717 0-4.92 2.203-4.92 4.917 0 .39.045.765.127 1.124C7.691 8.094 4.066 6.13 1.64 3.161c-.427.722-.666 1.561-.666 2.475 0 1.71.87 3.213 2.188 4.096-.807-.026-1.566-.248-2.228-.616v.061c0 2.385 1.693 4.374 3.946 4.827-.413.111-.849.171-1.296.171-.314 0-.615-.03-.916-.086.631 1.953 2.445 3.377 4.604 3.417-1.68 1.319-3.809 2.105-6.102 2.105-.39 0-.779-.023-1.17-.067 2.189 1.394 4.768 2.209 7.557 2.209 9.054 0 13.999-7.496 13.999-13.986 0-.209 0-.42-.015-.63.961-.689 1.8-1.56 2.46-2.548l-.047-.02z"/></svg></span></a></li></ul></span><span class="author p-author h-card vcard"> <img alt src="https://secure.gravatar.com/avatar/947b5f3f323da0ef785b6f02d9c265d6?s=96&#038;d=blank&#038;r=g" class="avatar avatar-96 jetpack-lazy-image" height="96" width="96" data-lazy-srcset="https://secure.gravatar.com/avatar/947b5f3f323da0ef785b6f02d9c265d6?s=192&#038;d=blank&#038;r=g 2x" data-lazy-src="https://secure.gravatar.com/avatar/947b5f3f323da0ef785b6f02d9c265d6?s=96&amp;is-pending-load=1#038;d=blank&#038;r=g" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"><noscript><img alt='' src='https://secure.gravatar.com/avatar/947b5f3f323da0ef785b6f02d9c265d6?s=96&#038;d=blank&#038;r=g' srcset='https://secure.gravatar.com/avatar/947b5f3f323da0ef785b6f02d9c265d6?s=192&#038;d=blank&#038;r=g 2x' class='avatar avatar-96 photo u-photo' height='96' width='96' /></noscript><a class="u-url url fn n p-name" href="https://snarfed.org/" title="Ryan Barrett" rel="author">Ryan Barrett</a></span>
+						<span class="comments-link"><a href="https://snarfed.org/2019-06-13_37547#comments">4 Comments</a></span>
+
+					</footer><!-- .entry-meta -->
+
+				<div class="entry-content clear">
+			<div class='e-content'>guess i&#8217;m done for the day</p>
+<p><a href="https://chat.indieweb.org/2019-06-13#t1560433376591000">
+<img class="shadow jetpack-lazy-image" src="/make_an_better_internet.png" data-lazy-src="/make_an_better_internet.png?is-pending-load=1" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"><noscript><img class="shadow" src="/make_an_better_internet.png"></noscript>
+</a></div>
+<div id="syndication-links"><span class="syn-text"></span><ul class="relsyn"><li><a aria-label="twitter" class="u-syndication syn-link" href="https://twitter.com/schnarfed/status/1139171042323156994"> <span class="svg-icon svg-twitter" style="display: inline-block; max-width: 1rem; margin: 2px;" aria-hidden="true" aria-label="twitter" title="twitter" ><svg role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>Twitter icon</title><path d="M23.954 4.569c-.885.389-1.83.654-2.825.775 1.014-.611 1.794-1.574 2.163-2.723-.951.555-2.005.959-3.127 1.184-.896-.959-2.173-1.559-3.591-1.559-2.717 0-4.92 2.203-4.92 4.917 0 .39.045.765.127 1.124C7.691 8.094 4.066 6.13 1.64 3.161c-.427.722-.666 1.561-.666 2.475 0 1.71.87 3.213 2.188 4.096-.807-.026-1.566-.248-2.228-.616v.061c0 2.385 1.693 4.374 3.946 4.827-.413.111-.849.171-1.296.171-.314 0-.615-.03-.916-.086.631 1.953 2.445 3.377 4.604 3.417-1.68 1.319-3.809 2.105-6.102 2.105-.39 0-.779-.023-1.17-.067 2.189 1.394 4.768 2.209 7.557 2.209 9.054 0 13.999-7.496 13.999-13.986 0-.209 0-.42-.015-.63.961-.689 1.8-1.56 2.46-2.548l-.047-.02z"/></svg></span></a></li></ul></div>					</div><!-- .entry-content -->
+
+		<span class="entry-format-badge theme-genericon"><span class="screen-reader-text">Standard</span></span>
+	</div><!-- .entry-wrap -->
+</article><!-- #post-## -->
+
+
+<article id="post-37491" class="clear post-37491 post type-post status-publish format-standard category-uncategorized h-entry hentry">
+	<div class="entry-wrap wrap clear">
+
+		<header class="entry-header">
+			<span class="categories-links"><a href="https://snarfed.org/category/uncategorized" rel="category tag">Uncategorized</a></span><h1 class="entry-title"><a href="https://snarfed.org/2019-06-06_37491" rel="bookmark"><span class='p-name'></span></a></h1>		</header><!-- .entry-header -->
+
+		<footer class="entry-meta">
+			<span class="entry-date"><a class="u-url" href="https://snarfed.org/2019-06-06_37491" title="6:56am" rel="bookmark"><time class="dt-published" datetime="2019-06-06T06:56:13-07:00">June 6, 2019</time></a><span class="syn-text"></span><ul class="relsyn"><li><a aria-label="twitter" class="u-syndication syn-link" href="https://twitter.com/schnarfed/status/1136632908372819969"> <span class="svg-icon svg-twitter" style="display: inline-block; max-width: 1rem; margin: 2px;" aria-hidden="true" aria-label="twitter" title="twitter" ><svg role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>Twitter icon</title><path d="M23.954 4.569c-.885.389-1.83.654-2.825.775 1.014-.611 1.794-1.574 2.163-2.723-.951.555-2.005.959-3.127 1.184-.896-.959-2.173-1.559-3.591-1.559-2.717 0-4.92 2.203-4.92 4.917 0 .39.045.765.127 1.124C7.691 8.094 4.066 6.13 1.64 3.161c-.427.722-.666 1.561-.666 2.475 0 1.71.87 3.213 2.188 4.096-.807-.026-1.566-.248-2.228-.616v.061c0 2.385 1.693 4.374 3.946 4.827-.413.111-.849.171-1.296.171-.314 0-.615-.03-.916-.086.631 1.953 2.445 3.377 4.604 3.417-1.68 1.319-3.809 2.105-6.102 2.105-.39 0-.779-.023-1.17-.067 2.189 1.394 4.768 2.209 7.557 2.209 9.054 0 13.999-7.496 13.999-13.986 0-.209 0-.42-.015-.63.961-.689 1.8-1.56 2.46-2.548l-.047-.02z"/></svg></span></a></li></ul></span><span class="author p-author h-card vcard"> <img alt src="https://secure.gravatar.com/avatar/947b5f3f323da0ef785b6f02d9c265d6?s=96&#038;d=blank&#038;r=g" class="avatar avatar-96 jetpack-lazy-image" height="96" width="96" data-lazy-srcset="https://secure.gravatar.com/avatar/947b5f3f323da0ef785b6f02d9c265d6?s=192&#038;d=blank&#038;r=g 2x" data-lazy-src="https://secure.gravatar.com/avatar/947b5f3f323da0ef785b6f02d9c265d6?s=96&amp;is-pending-load=1#038;d=blank&#038;r=g" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"><noscript><img alt='' src='https://secure.gravatar.com/avatar/947b5f3f323da0ef785b6f02d9c265d6?s=96&#038;d=blank&#038;r=g' srcset='https://secure.gravatar.com/avatar/947b5f3f323da0ef785b6f02d9c265d6?s=192&#038;d=blank&#038;r=g 2x' class='avatar avatar-96 photo u-photo' height='96' width='96' /></noscript><a class="u-url url fn n p-name" href="https://snarfed.org/" title="Ryan Barrett" rel="author">Ryan Barrett</a></span>
+						<span class="comments-link"><a href="https://snarfed.org/2019-06-06_37491#comments">5 Comments</a></span>
+
+					</footer><!-- .entry-meta -->
+
+				<div class="entry-content clear">
+			<div class='e-content'>
+<blockquote class="wp-block-quote">
+<p>Technology is amazing! It&#8217;s solved almost all of the problems that it caused in the first place.</p>
+</blockquote>
+<p>&#8211; Unknown</p>
+</p>
+</div>
+<div id="syndication-links"><span class="syn-text"></span><ul class="relsyn"><li><a aria-label="twitter" class="u-syndication syn-link" href="https://twitter.com/schnarfed/status/1136632908372819969"> <span class="svg-icon svg-twitter" style="display: inline-block; max-width: 1rem; margin: 2px;" aria-hidden="true" aria-label="twitter" title="twitter" ><svg role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>Twitter icon</title><path d="M23.954 4.569c-.885.389-1.83.654-2.825.775 1.014-.611 1.794-1.574 2.163-2.723-.951.555-2.005.959-3.127 1.184-.896-.959-2.173-1.559-3.591-1.559-2.717 0-4.92 2.203-4.92 4.917 0 .39.045.765.127 1.124C7.691 8.094 4.066 6.13 1.64 3.161c-.427.722-.666 1.561-.666 2.475 0 1.71.87 3.213 2.188 4.096-.807-.026-1.566-.248-2.228-.616v.061c0 2.385 1.693 4.374 3.946 4.827-.413.111-.849.171-1.296.171-.314 0-.615-.03-.916-.086.631 1.953 2.445 3.377 4.604 3.417-1.68 1.319-3.809 2.105-6.102 2.105-.39 0-.779-.023-1.17-.067 2.189 1.394 4.768 2.209 7.557 2.209 9.054 0 13.999-7.496 13.999-13.986 0-.209 0-.42-.015-.63.961-.689 1.8-1.56 2.46-2.548l-.047-.02z"/></svg></span></a></li></ul></div>					</div><!-- .entry-content -->
+
+		<span class="entry-format-badge theme-genericon"><span class="screen-reader-text">Standard</span></span>
+	</div><!-- .entry-wrap -->
+</article><!-- #post-## -->
+
+
+<article id="post-37372" class="clear post-37372 post type-post status-publish format-standard category-uncategorized tag-essay h-entry hentry">
+	<div class="entry-wrap wrap clear">
+
+		<header class="entry-header">
+			<span class="categories-links"><a href="https://snarfed.org/category/uncategorized" rel="category tag">Uncategorized</a></span><h1 class="entry-title"><a href="https://snarfed.org/2019-05-26_raymond-t-lahar" rel="bookmark"><span class='p-name'>Raymond T. Lahar</span></a></h1>		</header><!-- .entry-header -->
+
+		<footer class="entry-meta">
+			<span class="entry-date"><a class="u-url" href="https://snarfed.org/2019-05-26_raymond-t-lahar" title="12:47pm" rel="bookmark"><time class="dt-published" datetime="2019-05-26T12:47:09-07:00">May 26, 2019</time></a><span class="syn-text"></span><ul class="relsyn"><li><a aria-label="twitter" class="u-syndication syn-link" href="https://twitter.com/schnarfed/status/1132738383636156421"> <span class="svg-icon svg-twitter" style="display: inline-block; max-width: 1rem; margin: 2px;" aria-hidden="true" aria-label="twitter" title="twitter" ><svg role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>Twitter icon</title><path d="M23.954 4.569c-.885.389-1.83.654-2.825.775 1.014-.611 1.794-1.574 2.163-2.723-.951.555-2.005.959-3.127 1.184-.896-.959-2.173-1.559-3.591-1.559-2.717 0-4.92 2.203-4.92 4.917 0 .39.045.765.127 1.124C7.691 8.094 4.066 6.13 1.64 3.161c-.427.722-.666 1.561-.666 2.475 0 1.71.87 3.213 2.188 4.096-.807-.026-1.566-.248-2.228-.616v.061c0 2.385 1.693 4.374 3.946 4.827-.413.111-.849.171-1.296.171-.314 0-.615-.03-.916-.086.631 1.953 2.445 3.377 4.604 3.417-1.68 1.319-3.809 2.105-6.102 2.105-.39 0-.779-.023-1.17-.067 2.189 1.394 4.768 2.209 7.557 2.209 9.054 0 13.999-7.496 13.999-13.986 0-.209 0-.42-.015-.63.961-.689 1.8-1.56 2.46-2.548l-.047-.02z"/></svg></span></a></li><li><a aria-label="instagram" class="u-syndication syn-link" href="https://www.instagram.com/p/Bx8EMlzJ56w/"> <span class="svg-icon svg-instagram" style="display: inline-block; max-width: 1rem; margin: 2px;" aria-hidden="true" aria-label="instagram" title="instagram" ><svg role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>Instagram icon</title><path d="M12 0C8.74 0 8.333.015 7.053.072 5.775.132 4.905.333 4.14.63c-.789.306-1.459.717-2.126 1.384S.935 3.35.63 4.14C.333 4.905.131 5.775.072 7.053.012 8.333 0 8.74 0 12s.015 3.667.072 4.947c.06 1.277.261 2.148.558 2.913.306.788.717 1.459 1.384 2.126.667.666 1.336 1.079 2.126 1.384.766.296 1.636.499 2.913.558C8.333 23.988 8.74 24 12 24s3.667-.015 4.947-.072c1.277-.06 2.148-.262 2.913-.558.788-.306 1.459-.718 2.126-1.384.666-.667 1.079-1.335 1.384-2.126.296-.765.499-1.636.558-2.913.06-1.28.072-1.687.072-4.947s-.015-3.667-.072-4.947c-.06-1.277-.262-2.149-.558-2.913-.306-.789-.718-1.459-1.384-2.126C21.319 1.347 20.651.935 19.86.63c-.765-.297-1.636-.499-2.913-.558C15.667.012 15.26 0 12 0zm0 2.16c3.203 0 3.585.016 4.85.071 1.17.055 1.805.249 2.227.415.562.217.96.477 1.382.896.419.42.679.819.896 1.381.164.422.36 1.057.413 2.227.057 1.266.07 1.646.07 4.85s-.015 3.585-.074 4.85c-.061 1.17-.256 1.805-.421 2.227-.224.562-.479.96-.899 1.382-.419.419-.824.679-1.38.896-.42.164-1.065.36-2.235.413-1.274.057-1.649.07-4.859.07-3.211 0-3.586-.015-4.859-.074-1.171-.061-1.816-.256-2.236-.421-.569-.224-.96-.479-1.379-.899-.421-.419-.69-.824-.9-1.38-.165-.42-.359-1.065-.42-2.235-.045-1.26-.061-1.649-.061-4.844 0-3.196.016-3.586.061-4.861.061-1.17.255-1.814.42-2.234.21-.57.479-.96.9-1.381.419-.419.81-.689 1.379-.898.42-.166 1.051-.361 2.221-.421 1.275-.045 1.65-.06 4.859-.06l.045.03zm0 3.678c-3.405 0-6.162 2.76-6.162 6.162 0 3.405 2.76 6.162 6.162 6.162 3.405 0 6.162-2.76 6.162-6.162 0-3.405-2.76-6.162-6.162-6.162zM12 16c-2.21 0-4-1.79-4-4s1.79-4 4-4 4 1.79 4 4-1.79 4-4 4zm7.846-10.405c0 .795-.646 1.44-1.44 1.44-.795 0-1.44-.646-1.44-1.44 0-.794.646-1.439 1.44-1.439.793-.001 1.44.645 1.44 1.439z"/></svg></span></a></li></ul></span><span class="author p-author h-card vcard"> <img alt src="https://secure.gravatar.com/avatar/947b5f3f323da0ef785b6f02d9c265d6?s=96&#038;d=blank&#038;r=g" class="avatar avatar-96 jetpack-lazy-image" height="96" width="96" data-lazy-srcset="https://secure.gravatar.com/avatar/947b5f3f323da0ef785b6f02d9c265d6?s=192&#038;d=blank&#038;r=g 2x" data-lazy-src="https://secure.gravatar.com/avatar/947b5f3f323da0ef785b6f02d9c265d6?s=96&amp;is-pending-load=1#038;d=blank&#038;r=g" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"><noscript><img alt='' src='https://secure.gravatar.com/avatar/947b5f3f323da0ef785b6f02d9c265d6?s=96&#038;d=blank&#038;r=g' srcset='https://secure.gravatar.com/avatar/947b5f3f323da0ef785b6f02d9c265d6?s=192&#038;d=blank&#038;r=g 2x' class='avatar avatar-96 photo u-photo' height='96' width='96' /></noscript><a class="u-url url fn n p-name" href="https://snarfed.org/" title="Ryan Barrett" rel="author">Ryan Barrett</a></span>
+						<span class="comments-link"><a href="https://snarfed.org/2019-05-26_raymond-t-lahar#comments">32 Comments</a></span>
+
+					</footer><!-- .entry-meta -->
+
+				<div class="entry-content clear">
+			<div class='e-content'>
+<p class="right half">
+ <a href="/w/wp-content/uploads/2019/05/IMG_20190526_121329.jpg">
+  <img class="shadow jetpack-lazy-image" src="/w/wp-content/uploads/2019/05/IMG_20190526_121329-768x1024.jpg" data-lazy-src="/w/wp-content/uploads/2019/05/IMG_20190526_121329-768x1024.jpg?is-pending-load=1" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"><noscript><img class="shadow" src="/w/wp-content/uploads/2019/05/IMG_20190526_121329-768x1024.jpg" /></noscript>
+</a></p>
+<p>This Memorial Day weekend I&#8217;m thinking about my grandfather, Raymond T. Lahar (middle), and rereading his <a href="http://www.janawaygenealogy.com/Merchant2/merchant.mvc?Screen=PROD&amp;Product_Code=VT0118">memoirs</a>. He fought in World War II, in the European and North African theaters, Company K, 142nd Infantry, 36th Division, 1942-1945.</p>
+<p>In late 1944, his company crossed the Vosges Mountains in eastern France on a mission to establish contact and supply lines with the Second Battallion. After hours of marching, they came to a field, started across, and immediately took direct machine gun fire. Ray was hit in the leg. He could barely walk, but still managed to help drag the rest of his company to cover and safety where medics could tend to them.</p>
+<p>That was Ray&#8217;s last patrol. As one of his men, Sergeant Roy Christensen, put it: &#8220;You&#8217;ve got a beauty here. You&#8217;re going back to the States for sure. It&#8217;s a white foxhole for you.&#8221; Surgeons had to remove three inches from his left leg. He walked with a platform shoe and a cane for the rest of his life.</p>
+<p>Ray was later awarded three Purple Hearts, the French Croix de Guerre, the Distinguished Service Cross, and 12 other medals. He was honorably discharged on June 15, 1948 with the rank of Major.</p>
+<p>Thank you for everything, Grandpa.</p></div>
+<div id="syndication-links"><span class="syn-text"></span><ul class="relsyn"><li><a aria-label="twitter" class="u-syndication syn-link" href="https://twitter.com/schnarfed/status/1132738383636156421"> <span class="svg-icon svg-twitter" style="display: inline-block; max-width: 1rem; margin: 2px;" aria-hidden="true" aria-label="twitter" title="twitter" ><svg role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>Twitter icon</title><path d="M23.954 4.569c-.885.389-1.83.654-2.825.775 1.014-.611 1.794-1.574 2.163-2.723-.951.555-2.005.959-3.127 1.184-.896-.959-2.173-1.559-3.591-1.559-2.717 0-4.92 2.203-4.92 4.917 0 .39.045.765.127 1.124C7.691 8.094 4.066 6.13 1.64 3.161c-.427.722-.666 1.561-.666 2.475 0 1.71.87 3.213 2.188 4.096-.807-.026-1.566-.248-2.228-.616v.061c0 2.385 1.693 4.374 3.946 4.827-.413.111-.849.171-1.296.171-.314 0-.615-.03-.916-.086.631 1.953 2.445 3.377 4.604 3.417-1.68 1.319-3.809 2.105-6.102 2.105-.39 0-.779-.023-1.17-.067 2.189 1.394 4.768 2.209 7.557 2.209 9.054 0 13.999-7.496 13.999-13.986 0-.209 0-.42-.015-.63.961-.689 1.8-1.56 2.46-2.548l-.047-.02z"/></svg></span></a></li><li><a aria-label="instagram" class="u-syndication syn-link" href="https://www.instagram.com/p/Bx8EMlzJ56w/"> <span class="svg-icon svg-instagram" style="display: inline-block; max-width: 1rem; margin: 2px;" aria-hidden="true" aria-label="instagram" title="instagram" ><svg role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>Instagram icon</title><path d="M12 0C8.74 0 8.333.015 7.053.072 5.775.132 4.905.333 4.14.63c-.789.306-1.459.717-2.126 1.384S.935 3.35.63 4.14C.333 4.905.131 5.775.072 7.053.012 8.333 0 8.74 0 12s.015 3.667.072 4.947c.06 1.277.261 2.148.558 2.913.306.788.717 1.459 1.384 2.126.667.666 1.336 1.079 2.126 1.384.766.296 1.636.499 2.913.558C8.333 23.988 8.74 24 12 24s3.667-.015 4.947-.072c1.277-.06 2.148-.262 2.913-.558.788-.306 1.459-.718 2.126-1.384.666-.667 1.079-1.335 1.384-2.126.296-.765.499-1.636.558-2.913.06-1.28.072-1.687.072-4.947s-.015-3.667-.072-4.947c-.06-1.277-.262-2.149-.558-2.913-.306-.789-.718-1.459-1.384-2.126C21.319 1.347 20.651.935 19.86.63c-.765-.297-1.636-.499-2.913-.558C15.667.012 15.26 0 12 0zm0 2.16c3.203 0 3.585.016 4.85.071 1.17.055 1.805.249 2.227.415.562.217.96.477 1.382.896.419.42.679.819.896 1.381.164.422.36 1.057.413 2.227.057 1.266.07 1.646.07 4.85s-.015 3.585-.074 4.85c-.061 1.17-.256 1.805-.421 2.227-.224.562-.479.96-.899 1.382-.419.419-.824.679-1.38.896-.42.164-1.065.36-2.235.413-1.274.057-1.649.07-4.859.07-3.211 0-3.586-.015-4.859-.074-1.171-.061-1.816-.256-2.236-.421-.569-.224-.96-.479-1.379-.899-.421-.419-.69-.824-.9-1.38-.165-.42-.359-1.065-.42-2.235-.045-1.26-.061-1.649-.061-4.844 0-3.196.016-3.586.061-4.861.061-1.17.255-1.814.42-2.234.21-.57.479-.96.9-1.381.419-.419.81-.689 1.379-.898.42-.166 1.051-.361 2.221-.421 1.275-.045 1.65-.06 4.859-.06l.045.03zm0 3.678c-3.405 0-6.162 2.76-6.162 6.162 0 3.405 2.76 6.162 6.162 6.162 3.405 0 6.162-2.76 6.162-6.162 0-3.405-2.76-6.162-6.162-6.162zM12 16c-2.21 0-4-1.79-4-4s1.79-4 4-4 4 1.79 4 4-1.79 4-4 4zm7.846-10.405c0 .795-.646 1.44-1.44 1.44-.795 0-1.44-.646-1.44-1.44 0-.794.646-1.439 1.44-1.439.793-.001 1.44.645 1.44 1.439z"/></svg></span></a></li></ul></div>					</div><!-- .entry-content -->
+
+		<span class="entry-format-badge theme-genericon"><span class="screen-reader-text">Standard</span></span>
+	</div><!-- .entry-wrap -->
+</article><!-- #post-## -->
+
+
+<article id="post-37309" class="clear post-37309 post type-post status-publish format-standard category-uncategorized h-entry hentry">
+	<div class="entry-wrap wrap clear">
+
+		<header class="entry-header">
+			<span class="categories-links"><a href="https://snarfed.org/category/uncategorized" rel="category tag">Uncategorized</a></span><h1 class="entry-title"><a href="https://snarfed.org/2019-05-16_37309" rel="bookmark"><span class='p-name'></span></a></h1>		</header><!-- .entry-header -->
+
+		<footer class="entry-meta">
+			<span class="entry-date"><a class="u-url" href="https://snarfed.org/2019-05-16_37309" title="12:24pm" rel="bookmark"><time class="dt-published" datetime="2019-05-16T12:24:02-07:00">May 16, 2019</time></a></span><span class="author p-author h-card vcard"> <img alt src="https://secure.gravatar.com/avatar/947b5f3f323da0ef785b6f02d9c265d6?s=96&#038;d=blank&#038;r=g" class="avatar avatar-96 jetpack-lazy-image" height="96" width="96" data-lazy-srcset="https://secure.gravatar.com/avatar/947b5f3f323da0ef785b6f02d9c265d6?s=192&#038;d=blank&#038;r=g 2x" data-lazy-src="https://secure.gravatar.com/avatar/947b5f3f323da0ef785b6f02d9c265d6?s=96&amp;is-pending-load=1#038;d=blank&#038;r=g" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"><noscript><img alt='' src='https://secure.gravatar.com/avatar/947b5f3f323da0ef785b6f02d9c265d6?s=96&#038;d=blank&#038;r=g' srcset='https://secure.gravatar.com/avatar/947b5f3f323da0ef785b6f02d9c265d6?s=192&#038;d=blank&#038;r=g 2x' class='avatar avatar-96 photo u-photo' height='96' width='96' /></noscript><a class="u-url url fn n p-name" href="https://snarfed.org/" title="Ryan Barrett" rel="author">Ryan Barrett</a></span>
+						<span class="comments-link"><a href="https://snarfed.org/2019-05-16_37309#respond">Leave a comment</a></span>
+
+					</footer><!-- .entry-meta -->
+
+				<div class="entry-content clear">
+			<div class='e-content'>
+<p class="right half">
+ <a href="/misc-2019-1">
+  <img class="shadow jetpack-lazy-image" src="/w/wp-content/uploads/2019/05/onedome_lantern_3-768x1024.jpg" data-lazy-src="/w/wp-content/uploads/2019/05/onedome_lantern_3-768x1024.jpg?is-pending-load=1" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"><noscript><img class="shadow" src="/w/wp-content/uploads/2019/05/onedome_lantern_3-768x1024.jpg" /></noscript>
+</a></p>
+<p>New pictures are up!</p>
+<ul>
+<li><a href="/misc-2019-1">Misc 2019, first half</a></li>
+<li><a href="/brooke-school-2019">Brooke school 2019</a></li>
+<li><a href="/christmas-2019">Christmas 2019</a></li>
+<li><a href="/white-oak-2019-1">White Oak 2019, first half</a></li>
+<li><a href="/white-oak-house">White Oak house</a></li>
+<li><a href="/grandpa-george-weavings">Grandpa George&#8217;s weavings</a></li>
+</ul>
+</div>
+<div id="syndication-links"></div>					</div><!-- .entry-content -->
+
+		<span class="entry-format-badge theme-genericon"><span class="screen-reader-text">Standard</span></span>
+	</div><!-- .entry-wrap -->
+</article><!-- #post-## -->
+
+
+<article id="post-36685" class="clear post-36685 post type-post status-publish format-standard category-uncategorized h-entry hentry">
+	<div class="entry-wrap wrap clear">
+
+		<header class="entry-header">
+			<span class="categories-links"><a href="https://snarfed.org/category/uncategorized" rel="category tag">Uncategorized</a></span><h1 class="entry-title"><a href="https://snarfed.org/2019-04-30_36685" rel="bookmark"><span class='p-name'></span></a></h1>		</header><!-- .entry-header -->
+
+		<footer class="entry-meta">
+			<span class="entry-date"><a class="u-url" href="https://snarfed.org/2019-04-30_36685" title="8:03am" rel="bookmark"><time class="dt-published" datetime="2019-04-30T08:03:10-07:00">April 30, 2019</time></a><span class="syn-text"></span><ul class="relsyn"><li><a aria-label="twitter" class="u-syndication syn-link" href="https://twitter.com/schnarfed/status/1123242238702522369"> <span class="svg-icon svg-twitter" style="display: inline-block; max-width: 1rem; margin: 2px;" aria-hidden="true" aria-label="twitter" title="twitter" ><svg role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>Twitter icon</title><path d="M23.954 4.569c-.885.389-1.83.654-2.825.775 1.014-.611 1.794-1.574 2.163-2.723-.951.555-2.005.959-3.127 1.184-.896-.959-2.173-1.559-3.591-1.559-2.717 0-4.92 2.203-4.92 4.917 0 .39.045.765.127 1.124C7.691 8.094 4.066 6.13 1.64 3.161c-.427.722-.666 1.561-.666 2.475 0 1.71.87 3.213 2.188 4.096-.807-.026-1.566-.248-2.228-.616v.061c0 2.385 1.693 4.374 3.946 4.827-.413.111-.849.171-1.296.171-.314 0-.615-.03-.916-.086.631 1.953 2.445 3.377 4.604 3.417-1.68 1.319-3.809 2.105-6.102 2.105-.39 0-.779-.023-1.17-.067 2.189 1.394 4.768 2.209 7.557 2.209 9.054 0 13.999-7.496 13.999-13.986 0-.209 0-.42-.015-.63.961-.689 1.8-1.56 2.46-2.548l-.047-.02z"/></svg></span></a></li></ul></span><span class="author p-author h-card vcard"> <img alt src="https://secure.gravatar.com/avatar/947b5f3f323da0ef785b6f02d9c265d6?s=96&#038;d=blank&#038;r=g" class="avatar avatar-96 jetpack-lazy-image" height="96" width="96" data-lazy-srcset="https://secure.gravatar.com/avatar/947b5f3f323da0ef785b6f02d9c265d6?s=192&#038;d=blank&#038;r=g 2x" data-lazy-src="https://secure.gravatar.com/avatar/947b5f3f323da0ef785b6f02d9c265d6?s=96&amp;is-pending-load=1#038;d=blank&#038;r=g" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"><noscript><img alt='' src='https://secure.gravatar.com/avatar/947b5f3f323da0ef785b6f02d9c265d6?s=96&#038;d=blank&#038;r=g' srcset='https://secure.gravatar.com/avatar/947b5f3f323da0ef785b6f02d9c265d6?s=192&#038;d=blank&#038;r=g 2x' class='avatar avatar-96 photo u-photo' height='96' width='96' /></noscript><a class="u-url url fn n p-name" href="https://snarfed.org/" title="Ryan Barrett" rel="author">Ryan Barrett</a></span>
+						<span class="comments-link"><a href="https://snarfed.org/2019-04-30_36685#respond">Leave a comment</a></span>
+
+					</footer><!-- .entry-meta -->
+
+				<div class="entry-content clear">
+			<div class='e-content'>
+<blockquote class="wp-block-quote">
+<p>What [philanthropy] represents is a standing invitation to wealthy people to insert their private preferences into the public sphere. Or to put it more bluntly, it&#8217;s an invitation for plutocrats to operate in democracy.</p>
+</p>
+</blockquote>
+<p>&#8211; <a href="https://robreich.stanford.edu/">Rob Reich</a>, Professor of Political Science, Stanford</p>
+</div>
+<div id="syndication-links"><span class="syn-text"></span><ul class="relsyn"><li><a aria-label="twitter" class="u-syndication syn-link" href="https://twitter.com/schnarfed/status/1123242238702522369"> <span class="svg-icon svg-twitter" style="display: inline-block; max-width: 1rem; margin: 2px;" aria-hidden="true" aria-label="twitter" title="twitter" ><svg role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>Twitter icon</title><path d="M23.954 4.569c-.885.389-1.83.654-2.825.775 1.014-.611 1.794-1.574 2.163-2.723-.951.555-2.005.959-3.127 1.184-.896-.959-2.173-1.559-3.591-1.559-2.717 0-4.92 2.203-4.92 4.917 0 .39.045.765.127 1.124C7.691 8.094 4.066 6.13 1.64 3.161c-.427.722-.666 1.561-.666 2.475 0 1.71.87 3.213 2.188 4.096-.807-.026-1.566-.248-2.228-.616v.061c0 2.385 1.693 4.374 3.946 4.827-.413.111-.849.171-1.296.171-.314 0-.615-.03-.916-.086.631 1.953 2.445 3.377 4.604 3.417-1.68 1.319-3.809 2.105-6.102 2.105-.39 0-.779-.023-1.17-.067 2.189 1.394 4.768 2.209 7.557 2.209 9.054 0 13.999-7.496 13.999-13.986 0-.209 0-.42-.015-.63.961-.689 1.8-1.56 2.46-2.548l-.047-.02z"/></svg></span></a></li></ul></div>					</div><!-- .entry-content -->
+
+		<span class="entry-format-badge theme-genericon"><span class="screen-reader-text">Standard</span></span>
+	</div><!-- .entry-wrap -->
+</article><!-- #post-## -->
+
+
+<article id="post-36645" class="clear post-36645 post type-post status-publish format-standard category-uncategorized h-entry hentry">
+	<div class="entry-wrap wrap clear">
+
+		<header class="entry-header">
+			<span class="categories-links"><a href="https://snarfed.org/category/uncategorized" rel="category tag">Uncategorized</a></span><h1 class="entry-title"><a href="https://snarfed.org/2019-04-11_36645" rel="bookmark"><span class='p-name'></span></a></h1>		</header><!-- .entry-header -->
+
+		<footer class="entry-meta">
+			<span class="entry-date"><a class="u-url" href="https://snarfed.org/2019-04-11_36645" title="7:41pm" rel="bookmark"><time class="dt-published" datetime="2019-04-11T19:41:28-07:00">April 11, 2019</time></a><span class="syn-text"></span><ul class="relsyn"><li><a aria-label="twitter" class="u-syndication syn-link" href="https://twitter.com/schnarfed/status/1116532306183766016"> <span class="svg-icon svg-twitter" style="display: inline-block; max-width: 1rem; margin: 2px;" aria-hidden="true" aria-label="twitter" title="twitter" ><svg role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>Twitter icon</title><path d="M23.954 4.569c-.885.389-1.83.654-2.825.775 1.014-.611 1.794-1.574 2.163-2.723-.951.555-2.005.959-3.127 1.184-.896-.959-2.173-1.559-3.591-1.559-2.717 0-4.92 2.203-4.92 4.917 0 .39.045.765.127 1.124C7.691 8.094 4.066 6.13 1.64 3.161c-.427.722-.666 1.561-.666 2.475 0 1.71.87 3.213 2.188 4.096-.807-.026-1.566-.248-2.228-.616v.061c0 2.385 1.693 4.374 3.946 4.827-.413.111-.849.171-1.296.171-.314 0-.615-.03-.916-.086.631 1.953 2.445 3.377 4.604 3.417-1.68 1.319-3.809 2.105-6.102 2.105-.39 0-.779-.023-1.17-.067 2.189 1.394 4.768 2.209 7.557 2.209 9.054 0 13.999-7.496 13.999-13.986 0-.209 0-.42-.015-.63.961-.689 1.8-1.56 2.46-2.548l-.047-.02z"/></svg></span></a></li><li><a aria-label="instagram" class="u-syndication syn-link" href="https://www.instagram.com/p/BwI5m44JZqj/"> <span class="svg-icon svg-instagram" style="display: inline-block; max-width: 1rem; margin: 2px;" aria-hidden="true" aria-label="instagram" title="instagram" ><svg role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>Instagram icon</title><path d="M12 0C8.74 0 8.333.015 7.053.072 5.775.132 4.905.333 4.14.63c-.789.306-1.459.717-2.126 1.384S.935 3.35.63 4.14C.333 4.905.131 5.775.072 7.053.012 8.333 0 8.74 0 12s.015 3.667.072 4.947c.06 1.277.261 2.148.558 2.913.306.788.717 1.459 1.384 2.126.667.666 1.336 1.079 2.126 1.384.766.296 1.636.499 2.913.558C8.333 23.988 8.74 24 12 24s3.667-.015 4.947-.072c1.277-.06 2.148-.262 2.913-.558.788-.306 1.459-.718 2.126-1.384.666-.667 1.079-1.335 1.384-2.126.296-.765.499-1.636.558-2.913.06-1.28.072-1.687.072-4.947s-.015-3.667-.072-4.947c-.06-1.277-.262-2.149-.558-2.913-.306-.789-.718-1.459-1.384-2.126C21.319 1.347 20.651.935 19.86.63c-.765-.297-1.636-.499-2.913-.558C15.667.012 15.26 0 12 0zm0 2.16c3.203 0 3.585.016 4.85.071 1.17.055 1.805.249 2.227.415.562.217.96.477 1.382.896.419.42.679.819.896 1.381.164.422.36 1.057.413 2.227.057 1.266.07 1.646.07 4.85s-.015 3.585-.074 4.85c-.061 1.17-.256 1.805-.421 2.227-.224.562-.479.96-.899 1.382-.419.419-.824.679-1.38.896-.42.164-1.065.36-2.235.413-1.274.057-1.649.07-4.859.07-3.211 0-3.586-.015-4.859-.074-1.171-.061-1.816-.256-2.236-.421-.569-.224-.96-.479-1.379-.899-.421-.419-.69-.824-.9-1.38-.165-.42-.359-1.065-.42-2.235-.045-1.26-.061-1.649-.061-4.844 0-3.196.016-3.586.061-4.861.061-1.17.255-1.814.42-2.234.21-.57.479-.96.9-1.381.419-.419.81-.689 1.379-.898.42-.166 1.051-.361 2.221-.421 1.275-.045 1.65-.06 4.859-.06l.045.03zm0 3.678c-3.405 0-6.162 2.76-6.162 6.162 0 3.405 2.76 6.162 6.162 6.162 3.405 0 6.162-2.76 6.162-6.162 0-3.405-2.76-6.162-6.162-6.162zM12 16c-2.21 0-4-1.79-4-4s1.79-4 4-4 4 1.79 4 4-1.79 4-4 4zm7.846-10.405c0 .795-.646 1.44-1.44 1.44-.795 0-1.44-.646-1.44-1.44 0-.794.646-1.439 1.44-1.439.793-.001 1.44.645 1.44 1.439z"/></svg></span></a></li></ul></span><span class="author p-author h-card vcard"> <img alt src="https://secure.gravatar.com/avatar/947b5f3f323da0ef785b6f02d9c265d6?s=96&#038;d=blank&#038;r=g" class="avatar avatar-96 jetpack-lazy-image" height="96" width="96" data-lazy-srcset="https://secure.gravatar.com/avatar/947b5f3f323da0ef785b6f02d9c265d6?s=192&#038;d=blank&#038;r=g 2x" data-lazy-src="https://secure.gravatar.com/avatar/947b5f3f323da0ef785b6f02d9c265d6?s=96&amp;is-pending-load=1#038;d=blank&#038;r=g" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"><noscript><img alt='' src='https://secure.gravatar.com/avatar/947b5f3f323da0ef785b6f02d9c265d6?s=96&#038;d=blank&#038;r=g' srcset='https://secure.gravatar.com/avatar/947b5f3f323da0ef785b6f02d9c265d6?s=192&#038;d=blank&#038;r=g 2x' class='avatar avatar-96 photo u-photo' height='96' width='96' /></noscript><a class="u-url url fn n p-name" href="https://snarfed.org/" title="Ryan Barrett" rel="author">Ryan Barrett</a></span>
+						<span class="comments-link"><a href="https://snarfed.org/2019-04-11_36645#comments">1 Comment</a></span>
+
+					</footer><!-- .entry-meta -->
+
+				<div class="entry-content clear">
+			<div class='e-content'><a href="/w/wp-content/uploads/2019/04/IMG_20190411_194027_022.jpg"><img class="size-full shadow jetpack-lazy-image" data-wpid="111" src="https://i0.wp.com/snarfed.org/w/wp-content/uploads/2019/04/IMG_20190411_194027_022.jpg?w=696&#038;ssl=1" data-recalc-dims="1" data-lazy-src="https://i0.wp.com/snarfed.org/w/wp-content/uploads/2019/04/IMG_20190411_194027_022.jpg?w=696&amp;is-pending-load=1#038;ssl=1" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"><noscript><img class="size-full shadow" data-wpid="111" src="https://i0.wp.com/snarfed.org/w/wp-content/uploads/2019/04/IMG_20190411_194027_022.jpg?w=696&#038;ssl=1" data-recalc-dims="1"></noscript></a></div>
+<div id="syndication-links"><span class="syn-text"></span><ul class="relsyn"><li><a aria-label="twitter" class="u-syndication syn-link" href="https://twitter.com/schnarfed/status/1116532306183766016"> <span class="svg-icon svg-twitter" style="display: inline-block; max-width: 1rem; margin: 2px;" aria-hidden="true" aria-label="twitter" title="twitter" ><svg role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>Twitter icon</title><path d="M23.954 4.569c-.885.389-1.83.654-2.825.775 1.014-.611 1.794-1.574 2.163-2.723-.951.555-2.005.959-3.127 1.184-.896-.959-2.173-1.559-3.591-1.559-2.717 0-4.92 2.203-4.92 4.917 0 .39.045.765.127 1.124C7.691 8.094 4.066 6.13 1.64 3.161c-.427.722-.666 1.561-.666 2.475 0 1.71.87 3.213 2.188 4.096-.807-.026-1.566-.248-2.228-.616v.061c0 2.385 1.693 4.374 3.946 4.827-.413.111-.849.171-1.296.171-.314 0-.615-.03-.916-.086.631 1.953 2.445 3.377 4.604 3.417-1.68 1.319-3.809 2.105-6.102 2.105-.39 0-.779-.023-1.17-.067 2.189 1.394 4.768 2.209 7.557 2.209 9.054 0 13.999-7.496 13.999-13.986 0-.209 0-.42-.015-.63.961-.689 1.8-1.56 2.46-2.548l-.047-.02z"/></svg></span></a></li><li><a aria-label="instagram" class="u-syndication syn-link" href="https://www.instagram.com/p/BwI5m44JZqj/"> <span class="svg-icon svg-instagram" style="display: inline-block; max-width: 1rem; margin: 2px;" aria-hidden="true" aria-label="instagram" title="instagram" ><svg role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>Instagram icon</title><path d="M12 0C8.74 0 8.333.015 7.053.072 5.775.132 4.905.333 4.14.63c-.789.306-1.459.717-2.126 1.384S.935 3.35.63 4.14C.333 4.905.131 5.775.072 7.053.012 8.333 0 8.74 0 12s.015 3.667.072 4.947c.06 1.277.261 2.148.558 2.913.306.788.717 1.459 1.384 2.126.667.666 1.336 1.079 2.126 1.384.766.296 1.636.499 2.913.558C8.333 23.988 8.74 24 12 24s3.667-.015 4.947-.072c1.277-.06 2.148-.262 2.913-.558.788-.306 1.459-.718 2.126-1.384.666-.667 1.079-1.335 1.384-2.126.296-.765.499-1.636.558-2.913.06-1.28.072-1.687.072-4.947s-.015-3.667-.072-4.947c-.06-1.277-.262-2.149-.558-2.913-.306-.789-.718-1.459-1.384-2.126C21.319 1.347 20.651.935 19.86.63c-.765-.297-1.636-.499-2.913-.558C15.667.012 15.26 0 12 0zm0 2.16c3.203 0 3.585.016 4.85.071 1.17.055 1.805.249 2.227.415.562.217.96.477 1.382.896.419.42.679.819.896 1.381.164.422.36 1.057.413 2.227.057 1.266.07 1.646.07 4.85s-.015 3.585-.074 4.85c-.061 1.17-.256 1.805-.421 2.227-.224.562-.479.96-.899 1.382-.419.419-.824.679-1.38.896-.42.164-1.065.36-2.235.413-1.274.057-1.649.07-4.859.07-3.211 0-3.586-.015-4.859-.074-1.171-.061-1.816-.256-2.236-.421-.569-.224-.96-.479-1.379-.899-.421-.419-.69-.824-.9-1.38-.165-.42-.359-1.065-.42-2.235-.045-1.26-.061-1.649-.061-4.844 0-3.196.016-3.586.061-4.861.061-1.17.255-1.814.42-2.234.21-.57.479-.96.9-1.381.419-.419.81-.689 1.379-.898.42-.166 1.051-.361 2.221-.421 1.275-.045 1.65-.06 4.859-.06l.045.03zm0 3.678c-3.405 0-6.162 2.76-6.162 6.162 0 3.405 2.76 6.162 6.162 6.162 3.405 0 6.162-2.76 6.162-6.162 0-3.405-2.76-6.162-6.162-6.162zM12 16c-2.21 0-4-1.79-4-4s1.79-4 4-4 4 1.79 4 4-1.79 4-4 4zm7.846-10.405c0 .795-.646 1.44-1.44 1.44-.795 0-1.44-.646-1.44-1.44 0-.794.646-1.439 1.44-1.439.793-.001 1.44.645 1.44 1.439z"/></svg></span></a></li></ul></div>					</div><!-- .entry-content -->
+
+		<span class="entry-format-badge theme-genericon"><span class="screen-reader-text">Standard</span></span>
+	</div><!-- .entry-wrap -->
+</article><!-- #post-## -->
+
+
+<article id="post-36559" class="clear post-36559 post type-post status-publish format-standard category-uncategorized h-entry hentry">
+	<div class="entry-wrap wrap clear">
+
+		<header class="entry-header">
+			<span class="categories-links"><a href="https://snarfed.org/category/uncategorized" rel="category tag">Uncategorized</a></span><h1 class="entry-title"><a href="https://snarfed.org/2019-04-02_36559" rel="bookmark"><span class='p-name'></span></a></h1>		</header><!-- .entry-header -->
+
+		<footer class="entry-meta">
+			<span class="entry-date"><a class="u-url" href="https://snarfed.org/2019-04-02_36559" title="3:10pm" rel="bookmark"><time class="dt-published" datetime="2019-04-02T15:10:10-07:00">April 2, 2019</time></a><span class="syn-text"></span><ul class="relsyn"><li><a aria-label="twitter" class="u-syndication syn-link" href="https://twitter.com/schnarfed/status/1113201920456351745"> <span class="svg-icon svg-twitter" style="display: inline-block; max-width: 1rem; margin: 2px;" aria-hidden="true" aria-label="twitter" title="twitter" ><svg role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>Twitter icon</title><path d="M23.954 4.569c-.885.389-1.83.654-2.825.775 1.014-.611 1.794-1.574 2.163-2.723-.951.555-2.005.959-3.127 1.184-.896-.959-2.173-1.559-3.591-1.559-2.717 0-4.92 2.203-4.92 4.917 0 .39.045.765.127 1.124C7.691 8.094 4.066 6.13 1.64 3.161c-.427.722-.666 1.561-.666 2.475 0 1.71.87 3.213 2.188 4.096-.807-.026-1.566-.248-2.228-.616v.061c0 2.385 1.693 4.374 3.946 4.827-.413.111-.849.171-1.296.171-.314 0-.615-.03-.916-.086.631 1.953 2.445 3.377 4.604 3.417-1.68 1.319-3.809 2.105-6.102 2.105-.39 0-.779-.023-1.17-.067 2.189 1.394 4.768 2.209 7.557 2.209 9.054 0 13.999-7.496 13.999-13.986 0-.209 0-.42-.015-.63.961-.689 1.8-1.56 2.46-2.548l-.047-.02z"/></svg></span></a></li></ul></span><span class="author p-author h-card vcard"> <img alt src="https://secure.gravatar.com/avatar/947b5f3f323da0ef785b6f02d9c265d6?s=96&#038;d=blank&#038;r=g" class="avatar avatar-96 jetpack-lazy-image" height="96" width="96" data-lazy-srcset="https://secure.gravatar.com/avatar/947b5f3f323da0ef785b6f02d9c265d6?s=192&#038;d=blank&#038;r=g 2x" data-lazy-src="https://secure.gravatar.com/avatar/947b5f3f323da0ef785b6f02d9c265d6?s=96&amp;is-pending-load=1#038;d=blank&#038;r=g" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"><noscript><img alt='' src='https://secure.gravatar.com/avatar/947b5f3f323da0ef785b6f02d9c265d6?s=96&#038;d=blank&#038;r=g' srcset='https://secure.gravatar.com/avatar/947b5f3f323da0ef785b6f02d9c265d6?s=192&#038;d=blank&#038;r=g 2x' class='avatar avatar-96 photo u-photo' height='96' width='96' /></noscript><a class="u-url url fn n p-name" href="https://snarfed.org/" title="Ryan Barrett" rel="author">Ryan Barrett</a></span>
+						<span class="comments-link"><a href="https://snarfed.org/2019-04-02_36559#respond">Leave a comment</a></span>
+
+					</footer><!-- .entry-meta -->
+
+				<div class="entry-content clear">
+			<div class='e-content'>Standard dogma in security and encryption is that attacking is always easier than defending. <a href="https://aphyr.com/">Aphyr</a>&#8216;s stroke of insight with <a href="https://jepsen.io/">Jepsen</a> was to apply that to distributed systems. 👏</p>
+<p>(Along with plenty of smarts and hard work, of course!)</p></div>
+<div id="syndication-links"><span class="syn-text"></span><ul class="relsyn"><li><a aria-label="twitter" class="u-syndication syn-link" href="https://twitter.com/schnarfed/status/1113201920456351745"> <span class="svg-icon svg-twitter" style="display: inline-block; max-width: 1rem; margin: 2px;" aria-hidden="true" aria-label="twitter" title="twitter" ><svg role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>Twitter icon</title><path d="M23.954 4.569c-.885.389-1.83.654-2.825.775 1.014-.611 1.794-1.574 2.163-2.723-.951.555-2.005.959-3.127 1.184-.896-.959-2.173-1.559-3.591-1.559-2.717 0-4.92 2.203-4.92 4.917 0 .39.045.765.127 1.124C7.691 8.094 4.066 6.13 1.64 3.161c-.427.722-.666 1.561-.666 2.475 0 1.71.87 3.213 2.188 4.096-.807-.026-1.566-.248-2.228-.616v.061c0 2.385 1.693 4.374 3.946 4.827-.413.111-.849.171-1.296.171-.314 0-.615-.03-.916-.086.631 1.953 2.445 3.377 4.604 3.417-1.68 1.319-3.809 2.105-6.102 2.105-.39 0-.779-.023-1.17-.067 2.189 1.394 4.768 2.209 7.557 2.209 9.054 0 13.999-7.496 13.999-13.986 0-.209 0-.42-.015-.63.961-.689 1.8-1.56 2.46-2.548l-.047-.02z"/></svg></span></a></li></ul></div>					</div><!-- .entry-content -->
+
+		<span class="entry-format-badge theme-genericon"><span class="screen-reader-text">Standard</span></span>
+	</div><!-- .entry-wrap -->
+</article><!-- #post-## -->
+
+
+<article id="post-36491" class="clear post-36491 post type-post status-publish format-standard category-uncategorized h-entry hentry">
+	<div class="entry-wrap wrap clear">
+
+		<header class="entry-header">
+			<span class="categories-links"><a href="https://snarfed.org/category/uncategorized" rel="category tag">Uncategorized</a></span><h1 class="entry-title"><a href="https://snarfed.org/2019-03-26_36491" rel="bookmark"><span class='p-name'></span></a></h1>		</header><!-- .entry-header -->
+
+		<footer class="entry-meta">
+			<span class="entry-date"><a class="u-url" href="https://snarfed.org/2019-03-26_36491" title="1:42pm" rel="bookmark"><time class="dt-published" datetime="2019-03-26T13:42:04-07:00">March 26, 2019</time></a><span class="syn-text"></span><ul class="relsyn"><li><a aria-label="instagram" class="u-syndication syn-link" href="https://www.instagram.com/p/BvfDoO4nfjG/"> <span class="svg-icon svg-instagram" style="display: inline-block; max-width: 1rem; margin: 2px;" aria-hidden="true" aria-label="instagram" title="instagram" ><svg role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>Instagram icon</title><path d="M12 0C8.74 0 8.333.015 7.053.072 5.775.132 4.905.333 4.14.63c-.789.306-1.459.717-2.126 1.384S.935 3.35.63 4.14C.333 4.905.131 5.775.072 7.053.012 8.333 0 8.74 0 12s.015 3.667.072 4.947c.06 1.277.261 2.148.558 2.913.306.788.717 1.459 1.384 2.126.667.666 1.336 1.079 2.126 1.384.766.296 1.636.499 2.913.558C8.333 23.988 8.74 24 12 24s3.667-.015 4.947-.072c1.277-.06 2.148-.262 2.913-.558.788-.306 1.459-.718 2.126-1.384.666-.667 1.079-1.335 1.384-2.126.296-.765.499-1.636.558-2.913.06-1.28.072-1.687.072-4.947s-.015-3.667-.072-4.947c-.06-1.277-.262-2.149-.558-2.913-.306-.789-.718-1.459-1.384-2.126C21.319 1.347 20.651.935 19.86.63c-.765-.297-1.636-.499-2.913-.558C15.667.012 15.26 0 12 0zm0 2.16c3.203 0 3.585.016 4.85.071 1.17.055 1.805.249 2.227.415.562.217.96.477 1.382.896.419.42.679.819.896 1.381.164.422.36 1.057.413 2.227.057 1.266.07 1.646.07 4.85s-.015 3.585-.074 4.85c-.061 1.17-.256 1.805-.421 2.227-.224.562-.479.96-.899 1.382-.419.419-.824.679-1.38.896-.42.164-1.065.36-2.235.413-1.274.057-1.649.07-4.859.07-3.211 0-3.586-.015-4.859-.074-1.171-.061-1.816-.256-2.236-.421-.569-.224-.96-.479-1.379-.899-.421-.419-.69-.824-.9-1.38-.165-.42-.359-1.065-.42-2.235-.045-1.26-.061-1.649-.061-4.844 0-3.196.016-3.586.061-4.861.061-1.17.255-1.814.42-2.234.21-.57.479-.96.9-1.381.419-.419.81-.689 1.379-.898.42-.166 1.051-.361 2.221-.421 1.275-.045 1.65-.06 4.859-.06l.045.03zm0 3.678c-3.405 0-6.162 2.76-6.162 6.162 0 3.405 2.76 6.162 6.162 6.162 3.405 0 6.162-2.76 6.162-6.162 0-3.405-2.76-6.162-6.162-6.162zM12 16c-2.21 0-4-1.79-4-4s1.79-4 4-4 4 1.79 4 4-1.79 4-4 4zm7.846-10.405c0 .795-.646 1.44-1.44 1.44-.795 0-1.44-.646-1.44-1.44 0-.794.646-1.439 1.44-1.439.793-.001 1.44.645 1.44 1.439z"/></svg></span></a></li><li><a aria-label="twitter" class="u-syndication syn-link" href="https://twitter.com/schnarfed/status/1110642924914540544"> <span class="svg-icon svg-twitter" style="display: inline-block; max-width: 1rem; margin: 2px;" aria-hidden="true" aria-label="twitter" title="twitter" ><svg role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>Twitter icon</title><path d="M23.954 4.569c-.885.389-1.83.654-2.825.775 1.014-.611 1.794-1.574 2.163-2.723-.951.555-2.005.959-3.127 1.184-.896-.959-2.173-1.559-3.591-1.559-2.717 0-4.92 2.203-4.92 4.917 0 .39.045.765.127 1.124C7.691 8.094 4.066 6.13 1.64 3.161c-.427.722-.666 1.561-.666 2.475 0 1.71.87 3.213 2.188 4.096-.807-.026-1.566-.248-2.228-.616v.061c0 2.385 1.693 4.374 3.946 4.827-.413.111-.849.171-1.296.171-.314 0-.615-.03-.916-.086.631 1.953 2.445 3.377 4.604 3.417-1.68 1.319-3.809 2.105-6.102 2.105-.39 0-.779-.023-1.17-.067 2.189 1.394 4.768 2.209 7.557 2.209 9.054 0 13.999-7.496 13.999-13.986 0-.209 0-.42-.015-.63.961-.689 1.8-1.56 2.46-2.548l-.047-.02z"/></svg></span></a></li></ul></span><span class="author p-author h-card vcard"> <img alt src="https://secure.gravatar.com/avatar/947b5f3f323da0ef785b6f02d9c265d6?s=96&#038;d=blank&#038;r=g" class="avatar avatar-96 jetpack-lazy-image" height="96" width="96" data-lazy-srcset="https://secure.gravatar.com/avatar/947b5f3f323da0ef785b6f02d9c265d6?s=192&#038;d=blank&#038;r=g 2x" data-lazy-src="https://secure.gravatar.com/avatar/947b5f3f323da0ef785b6f02d9c265d6?s=96&amp;is-pending-load=1#038;d=blank&#038;r=g" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"><noscript><img alt='' src='https://secure.gravatar.com/avatar/947b5f3f323da0ef785b6f02d9c265d6?s=96&#038;d=blank&#038;r=g' srcset='https://secure.gravatar.com/avatar/947b5f3f323da0ef785b6f02d9c265d6?s=192&#038;d=blank&#038;r=g 2x' class='avatar avatar-96 photo u-photo' height='96' width='96' /></noscript><a class="u-url url fn n p-name" href="https://snarfed.org/" title="Ryan Barrett" rel="author">Ryan Barrett</a></span>
+						<span class="comments-link"><a href="https://snarfed.org/2019-03-26_36491#comments">31 Comments</a></span>
+
+					</footer><!-- .entry-meta -->
+
+				<div class="entry-content clear">
+			<div class='e-content'>4 year old passport photo? Nailed it.</p>
+<p><img class="size-full shadow jetpack-lazy-image" data-wpid="110" src="https://i1.wp.com/snarfed.org/w/wp-content/uploads/2019/03/IMG_20190326_133955_107.jpg?w=696&#038;ssl=1" data-temp-aztec-id="5b76a345-b5a2-43ca-a462-e96191395697" data-recalc-dims="1" data-lazy-src="https://i1.wp.com/snarfed.org/w/wp-content/uploads/2019/03/IMG_20190326_133955_107.jpg?w=696&amp;is-pending-load=1#038;ssl=1" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"><noscript><img class="size-full shadow" data-wpid="110" src="https://i1.wp.com/snarfed.org/w/wp-content/uploads/2019/03/IMG_20190326_133955_107.jpg?w=696&#038;ssl=1" data-temp-aztec-id="5b76a345-b5a2-43ca-a462-e96191395697" data-recalc-dims="1"></noscript></div>
+<div id="syndication-links"><span class="syn-text"></span><ul class="relsyn"><li><a aria-label="instagram" class="u-syndication syn-link" href="https://www.instagram.com/p/BvfDoO4nfjG/"> <span class="svg-icon svg-instagram" style="display: inline-block; max-width: 1rem; margin: 2px;" aria-hidden="true" aria-label="instagram" title="instagram" ><svg role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>Instagram icon</title><path d="M12 0C8.74 0 8.333.015 7.053.072 5.775.132 4.905.333 4.14.63c-.789.306-1.459.717-2.126 1.384S.935 3.35.63 4.14C.333 4.905.131 5.775.072 7.053.012 8.333 0 8.74 0 12s.015 3.667.072 4.947c.06 1.277.261 2.148.558 2.913.306.788.717 1.459 1.384 2.126.667.666 1.336 1.079 2.126 1.384.766.296 1.636.499 2.913.558C8.333 23.988 8.74 24 12 24s3.667-.015 4.947-.072c1.277-.06 2.148-.262 2.913-.558.788-.306 1.459-.718 2.126-1.384.666-.667 1.079-1.335 1.384-2.126.296-.765.499-1.636.558-2.913.06-1.28.072-1.687.072-4.947s-.015-3.667-.072-4.947c-.06-1.277-.262-2.149-.558-2.913-.306-.789-.718-1.459-1.384-2.126C21.319 1.347 20.651.935 19.86.63c-.765-.297-1.636-.499-2.913-.558C15.667.012 15.26 0 12 0zm0 2.16c3.203 0 3.585.016 4.85.071 1.17.055 1.805.249 2.227.415.562.217.96.477 1.382.896.419.42.679.819.896 1.381.164.422.36 1.057.413 2.227.057 1.266.07 1.646.07 4.85s-.015 3.585-.074 4.85c-.061 1.17-.256 1.805-.421 2.227-.224.562-.479.96-.899 1.382-.419.419-.824.679-1.38.896-.42.164-1.065.36-2.235.413-1.274.057-1.649.07-4.859.07-3.211 0-3.586-.015-4.859-.074-1.171-.061-1.816-.256-2.236-.421-.569-.224-.96-.479-1.379-.899-.421-.419-.69-.824-.9-1.38-.165-.42-.359-1.065-.42-2.235-.045-1.26-.061-1.649-.061-4.844 0-3.196.016-3.586.061-4.861.061-1.17.255-1.814.42-2.234.21-.57.479-.96.9-1.381.419-.419.81-.689 1.379-.898.42-.166 1.051-.361 2.221-.421 1.275-.045 1.65-.06 4.859-.06l.045.03zm0 3.678c-3.405 0-6.162 2.76-6.162 6.162 0 3.405 2.76 6.162 6.162 6.162 3.405 0 6.162-2.76 6.162-6.162 0-3.405-2.76-6.162-6.162-6.162zM12 16c-2.21 0-4-1.79-4-4s1.79-4 4-4 4 1.79 4 4-1.79 4-4 4zm7.846-10.405c0 .795-.646 1.44-1.44 1.44-.795 0-1.44-.646-1.44-1.44 0-.794.646-1.439 1.44-1.439.793-.001 1.44.645 1.44 1.439z"/></svg></span></a></li><li><a aria-label="twitter" class="u-syndication syn-link" href="https://twitter.com/schnarfed/status/1110642924914540544"> <span class="svg-icon svg-twitter" style="display: inline-block; max-width: 1rem; margin: 2px;" aria-hidden="true" aria-label="twitter" title="twitter" ><svg role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>Twitter icon</title><path d="M23.954 4.569c-.885.389-1.83.654-2.825.775 1.014-.611 1.794-1.574 2.163-2.723-.951.555-2.005.959-3.127 1.184-.896-.959-2.173-1.559-3.591-1.559-2.717 0-4.92 2.203-4.92 4.917 0 .39.045.765.127 1.124C7.691 8.094 4.066 6.13 1.64 3.161c-.427.722-.666 1.561-.666 2.475 0 1.71.87 3.213 2.188 4.096-.807-.026-1.566-.248-2.228-.616v.061c0 2.385 1.693 4.374 3.946 4.827-.413.111-.849.171-1.296.171-.314 0-.615-.03-.916-.086.631 1.953 2.445 3.377 4.604 3.417-1.68 1.319-3.809 2.105-6.102 2.105-.39 0-.779-.023-1.17-.067 2.189 1.394 4.768 2.209 7.557 2.209 9.054 0 13.999-7.496 13.999-13.986 0-.209 0-.42-.015-.63.961-.689 1.8-1.56 2.46-2.548l-.047-.02z"/></svg></span></a></li></ul></div>					</div><!-- .entry-content -->
+
+		<span class="entry-format-badge theme-genericon"><span class="screen-reader-text">Standard</span></span>
+	</div><!-- .entry-wrap -->
+</article><!-- #post-## -->
+
+
+<article id="post-36438" class="clear post-36438 post type-post status-publish format-standard category-uncategorized h-entry hentry">
+	<div class="entry-wrap wrap clear">
+
+		<header class="entry-header">
+			<span class="categories-links"><a href="https://snarfed.org/category/uncategorized" rel="category tag">Uncategorized</a></span><h1 class="entry-title"><a href="https://snarfed.org/2019-03-19_36438" rel="bookmark"><span class='p-name'></span></a></h1>		</header><!-- .entry-header -->
+
+		<footer class="entry-meta">
+			<span class="entry-date"><a class="u-url" href="https://snarfed.org/2019-03-19_36438" title="7:11pm" rel="bookmark"><time class="dt-published" datetime="2019-03-19T19:11:17-07:00">March 19, 2019</time></a><span class="syn-text"></span><ul class="relsyn"><li><a aria-label="instagram" class="u-syndication syn-link" href="https://www.instagram.com/p/BvNn0fEnslg/"> <span class="svg-icon svg-instagram" style="display: inline-block; max-width: 1rem; margin: 2px;" aria-hidden="true" aria-label="instagram" title="instagram" ><svg role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>Instagram icon</title><path d="M12 0C8.74 0 8.333.015 7.053.072 5.775.132 4.905.333 4.14.63c-.789.306-1.459.717-2.126 1.384S.935 3.35.63 4.14C.333 4.905.131 5.775.072 7.053.012 8.333 0 8.74 0 12s.015 3.667.072 4.947c.06 1.277.261 2.148.558 2.913.306.788.717 1.459 1.384 2.126.667.666 1.336 1.079 2.126 1.384.766.296 1.636.499 2.913.558C8.333 23.988 8.74 24 12 24s3.667-.015 4.947-.072c1.277-.06 2.148-.262 2.913-.558.788-.306 1.459-.718 2.126-1.384.666-.667 1.079-1.335 1.384-2.126.296-.765.499-1.636.558-2.913.06-1.28.072-1.687.072-4.947s-.015-3.667-.072-4.947c-.06-1.277-.262-2.149-.558-2.913-.306-.789-.718-1.459-1.384-2.126C21.319 1.347 20.651.935 19.86.63c-.765-.297-1.636-.499-2.913-.558C15.667.012 15.26 0 12 0zm0 2.16c3.203 0 3.585.016 4.85.071 1.17.055 1.805.249 2.227.415.562.217.96.477 1.382.896.419.42.679.819.896 1.381.164.422.36 1.057.413 2.227.057 1.266.07 1.646.07 4.85s-.015 3.585-.074 4.85c-.061 1.17-.256 1.805-.421 2.227-.224.562-.479.96-.899 1.382-.419.419-.824.679-1.38.896-.42.164-1.065.36-2.235.413-1.274.057-1.649.07-4.859.07-3.211 0-3.586-.015-4.859-.074-1.171-.061-1.816-.256-2.236-.421-.569-.224-.96-.479-1.379-.899-.421-.419-.69-.824-.9-1.38-.165-.42-.359-1.065-.42-2.235-.045-1.26-.061-1.649-.061-4.844 0-3.196.016-3.586.061-4.861.061-1.17.255-1.814.42-2.234.21-.57.479-.96.9-1.381.419-.419.81-.689 1.379-.898.42-.166 1.051-.361 2.221-.421 1.275-.045 1.65-.06 4.859-.06l.045.03zm0 3.678c-3.405 0-6.162 2.76-6.162 6.162 0 3.405 2.76 6.162 6.162 6.162 3.405 0 6.162-2.76 6.162-6.162 0-3.405-2.76-6.162-6.162-6.162zM12 16c-2.21 0-4-1.79-4-4s1.79-4 4-4 4 1.79 4 4-1.79 4-4 4zm7.846-10.405c0 .795-.646 1.44-1.44 1.44-.795 0-1.44-.646-1.44-1.44 0-.794.646-1.439 1.44-1.439.793-.001 1.44.645 1.44 1.439z"/></svg></span></a></li><li><a aria-label="twitter" class="u-syndication syn-link" href="https://twitter.com/schnarfed/status/1108189089306537984"> <span class="svg-icon svg-twitter" style="display: inline-block; max-width: 1rem; margin: 2px;" aria-hidden="true" aria-label="twitter" title="twitter" ><svg role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>Twitter icon</title><path d="M23.954 4.569c-.885.389-1.83.654-2.825.775 1.014-.611 1.794-1.574 2.163-2.723-.951.555-2.005.959-3.127 1.184-.896-.959-2.173-1.559-3.591-1.559-2.717 0-4.92 2.203-4.92 4.917 0 .39.045.765.127 1.124C7.691 8.094 4.066 6.13 1.64 3.161c-.427.722-.666 1.561-.666 2.475 0 1.71.87 3.213 2.188 4.096-.807-.026-1.566-.248-2.228-.616v.061c0 2.385 1.693 4.374 3.946 4.827-.413.111-.849.171-1.296.171-.314 0-.615-.03-.916-.086.631 1.953 2.445 3.377 4.604 3.417-1.68 1.319-3.809 2.105-6.102 2.105-.39 0-.779-.023-1.17-.067 2.189 1.394 4.768 2.209 7.557 2.209 9.054 0 13.999-7.496 13.999-13.986 0-.209 0-.42-.015-.63.961-.689 1.8-1.56 2.46-2.548l-.047-.02z"/></svg></span></a></li></ul></span><span class="author p-author h-card vcard"> <img alt src="https://secure.gravatar.com/avatar/947b5f3f323da0ef785b6f02d9c265d6?s=96&#038;d=blank&#038;r=g" class="avatar avatar-96 jetpack-lazy-image" height="96" width="96" data-lazy-srcset="https://secure.gravatar.com/avatar/947b5f3f323da0ef785b6f02d9c265d6?s=192&#038;d=blank&#038;r=g 2x" data-lazy-src="https://secure.gravatar.com/avatar/947b5f3f323da0ef785b6f02d9c265d6?s=96&amp;is-pending-load=1#038;d=blank&#038;r=g" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"><noscript><img alt='' src='https://secure.gravatar.com/avatar/947b5f3f323da0ef785b6f02d9c265d6?s=96&#038;d=blank&#038;r=g' srcset='https://secure.gravatar.com/avatar/947b5f3f323da0ef785b6f02d9c265d6?s=192&#038;d=blank&#038;r=g 2x' class='avatar avatar-96 photo u-photo' height='96' width='96' /></noscript><a class="u-url url fn n p-name" href="https://snarfed.org/" title="Ryan Barrett" rel="author">Ryan Barrett</a></span>
+						<span class="comments-link"><a href="https://snarfed.org/2019-03-19_36438#comments">16 Comments</a></span>
+
+					</footer><!-- .entry-meta -->
+
+				<div class="entry-content clear">
+			<div class='e-content'><img data-attachment-id="36437" data-permalink="https://snarfed.org/img_20190319_190950_427" data-orig-file="https://i2.wp.com/snarfed.org/w/wp-content/uploads/2019/03/IMG_20190319_190950_427.jpg?fit=3024%2C3024&amp;ssl=1" data-orig-size="3024,3024" data-comments-opened="1" data-image-meta="{&quot;aperture&quot;:&quot;0&quot;,&quot;credit&quot;:&quot;&quot;,&quot;camera&quot;:&quot;&quot;,&quot;caption&quot;:&quot;&quot;,&quot;created_timestamp&quot;:&quot;0&quot;,&quot;copyright&quot;:&quot;&quot;,&quot;focal_length&quot;:&quot;0&quot;,&quot;iso&quot;:&quot;0&quot;,&quot;shutter_speed&quot;:&quot;0&quot;,&quot;title&quot;:&quot;&quot;,&quot;orientation&quot;:&quot;0&quot;}" data-image-title="IMG_20190319_190950_427.jpg" data-image-description data-medium-file="https://i2.wp.com/snarfed.org/w/wp-content/uploads/2019/03/IMG_20190319_190950_427.jpg?fit=300%2C300&amp;ssl=1" data-large-file="https://i2.wp.com/snarfed.org/w/wp-content/uploads/2019/03/IMG_20190319_190950_427.jpg?fit=696%2C696&amp;ssl=1" class="wp-image-36437 alignnone size-full jetpack-lazy-image" src="https://i2.wp.com/snarfed.org/w/wp-content/uploads/2019/03/IMG_20190319_190950_427.jpg?resize=696%2C696&#038;ssl=1" width="696" height="696" data-recalc-dims="1" data-lazy-srcset="https://i2.wp.com/snarfed.org/w/wp-content/uploads/2019/03/IMG_20190319_190950_427.jpg?w=3024&amp;ssl=1 3024w, https://i2.wp.com/snarfed.org/w/wp-content/uploads/2019/03/IMG_20190319_190950_427.jpg?resize=150%2C150&amp;ssl=1 150w, https://i2.wp.com/snarfed.org/w/wp-content/uploads/2019/03/IMG_20190319_190950_427.jpg?resize=300%2C300&amp;ssl=1 300w, https://i2.wp.com/snarfed.org/w/wp-content/uploads/2019/03/IMG_20190319_190950_427.jpg?resize=768%2C768&amp;ssl=1 768w, https://i2.wp.com/snarfed.org/w/wp-content/uploads/2019/03/IMG_20190319_190950_427.jpg?resize=1024%2C1024&amp;ssl=1 1024w, https://i2.wp.com/snarfed.org/w/wp-content/uploads/2019/03/IMG_20190319_190950_427.jpg?resize=1272%2C1272&amp;ssl=1 1272w, https://i2.wp.com/snarfed.org/w/wp-content/uploads/2019/03/IMG_20190319_190950_427.jpg?w=1392&amp;ssl=1 1392w, https://i2.wp.com/snarfed.org/w/wp-content/uploads/2019/03/IMG_20190319_190950_427.jpg?w=2088&amp;ssl=1 2088w" data-lazy-sizes="(max-width: 696px) 100vw, 696px" data-lazy-src="https://i2.wp.com/snarfed.org/w/wp-content/uploads/2019/03/IMG_20190319_190950_427.jpg?resize=696%2C696&amp;is-pending-load=1#038;ssl=1" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"><noscript><img data-attachment-id="36437" data-permalink="https://snarfed.org/img_20190319_190950_427" data-orig-file="https://i2.wp.com/snarfed.org/w/wp-content/uploads/2019/03/IMG_20190319_190950_427.jpg?fit=3024%2C3024&amp;ssl=1" data-orig-size="3024,3024" data-comments-opened="1" data-image-meta="{&quot;aperture&quot;:&quot;0&quot;,&quot;credit&quot;:&quot;&quot;,&quot;camera&quot;:&quot;&quot;,&quot;caption&quot;:&quot;&quot;,&quot;created_timestamp&quot;:&quot;0&quot;,&quot;copyright&quot;:&quot;&quot;,&quot;focal_length&quot;:&quot;0&quot;,&quot;iso&quot;:&quot;0&quot;,&quot;shutter_speed&quot;:&quot;0&quot;,&quot;title&quot;:&quot;&quot;,&quot;orientation&quot;:&quot;0&quot;}" data-image-title="IMG_20190319_190950_427.jpg" data-image-description="" data-medium-file="https://i2.wp.com/snarfed.org/w/wp-content/uploads/2019/03/IMG_20190319_190950_427.jpg?fit=300%2C300&amp;ssl=1" data-large-file="https://i2.wp.com/snarfed.org/w/wp-content/uploads/2019/03/IMG_20190319_190950_427.jpg?fit=696%2C696&amp;ssl=1" class="wp-image-36437 alignnone size-full" src="https://i2.wp.com/snarfed.org/w/wp-content/uploads/2019/03/IMG_20190319_190950_427.jpg?resize=696%2C696&#038;ssl=1" width="696" height="696" srcset="https://i2.wp.com/snarfed.org/w/wp-content/uploads/2019/03/IMG_20190319_190950_427.jpg?w=3024&amp;ssl=1 3024w, https://i2.wp.com/snarfed.org/w/wp-content/uploads/2019/03/IMG_20190319_190950_427.jpg?resize=150%2C150&amp;ssl=1 150w, https://i2.wp.com/snarfed.org/w/wp-content/uploads/2019/03/IMG_20190319_190950_427.jpg?resize=300%2C300&amp;ssl=1 300w, https://i2.wp.com/snarfed.org/w/wp-content/uploads/2019/03/IMG_20190319_190950_427.jpg?resize=768%2C768&amp;ssl=1 768w, https://i2.wp.com/snarfed.org/w/wp-content/uploads/2019/03/IMG_20190319_190950_427.jpg?resize=1024%2C1024&amp;ssl=1 1024w, https://i2.wp.com/snarfed.org/w/wp-content/uploads/2019/03/IMG_20190319_190950_427.jpg?resize=1272%2C1272&amp;ssl=1 1272w, https://i2.wp.com/snarfed.org/w/wp-content/uploads/2019/03/IMG_20190319_190950_427.jpg?w=1392&amp;ssl=1 1392w, https://i2.wp.com/snarfed.org/w/wp-content/uploads/2019/03/IMG_20190319_190950_427.jpg?w=2088&amp;ssl=1 2088w" sizes="(max-width: 696px) 100vw, 696px" data-recalc-dims="1" /></noscript></div>
+<div id="syndication-links"><span class="syn-text"></span><ul class="relsyn"><li><a aria-label="instagram" class="u-syndication syn-link" href="https://www.instagram.com/p/BvNn0fEnslg/"> <span class="svg-icon svg-instagram" style="display: inline-block; max-width: 1rem; margin: 2px;" aria-hidden="true" aria-label="instagram" title="instagram" ><svg role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>Instagram icon</title><path d="M12 0C8.74 0 8.333.015 7.053.072 5.775.132 4.905.333 4.14.63c-.789.306-1.459.717-2.126 1.384S.935 3.35.63 4.14C.333 4.905.131 5.775.072 7.053.012 8.333 0 8.74 0 12s.015 3.667.072 4.947c.06 1.277.261 2.148.558 2.913.306.788.717 1.459 1.384 2.126.667.666 1.336 1.079 2.126 1.384.766.296 1.636.499 2.913.558C8.333 23.988 8.74 24 12 24s3.667-.015 4.947-.072c1.277-.06 2.148-.262 2.913-.558.788-.306 1.459-.718 2.126-1.384.666-.667 1.079-1.335 1.384-2.126.296-.765.499-1.636.558-2.913.06-1.28.072-1.687.072-4.947s-.015-3.667-.072-4.947c-.06-1.277-.262-2.149-.558-2.913-.306-.789-.718-1.459-1.384-2.126C21.319 1.347 20.651.935 19.86.63c-.765-.297-1.636-.499-2.913-.558C15.667.012 15.26 0 12 0zm0 2.16c3.203 0 3.585.016 4.85.071 1.17.055 1.805.249 2.227.415.562.217.96.477 1.382.896.419.42.679.819.896 1.381.164.422.36 1.057.413 2.227.057 1.266.07 1.646.07 4.85s-.015 3.585-.074 4.85c-.061 1.17-.256 1.805-.421 2.227-.224.562-.479.96-.899 1.382-.419.419-.824.679-1.38.896-.42.164-1.065.36-2.235.413-1.274.057-1.649.07-4.859.07-3.211 0-3.586-.015-4.859-.074-1.171-.061-1.816-.256-2.236-.421-.569-.224-.96-.479-1.379-.899-.421-.419-.69-.824-.9-1.38-.165-.42-.359-1.065-.42-2.235-.045-1.26-.061-1.649-.061-4.844 0-3.196.016-3.586.061-4.861.061-1.17.255-1.814.42-2.234.21-.57.479-.96.9-1.381.419-.419.81-.689 1.379-.898.42-.166 1.051-.361 2.221-.421 1.275-.045 1.65-.06 4.859-.06l.045.03zm0 3.678c-3.405 0-6.162 2.76-6.162 6.162 0 3.405 2.76 6.162 6.162 6.162 3.405 0 6.162-2.76 6.162-6.162 0-3.405-2.76-6.162-6.162-6.162zM12 16c-2.21 0-4-1.79-4-4s1.79-4 4-4 4 1.79 4 4-1.79 4-4 4zm7.846-10.405c0 .795-.646 1.44-1.44 1.44-.795 0-1.44-.646-1.44-1.44 0-.794.646-1.439 1.44-1.439.793-.001 1.44.645 1.44 1.439z"/></svg></span></a></li><li><a aria-label="twitter" class="u-syndication syn-link" href="https://twitter.com/schnarfed/status/1108189089306537984"> <span class="svg-icon svg-twitter" style="display: inline-block; max-width: 1rem; margin: 2px;" aria-hidden="true" aria-label="twitter" title="twitter" ><svg role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>Twitter icon</title><path d="M23.954 4.569c-.885.389-1.83.654-2.825.775 1.014-.611 1.794-1.574 2.163-2.723-.951.555-2.005.959-3.127 1.184-.896-.959-2.173-1.559-3.591-1.559-2.717 0-4.92 2.203-4.92 4.917 0 .39.045.765.127 1.124C7.691 8.094 4.066 6.13 1.64 3.161c-.427.722-.666 1.561-.666 2.475 0 1.71.87 3.213 2.188 4.096-.807-.026-1.566-.248-2.228-.616v.061c0 2.385 1.693 4.374 3.946 4.827-.413.111-.849.171-1.296.171-.314 0-.615-.03-.916-.086.631 1.953 2.445 3.377 4.604 3.417-1.68 1.319-3.809 2.105-6.102 2.105-.39 0-.779-.023-1.17-.067 2.189 1.394 4.768 2.209 7.557 2.209 9.054 0 13.999-7.496 13.999-13.986 0-.209 0-.42-.015-.63.961-.689 1.8-1.56 2.46-2.548l-.047-.02z"/></svg></span></a></li></ul></div>					</div><!-- .entry-content -->
+
+		<span class="entry-format-badge theme-genericon"><span class="screen-reader-text">Standard</span></span>
+	</div><!-- .entry-wrap -->
+</article><!-- #post-## -->
+
+
+<article id="post-36417" class="clear post-36417 post type-post status-publish format-standard category-uncategorized h-entry hentry">
+	<div class="entry-wrap wrap clear">
+
+		<header class="entry-header">
+			<span class="categories-links"><a href="https://snarfed.org/category/uncategorized" rel="category tag">Uncategorized</a></span><h1 class="entry-title"><a href="https://snarfed.org/2019-03-15_36417" rel="bookmark"><span class='p-name'></span></a></h1>		</header><!-- .entry-header -->
+
+		<footer class="entry-meta">
+			<span class="entry-date"><a class="u-url" href="https://snarfed.org/2019-03-15_36417" title="9:50pm" rel="bookmark"><time class="dt-published" datetime="2019-03-15T21:50:17-07:00">March 15, 2019</time></a><span class="syn-text"></span><ul class="relsyn"><li><a aria-label="twitter" class="u-syndication syn-link" href="https://twitter.com/schnarfed/status/1106778999148023808"> <span class="svg-icon svg-twitter" style="display: inline-block; max-width: 1rem; margin: 2px;" aria-hidden="true" aria-label="twitter" title="twitter" ><svg role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>Twitter icon</title><path d="M23.954 4.569c-.885.389-1.83.654-2.825.775 1.014-.611 1.794-1.574 2.163-2.723-.951.555-2.005.959-3.127 1.184-.896-.959-2.173-1.559-3.591-1.559-2.717 0-4.92 2.203-4.92 4.917 0 .39.045.765.127 1.124C7.691 8.094 4.066 6.13 1.64 3.161c-.427.722-.666 1.561-.666 2.475 0 1.71.87 3.213 2.188 4.096-.807-.026-1.566-.248-2.228-.616v.061c0 2.385 1.693 4.374 3.946 4.827-.413.111-.849.171-1.296.171-.314 0-.615-.03-.916-.086.631 1.953 2.445 3.377 4.604 3.417-1.68 1.319-3.809 2.105-6.102 2.105-.39 0-.779-.023-1.17-.067 2.189 1.394 4.768 2.209 7.557 2.209 9.054 0 13.999-7.496 13.999-13.986 0-.209 0-.42-.015-.63.961-.689 1.8-1.56 2.46-2.548l-.047-.02z"/></svg></span></a></li></ul></span><span class="author p-author h-card vcard"> <img alt src="https://secure.gravatar.com/avatar/947b5f3f323da0ef785b6f02d9c265d6?s=96&#038;d=blank&#038;r=g" class="avatar avatar-96 jetpack-lazy-image" height="96" width="96" data-lazy-srcset="https://secure.gravatar.com/avatar/947b5f3f323da0ef785b6f02d9c265d6?s=192&#038;d=blank&#038;r=g 2x" data-lazy-src="https://secure.gravatar.com/avatar/947b5f3f323da0ef785b6f02d9c265d6?s=96&amp;is-pending-load=1#038;d=blank&#038;r=g" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"><noscript><img alt='' src='https://secure.gravatar.com/avatar/947b5f3f323da0ef785b6f02d9c265d6?s=96&#038;d=blank&#038;r=g' srcset='https://secure.gravatar.com/avatar/947b5f3f323da0ef785b6f02d9c265d6?s=192&#038;d=blank&#038;r=g 2x' class='avatar avatar-96 photo u-photo' height='96' width='96' /></noscript><a class="u-url url fn n p-name" href="https://snarfed.org/" title="Ryan Barrett" rel="author">Ryan Barrett</a></span>
+						<span class="comments-link"><a href="https://snarfed.org/2019-03-15_36417#respond">Leave a comment</a></span>
+
+					</footer><!-- .entry-meta -->
+
+				<div class="entry-content clear">
+			<div class='e-content'>
+<blockquote class="wp-block-quote">
+<p>Apocalypse…you see that, and you know….I&#8217;m just going to lay down and die. I&#8217;m not gonna thrive in that environment! I <em>type</em> for a living. I&#8217;ll be food for other, stronger men.</p>
+</blockquote>
+<p>&#8211; <a href="https://www.penny-arcade.com/comic/2019/03/15">Penny Arcade, <em>Deer Diary</em></a></p>
+</div>
+<div id="syndication-links"><span class="syn-text"></span><ul class="relsyn"><li><a aria-label="twitter" class="u-syndication syn-link" href="https://twitter.com/schnarfed/status/1106778999148023808"> <span class="svg-icon svg-twitter" style="display: inline-block; max-width: 1rem; margin: 2px;" aria-hidden="true" aria-label="twitter" title="twitter" ><svg role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>Twitter icon</title><path d="M23.954 4.569c-.885.389-1.83.654-2.825.775 1.014-.611 1.794-1.574 2.163-2.723-.951.555-2.005.959-3.127 1.184-.896-.959-2.173-1.559-3.591-1.559-2.717 0-4.92 2.203-4.92 4.917 0 .39.045.765.127 1.124C7.691 8.094 4.066 6.13 1.64 3.161c-.427.722-.666 1.561-.666 2.475 0 1.71.87 3.213 2.188 4.096-.807-.026-1.566-.248-2.228-.616v.061c0 2.385 1.693 4.374 3.946 4.827-.413.111-.849.171-1.296.171-.314 0-.615-.03-.916-.086.631 1.953 2.445 3.377 4.604 3.417-1.68 1.319-3.809 2.105-6.102 2.105-.39 0-.779-.023-1.17-.067 2.189 1.394 4.768 2.209 7.557 2.209 9.054 0 13.999-7.496 13.999-13.986 0-.209 0-.42-.015-.63.961-.689 1.8-1.56 2.46-2.548l-.047-.02z"/></svg></span></a></li></ul></div>					</div><!-- .entry-content -->
+
+		<span class="entry-format-badge theme-genericon"><span class="screen-reader-text">Standard</span></span>
+	</div><!-- .entry-wrap -->
+</article><!-- #post-## -->
+
+
+
+		</div><!-- #content -->
+	</div><!-- #primary -->
+
+
+	</div><!-- #main -->
+
+	<footer id="colophon" class="site-footer" role="contentinfo">
+		<div class="site-info wrap">
+						<a href="http://wordpress.org/" title="A Semantic Personal Publishing Platform" rel="generator">Proudly powered by WordPress</a>
+			<span class="sep"> | </span>
+			Theme: Ryu by <a href="http://wordpress.com/themes/ryu/" rel="designer">WordPress.com</a>.		</div><!-- .site-info -->
+	</footer><!-- #colophon -->
+</div><!-- #page -->
+
+		<script type="text/javascript">
+		//<![CDATA[
+		var infiniteScroll = JSON.parse( decodeURIComponent( '%7B%22settings%22%3A%7B%22id%22%3A%22content%22%2C%22ajaxurl%22%3A%22https%3A%5C%2F%5C%2Fsnarfed.org%5C%2F%3Finfinity%3Dscrolling%22%2C%22type%22%3A%22scroll%22%2C%22wrapper%22%3Atrue%2C%22wrapper_class%22%3A%22infinite-wrap%22%2C%22footer%22%3A%22page%22%2C%22click_handle%22%3A%221%22%2C%22text%22%3A%22Older%20posts%22%2C%22totop%22%3A%22Scroll%20back%20to%20top%22%2C%22currentday%22%3A%2215.03.19%22%2C%22order%22%3A%22DESC%22%2C%22scripts%22%3A%5B%5D%2C%22styles%22%3A%5B%5D%2C%22google_analytics%22%3Afalse%2C%22offset%22%3A1%2C%22history%22%3A%7B%22host%22%3A%22snarfed.org%22%2C%22path%22%3A%22%5C%2Fpage%5C%2F%25d%22%2C%22use_trailing_slashes%22%3Afalse%2C%22parameters%22%3A%22%22%7D%2C%22query_args%22%3A%7B%22error%22%3A%22%22%2C%22m%22%3A%22%22%2C%22p%22%3A0%2C%22post_parent%22%3A%22%22%2C%22subpost%22%3A%22%22%2C%22subpost_id%22%3A%22%22%2C%22attachment%22%3A%22%22%2C%22attachment_id%22%3A0%2C%22name%22%3A%22%22%2C%22static%22%3A%22%22%2C%22pagename%22%3A%22%22%2C%22page_id%22%3A0%2C%22second%22%3A%22%22%2C%22minute%22%3A%22%22%2C%22hour%22%3A%22%22%2C%22day%22%3A0%2C%22monthnum%22%3A0%2C%22year%22%3A0%2C%22w%22%3A0%2C%22category_name%22%3A%22%22%2C%22tag%22%3A%22%22%2C%22cat%22%3A%22%22%2C%22tag_id%22%3A%22%22%2C%22author%22%3A%22%22%2C%22author_name%22%3A%22%22%2C%22feed%22%3A%22%22%2C%22tb%22%3A%22%22%2C%22paged%22%3A0%2C%22meta_key%22%3A%22%22%2C%22meta_value%22%3A%22%22%2C%22preview%22%3A%22%22%2C%22s%22%3A%22%22%2C%22sentence%22%3A%22%22%2C%22title%22%3A%22%22%2C%22fields%22%3A%22%22%2C%22menu_order%22%3A%22%22%2C%22embed%22%3A%22%22%2C%22category__in%22%3A%5B%5D%2C%22category__not_in%22%3A%5B27%2C23%2C28%2C29%5D%2C%22category__and%22%3A%5B%5D%2C%22post__in%22%3A%5B%5D%2C%22post__not_in%22%3A%5B%5D%2C%22post_name__in%22%3A%5B%5D%2C%22tag__in%22%3A%5B%5D%2C%22tag__not_in%22%3A%5B%5D%2C%22tag__and%22%3A%5B%5D%2C%22tag_slug__in%22%3A%5B%5D%2C%22tag_slug__and%22%3A%5B%5D%2C%22post_parent__in%22%3A%5B%5D%2C%22post_parent__not_in%22%3A%5B%5D%2C%22author__in%22%3A%5B%5D%2C%22author__not_in%22%3A%5B%5D%2C%22posts_per_page%22%3A10%2C%22ignore_sticky_posts%22%3Afalse%2C%22suppress_filters%22%3Afalse%2C%22cache_results%22%3Atrue%2C%22update_post_term_cache%22%3Atrue%2C%22lazy_load_term_meta%22%3Atrue%2C%22update_post_meta_cache%22%3Atrue%2C%22post_type%22%3A%22%22%2C%22nopaging%22%3Afalse%2C%22comments_per_page%22%3A%2250%22%2C%22no_found_rows%22%3Afalse%2C%22order%22%3A%22DESC%22%7D%2C%22query_before%22%3A%222019-06-13%2012%3A23%3A42%22%2C%22last_post_date%22%3A%222019-03-15%2021%3A50%3A17%22%2C%22body_class%22%3A%22infinite-scroll%20neverending%22%2C%22stats%22%3A%22blog%3D82875054%26host%3Dsnarfed.org%26v%3Dext%26j%3D1%3A7.4%26x_pagetype%3Dinfinite-jetpack%22%7D%7D' ) );
+		//]]>
+		</script>
+				<div id="infinite-footer">
+			<div class="container">
+				<div class="blog-info">
+					<a id="infinity-blog-title" href="https://snarfed.org/" rel="home">
+						snarfed.org					</a>
+				</div>
+				<div class="blog-credits">
+					<a href="https://wordpress.org/" rel="noopener noreferrer" target="_blank" rel="generator">Proudly powered by WordPress</a> Theme: snarfed-ryu.				</div>
+			</div>
+		</div><!-- #infinite-footer -->
+		<script type='text/javascript' src='https://c0.wp.com/p/jetpack/7.4/_inc/build/infinite-scroll/infinity.min.js'></script>
+<script type='text/javascript' src='https://c0.wp.com/p/jetpack/7.4/_inc/build/photon/photon.min.js'></script>
+<script type='text/javascript' src='https://s0.wp.com/wp-content/js/devicepx-jetpack.js?ver=201924'></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var jetpackCarouselStrings = {"widths":[370,700,1000,1200,1400,2000],"is_logged_in":"","lang":"en","ajaxurl":"https:\/\/snarfed.org\/w\/wp-admin\/admin-ajax.php","nonce":"ba6372bb91","display_exif":"0","display_geo":"1","single_image_gallery":"1","single_image_gallery_media_file":"","background_color":"black","comment":"Comment","post_comment":"Post Comment","write_comment":"Write a Comment...","loading_comments":"Loading Comments...","download_original":"View full size <span class=\"photo-size\">{0}<span class=\"photo-size-times\">\u00d7<\/span>{1}<\/span>","no_comment_text":"Please be sure to submit some text with your comment.","no_comment_email":"Please provide an email address to comment.","no_comment_author":"Please provide your name to comment.","comment_post_error":"Sorry, but there was an error posting your comment. Please try again later.","comment_approved":"Your comment was approved.","comment_unapproved":"Your comment is in moderation.","camera":"Camera","aperture":"Aperture","shutter_speed":"Shutter Speed","focal_length":"Focal Length","copyright":"Copyright","comment_registration":"0","require_name_email":"0","login_url":"https:\/\/snarfed.org\/w\/wp-login.php?redirect_to=https%3A%2F%2Fsnarfed.org%2F2019-06-13_37547","blog_id":"1","meta_data":["camera","aperture","shutter_speed","focal_length","copyright"],"local_comments_commenting_as":"<fieldset><label for=\"email\">Email<\/label> <input type=\"text\" name=\"email\" class=\"jp-carousel-comment-form-field jp-carousel-comment-form-text-field\" id=\"jp-carousel-comment-form-email-field\" \/><\/fieldset><fieldset><label for=\"author\">Name<\/label> <input type=\"text\" name=\"author\" class=\"jp-carousel-comment-form-field jp-carousel-comment-form-text-field\" id=\"jp-carousel-comment-form-author-field\" \/><\/fieldset><fieldset><label for=\"url\">Website<\/label> <input type=\"text\" name=\"url\" class=\"jp-carousel-comment-form-field jp-carousel-comment-form-text-field\" id=\"jp-carousel-comment-form-url-field\" \/><\/fieldset>"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='https://c0.wp.com/p/jetpack/7.4/_inc/build/carousel/jetpack-carousel.min.js'></script>
+<script type='text/javascript' src='https://c0.wp.com/c/5.2.1/wp-includes/js/mediaelement/wp-mediaelement.min.js'></script>
+<script type='text/javascript' src='https://snarfed.org/w/wp-content/themes/snarfed-ryu/fragmention.js?ver=1.0'></script>
+<script type='text/javascript' src='https://snarfed.org/w/wp-content/themes/ryu/js/skip-link-focus-fix.js?ver=20130115'></script>
+<script type='text/javascript' src='https://snarfed.org/w/wp-content/themes/ryu/js/ryu.js?ver=20130319'></script>
+<script type='text/javascript' src='https://c0.wp.com/p/jetpack/7.4/_inc/build/lazy-images/js/lazy-images.min.js'></script>
+<script type='text/javascript' src='https://c0.wp.com/c/5.2.1/wp-includes/js/wp-embed.min.js'></script>
+<script type="text/javascript">
+			jQuery.extend( infiniteScroll.settings.scripts, ["jquery-core","jquery-migrate","jquery","spin","jquery.spin","tiled-gallery","mediaelement-core","mediaelement-migrate","mediaelement","the-neverending-homepage","jetpack-photon","devicepx","jetpack-carousel","wp-mediaelement","snarfed-fragmention","ryu-skip-link-focus-fix","ryu-theme","jetpack-lazy-images","wp-embed"] );
+			jQuery.extend( infiniteScroll.settings.styles, ["openid","the-neverending-homepage","wp-block-library","semantic-linkbacks-css","jetpack-carousel","tiled-gallery","mediaelement","wp-mediaelement","genericons","ryu-style","ryu-lato","ryu-playfair-display","syndication-style"] );
+		</script><script type='text/javascript' src='https://stats.wp.com/e-201924.js' async='async' defer='defer'></script>
+<script type='text/javascript'>
+	_stq = window._stq || [];
+	_stq.push([ 'view', {v:'ext',j:'1:7.4',blog:'82875054',post:'0',tz:'-7',srv:'snarfed.org'} ]);
+	_stq.push([ 'clickTrackerInit', '82875054', '0' ]);
+</script>
+
+</body>
+</html>
+<!-- Dynamic page generated in 0.935 seconds. -->
+<!-- Cached page generated by WP-Super-Cache on 2019-06-13 12:23:42 -->
+
+<!-- Compression = gzip -->

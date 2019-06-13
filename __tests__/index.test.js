@@ -47,7 +47,7 @@ tap.test('local rss', t => {
   wm.load(read('/fixtures/jeremy.xml'));
 });
 
-tap.only('local non-h-entry', t => {
+tap.test('local non-h-entry', t => {
   t.plan(1);
   const wm = new Webmention();
   wm.on('end', () => {
@@ -58,4 +58,14 @@ tap.only('local non-h-entry', t => {
     t.end();
   });
   wm.load(read('/fixtures/alt-but.html'));
+});
+
+tap.test('local h-feed nested', t => {
+  t.plan(1);
+  const wm = new Webmention();
+  wm.on('end', () => {
+    t.equal(wm.mentions.length, 1);
+    t.end();
+  });
+  wm.load(read('/fixtures/snarfed.html'));
 });
