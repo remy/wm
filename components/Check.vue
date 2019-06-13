@@ -55,8 +55,11 @@
 // TODO handle errors / 429 etc
 const API = ""; //"https://wm.rem.now.sh/api"; //process.env.API;
 export default {
+  props: {
+    url: String,
+  },
   data: () => ({
-    url: "",
+    // url: "",
     loading: false,
     mentions: [],
     sent: false,
