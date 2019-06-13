@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div v-on:toggle.capture="handleToggle">
     <h1>Documentation</h1>
     <h2>Platform agnostic webmentions</h2>
     <p>webmention.app relies entirely on your markup and not your software, so no matter how your content is generated, you can send outgoing webmentions to other web sites.</p>
@@ -69,14 +69,37 @@
           Select the
           <strong>Deploy succeeded</strong> event, and the URL to send outgoing webmentions is:
         </p>
-        <pre><code><span>https://webmention.app/api/check?token=</span><a href="/token">[your-token]</a>&limit=1&url=[your-feed-url]</code></pre>
+        <pre><code><span>https://webmention.app/api/check?token=</span><n-link to="/token">[your-token]</n-link>&limit=1&url=[your-feed-url]</code></pre>
         <p>Now upon every new post you release, webmention.app will automatically handle your webmentions for you.</p>
       </div>
     </details>
 
-    <details id="how-to-use-use-a-feed-as-source">
+    <details open id="using-ifttt-to-trigger-checks">
       <summary>
-        <h2>How to use use a feed as source</h2>
+        <h2>Using IFTTT to trigger checks</h2>
+      </summary>
+      <div>
+        <p>If you have an RSS feed on your website, then you can configure IFTTT the trigger a call to webmention.app when new posts are published.</p>
+        <ol>
+          <li>
+            Start by
+            <a target="_blank" href="https://ifttt.com/create">creating a new applet on ifttt.com</a>
+          </li>
+          <li>Click on <strong>+this</strong> and select <strong>RSS Feed</strong></li>
+          <li>Select <strong>New feed item</strong> and enter the URL to your feed</li>
+          <li>Click on <strong>+that</strong> and find and select <strong>Webhooks</strong></li>
+          <li>For the URL, enter: <code><strong v-pre>https://webmention.app/api/check?url={{EntryUrl}}&token=</strong><n-link to="/token">[your-token]</n-link></code></li>
+          <li>Change the method to <strong>POST</strong></li>
+          <li>Then click <strong>Create action</strong> then <strong>Finish</strong></li>
+        </ol>
+
+        <p>Now when you publish a post, IFTTT will tell webmention.app to check the new URL for webmentions and automatically send them out.</p>
+      </div>
+    </details>
+
+    <details id="supported-feed-types">
+      <summary>
+        <h2>Supported feed types</h2>
       </summary>
       <div>
         <p>You can use either the web service or the command line method to request a feed. You pass the URL of the feed to webmention.app just as you would any other URL.</p>
@@ -197,7 +220,7 @@
     <h2 id="further-reading">Further reading</h2>
     <ul>
       <li>
-        <a href="/docs/todo">TODO / Work in progress</a>
+        <n-link to="/docs/todo">TODO / Work in progress</n-link>
       </li>
       <li>
         <a href="https://github.com/remy/wm/issues">Found an issue or want to make an improvement?</a>
@@ -230,7 +253,18 @@ export default {
   mounted() {
     if (window.location.hash) {
       const details = document.querySelector(window.location.hash);
-      if (details) details.open = true;
+
+      if (details) {
+        details.open = true;
+        details.scrollIntoView();
+      }
+    }
+  },
+  methods: {
+    handleToggle(e) {
+      if (e.target.nodeName === "DETAILS" && e.target.open) {
+        window.history.replaceState("", "", "#" + e.target.id);
+      }
     }
   },
   head() {
