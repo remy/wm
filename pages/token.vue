@@ -16,10 +16,8 @@
       <pre><code>curl -X POST https://webmention.app?token=<span>{{ token }}</span>&amp;url=…</code></pre>
     </div>
     <div v-else>
-      <p>
-        <center>
-          <a class="btn" href="/auth">Sign in using Github</a>
-        </center>
+      <p class="center">
+        <a class="btn" href="/auth">Sign in using Github</a>
       </p>
       <p>The sign in process does not ask for any private data (nor email) and is only used to assign you a unique token that will allow you to make as many request as you need against this service.</p>
     </div>
@@ -29,6 +27,9 @@
 </template>
 
 <style scoped>
+.center {
+  text-align: center;
+}
 .btn {
   font-size: 18px;
 }
