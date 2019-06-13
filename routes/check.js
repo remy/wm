@@ -9,12 +9,6 @@ const rateWindow = 1000 * 60; // * 60 * 4; // 4 hours
 module.exports = async (req, res) => {
   let { url, token, limit } = qs(req);
 
-  if (!url) {
-    // if no URL is provided, give them the UI
-    res.writeHead(302, { location: '/test' });
-    res.end();
-  }
-
   const now = new Date();
 
   // Server-Timing: miss, db;dur=53, app;dur=47.2 (ms)
@@ -25,7 +19,13 @@ module.exports = async (req, res) => {
   };
 
   if (!url) {
-    return res.end('Bad request');
+    res.writeHead(400);
+    return res.end(
+      JSON.stringify({
+        error: 'Bad request',
+        message: 'A valid URL is required to test against',
+      })
+    );
   }
 
   if (!url.startsWith('http')) {
