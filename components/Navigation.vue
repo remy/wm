@@ -10,7 +10,7 @@
         <n-link to="/token">Get token</n-link>
       </li>
       <li>
-        <n-link to="/check">Check a URL</n-link>
+        <n-link to="/test">Test a URL</n-link>
       </li>
       <li>
         <n-link to="/docs">Docs</n-link>

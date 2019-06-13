@@ -28,8 +28,7 @@ h1 {
 h2 {
   font-size: 1.3rem;
   line-height: 1.6rem;
-  color: #9e9e9e;
-  /* overflow: hidden; */
+  color: rgb(148, 146, 146);
 }
 
 #index h2 {

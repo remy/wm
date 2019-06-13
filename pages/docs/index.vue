@@ -26,7 +26,7 @@
           You need to find a way to request a URL, in this example, we'll use the command line tool
           <code>curl</code>:
         </p>
-        <pre><code><span class="prompt">$</span> curl -X POST https://webmention.app/api/check?url=https://adactio.com/journal/15254
+        <pre><code><span class="prompt">$</span> curl -X POST https://webmention.app/check?url=https://adactio.com/journal/15254
 [{"endpoint":{"url":"https://webmention.io/indiewebcamp/webmention","type":"webmention"},"source":"https://adactio.com/journal/15254","target":"https://indieweb.org/Homebrew_Website_Club"},{"endpoint":{"url":"https://webmention.io/indiewebcamp/webmention","type":"webmention"},"source":"https://adactio.com/journal/15254","target":"https://indieweb.org/2019/Brighton"},{"endpoint":{"url":"https://brid.gy/publish/webmention","type":"webmention"},"source":"https://adactio.com/journal/15254","target":"https://benjamin.parry.is/"},{"endpoint":{"url":"https://webmention.io/remysharp.com/webmention","type":"webmention"},"source":"https://adactio.com/journal/15254","target":"https://remysharp.com/"}]
 </code></pre>
 
@@ -69,12 +69,12 @@
           Select the
           <strong>Deploy succeeded</strong> event, and the URL to send outgoing webmentions is:
         </p>
-        <pre><code><span>https://webmention.app/api/check?token=</span><n-link to="/token">[your-token]</n-link>&limit=1&url=[your-feed-url]</code></pre>
+        <pre><code><span>https://webmention.app/check?token=</span><n-link to="/token">[your-token]</n-link>&limit=1&url=[your-feed-url]</code></pre>
         <p>Now upon every new post you release, webmention.app will automatically handle your webmentions for you.</p>
       </div>
     </details>
 
-    <details open id="using-ifttt-to-trigger-checks">
+    <details id="using-ifttt-to-trigger-checks">
       <summary>
         <h2>Using IFTTT to trigger checks</h2>
       </summary>
@@ -88,7 +88,7 @@
           <li>Click on <strong>+this</strong> and select <strong>RSS Feed</strong></li>
           <li>Select <strong>New feed item</strong> and enter the URL to your feed</li>
           <li>Click on <strong>+that</strong> and find and select <strong>Webhooks</strong></li>
-          <li>For the URL, enter: <code><strong v-pre>https://webmention.app/api/check?url={{EntryUrl}}&token=</strong><n-link to="/token">[your-token]</n-link></code></li>
+          <li>For the URL, enter: <code><strong v-pre>https://webmention.app/check?url={{EntryUrl}}&token=</strong><n-link to="/token">[your-token]</n-link></code></li>
           <li>Change the method to <strong>POST</strong></li>
           <li>Then click <strong>Create action</strong> then <strong>Finish</strong></li>
         </ol>
