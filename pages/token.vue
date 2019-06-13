@@ -13,7 +13,7 @@
       <p>This token doesn't provide any write access, and is only used to identify you as a real person wanting to use this service.</p>
       <h2>Usage</h2>
       <p>Include your token as a URL parameter in your calls to the check API:</p>
-      <pre><code>curl -X POST https://webmention.app?token=<span>{{ token }}</span>&amp;url=…</code></pre>
+      <pre><code>curl -X POST https://webmention.app/check?token=<span>{{ token }}</span>&amp;url=…</code></pre>
     </div>
     <div v-else>
       <p class="center">
