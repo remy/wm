@@ -50,11 +50,8 @@ tap.test('local rss', t => {
 tap.test('local non-h-entry', t => {
   t.plan(1);
   const wm = new Webmention();
-  wm.on('end', () => {
-    console.warn(wm.mentions);
-
-    t.equal(wm.mentions.length, 10);
-
+  wm.on('endpoints', e => {
+    t.equal(e, 2);
     t.end();
   });
   wm.load(read('/fixtures/alt-but.html'));
@@ -63,8 +60,10 @@ tap.test('local non-h-entry', t => {
 tap.test('local h-feed nested', t => {
   t.plan(1);
   const wm = new Webmention();
-  wm.on('end', () => {
-    t.equal(wm.mentions.length, 1);
+  wm.on('endpoints', endpoints => {
+    console.log(endpoints);
+
+    t.equal(endpoints.length, 1);
     t.end();
   });
   wm.load(read('/fixtures/snarfed.html'));
