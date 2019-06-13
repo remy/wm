@@ -23,7 +23,7 @@ module.exports = async (req, res) => {
     return res.end(
       JSON.stringify({
         error: 'Bad request',
-        message: 'A valid URL is required to test against',
+        message: 'A valid URL is required to test against.',
       })
     );
   }

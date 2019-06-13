@@ -90,7 +90,7 @@ export default {
         this.hasResult = true;
       } else {
         this.loading = false;
-        if (res.status === 429) {
+        if (res.status >= 400) {
           const json = await res.json();
           this.error = json.message;
         }
