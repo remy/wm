@@ -1,6 +1,7 @@
 <template lang="md">
 # TODO
 
+- [ ] Support proper host encoding, so https://i❤️.ws works
 - [ ] Allow self mentions & pings
 - [ ] Provide `require('@remy/webmention')` support
 - [ ] Support JSON feed (if there's requests for it)
