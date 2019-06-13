@@ -314,13 +314,6 @@ details ol {
   margin: 0;
 }
 
-details li span {
-  display: block;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  margin: 4px 0;
-}
-
 details li a {
   white-space: nowrap;
 }
