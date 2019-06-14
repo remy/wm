@@ -2,7 +2,7 @@
   <form @submit="findMentions" method="GET" action="/check">
     <div class="flex-fields">
       <label class="label" for="url">URL:</label>
-      <input v-model="url" name="url" type="text" id="url">
+      <input v-on:input="handleInput" v-model="url" name="url" type="text" id="url">
       <button
         type="submit"
         class="btn"
@@ -53,10 +53,11 @@
 
 <script>
 // TODO handle errors / 429 etc
-const API = ""; //"https://wm.rem.now.sh/api"; //process.env.API;
+const API = process.env.API;
 export default {
   props: {
-    query: String
+    query: String,
+    onInput: Function,
   },
   data: function () {
     return {
@@ -69,6 +70,9 @@ export default {
     };
   },
   methods: {
+    handleInput(e) {
+      this.$emit('input', e);
+    },
     async sendMentions(event) {
       event.preventDefault();
       this.loading = true;

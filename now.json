@@ -10,11 +10,11 @@
         "Access-Control-Allow-Origin": "*"
       }
     },
-    {
-      "src": "/status",
-      "dest": "/routes/status.js",
-      "methods": ["POST"]
-    },
+    // {
+    //   "src": "/status",
+    //   "dest": "/routes/status.js",
+    //   "methods": ["POST"]
+    // },
     { "src": "/auth/?.*", "dest": "/routes/auth.js" },
     {
       "methods": ["GET"],
