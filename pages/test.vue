@@ -10,10 +10,7 @@
 import Check from "../components/Check";
 export default {
   data() {
-    return { url: '' }
-  },
-  asyncData ({ query } = {}) {
-    return query;
+    return { url: this.$route.query.url }
   },
   components: { Check }
 };

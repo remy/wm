@@ -1,6 +1,6 @@
 {
   "name": "@remy/webmention",
-  "version": "1.3.1",
+  "version": "1.3.2",
   "description": "Web Mentions sender",
   "main": "./lib/webmention.js",
   "bin": {
@@ -14,8 +14,8 @@
   ],
   "scripts": {
     "dev": "nuxt",
-    "deploy": "npm run build && now --target production",
-    "_build": "nuxt generate",
+    "deploy": "npm run build && now",
+    "build": "nuxt generate",
     "now-build": "nuxt generate",
     "now-dev": "nuxt",
     "test": "tap"
@@ -31,31 +31,30 @@
   "author": "Remy Sharp (https://remysharp.com)",
   "license": "MIT",
   "dependencies": {
-    "aws-sdk": "^2.466.0",
     "cheerio": "0.22.0",
     "clui": "^0.3.6",
-    "cookie-universal-nuxt": "^2.0.14",
     "decodeuricomponent": "^0.3.1",
     "follow-redirects": "^1.7.0",
-    "googleapis": "^40.0.0",
     "li": "^1.3.0",
     "microformat-node": "^2.0.1",
     "ms": "^2.1.1",
     "node-fetch": "^2.6.0",
     "optimist": "^0.6.1",
-    "passport": "^0.4.0",
-    "passport-github2": "^0.1.11",
     "rss-parser": "^3.7.0",
     "uuid": "^3.3.2"
   },
   "devDependencies": {
+    "passport": "^0.4.0",
+    "passport-github2": "^0.1.11",
+    "aws-sdk": "^2.466.0",
+    "cookie-universal-nuxt": "^2.0.14",
     "@nuxtjs/markdownit": "^1.2.4",
     "@remy/envy": "^4.0.2",
     "markdown-it-named-headings": "^1.1.0",
     "markdown-it-task-lists": "^2.1.1",
     "micro": "^9.3.4",
     "micro-dev": "^3.0.0",
-    "nuxt": "^2.7.1",
+    "nuxt": "^2.8.1",
     "tap": "^14.2.0"
   }
 }
