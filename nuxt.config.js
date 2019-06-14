@@ -1,5 +1,5 @@
 module.exports = {
-  mode: 'universal',
+  mode: 'spa',
 
   generate: {
     minify: {
@@ -22,7 +22,7 @@ module.exports = {
   css: [],
 
   env: {
-    API: process.env.API || 'http://localhost:3030/api',
+    API: process.env.NODE_ENV === 'development' ? 'http://localhost:3030' : '',
   },
 
   modules: ['@nuxtjs/markdownit', 'cookie-universal-nuxt'],

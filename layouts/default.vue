@@ -39,7 +39,8 @@ export default {
         name: "twitter:image:src",
         content: "https://webmention.app/webmention-app-card.jpg"
       },
-      { name: "twitter:card", content: "summary_large_image" }
+      { name: "twitter:card", content: "summary_large_image" },
+      { name: "sha", content: process.env.NOW_GITHUB_COMMIT_SHA },
     ],
     link: [
       {
