@@ -66,7 +66,7 @@ module.exports = async (req, res) => {
             message: `Too many requests in time window. Try again in ${ms(
               delta * -1,
               { long: true }
-            )}, or use a free token for no rate limits.`,
+            )}, or use a free token for no rate limits: https://webmention.app/token`,
           })
         );
       }
@@ -108,6 +108,7 @@ module.exports = async (req, res) => {
 
     if (req.method.toLowerCase() === 'post') {
       return Promise.all(urls.map(sendMention)).then(reply => {
+        if (reply.length) db.updateRequestCount('__sent', reply.length);
         timings.send = Date.now() - now.getTime();
         send(JSON.stringify({ urls: reply }));
       });
