@@ -108,7 +108,12 @@ module.exports = async (req, res) => {
 
     if (req.method.toLowerCase() === 'post') {
       return Promise.all(urls.map(sendMention)).then(reply => {
-        if (reply.length) db.updateRequestCount('__sent', reply.length);
+        console.log(reply);
+
+        if (reply.length)
+          db.updateRequestCount('__sent', reply.length)
+            .then(() => '__sent ok')
+            .catch(E => console.log(E));
         timings.send = Date.now() - now.getTime();
         send(JSON.stringify({ urls: reply }));
       });

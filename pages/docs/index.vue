@@ -24,7 +24,7 @@
         </p>
         <p>
           You need to find a way to request a URL, in this example, we'll use the command line tool
-          <code>curl</code>:
+          <code>curl</code>. Here's a real world example of sending webmentions:
         </p>
         <pre><code><span class="prompt">$</span> curl -X POST https://webmention.app/check?url=https://adactio.com/journal/15254
 [{"endpoint":{"url":"https://webmention.io/indiewebcamp/webmention","type":"webmention"},"source":"https://adactio.com/journal/15254","target":"https://indieweb.org/Homebrew_Website_Club"},{"endpoint":{"url":"https://webmention.io/indiewebcamp/webmention","type":"webmention"},"source":"https://adactio.com/journal/15254","target":"https://indieweb.org/2019/Brighton"},{"endpoint":{"url":"https://brid.gy/publish/webmention","type":"webmention"},"source":"https://adactio.com/journal/15254","target":"https://benjamin.parry.is/"},{"endpoint":{"url":"https://webmention.io/remysharp.com/webmention","type":"webmention"},"source":"https://adactio.com/journal/15254","target":"https://remysharp.com/"}]
@@ -83,14 +83,41 @@
         <ol>
           <li>
             Start by
-            <a target="_blank" href="https://ifttt.com/create">creating a new applet on ifttt.com</a>
+            <a
+              target="_blank"
+              href="https://ifttt.com/create"
+            >creating a new applet on ifttt.com</a>
           </li>
-          <li>Click on <strong>+this</strong> and select <strong>RSS Feed</strong></li>
-          <li>Select <strong>New feed item</strong> and enter the URL to your feed</li>
-          <li>Click on <strong>+that</strong> and find and select <strong>Webhooks</strong></li>
-          <li>For the URL, enter: <code><strong v-pre>https://webmention.app/check?url={{EntryUrl}}&token=</strong><n-link to="/token">[your-token]</n-link></code></li>
-          <li>Change the method to <strong>POST</strong></li>
-          <li>Then click <strong>Create action</strong> then <strong>Finish</strong></li>
+          <li>
+            Click on
+            <strong>+this</strong> and select
+            <strong>RSS Feed</strong>
+          </li>
+          <li>
+            Select
+            <strong>New feed item</strong> and enter the URL to your feed
+          </li>
+          <li>
+            Click on
+            <strong>+that</strong> and find and select
+            <strong>Webhooks</strong>
+          </li>
+          <li>
+            For the URL, enter:
+            <code>
+              <strong v-pre>https://webmention.app/check?url={{EntryUrl}}&token=</strong>
+              <n-link to="/token">[your-token]</n-link>
+            </code>
+          </li>
+          <li>
+            Change the method to
+            <strong>POST</strong>
+          </li>
+          <li>
+            Then click
+            <strong>Create action</strong> then
+            <strong>Finish</strong>
+          </li>
         </ol>
 
         <p>Now when you publish a post, IFTTT will tell webmention.app to check the new URL for webmentions and automatically send them out.</p>
@@ -106,15 +133,41 @@
         <ol>
           <li>
             Start by
-            <a target="_blank" href="https://ifttt.com/create">creating a new applet on ifttt.com</a>
+            <a
+              target="_blank"
+              href="https://ifttt.com/create"
+            >creating a new applet on ifttt.com</a>
           </li>
-          <li>Click on <strong>+this</strong> and select <strong>Date &amp; Time</strong></li>
+          <li>
+            Click on
+            <strong>+this</strong> and select
+            <strong>Date &amp; Time</strong>
+          </li>
           <li>Select the frequency that suits your website - unless you're prolific, daily or weekly might be best.</li>
           <li>Change the time from the default 12 AM - this eases everyone's requests coming at the same time</li>
-          <li>Click on <strong>+that</strong> and find and select <strong>Webhooks</strong></li>
-          <li>For the URL, enter: <code><strong v-pre>https://webmention.app/check?url={{EntryUrl}}&token=</strong><n-link to="/token">[your-token]</n-link></code></li>
-          <li>Change the method to <strong>POST</strong></li>
-          <li>Then click <strong>Create action</strong> then <strong>Finish</strong></li>
+          <li>
+            Click on
+            <strong>+that</strong> and find and select
+            <strong>Webhooks</strong>
+          </li>
+          <li>
+            For the URL, enter:
+            <code>
+              <strong v-pre>https://webmention.app/check?url={YOUR_URL}&token=</strong>
+              <n-link to="/token">[your-token]</n-link>
+            </code> (remember to swap
+            <code>{YOUR_URL}</code> for your
+            <em>actual</em> URL!)
+          </li>
+          <li>
+            Change the method to
+            <strong>POST</strong>
+          </li>
+          <li>
+            Then click
+            <strong>Create action</strong> then
+            <strong>Finish</strong>
+          </li>
         </ol>
 
         <p>Now IFTTT will run a regular webmention notification request.</p>
@@ -241,18 +294,26 @@
       </div>
     </details>
 
-    <h2 id="further-reading">Further reading</h2>
-    <ul>
-      <li>
-        <n-link to="/docs/todo">TODO / Work in progress</n-link>
-      </li>
-      <li>
-        <a href="https://github.com/remy/wm/issues">Found an issue or want to make an improvement?</a>
-      </li>
-      <li>
-        <a href="https://github.com/remy/wm/">Source code on Github</a>
-      </li>
-    </ul>
+    <details id="further-reading">
+      <summary>
+        <h2>Further reading</h2>
+      </summary>
+      <div>
+        <ul>
+          <li>
+            <n-link to="/docs/todo">TODO / Work in progress</n-link>
+          </li>
+          <li>
+            <a
+              href="https://github.com/remy/wm/issues"
+            >Found an issue or want to make an improvement?</a>
+          </li>
+          <li>
+            <a href="https://github.com/remy/wm/">Source code on Github</a>
+          </li>
+        </ul>
+      </div>
+    </details>
   </div>
 </template>
 
