@@ -56,13 +56,13 @@
         <p>There's two options here:</p>
         <p>
           You can
-          <n-link to="/docs#send-webmentions-using-the-web-service">call this web site's webhook</n-link>when your site is updated pointing to the URL of your homepage.
+          <n-link to="/docs#send-webmentions-using-the-web-service">call this web site's webhook</n-link> when your site is updated pointing to the URL of your homepage.
         </p>
         <p>
           Alternatively you can use
           <n-link
             to="/docs#scheduling-repeating-checks"
-          >IFTTT to run a repeating and scheduled recipe</n-link>to check your homepage for new content.
+          >IFTTT to run a repeating and scheduled recipe</n-link> to check your homepage for new content.
         </p>
       </div>
 
