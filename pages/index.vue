@@ -24,18 +24,14 @@
         </li>
       </ul>
 
-      <h2>Get started</h2>
+      <h2>Getting started</h2>
 
-      <p>If you want to integrate outgoing webmentions on your blog and don't know where to start, <n-link to="/docs">review the documentation</n-link> which include Netlify and IFTTT examples.</p>
+      <GettingStarted />
 
-      <p>
-        If you don't want to rely on an online service, you can alternatively use the
-        <n-link to="/docs#using-the-command-line">command line tool</n-link>.
-      </p>
     </div>
     <div>
       <hr>
-      <h3>Check a URL and discover outgoing webmentions now</h3>
+      <h3>Want to just try it out? Check a URL for webmentions</h3>
       <Check/>
     </div>
   </div>
@@ -54,9 +50,11 @@ h1 + h2 {
 
 <script>
 import Check from "../components/Check";
+import GettingStarted from "../components/GettingStarted"
 export default {
   components: {
-    Check
+    Check,
+    GettingStarted,
   },
   head() {
     return { bodyAttrs: { id: "index" } };

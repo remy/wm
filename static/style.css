@@ -333,10 +333,13 @@ details div:last-child pre {
 }
 
 .btn {
+  display: inline-block;
+  line-height: 28px;
   min-width: 100px;
   white-space: nowrap;
   border-radius: 4px;
   cursor: pointer;
+  margin: 0;
   background-color: rgb(66, 66, 66);
   border: 1px solid rgb(66, 66, 66);
   color: white;
@@ -376,6 +379,7 @@ details div:last-child pre {
 
 .btn:hover,
 .btn:active {
+  border-width: 1px;
   outline: none;
   background-color: white;
   color: rgb(66, 66, 66);

@@ -97,6 +97,30 @@
       </div>
     </details>
 
+    <details id="scheduling-repeating-checks">
+      <summary>
+        <h2>Scheduling repeating checks</h2>
+      </summary>
+      <div>
+        <p>If you publish your content to a URL that's constant, like your homepage, or mysite.com/articles, when you can use IFTTT to set up a regular check - either weekly, daily or hourly.</p>
+        <ol>
+          <li>
+            Start by
+            <a target="_blank" href="https://ifttt.com/create">creating a new applet on ifttt.com</a>
+          </li>
+          <li>Click on <strong>+this</strong> and select <strong>Date &amp; Time</strong></li>
+          <li>Select the frequency that suits your website - unless you're prolific, daily or weekly might be best.</li>
+          <li>Change the time from the default 12 AM - this eases everyone's requests coming at the same time</li>
+          <li>Click on <strong>+that</strong> and find and select <strong>Webhooks</strong></li>
+          <li>For the URL, enter: <code><strong v-pre>https://webmention.app/check?url={{EntryUrl}}&token=</strong><n-link to="/token">[your-token]</n-link></code></li>
+          <li>Change the method to <strong>POST</strong></li>
+          <li>Then click <strong>Create action</strong> then <strong>Finish</strong></li>
+        </ol>
+
+        <p>Now IFTTT will run a regular webmention notification request.</p>
+      </div>
+    </details>
+
     <details id="supported-feed-types">
       <summary>
         <h2>Supported feed types</h2>

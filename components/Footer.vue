@@ -7,6 +7,11 @@
     <li>
       <n-link to="/about">About</n-link>
     </li>
+    <!-- <li>
+      <n-link to="/status">
+        Status
+      </n-link>
+    </li> -->
     <li>
       <a href="https://github.com/remy/wm">
         Version:
