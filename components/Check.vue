@@ -57,9 +57,9 @@ const API = process.env.API;
 export default {
   props: {
     query: String,
-    onInput: Function,
+    onInput: Function
   },
-  data: function () {
+  data: function() {
     return {
       url: this.query,
       loading: false,
@@ -71,14 +71,17 @@ export default {
   },
   methods: {
     handleInput(e) {
-      this.$emit('input', e);
+      this.$emit("input", e);
     },
     async sendMentions(event) {
       event.preventDefault();
       this.loading = true;
-      const res = await fetch(`${API}/check/?url=${encodeURIComponent(this.url)}`, {
-        method: "post"
-      });
+      const res = await fetch(
+        `${API}/check/?url=${encodeURIComponent(this.url)}`,
+        {
+          method: "post"
+        }
+      );
       this.loading = false;
       const json = await res.json();
       if (!json.error) {
@@ -90,6 +93,19 @@ export default {
       }
       this.hasResult = false;
     },
+    errorText(message, status) {
+      return `There was a possible error with this request:<br><em>${message}</em><br><br><a target="_blank" href="https://github.com/remy/wm/issues/new?title=${escape(
+        "Error with " + this.url
+      )}&body=${escape(
+        "URL: " +
+          this.url +
+          "\nStatus: " +
+          status +
+          "\nError: `" +
+          message +
+          "`"
+      )}">If you think this is wrong, please raise an issue</a>`;
+    },
     async findMentions(event) {
       event.preventDefault();
       this.sent = false;
@@ -97,12 +113,14 @@ export default {
       this.hasResult = false;
       this.error = null;
       this.mentions = [];
-      const res = await fetch(`${API}/check/?url=${encodeURIComponent(this.url)}`);
+      const res = await fetch(
+        `${API}/check/?url=${encodeURIComponent(this.url)}`
+      );
 
       if (res.status === 200) {
         const json = await res.json();
         if (json.error) {
-          this.error = `There was an error with this request:<br><em>${json.message}</em><br><br><a target="_blank" href="https://github.com/remy/wm/issues/new?title=${escape('Error on check')}&body=${escape('URL: ' + this.url + '\nStatus: ' + res.status + '\nError: `' + json.message + '`')}">If you think this is wrong, please raise an issue</a>`;
+          this.error = this.errorText(json.message, res.status);
         } else {
           this.mentions = json.urls;
           this.hasResult = true;
@@ -116,7 +134,7 @@ export default {
         } catch (e) {
           console.log(e);
 
-          this.error = `There was an error with this request:<br><em>${e.message}</em><br><br><a target="_blank" href="https://github.com/remy/wm/issues/new?title=${escape('Error on check')}&body=${escape('URL: ' + this.url + '\nStatus: ' + res.status + '\nError: ' + e.message)}">If you think this is wrong, please raise an issue</a>`;
+          this.error = this.errorText(e.message, res.status);
         }
       }
     }
