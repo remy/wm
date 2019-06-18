@@ -18,7 +18,7 @@
         <strong>{{ mentions.length === 0 ? 'No' : mentions.length }} webmention supported links found.</strong>
       </p>
       <p v-if="error">
-        <strong>{{error}}</strong>
+        <strong v-html="error"></strong>
       </p>
 
       <ol id="mentions">
@@ -102,7 +102,7 @@ export default {
       if (res.status === 200) {
         const json = await res.json();
         if (json.error) {
-          this.error = json.message;
+          this.error = `There was an error with this request:<br><em>${json.message}</em><br><br><a target="_blank" href="https://github.com/remy/wm/issues/new?title=${escape('Error on check')}&body=${escape('URL: ' + this.url + '\nStatus: ' + res.status + '\nError: `' + json.message + '`')}">If you think this is wrong, please raise an issue</a>`;
         } else {
           this.mentions = json.urls;
           this.hasResult = true;
@@ -116,9 +116,7 @@ export default {
         } catch (e) {
           console.log(e);
 
-          this.error =
-            "Something went wrong trying to capture the contents of the check request: " +
-            e;
+          this.error = `There was an error with this request:<br><em>${e.message}</em><br><br><a target="_blank" href="https://github.com/remy/wm/issues/new?title=${escape('Error on check')}&body=${escape('URL: ' + this.url + '\nStatus: ' + res.status + '\nError: ' + e.message)}">If you think this is wrong, please raise an issue</a>`;
         }
       }
     }
