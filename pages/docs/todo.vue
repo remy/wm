@@ -6,6 +6,11 @@
 - [ ] Support JSON feed (if there's requests for it)
 - [ ] Support other sign in methods, such as indieauth
 
+## As of v1.3.4 / 2019-06-18
+
+- [x] Timeout on unresponsive domains after 5 seconds
+- [x] Handle empty `h-entry` items
+
 ## As of v1.3.1 / 2019-06-13
 
 - [x] Support proper host encoding, so https://i❤️.ws works
