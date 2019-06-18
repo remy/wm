@@ -83,11 +83,11 @@ if (!send) {
     if (res.length === 0) {
       if (wm.mentions.length) {
         console.log(
-          'No active webmention endpoints found on %s entries found (try increasing with --limit N)',
+          'No webmention endpoints found on %s entries found (try increasing with --limit N)',
           wm.mentions.length
         );
       } else {
-        console.log('No active webmention endpoints found');
+        console.log('No webmention endpoints found');
       }
     }
 
