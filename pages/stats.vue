@@ -37,10 +37,9 @@ export default {
       }
     }
   },
-  async asyncData(context) {
+  async mounted() {
     const res = await fetch(API + "/stats", { method: "post" });
-    const checks = await res.json();
-    return { checks };
-  }
+    this.checks = await res.json();
+  },
 };
 </script>
