@@ -1,7 +1,7 @@
 const micro = require('micro');
 const check = require('./routes/check');
 const auth = require('./routes/auth');
-const status = require('./routes/status');
+const status = require('./routes/stats');
 const { send } = micro;
 
 const dev = async (req, res) => {
@@ -10,7 +10,7 @@ const dev = async (req, res) => {
     return await check(req, res);
   }
 
-  if (req.url.startsWith('/status')) {
+  if (req.url.startsWith('/stats')) {
     return await status(req, res);
   }
 

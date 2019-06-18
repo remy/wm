@@ -11,6 +11,7 @@
       }
     },
     { "src": "/auth/?.*", "dest": "/routes/auth.js" },
+    { "src": "/stats", "dest": "/routes/stats.js", "methods": ["POST"] },
     {
       "methods": ["GET"],
       "src": "^/",

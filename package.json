@@ -1,6 +1,6 @@
 {
   "name": "@remy/webmention",
-  "version": "1.3.5",
+  "version": "1.3.6",
   "description": "Web Mentions sender",
   "main": "./lib/webmention.js",
   "bin": {
@@ -37,7 +37,7 @@
     "follow-redirects": "^1.7.0",
     "li": "^1.3.0",
     "microformat-node": "^2.0.1",
-    "ms": "^2.1.1",
+    "ms": "^2.1.2",
     "node-fetch": "^2.6.0",
     "optimist": "^0.6.1",
     "rss-parser": "^3.7.0",
