@@ -9,6 +9,7 @@ const rateWindow = 1000 * 60; // * 60 * 4; // 4 hours
 
 module.exports = async (req, res) => {
   let { url, token, limit } = qs(req);
+  const method = req.method.toLowerCase();
 
   const now = new Date();
 
@@ -96,7 +97,7 @@ module.exports = async (req, res) => {
       });
   };
 
-  console.log('>> ' + url);
+  console.log('>> %s %s', method === 'post' ? 'SEND' : 'QUERY', url);
 
   const wm = new Webmention({ limit });
   wm.on('error', e => {
@@ -106,14 +107,13 @@ module.exports = async (req, res) => {
   wm.on('endpoints', urls => {
     timings.webmention = Date.now() - now.getTime();
 
-    if (req.method.toLowerCase() === 'post') {
+    if (method === 'post') {
       return Promise.all(urls.map(sendMention)).then(reply => {
-        console.log(reply);
-
         if (reply.length)
-          db.updateRequestCount('__sent', reply.length)
-            .then(() => '__sent ok')
-            .catch(E => console.log(E));
+          db.updateRequestCount(
+            '__sent',
+            reply.filter(_ => _.status < 400).length
+          ).catch(E => console.log('error updating __sent count', E));
         timings.send = Date.now() - now.getTime();
         send(JSON.stringify({ urls: reply }));
       });
