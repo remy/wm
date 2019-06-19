@@ -3,6 +3,7 @@
   "version": "1.3.6",
   "description": "Web Mentions sender",
   "main": "./lib/webmention.js",
+  "repository": "github:remy/wm",
   "bin": {
     "wm": "./bin/wm.js",
     "webmention": "./bin/wm.js"
