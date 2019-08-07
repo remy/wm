@@ -51,7 +51,7 @@ tap.test('local non-h-entry', t => {
   t.plan(1);
   const wm = new Webmention();
   wm.on('endpoints', e => {
-    t.equal(e, 2);
+    t.equal(e.length, 2);
     t.end();
   });
   wm.load(read('/fixtures/alt-but.html'));
@@ -61,9 +61,7 @@ tap.test('local h-feed nested', t => {
   t.plan(1);
   const wm = new Webmention();
   wm.on('endpoints', endpoints => {
-    console.log(endpoints);
-
-    t.equal(endpoints.length, 1);
+    t.equal(endpoints.length, 10);
     t.end();
   });
   wm.load(read('/fixtures/snarfed.html'));
