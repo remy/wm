@@ -1,6 +1,6 @@
 {
   "name": "@remy/webmention",
-  "version": "1.4.0",
+  "version": "1.4.1",
   "description": "Web Mentions sender",
   "main": "./lib/webmention.js",
   "repository": "github:remy/wm",
