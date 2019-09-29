@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xml:lang="en" xmlns="http://www.w3.org/2005/Atom" xmlns:media="http://search.yahoo.com/mrss/" xmlns:sy="http://purl.org/rss/1.0/modules/syndication/">
+  <id>urn:uuid:f6d9e764-f597-5370-94e1-c01aa3928860</id>
+  <title type="text">Ctrl blog</title>
+  <author>
+    <name>Daniel Aleksandersen</name>
+    <uri>https://www.daniel.priv.no/</uri>
+  </author>
+  <rights type="text">Copyright © 2019 Daniel Aleksandersen.</rights>
+  <link href="https://www.ctrl.blog/" rel="alternate" type="text/html" />
+  <link href="https://feed.ctrl.blog/latest.atom" rel="self" type="application/atom+xml" />
+  <updated>2019-09-26T04:58:00Z</updated>
+  <sy:updatePeriod>daily</sy:updatePeriod>
+  <sy:updateFrequency>6</sy:updateFrequency>
+  <entry>
+    <id>urn:uuid:cc30d5e6-33d4-4f45-97ce-f0664622c6c2</id>
+    <link href="https://www.ctrl.blog/entry/html-semantic-improve-machine-translation.html#src=feed" rel="alternate" type="text/html" />
+    <published>2019-09-26T04:58:00Z</published>
+    <updated>2019-09-26T04:58:00Z</updated>
+    <title type="text">Semantic markup improves the quality of machine-translated technical texts</title>
+    <summary type="text">Text-level semantic HTML can improve machine-translation of texts containing program names, programming instructions, file paths, URIs, etc.</summary>
+    <content type="html">&lt;p&gt;The leading web browser, Google Chrome, and leading search engines — including Bing, Yandex, Google, and Baidu — can machine-translate any webpage in seconds. This enables anyone who understands a supported language to access documents written in any other supported language.&lt;/p&gt; &lt;p&gt;&lt;a href="https://www.ctrl.blog/entry/html-semantic-improve-machine-translation.html#src=feed"&gt;Read more …&lt;/a&gt;&lt;/p&gt;</content>
+    <media:content fileSize="22377" height="612" medium="image" type="image/jpeg" url="https://www.ctrl.blog/media/hero/localization-symbol.1088x612.jpeg" width="1088" />
+    <category label="HTML" scheme="https://www.ctrl.blog" term="/topic/html.html" />
+    <category label="Localization" scheme="https://www.ctrl.blog" term="/topic/localization.html" />
+  </entry>
+  <entry>
+    <id>urn:uuid:03020027-792e-4468-9999-b84847d6aff6</id>
+    <link href="https://www.ctrl.blog/entry/coil-web-monetization.html#src=feed" rel="alternate" type="text/html" />
+    <published>2019-09-18T15:19:00Z</published>
+    <updated>2019-09-18T15:19:00Z</updated>
+    <title type="text">How Coil and Web Monetization works compared to Flattr</title>
+    <summary type="text">I explore the new Coil micro-payment system and browser extension, based on the proposed Web Monetization web-standard, and compare it to Flattr.</summary>
+    <content type="html">&lt;p&gt;Coil is a micro-payment service that resembles Flattr. Both services rely on a web browser extension to automatically pay participating websites and creators from customers’ 5 USD/monthly subscription funds.&lt;/p&gt; &lt;p&gt;&lt;a href="https://www.ctrl.blog/entry/coil-web-monetization.html#src=feed"&gt;Read more …&lt;/a&gt;&lt;/p&gt;</content>
+    <media:content fileSize="81637" height="612" medium="image" type="image/png" url="https://www.ctrl.blog/media/hero/coil-is-paying.1088x612.png" width="1088" />
+    <category label="Web Monetization" scheme="https://www.ctrl.blog" term="/topic/web-monetization.html" />
+    <category label="Browser Extensions" scheme="https://www.ctrl.blog" term="/topic/browser-extensions.html" />
+  </entry>
+  <entry>
+    <id>urn:uuid:af7795c9-aa6b-4653-904c-5814b5f86650</id>
+    <link href="https://www.ctrl.blog/entry/va-qled-text-rendering.html#src=feed" rel="alternate" type="text/html" />
+    <published>2019-09-17T12:07:00Z</published>
+    <updated>2019-09-17T13:05:00Z</updated>
+    <title type="text">Text rendering doesn’t look too good on VA-QLED display panels</title>
+    <summary type="text">“Quantum pixels” works by turning off half of the pixel. This can badly affect text-rendering on VA-QLED displays like the one in the Samsung C24FG70.</summary>
+    <content type="html">&lt;p&gt;Earlier, I’ve discussed the many choices and complexities involved in choosing a monitor category. Now, I want to go a bit deeper into this by discussing an unexpected surprise I had with a vertically-aligned quantum-dots (VA-QLED) display panel from Samsung.&lt;/p&gt; &lt;p&gt;&lt;a href="https://www.ctrl.blog/entry/va-qled-text-rendering.html#src=feed"&gt;Read more …&lt;/a&gt;&lt;/p&gt;</content>
+    <media:content fileSize="1516951" height="612" medium="image" type="image/png" url="https://www.ctrl.blog/media/hero/va-qled-subpixel-interlacing.1088x612.png" width="1088" />
+  </entry>
+  <entry>
+    <id>urn:uuid:911ca9a4-531e-4771-a2c8-d2d60d0b033f</id>
+    <link href="https://www.ctrl.blog/entry/syncthing-deletes-recreated-files.html#src=feed" rel="alternate" type="text/html" />
+    <published>2019-09-16T16:29:00Z</published>
+    <updated>2019-09-16T16:29:00Z</updated>
+    <title type="text">Why Syncthing kept deleting my re-created files</title>
+    <summary type="text">I finally worked out why files seemingly at random kept disappearing from my Syncthing-synchronized directories.</summary>
+    <content type="html">&lt;p&gt;I first tried Syncthing a couple of years ago, but abandoned it because it kept running into file synchronization conflicts. A couple of months ago, I once again tried keeping my files synchronized across devices using Syncthing. I’ve had much more success with it this time.&lt;/p&gt; &lt;p&gt;&lt;a href="https://www.ctrl.blog/entry/syncthing-deletes-recreated-files.html#src=feed"&gt;Read more …&lt;/a&gt;&lt;/p&gt;</content>
+    <media:content fileSize="61309" height="612" medium="image" type="image/jpeg" url="https://www.ctrl.blog/media/hero/syncthing-papers.1088x612.jpeg" width="1088" />
+    <category label="Storage" scheme="https://www.ctrl.blog" term="/topic/storage.html" />
+  </entry>
+  <entry>
+    <id>urn:uuid:4ef8c3ee-5a89-42fa-9a07-b6b358931934</id>
+    <link href="https://www.ctrl.blog/entry/fridge-pc-fan.html#src=feed" rel="alternate" type="text/html" />
+    <published>2019-09-02T21:44:00Z</published>
+    <updated>2019-09-04T00:46:00Z</updated>
+    <title type="text">Normalize fridge temperatures by installing a PC fan</title>
+    <summary type="text">I installed a 120 cm 12-volt PC-fan in my aging Electrolux combo fridge-freezer. This upgrade resulted in a 29% power-savings and more stable temperatures.</summary>
+    <content type="html">&lt;p&gt;I’ve installed a 120 cm 12-volt PC-fan in my aging Electrolux combo fridge-freezer. This simple upgrade resulted in more stable temperatures and a 29% reduction in power consumption.&lt;/p&gt; &lt;p&gt;&lt;a href="https://www.ctrl.blog/entry/fridge-pc-fan.html#src=feed"&gt;Read more …&lt;/a&gt;&lt;/p&gt;</content>
+    <media:content fileSize="64850" height="612" medium="image" type="image/jpeg" url="https://www.ctrl.blog/media/hero/fridge-pc-fan.1088x612.jpeg" width="1088" />
+    <category label="Hardware" scheme="https://www.ctrl.blog" term="/topic/hardware.html" />
+    <category label="Diabetes" scheme="https://www.ctrl.blog" term="/topic/diabetes.html" />
+  </entry>
+  <entry>
+    <id>urn:uuid:1d0c301d-3ee3-4aab-b882-a9ac8d6b0ce2</id>
+    <link href="https://www.ctrl.blog/entry/mod_substitute.html#src=feed" rel="alternate" type="text/html" />
+    <published>2019-09-02T13:08:00Z</published>
+    <updated>2019-09-02T13:08:00Z</updated>
+    <title type="text">Make changes to static content with response body substitutions</title>
+    <summary type="text">Tweak the HTTP response body with regex substitutions. Apache HTTPD configuration example shows changing the URL tracking parameters in a syndication feed file.</summary>
+    <content type="html">&lt;p&gt;Ctrl blog’s syndication news feed is called upon to handle a lot of different tasks and service integrations. It’s used to share new articles on Twitter, create the weekly newsletter, as well as handling integrations with syndication services like Apple News and Flipboard. It’s also used in a myriad of different feed readers by individual readers.&lt;/p&gt; &lt;p&gt;&lt;a href="https://www.ctrl.blog/entry/mod_substitute.html#src=feed"&gt;Read more …&lt;/a&gt;&lt;/p&gt;</content>
+    <media:content fileSize="37811" height="612" medium="image" type="image/png" url="https://www.ctrl.blog/media/hero/link-src-substitution.1088x612.png" width="1088" />
+    <category label="Apache HTTPD" scheme="https://www.ctrl.blog" term="/topic/apache-httpd.html" />
+    <category label="Syndication feeds" scheme="https://www.ctrl.blog" term="/topic/syndication-feeds.html" />
+  </entry>
+  <entry>
+    <id>urn:uuid:04d80775-abe8-4162-92de-ddf57a8dc970</id>
+    <link href="https://www.ctrl.blog/entry/email-identity-provider.html#src=feed" rel="alternate" type="text/html" />
+    <published>2019-08-30T15:12:00Z</published>
+    <updated>2019-08-30T15:12:00Z</updated>
+    <title type="text">Your online identity is owned by your email provider</title>
+    <summary type="text">Your email provider owns your online identity by controlling your email address. You can’t port your email address to another provider as with phone numbers.</summary>
+    <content type="html">&lt;p&gt;Many of the leading tech companies — including but not limited to Apple, Baidu, Google, Microsoft, and Yandex — offer free email services to their customers. Email was never designed to be your ubiquitous online identity. Nevertheless, it's what most businesses and services use to fill that role today. Email service providers reap the benefits of a captive customer base.&lt;/p&gt; &lt;p&gt;&lt;a href="https://www.ctrl.blog/entry/email-identity-provider.html#src=feed"&gt;Read more …&lt;/a&gt;&lt;/p&gt;</content>
+    <media:content fileSize="95528" height="612" medium="image" type="image/jpeg" url="https://www.ctrl.blog/media/hero/email-envelopes.1088x612.jpeg" width="1088" />
+    <category label="Email" scheme="https://www.ctrl.blog" term="/topic/email.html" />
+    <category label="Identity" scheme="https://www.ctrl.blog" term="/topic/identity.html" />
+  </entry>
+  <entry>
+    <id>urn:uuid:0f9249bc-b357-4d05-a535-93b17389942f</id>
+    <link href="https://www.ctrl.blog/entry/freestyle-libre2-wear.html#src=feed" rel="alternate" type="text/html" />
+    <published>2019-08-22T16:27:00Z</published>
+    <updated>2019-08-22T16:27:00Z</updated>
+    <title type="text">What’s it like to wear a FreeStyle Libre glucose monitoring sensor?</title>
+    <summary type="text">Experiences with showering, sleeping, and living with a FreeStyle Libre 2 Sensor glued to the upper arm for up to 14 days. Flash-glucose monitor convenience trumps all.</summary>
+    <content type="html">&lt;p&gt;Abbott FreeStyle Libre 2 is a flash-glucose monitoring system consisting of a glucose sensor attached to the back of the upper arm and either a reader device or smartphone app. So what’s it like to wear something glued on to your upper arm for 14 days at a time?&lt;/p&gt; &lt;p&gt;&lt;a href="https://www.ctrl.blog/entry/freestyle-libre2-wear.html#src=feed"&gt;Read more …&lt;/a&gt;&lt;/p&gt;</content>
+    <media:content fileSize="61684" height="612" medium="image" type="image/jpeg" url="https://www.ctrl.blog/media/hero/abbott-freestyle-libre2-sensor.1088x612.jpeg" width="1088" />
+    <category label="Diabetes" scheme="https://www.ctrl.blog" term="/topic/diabetes.html" />
+  </entry>
+  <entry>
+    <id>urn:uuid:3698ea5d-2b92-4805-9b19-73cd82fa2d6d</id>
+    <link href="https://www.ctrl.blog/entry/podcast-programmatic-adblock.html#src=feed" rel="alternate" type="text/html" />
+    <published>2019-08-13T12:40:00Z</published>
+    <updated>2019-08-13T12:40:00Z</updated>
+    <title type="text">How to block programmatic podcast ads</title>
+    <summary type="text">Here is how you can block most programmatically inserted ads, or “dynamic ads”, in your podcast subscriptions.</summary>
+    <content type="html">&lt;p&gt;Here is how you can block programmatically inserted advertisements, or “dynamic ads”, in most podcasts. This method works for podcast delivered through the leading programmatic podcast ad brokers.&lt;/p&gt; &lt;p&gt;&lt;a href="https://www.ctrl.blog/entry/podcast-programmatic-adblock.html#src=feed"&gt;Read more …&lt;/a&gt;&lt;/p&gt;</content>
+    <media:content fileSize="26980" height="612" medium="image" type="image/jpeg" url="https://www.ctrl.blog/media/hero/microphone.1088x612.jpeg" width="1088" />
+    <category label="Podcasts" scheme="https://www.ctrl.blog" term="/topic/podcasts.html" />
+    <category label="Advertisement Technology" scheme="https://www.ctrl.blog" term="/topic/advertisement-technology.html" />
+    <category label="VPN" scheme="https://www.ctrl.blog" term="/topic/vpn.html" />
+  </entry>
+  <entry>
+    <id>urn:uuid:f689febd-826c-461f-9d29-a5d606bce599</id>
+    <link href="https://www.ctrl.blog/entry/android-sleep-tracker.html#src=feed" rel="alternate" type="text/html" />
+    <published>2019-08-11T22:55:00Z</published>
+    <updated>2019-08-12T13:35:00Z</updated>
+    <title type="text">Unobtrusive sleep tracking app for Android</title>
+    <summary type="text">Sleep Debt Tracker is a simple Google Fit-compatible Android app that assumes you’re sleeping in the hours when you don’t use your phone at night.</summary>
+    <content type="html">&lt;p&gt;There are a ton of Android apps that over-complicate sleep tracking. Some apps want to listen to your sleep all night, others want you to take your phone with you into bed as you sleep. Many of these apps come with a 30–50 USD yearly subscription cost.&lt;/p&gt; &lt;p&gt;&lt;a href="https://www.ctrl.blog/entry/android-sleep-tracker.html#src=feed"&gt;Read more …&lt;/a&gt;&lt;/p&gt;</content>
+    <media:content fileSize="46124" height="612" medium="image" type="image/png" url="https://www.ctrl.blog/media/hero/sleep-debt-tracker.1088x612.png" width="1088" />
+    <category label="Mobile Apps" scheme="https://www.ctrl.blog" term="/topic/mobile-apps.html" />
+    <category label="Android" scheme="https://www.ctrl.blog" term="/topic/android.html" />
+  </entry>
+</feed>
