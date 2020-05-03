@@ -21,9 +21,6 @@
     "now-dev": "nuxt",
     "test": "tap"
   },
-  "engines": {
-    "node": "^8.3.x"
-  },
   "keywords": [
     "webmention",
     "webmentions",
