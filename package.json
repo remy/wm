@@ -19,6 +19,7 @@
     "build": "nuxt generate",
     "now-build": "nuxt generate",
     "now-dev": "nuxt",
+    "test:watch": "tap __tests__/*.test.js --no-coverage-report --watch",
     "test": "tap"
   },
   "keywords": [
