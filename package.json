@@ -32,30 +32,28 @@
   "author": "Remy Sharp (https://remysharp.com)",
   "license": "MIT",
   "dependencies": {
-    "cheerio": "0.22.0",
+    "cheerio": "^1.0.0-rc.3",
     "clui": "^0.3.6",
     "decodeuricomponent": "^0.3.1",
-    "follow-redirects": "^1.7.0",
+    "follow-redirects": "^1.11.0",
     "li": "^1.3.0",
     "microformat-node": "^2.0.1",
     "ms": "^2.1.2",
     "node-fetch": "^2.6.0",
     "optimist": "^0.6.1",
-    "rss-parser": "^3.7.0",
-    "uuid": "^3.3.2"
+    "rss-parser": "^3.7.6",
+    "uuid": "^3.4.0"
   },
   "devDependencies": {
-    "passport": "^0.4.0",
-    "passport-github2": "^0.1.11",
-    "aws-sdk": "^2.466.0",
-    "cookie-universal-nuxt": "^2.0.14",
-    "@nuxtjs/markdownit": "^1.2.4",
-    "@remy/envy": "^4.0.2",
+    "@nuxtjs/markdownit": "^1.2.9",
+    "aws-sdk": "^2.668.0",
+    "cookie-universal-nuxt": "^2.1.3",
     "markdown-it-named-headings": "^1.1.0",
     "markdown-it-task-lists": "^2.1.1",
     "micro": "^9.3.4",
-    "micro-dev": "^3.0.0",
-    "nuxt": "^2.8.1",
-    "tap": "^14.2.0"
+    "nuxt": "^2.12.2",
+    "passport": "^0.4.1",
+    "passport-github2": "^0.1.12",
+    "tap": "^14.10.7"
   }
 }
