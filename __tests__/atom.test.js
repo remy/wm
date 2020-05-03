@@ -11,3 +11,14 @@ tap.test('compile dom for atom', async t => {
   links(await parse(xml, 10));
   t.pass('worked');
 });
+
+tap.test('detected escaped links in atom', async t => {
+  t.plan(2);
+
+  const xml = read('/fixtures/summary.atom');
+  const dom = await parse(xml, 10);
+
+  const [res] = links(dom);
+  t.same(res.links.length, 1, 'finds example.com');
+  t.same(res.links[0], 'https://example.com/marker', 'finds example.com');
+});
