@@ -1,0 +1,393 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>fsis.site 🐴</title>
+    <link>https://fsis.site/blog/</link>
+    <description>Recent content on fsis.site 🐴</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-US</language>
+    <copyright>Copyright © 2020, FSi</copyright>
+    <lastBuildDate>Tue, 13 Oct 2020 00:00:00 +0000</lastBuildDate><atom:link href="https://fsis.site/blog/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Links for 2020-10-13</title>
+      <link>https://fsis.site/blog/20201013173555/</link>
+      <pubDate>Tue, 13 Oct 2020 00:00:00 +0000</pubDate>
+
+      <guid>https://fsis.site/blog/20201013173555/</guid>
+      <description> plug-n-pwn  Unfortunately Intel has placed large amounts of information about the Thunderbolt controllers and protocol under NDA, meaning that it has not been properly researched leading to a string of vulnerabilities over the years.
+  Vt Cup Of Water, No Water, Wasp  </description>
+    </item>
+
+    <item>
+      <title>Migrated to Hugo</title>
+      <link>https://fsis.site/blog/2020-10-06/</link>
+      <pubDate>Tue, 06 Oct 2020 00:00:00 +0000</pubDate>
+
+      <guid>https://fsis.site/blog/2020-10-06/</guid>
+      <description>This is something I&amp;rsquo;ve wanted to do for a long time (11 months? omg), but here it is at last. This site/blog is now powered by Hugo. I tried to keep stuff similar to how it was before, while adding my own flair.
+The feed URL has been changed. I guess you know that if you&amp;rsquo;re reading this, but make sure to update your RSS reader otherwise.
+Also, as the sources for this site is now in plain markdown, I&amp;rsquo;ve merged them with my (previously private) notes, so now you can enjoy such masterpieces as my meat marinades and add-srt-to-mp4.</description>
+    </item>
+
+    <item>
+      <title>Letter from Italy</title>
+      <link>https://fsis.site/blog/2020-06-19-letter-from-italy/</link>
+      <pubDate>Tue, 09 Jun 2020 14:34:00 +0300</pubDate>
+
+      <guid>https://fsis.site/blog/2020-06-19-letter-from-italy/</guid>
+      <description>Today I&amp;rsquo;ve finally got a letter from a friend in Italy that took more than a month to arrive. Understandable, I guess, with the quarantine affecting the post office and all that.</description>
+    </item>
+
+    <item>
+      <title>Middle of November</title>
+      <link>https://fsis.site/blog/2019-11-16/</link>
+      <pubDate>Sat, 16 Nov 2019 12:37:59 +0000</pubDate>
+
+      <guid>https://fsis.site/blog/2019-11-16/</guid>
+      <description>Programming   Laser-Based Audio Injection on Voice-Controllable Systems
+TL;DR:
+ By shining the laser through the window at microphones inside smart speakers, tablets, or phones, a far away attacker can remotely send inaudible and potentially invisible commands which are then acted upon by Alexa, Portal, Google assistant or Siri.
+ or, as they say in Russia, РЕШЕТО
+  Text Rendering Hates You
+Fun quote:
+ Also have you heard of Animated SVG Fonts?</description>
+    </item>
+
+    <item>
+      <title>End of October Spooky Post</title>
+      <link>https://fsis.site/blog/2019-11-01/</link>
+      <pubDate>Fri, 01 Nov 2019 00:00:00 +0000</pubDate>
+
+      <guid>https://fsis.site/blog/2019-11-01/</guid>
+      <description>Real life: happens.
+Me:
+Programming  XML is almost always misused  Articles   Exfiltrating information using the light sensor
+Might not sound like much, but they mean, like, in a browser context. From JavaScript.
+  Why Renaissance Paintings Aren&amp;rsquo;t as Green as They Used to Be
+TL;DR: the green pigment they used is getting less green with time.
+  Nonviolent communication
+A neat idea, should probably give the book a go.</description>
+    </item>
+
+    <item>
+      <title>Untitled Goose Post</title>
+      <link>https://fsis.site/blog/2019-10-13/</link>
+      <pubDate>Sun, 13 Oct 2019 20:33:39 +0000</pubDate>
+
+      <guid>https://fsis.site/blog/2019-10-13/</guid>
+      <description>Programming   CollapseOS
+TL;DR: Someone is making an 8-bit OS just in case to be useful in post-collapse scenarios.
+ With a copy of this project, a capable and creative person should be able to manage to build and install Collapse OS without external resources (i.e. internet) on a machine of her design, built from scavenged parts with low-tech tools.
+   Don&amp;rsquo;t Look Into The Light
+TL;DR:</description>
+    </item>
+
+    <item>
+      <title>Are plants intelligent enough to use PHP?</title>
+      <link>https://fsis.site/blog/2019-09-30/</link>
+      <pubDate>Mon, 30 Sep 2019 19:48:10 +0000</pubDate>
+
+      <guid>https://fsis.site/blog/2019-09-30/</guid>
+      <description>Programming  No, PHP doesn&amp;rsquo;t have closures  Articles   WeWork and Counterfeit Capitalism
+  What if Planet 9 is a Primordial Black Hole?
+What killed me was the &amp;ldquo;exact scale illustration of a 5 Earth mass black hole&amp;rdquo;
+  The Octopus: An Alien Among Us
+Clickbaity quote:
+ Yes, an octopus is objectively aware of itself and of the objects around it. It contains the information.</description>
+    </item>
+
+    <item>
+      <title>Folding paper globes and simulated universe</title>
+      <link>https://fsis.site/blog/2019-09-23/</link>
+      <pubDate>Mon, 23 Sep 2019 19:38:54 +0000</pubDate>
+
+      <guid>https://fsis.site/blog/2019-09-23/</guid>
+      <description>&amp;hellip;and this time the post is small-ish (and a week delayed) because I suddenly got sick (well, not suddenly, it was all because I spent a night at that The Comet is Coming concert, probably) and just started to return to the rhythm of things.
+Programming  POS software written in QBasic, used worldwide  Articles   The Termination Risks of Simulation Science
+TL;DR: a scientist argues that it&amp;rsquo;s quite unreasanable to expect the beings running our universe&amp;rsquo;s simulation (if it indeed is one) to stop simulating it just because we&amp;rsquo;ve found out it is a simulation.</description>
+    </item>
+
+    <item>
+      <title>Moscow Music Week report and some links</title>
+      <link>https://fsis.site/blog/2019-09-08/</link>
+      <pubDate>Sun, 08 Sep 2019 21:52:05 +0000</pubDate>
+
+      <guid>https://fsis.site/blog/2019-09-08/</guid>
+      <description>Shorter one this time, for I was attending Moscow Music Week.
+It&amp;rsquo;s a festival here in Moscow, with quite a few places and performances (that, sadly, happen all at the same time) for four days straight.
+Due to the aforementioned happening-at-the-same-time, I was only able to attend a couple of the showcases, namely Free Jazz and Dark Jazz ones. Quite liked these (even though the Dark Jazz showcase there were three free jazz performances and only one dark-jazz one).</description>
+    </item>
+
+    <item>
+      <title>Another digest</title>
+      <link>https://fsis.site/blog/2019-09-01/</link>
+      <pubDate>Sun, 01 Sep 2019 09:24:39 +0000</pubDate>
+
+      <guid>https://fsis.site/blog/2019-09-01/</guid>
+      <description>Aaand back to our regularly scheduled program. Speaking of programming&amp;hellip;
+Programming   Rabbit holes
+TL;DR: how ubuntu generates its motd is weird (and pings their server once every 12 hours)
+  Funny quote
+ It&amp;rsquo;s quite simple. PHP was not designed. It evolved, without a predator to remove bad mutations. &amp;ndash; The_Sly_Marbo on reddit
+   Articles   Black hole &amp;ldquo;so big it shouldn&amp;rsquo;t exist&amp;rdquo;
+Note: the title is quite click-baity.</description>
+    </item>
+
+    <item>
+      <title>August travels</title>
+      <link>https://fsis.site/blog/2019-08-26/</link>
+      <pubDate>Mon, 26 Aug 2019 17:43:50 +0000</pubDate>
+
+      <guid>https://fsis.site/blog/2019-08-26/</guid>
+      <description>Here&amp;rsquo;s a brief log of my travels to make up for all the missed posts (as I, in fact, pledged to post once a week or so).
+Brutal Assault (August 7 to August 11) Brutal Assault is a yearly heavy metal festival held in fortress Josefov, near Jaromerz in Czech Republic.
+It is held in an old fortress that has seen WWII, WWI and many wars before that, presumably (being medieval and all that).</description>
+    </item>
+
+    <item>
+      <title>Light Sail, OH GOD WHY and some grindcore</title>
+      <link>https://fsis.site/blog/2019-08-04/</link>
+      <pubDate>Sun, 04 Aug 2019 10:31:11 +0000</pubDate>
+
+      <guid>https://fsis.site/blog/2019-08-04/</guid>
+      <description>Articles   LightSail2 is working!
+  A nuclear war might make crops stop growing, so we need a backup plan.
+TL;DR: prepping for the apocalypse but scientifically!
+(Won&amp;rsquo;t read the book because fuck elsevier, but it does sound interesting)
+  Why are the prices so damn high?
+Mostly linking it for this tangent that almost hurts to read:
+ The feeling is “subjective” in the sense that it occurs inside your mind, but it is “objective” in the sense that you cannot get it arbitrarily by wishing; some things produce it and some do not.</description>
+    </item>
+
+    <item>
+      <title>Marble, dungeons and quantum darwinism</title>
+      <link>https://fsis.site/blog/2019-07-27/</link>
+      <pubDate>Sat, 27 Jul 2019 14:41:29 +0000</pubDate>
+
+      <guid>https://fsis.site/blog/2019-07-27/</guid>
+      <description>First off, some updates:
+ I&amp;rsquo;ve removed the Google Fonts dependency. Uses a couple of self-hosted fonts with system fallback now. Small visual updates as well.  Now on to business as usual.
+Programming   The Mutable Web, via hackernews
+  SVG PORN
+NB: not actually porn, just a collection of hand-crafted SVG icons
+(via hackernews)
+  Dungeon Generation in Diablo 1
+TL;DR: some were heavily inspired by Rogue and the likes.</description>
+    </item>
+
+    <item>
+      <title>The best medieval snails rendering bicycle supernests in human skin</title>
+      <link>https://fsis.site/blog/2019-07-21/</link>
+      <pubDate>Sun, 21 Jul 2019 13:27:41 +0000</pubDate>
+
+      <guid>https://fsis.site/blog/2019-07-21/</guid>
+      <description>Programming   The Best Refactoring You&amp;rsquo;ve Never Heard Of
+TL;DR: defunctionalize the continuation!
+  The PGP Problem
+TL;DR: no solution in sight (just &amp;ldquo;use signal&amp;rdquo; is not a solution).
+Neat quote:
+ Take AEAD ciphers: the Rust-language Sequoia PGP defaulted to the AES-EAX AEAD mode, which is great, and nobody can read those messages because most PGP installs don’t know what EAX mode is, which is not great</description>
+    </item>
+
+    <item>
+      <title>Ottoman floating point zip bombs on the moon</title>
+      <link>https://fsis.site/blog/2019-07-13/</link>
+      <pubDate>Sat, 13 Jul 2019 11:55:19 +0000</pubDate>
+
+      <guid>https://fsis.site/blog/2019-07-13/</guid>
+      <description>Programming   Floating point routines for 6502 by Woz
+(direct link)
+  A better zip bomb; NON-RECURSIVE zip-bombs that extract from 42 kB to 5.5 GB, from 10MB to 281TB, or from 46MB to 4.5PB (last one is Zip64 and not as compatible). Non-recursive means you get that amount of date in a single extract operation.
+Not quite useful information, but interesting nonetheless.
+  Articles   Designing the First Full-Time Human Habitat on the Moon, original press-release</description>
+    </item>
+
+    <item>
+      <title>Live-coding long-term lewd asshole torture storage</title>
+      <link>https://fsis.site/blog/2019-07-09/</link>
+      <pubDate>Tue, 09 Jul 2019 18:35:52 +0000</pubDate>
+
+      <guid>https://fsis.site/blog/2019-07-09/</guid>
+      <description>Programming   Live coding a vi for CP/M, from scratch
+  Somewhat related (and ancient), Linux on an 8-bit micro by emulating an ARM processor, no less! (slower than molasses, obviously, like, literally, hours to boot)
+  Also related, Why 80s BASIC still matters! - this made me want to buy the book, and I probably will.
+  Articles   Inside the World&amp;rsquo;s First Long-term Storage Facility for Highly Radioactive Nuclear Waste</description>
+    </item>
+
+    <item>
+      <title>Don&#39;t take fractal fireball notes written in FORTH</title>
+      <link>https://fsis.site/blog/2019-06-29/</link>
+      <pubDate>Sat, 29 Jun 2019 11:00:00 +0000</pubDate>
+
+      <guid>https://fsis.site/blog/2019-06-29/</guid>
+      <description>Programming   1991: A SERVER-SIDE WEB FRAMEWORK WRITTEN IN FORTH, github
+BECAUSE OF COURSE
+  Articles   Don&amp;rsquo;t take notes with a laptop
+TL;DR: This has been told again and again, but hand-writing lecture notes makes you remember them better (and makes your hands hurt a lot)
+  Floppycasts!
+TL;DR: if satisfied with absolutely terrifying quality, you can fit about 22 minutes of MP3 speech on a floppy disk, or about 30 minutes of Opus (approximately as terrifying but in a different way)</description>
+    </item>
+
+    <item>
+      <title>Next level mead and honey outcome of amateur opossum romance</title>
+      <link>https://fsis.site/blog/2019-06-16/</link>
+      <pubDate>Sun, 16 Jun 2019 21:15:00 +0000</pubDate>
+
+      <guid>https://fsis.site/blog/2019-06-16/</guid>
+      <description>Programming   Next level fork bomb
+WARNING: it&amp;rsquo;s a fork bomb, don&amp;rsquo;t paste it anywhere!
+TL;DR: a fork bomb with a couple extra layers of deviousness (via bici)
+  Articles   FunKey
+TL;DR: TL;DR: A keychain with a bunch of emulators, some buttons and an LCD screen; like a really tiny nintendo ds
+  Stardock and Star Control creators settle lawsuits—with mead and honey
+TL;DR: The kind of news headline you read first thing in the morning and do a double take</description>
+    </item>
+
+    <item>
+      <title>Russian independence day special</title>
+      <link>https://fsis.site/blog/2019-06-12/</link>
+      <pubDate>Wed, 12 Jun 2019 10:11:00 +0000</pubDate>
+
+      <guid>https://fsis.site/blog/2019-06-12/</guid>
+      <description>Programming   On Dat://
+TL;DR: Dat is a distributed web network, and this post talks about building a clone of an old (and dead) mixtape-sharing website muxtape with it, called duxtape (github).
+Suffice it to say, I am very interested.
+  Articles   You (probably) don&amp;rsquo;t need ReCAPTCHA
+TL;DR: (probably) yes
+I myself quite liked the proof-of-work captcha concept (i.e. &amp;ldquo;mine some hashes for me if you want to comment; if you want to spam a lot, it&amp;rsquo;s ok, just mine a lot of hashes&amp;rdquo;)</description>
+    </item>
+
+    <item>
+      <title>Horrifying Satanic Space Colonies: Odyssey</title>
+      <link>https://fsis.site/blog/2019-06-08/</link>
+      <pubDate>Sat, 08 Jun 2019 11:27:00 +0000</pubDate>
+
+      <guid>https://fsis.site/blog/2019-06-08/</guid>
+      <description>Programming   Horrifying PDF experiments
+ e.g. breakout    Articles   How to Join a Social Network in 1998
+TL;DR you mail them CSV of your friends in response
+  Ancient Egyptian Bread (unrolled here)
+  Paradigms and priors
+TL;DR how science works
+  I found two identical packs of Skittles among 468 packs
+TL;DR why
+  Can we all please stop using medium?</description>
+    </item>
+
+    <item>
+      <title>Bizzarre Japanese sorting and exploding things</title>
+      <link>https://fsis.site/blog/2019-04-14/</link>
+      <pubDate>Sun, 14 Apr 2019 16:39:43 +0000</pubDate>
+
+      <guid>https://fsis.site/blog/2019-04-14/</guid>
+      <description>Programming   Sorting in Japanese is hard
+ There are four Japanese women whose names you have to sort: Junko, Atsuko, Kiyoko, and Akiko. This does not seem difficult, until they each show you how they write their names in kanji:
+   淳子 (Junko) 淳子 (Atsuko) 淳子 (Kiyoko) 淳子 (Akiko)     AMP for email is a terrible idea
+TL;DR: yes.
+  Articles   Israel&amp;rsquo;s Moon lander crashed, and that&amp;rsquo;s OK</description>
+    </item>
+
+    <item>
+      <title>Can&#39;t unsee these insecure Wordpress plugins</title>
+      <link>https://fsis.site/blog/2019-04-09/</link>
+      <pubDate>Tue, 09 Apr 2019 12:00:00 +0000</pubDate>
+
+      <guid>https://fsis.site/blog/2019-04-09/</guid>
+      <description>Programming   Water is still wet. In other news, wordpress plugin ecosystem is still trash a ball of slimy writhing unspeakable horrors.
+ one two hackernews discussion  TL;DR: If you ever used anything from these &amp;ldquo;pipdig&amp;rdquo; guys on your wordpress or blogger site, please stop asap.
+I personally recommend switching to Hugo instead (do as I say, not as I do; you generally don&amp;rsquo;t need the complexity of Gatsby).</description>
+    </item>
+
+    <item>
+      <title>Garfield phones, x-ray records and phone tombs</title>
+      <link>https://fsis.site/blog/2019-03-31/</link>
+      <pubDate>Sun, 31 Mar 2019 12:00:00 +0000</pubDate>
+
+      <guid>https://fsis.site/blog/2019-03-31/</guid>
+      <description>Programming  Exercises in Emulation: Xbox 360’s FMA Instruction  Articles   (quote) Algorithmic recommendations [&amp;hellip;] are failing users by encouraging them to take their interests to the farthest maximum: a you like coffee; have you tried cocaine? kind of effect. Are these features necessary?
+  What Achilles should have said to the Tortoise
+  Garfield phones beach mystery finally solved after 35 years
+  Procrastination Sucks — So Here’s The “Eat That Frog” Way to Powerful Productivity</description>
+    </item>
+
+    <item>
+      <title>Doom, Fire and Wombats</title>
+      <link>https://fsis.site/blog/2019-03-17/</link>
+      <pubDate>Sun, 17 Mar 2019 12:00:00 +0000</pubDate>
+
+      <guid>https://fsis.site/blog/2019-03-17/</guid>
+      <description>Programming   How Doom fire was done
+A short and to the point tutorial. (&amp;ldquo;Doom&amp;rdquo; here refers to PSX and N64 Doom ports)
+  Articles   Going old school: how I replaced Facebook with email
+In fact, this is what finally inspired me to do this blog
+  How to balance full-time work with creative projects
+TL;DR: Find a better job, don&amp;rsquo;t think you&amp;rsquo;ll be able to do a lot anyway</description>
+    </item>
+
+    <item>
+      <title>I should probably change the design and remove these titles</title>
+      <link>https://fsis.site/blog/2019-03-10/</link>
+      <pubDate>Sun, 10 Mar 2019 20:00:00 +0000</pubDate>
+
+      <guid>https://fsis.site/blog/2019-03-10/</guid>
+      <description>Programming   Wave Function Collapse
+An algorihtm that generates bitmaps that are locally similar to the input bitmap.
+Can be used for e.g. texture or dungeon generation.
+NB: Has nothing quantum or wave-functiony in it.
+  3d City generator that uses it
+  Articles   Speaking of quantum theory, Quantum theory cannot consistently describe the use of itself
+Turns out, we&amp;rsquo;d need some new theory to describe both microscopic and macroscopic events .</description>
+    </item>
+
+    <item>
+      <title>Smallish one this time</title>
+      <link>https://fsis.site/blog/2019-03-03/</link>
+      <pubDate>Sun, 03 Mar 2019 17:10:24 +0000</pubDate>
+
+      <guid>https://fsis.site/blog/2019-03-03/</guid>
+      <description>Programming   Why Don&amp;rsquo;t People Use Formal Methods
+(because they are normally not worth the investment)
+  Articles   ETS isn&amp;rsquo;t TLS and you should not use it
+  We Need Chrome No More
+  How Chickens Lost Their Penises
+  Music   Wooden Shjips - Back to Land (2013)
+Hard psychedelic rock, very psychedelic in fact. Highly recommended.
+  Marxthrone - A Blaze in the Western Sky</description>
+    </item>
+
+    <item>
+      <title>Links and updates</title>
+      <link>https://fsis.site/blog/2019-02-24/</link>
+      <pubDate>Sun, 24 Feb 2019 23:44:00 +0000</pubDate>
+
+      <guid>https://fsis.site/blog/2019-02-24/</guid>
+      <description>Programming   C is Not a Low-level Language
+All programming languages are abstractions, in some way. Even simplistic ones, like C and x86 assembly, are now quite far from the bare bones of the hardware (at least, in the x86-world) &amp;ndash; there&amp;rsquo;s just too many layers of intermediate translations and optimizations that the CPU does by itself.
+RISC architectures are better in that regard, as even x86 CPUs are RISC-like internally nowadays (or so they say), so at least it&amp;rsquo;s more transparent that way.</description>
+    </item>
+
+    <item>
+      <title>Links and updates</title>
+      <link>https://fsis.site/blog/2019-02-19/</link>
+      <pubDate>Tue, 19 Feb 2019 18:14:18 +0000</pubDate>
+
+      <guid>https://fsis.site/blog/2019-02-19/</guid>
+      <description>In this post, I will try and gather some interesting stuff I found around the internets.
+  Event sourcing is hard. I used to work on an large product which was based on event-sourcing, and can agree on many points made by the author. It was very fun, but also a lot of pain.
+I guess, eventually, when the right tooling will be sourced, it will be usable&amp;hellip; (Apache Kafka/Zamza come to mind; then again, it were these exact things that made us consider event-sourcing in the first place)</description>
+    </item>
+
+    <item>
+      <title>Hello</title>
+      <link>https://fsis.site/blog/2019-01-26_first/</link>
+      <pubDate>Sat, 26 Jan 2019 13:06:30 +0000</pubDate>
+
+      <guid>https://fsis.site/blog/2019-01-26_first/</guid>
+      <description>Hello and welcome to my personal space, where I will probably post random links for, like, two people to notice.
+I made it using gatsby.js, and the experience was OK. In retrospect I think I should&amp;rsquo;ve used some better starter, and not try and bend the default one to my will. Oh well.
+This whole thing seems to be working, so yay.
+Here&amp;rsquo;s a list of things that I still have to do at some point:</description>
+    </item>
+
+  </channel>
+</rss>
