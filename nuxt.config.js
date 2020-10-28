@@ -1,11 +1,5 @@
 module.exports = {
-  mode: 'universal',
-
-  generate: {
-    minify: {
-      removeRedundantAttributes: false,
-    },
-  },
+  mode: 'static',
 
   vue: {
     config: {
@@ -41,5 +35,8 @@ module.exports = {
    */
   build: {
     extend(config, ctx) {},
+    minify: {
+      removeRedundantAttributes: false,
+    },
   },
 };
