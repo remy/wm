@@ -2,7 +2,7 @@
 /* eslint-disable no-process-exit */
 /* eslint-disable node/no-unpublished-bin */
 const pkg = require('../package.json');
-const opts = require('optimist')
+const opts = require('yargs')
   .usage(
     'Parse, discover and send webmentions\n\n$ $0 [ url | file ]\n\nversion: ' +
       pkg.version
