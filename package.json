@@ -19,7 +19,7 @@
     "build": "nuxt generate",
     "now-build": "nuxt generate",
     "now-dev": "nuxt",
-    "test:watch": "tap __tests__/*.test.js --no-coverage-report --watch",
+    "test:watch": "tap __tests__/*.test.js --no-check-coverage --no-coverage-report --watch",
     "test": "tap"
   },
   "keywords": [
@@ -54,6 +54,6 @@
     "nuxt": "^2.14.7",
     "passport": "^0.4.0",
     "passport-github2": "^0.1.11",
-    "tap": "^14.2.0"
+    "tap": "15.0.9"
   }
 }

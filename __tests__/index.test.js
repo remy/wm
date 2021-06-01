@@ -7,7 +7,7 @@ tap.test('atom', t => {
   t.plan(1);
   const wm = new Webmention({ limit: 2 });
   wm.on('end', () => {
-    t.notEqual(wm.mentions.length, 0);
+    t.not(wm.mentions.length, 0);
     t.end();
   });
   wm.load(read('/fixtures/simon-links-atom.xml'));
@@ -17,7 +17,7 @@ tap.test('xml', t => {
   t.plan(1);
   const wm = new Webmention({ limit: 2 });
   wm.on('end', () => {
-    t.notEqual(wm.mentions.length, 0);
+    t.not(wm.mentions.length, 0);
     t.end();
   });
   wm.load(read('/fixtures/fsis.xml'));
