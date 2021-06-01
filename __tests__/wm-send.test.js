@@ -1,13 +1,17 @@
+const fs = require('fs')
 const path = require('path')
 const tap = require('tap');
-const sendWebmention = tap.mock('../lib/send/webmention', {
+const read = f => fs.readFileSync(__dirname + f, 'utf8');
+const Webmention = tap.mock('../lib/webmention', {
   'node-fetch': async () => ({ status: 200, text: async () => 'server response' })
 })
 
-tap.test('receive endpoint response data', async t => {
+tap.test('endpoint response data', t => {
   t.plan(1);
-  
-  const reply = await sendWebmention({ source: '', target: '', endpoint: '' })
-  t.equal(reply.response, 'server response')
-  t.end()
-})
+  const wm = new Webmention({ send: true });
+  wm.on('sent', reply => {
+    t.equal(reply.response, 'server response')
+    t.end()
+  });
+  wm.load(read('/fixtures/adactio-link.html'));
+});
