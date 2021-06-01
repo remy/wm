@@ -105,6 +105,7 @@ wm.on('sent', res => {
   console.log(`endpoint = ${res.endpoint.url} (${res.endpoint.type})`);
   console.log('target   = ' + res.target);
   console.log(`status   = ${res.status} ${res.status < 400 ? '✓' : '✗'}`); // ✖︎✓✔︎✗
+  if (res.response && res.error === null) console.log('response = ' + res.response);
   if (res.error) console.log('error    = ' + res.error);
   console.log('');
 });
