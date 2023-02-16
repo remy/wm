@@ -123,7 +123,7 @@ module.exports = async (req, res) => {
       return send(
         JSON.stringify({
           error: true,
-          message: `No webmention endpoints found in the ${
+          message: `No webmention endpoints found in the links of the ${
             wm.mentions.length
           } content ${wm.mentions.length === 1 ? 'entry' : 'entries'}`,
         })
