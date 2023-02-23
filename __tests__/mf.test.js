@@ -18,8 +18,18 @@ tap.test('microformat missing', t => {
   t.plan(1);
   const wm = new Webmention();
   wm.on('endpoints', endpoints => {
-    t.equal(endpoints.length, 2);
+    t.equal(endpoints.length, 3);
     t.end();
   });
   wm.load(read('/fixtures/mf-missing.html'));
+});
+
+tap.test('check for links', t => {
+  t.plan(1);
+  const wm = new Webmention();
+  wm.on('endpoints', endpoints => {
+    t.equal(endpoints.length, 4);
+    t.end();
+  });
+  wm.load(read('/fixtures/all-links.html'));
 });
