@@ -28,7 +28,13 @@ tap.test('check for links', t => {
   t.plan(1);
   const wm = new Webmention();
   wm.on('endpoints', endpoints => {
-    t.equal(endpoints.length, 4);
+	const targets = endpoints.map(({ target }) => target);
+  t.same(targets, [
+    'https://www.benji.dog/now',
+    'http://indieweb.org',
+    'https://brid.gy/publish/mastodon',
+    'https://fed.brid.gy/',
+  ]);
     t.end();
   });
   wm.load(read('/fixtures/all-links.html'));
