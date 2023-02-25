@@ -9,6 +9,20 @@
       <code>hentry</code>) Microformat markup, RSS and Atom. For backward compatibility both webmention and pingback protocols are supported.
     </p>
 
+    <details id="what-is-a-webmention">
+      <summary>
+        <h2>What is a webmention</h2>
+      </summary>
+      <div>
+        <p>
+          A webmention is a web standard that allows sites to notify each other of links.
+          Sites can make use of these notifications to display comments, count likes, or link back to the source page.
+          To learn more about what you can do with webmentions, visit the <a href="https://indieweb.org/Webmention">IndieWeb wiki</a>.
+        </p>
+
+      </div>
+    </details>
+
     <details id="send-webmentions-using-the-web-service">
       <summary>
         <h2>Send webmentions using the web service</h2>
