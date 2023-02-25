@@ -55,7 +55,21 @@
         <h2>How to integrate with Netlify</h2>
       </summary>
       <div>
-        <p>Netlify is a great platform for hosting static sites, and you can use webmention.app as part of your build process, or more simply if you also generate an RSS feed for you website you can provide a "deploy notification".</p>
+        <p>
+            Netlify is a great platform for hosting static sites, and you can use webmention.app as part of your build process.
+            If your site as a feed (see "Supported feed types"), use either of the following options to send mentions after your site has been deployed.
+        </p>
+        <p>
+            Each post-build check will send webmentions for the latest entries regardless of whether they were previously sent.
+            To avoid resending webmentions for previous entries, set the limit flag to 1.
+        </p>
+        <h3>Option 1: Netlify Build Plugin</h3>
+        <p>
+          The <a href="https://github.com/CodeFoodPixels/netlify-plugin-webmentions">netlify-plugin-webmentions</a> npm package provides a way to send webmentions directly within a site build using a feed file.
+          This also avoids extra load on the hosted service.
+          See that project's README for additional documentation.
+        </p>
+        <h3>Option 2: Deploy notification</h3>
         <p>
           Navigate to your Netlify project, and from the
           <strong>Build &amp; Deploy</strong> menu, find
