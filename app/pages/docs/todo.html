@@ -1,0 +1,50 @@
+<app-layout id="index">
+  <style>
+    h2 {
+      margin-top: 36px;
+    }
+  </style>
+
+  <h1>TODO</h1>
+  <ul class="contains-task-list">
+    <li class="task-list-item"><input type="checkbox" disabled> Allow self mentions &amp; pings</li>
+    <li class="task-list-item"><input type="checkbox" disabled> Provide <code>require('@remy/webmention')</code> support
+    </li>
+    <li class="task-list-item"><input type="checkbox" disabled> Support JSON feed (if there's requests for it)</li>
+    <li class="task-list-item"><input type="checkbox" disabled> Support other sign in methods, such as indieauth</li>
+  </ul>
+  <h2>As of v1.3.4 / 2019-06-18</h2>
+  <ul class="contains-task-list">
+    <li class="task-list-item"><input type="checkbox" disabled checked> Timeout on unresponsive domains after 5 seconds
+    </li>
+    <li class="task-list-item"><input type="checkbox" disabled checked> Handle empty <code>h-entry</code> items</li>
+  </ul>
+  <h2>As of v1.3.1 / 2019-06-13</h2>
+  <ul class="contains-task-list">
+    <li class="task-list-item"><input type="checkbox" disabled checked> Support proper host encoding, so <a
+        href="https://i❤️.ws">https://i❤️.ws</a> works
+    </li>
+    <li class="task-list-item"><input type="checkbox" disabled checked> If both pingback &amp; webmention found,
+      prioritise webmention</li>
+    <li class="task-list-item"><input type="checkbox" disabled checked> Support nested <code>h-entry</code> (such as
+      nested in <code>h-feed</code>s)</li>
+  </ul>
+  <h2>As of 2019-06-04</h2>
+  <ul class="contains-task-list">
+    <li class="task-list-item"><input type="checkbox" disabled checked> [web] More docs?!</li>
+    <li class="task-list-item"><input type="checkbox" disabled checked> [web] Auth / token</li>
+    <li class="task-list-item"><input type="checkbox" disabled checked> Add backend db to prevent (potential) abuse</li>
+  </ul>
+  <h2>As of v1.2.0 / 2019-05-30</h2>
+  <ul class="contains-task-list">
+    <li class="task-list-item"><input type="checkbox" disabled checked> Support wordpress <code>hentry</code> (not
+      &quot;valid&quot; microformat)</li>
+    <li class="task-list-item"><input type="checkbox" disabled checked> Atom</li>
+    <li class="task-list-item"><input type="checkbox" disabled checked> Better feedback on non-200 requests</li>
+    <li class="task-list-item"><input type="checkbox" disabled checked> Support XML RPC pingbacks</li>
+  </ul>
+  <hr>
+  <p><a href="https://github.com/remy/wm">Please help and contribute with pull requests ❤️</a></p>
+
+
+</app-layout>

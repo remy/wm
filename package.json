@@ -14,11 +14,9 @@
     "generated/*"
   ],
   "scripts": {
-    "dev": "nuxt",
-    "deploy": "npm run build && now",
-    "build": "nuxt generate",
-    "now-build": "nuxt generate",
-    "now-dev": "nuxt",
+    "start": "npx enhance dev",
+    "lint": "eslint ./app/**/*.mjs --fix",
+    "enhance": "enhance",
     "test:watch": "tap __tests__/*.test.js --no-coverage-report --watch",
     "test": "tap"
   },
@@ -30,6 +28,9 @@
   "author": "Remy Sharp (https://remysharp.com)",
   "license": "MIT",
   "dependencies": {
+    "@enhance/arc-plugin-enhance": "^6.2.3",
+    "@enhance/element": "^1.1.2",
+    "@enhance/styles-cribsheet": "^0.0.9",
     "cheerio": "^0.22.0",
     "clui": "^0.3.6",
     "decodeuricomponent": "^0.3.1",
@@ -40,18 +41,17 @@
     "node-fetch": "^2.6.1",
     "optimist": "^0.6.1",
     "rss-parser": "^3.7.0",
+    "serve-handler": "^6.1.5",
     "uuid": "^3.3.2"
   },
   "devDependencies": {
-    "@nuxtjs/markdownit": "^1.2.4",
+    "@enhance/cli": "latest",
+    "@enhance/types": "^0.6.1",
     "@remy/envy": "^4.0.2",
     "aws-sdk": "^2.466.0",
-    "cookie-universal-nuxt": "^2.0.14",
+    "eslint": "^8.49.0",
     "markdown-it-named-headings": "^1.1.0",
     "markdown-it-task-lists": "^2.1.1",
-    "micro": "^9.3.4",
-    "micro-dev": "^3.0.0",
-    "nuxt": "^2.14.7",
     "passport": "^0.4.0",
     "passport-github2": "^0.1.11",
     "tap": "^14.2.0"

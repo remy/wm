@@ -1,13 +1,13 @@
-const qs = require('../lib/query-string');
-const Webmention = require('../lib/webmention');
-const sendMention = require('../lib/send');
-const db = require('../lib/db');
-const ms = require('ms');
-const parse = require('url').parse;
+import qs from '../lib/query-string';
+import Webmention from '../lib/webmention';
+import sendMention from '../lib/send';
+import db from '../lib/db';
+import ms from 'ms';
+import { parse } from 'url';
 
 const rateWindow = 1000 * 60; // * 60 * 4; // 4 hours
 
-module.exports = async (req, res) => {
+export default async (req, res) => {
   let { url, token, limit } = qs(req);
   const method = req.method.toLowerCase();
 
@@ -79,20 +79,20 @@ module.exports = async (req, res) => {
     .then(() => {
       timings.db = Date.now() - now.getTime();
     })
-    .catch(e => console.log(e));
+    .catch((e) => console.log(e));
 
-  const send = data => {
+  const send = (data) => {
     dbUpdate
       .then(() => {
         res.setHeader(
           'Server-Timing',
-          Object.keys(timings).map(key => {
+          Object.keys(timings).map((key) => {
             return `${key};dur=${timings[key].toFixed(2)}`;
           })
         );
         res.end(data);
       })
-      .catch(e => {
+      .catch((e) => {
         res.end({ error: true, message: e.message });
       });
   };
@@ -100,20 +100,20 @@ module.exports = async (req, res) => {
   console.log('>> %s %s', method === 'post' ? 'SEND' : 'QUERY', url);
 
   const wm = new Webmention({ limit });
-  wm.on('error', e => {
+  wm.on('error', (e) => {
     send(JSON.stringify({ error: true, message: e.message }));
   });
 
-  wm.on('endpoints', urls => {
+  wm.on('endpoints', (urls) => {
     timings.webmention = Date.now() - now.getTime();
 
     if (method === 'post') {
-      return Promise.all(urls.map(sendMention)).then(reply => {
+      return Promise.all(urls.map(sendMention)).then((reply) => {
         if (reply.length)
           db.updateRequestCount(
             '__sent',
-            reply.filter(_ => _.status < 400).length
-          ).catch(E => console.log('error updating __sent count', E));
+            reply.filter((_) => _.status < 400).length
+          ).catch((E) => console.log('error updating __sent count', E));
         timings.send = Date.now() - now.getTime();
         send(JSON.stringify({ urls: reply }));
       });

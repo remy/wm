@@ -2,6 +2,7 @@ const micro = require('micro');
 const check = require('./routes/check');
 const auth = require('./routes/auth');
 const status = require('./routes/stats');
+const handler = require('serve-handler');
 const { send } = micro;
 
 const dev = async (req, res) => {
@@ -18,7 +19,12 @@ const dev = async (req, res) => {
     return await auth(req, res);
   }
 
-  send(res, 404, '404. Not found.');
+  await handler(req, res, {
+    cleanUrls: true,
+    public: './dist',
+  });
+
+  // send(res, 404, '404. Not found.');
 };
 
 const server = micro(dev);
