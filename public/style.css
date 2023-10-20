@@ -349,7 +349,7 @@ details div:last-child pre {
   transition: background-color 100ms ease-out, color 100ms ease-out;
 }
 
-.btn.loading {
+.btn:disabled {
   cursor: wait;
   transition: opacity 0.3s ease;
   background-size: 30px 30px;
@@ -486,17 +486,20 @@ footer li:last-child:after {
   border-radius: 4px;
   font-size: 80%;
   padding: 0px 6px;
-  background: #2196F3;
+  background: #2196f3;
   color: white;
   text-align: center;
   display: inline-block;
   line-height: 22px;
 }
 
-.status-2, .status-200,.status-201 {
+.status-2,
+.status-200,
+.status-201 {
   background: green;
 }
 
-.status-4, .status-5 {
-  background: #B71C1C;
+.status-4,
+.status-5 {
+  background: #b71c1c;
 }

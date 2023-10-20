@@ -1,120 +1,132 @@
 // TODO handle errors / 429 etc
-const API = process.env.API;
-const res = {
-  props: {
-    query: String,
-    onInput: Function,
-  },
-  data: function () {
-    return {
-      url: this.query,
-      loading: false,
-      mentions: [],
-      sent: false,
-      hasResult: false,
-      error: null,
-    };
-  },
-  methods: {
-    handleInput(e) {
-      this.$emit('input', e);
-    },
-    async sendMentions(event) {
-      event.preventDefault();
-      this.loading = true;
-      const res = await fetch(
-        `${API}/check/?url=${encodeURIComponent(this.url)}`,
-        {
-          method: 'post',
-        }
-      );
-      this.loading = false;
-      const json = await res.json();
-      if (!json.error) {
-        this.mentions = json.urls;
-        this.sent = true;
-      } else {
-        this.mentions = [];
-        this.error = json.message;
-      }
-      this.hasResult = false;
-    },
-    errorText(message, status) {
-      return `There was a possible error with this request:<br><em>${message}</em><br><br><a target="_blank" href="https://github.com/remy/wm/issues/new?title=${escape(
-        'Error with ' + this.url
-      )}&body=${escape(
-        'URL: ' +
-          this.url +
-          '\nStatus: ' +
-          status +
-          '\nError: `' +
-          message +
-          '`'
-      )}">If you think this is wrong, please raise an issue</a>`;
-    },
-    async findMentions(event) {
-      event.preventDefault();
-      this.sent = false;
-      this.loading = true;
-      this.hasResult = false;
-      this.error = null;
-      this.mentions = [];
-      const res = await fetch(
-        `${API}/check/?url=${encodeURIComponent(this.url)}`
-      );
+// const API = process.env.API;
+// const res = {
+//   props: {
+//     query: String,
+//     onInput: Function,
+//   },
+//   data: function () {
+//     return {
+//       url: this.query,
+//       loading: false,
+//       mentions: [],
+//       sent: false,
+//       hasResult: false,
+//       error: null,
+//     };
+//   },
+//   methods: {
+//     handleInput(e) {
+//       this.$emit('input', e);
+//     },
+//     async sendMentions(event) {
+//       event.preventDefault();
+//       this.loading = true;
+//       const res = await fetch(
+//         `${API}/check/?url=${encodeURIComponent(this.url)}`,
+//         {
+//           method: 'post',
+//         }
+//       );
+//       this.loading = false;
+//       const json = await res.json();
+//       if (!json.error) {
+//         this.mentions = json.urls;
+//         this.sent = true;
+//       } else {
+//         this.mentions = [];
+//         this.error = json.message;
+//       }
+//       this.hasResult = false;
+//     },
+//     errorText(message, status) {
+//       return `There was a possible error with this request:<br><em>${message}</em><br><br><a target="_blank" href="https://github.com/remy/wm/issues/new?title=${escape(
+//         'Error with ' + this.url
+//       )}&body=${escape(
+//         'URL: ' +
+//           this.url +
+//           '\nStatus: ' +
+//           status +
+//           '\nError: `' +
+//           message +
+//           '`'
+//       )}">If you think this is wrong, please raise an issue</a>`;
+//     },
+//     async findMentions(event) {
+//       event.preventDefault();
+//       this.sent = false;
+//       this.loading = true;
+//       this.hasResult = false;
+//       this.error = null;
+//       this.mentions = [];
+//       const res = await fetch(
+//         `${API}/check/?url=${encodeURIComponent(this.url)}`
+//       );
 
-      if (res.status === 200) {
-        const json = await res.json();
-        if (json.error) {
-          this.error = this.errorText(json.message, res.status);
-        } else {
-          this.mentions = json.urls;
-          this.hasResult = true;
-        }
-        this.loading = false;
-      } else {
-        this.loading = false;
-        try {
-          const json = await res.json();
-          this.error = json.message;
-        } catch (e) {
-          console.log(e);
+//       if (res.status === 200) {
+//         const json = await res.json();
+//         if (json.error) {
+//           this.error = this.errorText(json.message, res.status);
+//         } else {
+//           this.mentions = json.urls;
+//           this.hasResult = true;
+//         }
+//         this.loading = false;
+//       } else {
+//         this.loading = false;
+//         try {
+//           const json = await res.json();
+//           this.error = json.message;
+//         } catch (e) {
+//           console.log(e);
 
-          this.error = this.errorText(e.message, res.status);
-        }
-      }
-    },
-  },
-};
+//           this.error = this.errorText(e.message, res.status);
+//         }
+//       }
+//     },
+//   },
+// };
 
 export default function CheckMention({ html, state }) {
-  const { store = {} } = state;
+  const { store = {}, attrs = {} } = state;
+  const { loading = false } = attrs;
   const { sent = false, error = false, mentions = [] } = store;
+  const hasResult = mentions.length > 0;
+
   return html` <script
-      type="X_module"
+      type="module"
       src="/_public/browser/check-mention.mjs"
     ></script>
     <form method="GET" action="/check">
       <div class="flex-fields">
         <label class="label" for="url">URL:</label>
         <input required name="url" type="text" id="url" />
-        <button type="submit" class="btn">Start</button>
+        <button
+          id="submit-button"
+          ${loading ? 'disabled' : ''}
+          type="submit"
+          class="btn"
+        >
+          Start
+        </button>
       </div>
       <div>
-        <p>
+        ${sent &&
+        html`<p>
           <strong>
             Sent ${mentions.map((_) => _.status < 400).length} webmention
             notifications.
           </strong>
-        </p>
-        <p v-if="hasResult">
+        </p>`}
+        ${hasResult &&
+        html`<p>
           <strong>
             ${mentions.length === 0 ? 'No' : mentions.length} webmention
             supported links found.
           </strong>
-        </p>
+        </p>`}
         ${error &&
-        `<p>
+        html`<p>
           <strong>${error}</strong>
         </p>`}
 
@@ -140,11 +152,13 @@ export default function CheckMention({ html, state }) {
           </span>
         </li>
       -->
-        <p v-if="hasResult && mentions.length">
-          <button v-on:click="sendMentions" class="btn cta">
-            Send all webmentions
-          </button>
-        </p>
+        ${hasResult // eslint-disable-next-line indent
+          ? html`<p>
+              <button v-on:click="sendMentions" class="btn cta">
+                Send all webmentions
+              </button>
+            </p>` // eslint-disable-next-line indent
+          : null}
       </div>
     </form>`;
 }

@@ -27,8 +27,41 @@
           You need to find a way to request a URL, in this example, we'll use the command line tool
           <code>curl</code>. Here's a real world example of sending webmentions:
         </p>
-        <pre><code><span class="prompt">$</span> curl -X POST https://webmention.app/check?url=https://adactio.com/journal/15254
-[{"endpoint":{"url":"https://webmention.io/indiewebcamp/webmention","type":"webmention"},"source":"https://adactio.com/journal/15254","target":"https://indieweb.org/Homebrew_Website_Club"},{"endpoint":{"url":"https://webmention.io/indiewebcamp/webmention","type":"webmention"},"source":"https://adactio.com/journal/15254","target":"https://indieweb.org/2019/Brighton"},{"endpoint":{"url":"https://brid.gy/publish/webmention","type":"webmention"},"source":"https://adactio.com/journal/15254","target":"https://benjamin.parry.is/"},{"endpoint":{"url":"https://webmention.io/remysharp.com/webmention","type":"webmention"},"source":"https://adactio.com/journal/15254","target":"https://remysharp.com/"}]
+        <pre><code><span class="prompt">$ </span>curl -X POST https://webmention.app/check?url=https://adactio.com/journal/15254
+[
+  {
+    "endpoint": {
+      "url": "https://webmention.io/indiewebcamp/webmention",
+      "type": "webmention"
+    },
+    "source": "https://adactio.com/journal/15254",
+    "target": "https://indieweb.org/Homebrew_Website_Club"
+  },
+  {
+    "endpoint": {
+      "url": "https://webmention.io/indiewebcamp/webmention",
+      "type": "webmention"
+    },
+    "source": "https://adactio.com/journal/15254",
+    "target": "https://indieweb.org/2019/Brighton"
+  },
+  {
+    "endpoint": {
+      "url": "https://brid.gy/publish/webmention",
+      "type": "webmention"
+    },
+    "source": "https://adactio.com/journal/15254",
+    "target": "https://benjamin.parry.is/"
+  },
+  {
+    "endpoint": {
+      "url": "https://webmention.io/remysharp.com/webmention",
+      "type": "webmention"
+    },
+    "source": "https://adactio.com/journal/15254",
+    "target": "https://remysharp.com/"
+  }
+]
 </code></pre>
 
         <p>
@@ -45,9 +78,7 @@
         </p>
 
         <p>
-          Remember to claim
-          <a href="/token">a token</a>
-          {{' '}}so that your requests are not rate limited.
+          Remember to claim <a href="/token">a token</a> so that your requests are not rate limited.
         </p>
       </div>
     </details>
@@ -207,7 +238,7 @@
           The tool uses
           <a href="https://nodejs.com">nodejs</a> and once nodejs is installed, you can install the tool using:
         </p>
-        <pre><code><span class="prompt">$</span> npm install @remy/webmention</code></pre>
+        <pre><code><span class="prompt">$ </span>npm install @remy/webmention</code></pre>
         <p>
           This provides an executable under the command
           <code>webmention</code> (also available as
@@ -238,7 +269,7 @@
           Using
           <code>npx</code> you can invoke the tool to read the latest entry in your RSS feed:
         </p>
-        <pre><code><span class="prompt">$</span> npx webmention https://yoursite.com/feed.xml --limit 1 --send</code></pre>
+        <pre><code><span class="prompt">$ </span>npx webmention https://yoursite.com/feed.xml --limit 1 --send</code></pre>
         <p>
           Alternatively, you can make the tool part of your build workflow and have it execute during a
           <code>postbuild</code> phase:

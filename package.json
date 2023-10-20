@@ -14,7 +14,7 @@
     "generated/*"
   ],
   "scripts": {
-    "start": "npx enhance dev",
+    "start": "npx enhance dev --no-warnings",
     "lint": "eslint ./app/**/*.mjs --fix",
     "enhance": "enhance",
     "test:watch": "tap __tests__/*.test.js --no-coverage-report --watch",

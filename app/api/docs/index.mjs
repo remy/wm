@@ -1,4 +1,4 @@
-export default function get() {
+export function get() {
   console.log('api/index/get');
   return {
     json: {
