@@ -1,4 +1,8 @@
-export default function Head() {
+export default function Head(state) {
+  const { store } = state;
+
+  console.log('head', store);
+
   return `
     <!DOCTYPE html>
     <html lang="en">
@@ -7,7 +11,7 @@ export default function Head() {
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>Automate your outgoing webmentions</title>
 
-        <link rel="icon" sizes="192x192" href="/favicon.png">
+        <link rel="icon" sizes="192x192" href="/_public/favicon.png">
         <link href="https://fonts.googleapis.com/css?family=Rubik" rel="stylesheet">
         <link href="/_public/style.css" rel="stylesheet">
 

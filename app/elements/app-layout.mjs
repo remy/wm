@@ -1,5 +1,4 @@
-export default function AppLayout({ html, ...rest }) {
-  console.log(rest);
+export default function AppLayout({ html }) {
   return html`
     <main>
       <header>

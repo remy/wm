@@ -1,12 +1,14 @@
-<template>
-  <div v-on:toggle.capture="handleToggle">
+<app-layout id="docs" app-title="docs :: webmention.app">
+  <div>
     <h1>Documentation</h1>
     <h2>Platform agnostic webmentions</h2>
-    <p>webmention.app relies entirely on your markup and not your software, so no matter how your content is generated, you can send outgoing webmentions to other web sites.</p>
+    <p>webmention.app relies entirely on your markup and not your software, so no matter how your content is generated,
+      you can send outgoing webmentions to other web sites.</p>
     <p>
       Supported formats include: plain HTML,
       <code>h-entry</code> (and
-      <code>hentry</code>) Microformat markup, RSS and Atom. For backward compatibility both webmention and pingback protocols are supported.
+      <code>hentry</code>) Microformat markup, RSS and Atom. For backward compatibility both webmention and pingback
+      protocols are supported.
     </p>
 
     <details id="send-webmentions-using-the-web-service">
@@ -15,10 +17,9 @@
       </summary>
       <div>
         <p>
-          You can send either URLs with HTML or RSS feeds. The service supports single entries and multiple entries. Multiple entries are found with well formed markup, specifically using
-          <a
-            href="https://indieweb.org/h-entry"
-          >
+          You can send either URLs with HTML or RSS feeds. The service supports single entries and multiple entries.
+          Multiple entries are found with well formed markup, specifically using
+          <a href="https://indieweb.org/h-entry">
             <code>.h-entry</code>
           </a> classes.
         </p>
@@ -38,13 +39,14 @@
 
         <p>
           In the example above, the
-          <code>-X POST</code> curl argument is being use to ensure the request is a POST which notifies. If you want to perform a dry-run to see what would be sent, perform a GET request (and remove the
+          <code>-X POST</code> curl argument is being use to ensure the request is a POST which notifies. If you want to
+          perform a dry-run to see what would be sent, perform a GET request (and remove the
           <code>-X POST</code>).
         </p>
 
         <p>
           Remember to claim
-          <n-link to="/token">a token</n-link>
+          <a href="/token">a token</a>
           {{' '}}so that your requests are not rate limited.
         </p>
       </div>
@@ -55,7 +57,9 @@
         <h2>How to integrate with Netlify</h2>
       </summary>
       <div>
-        <p>Netlify is a great platform for hosting static sites, and you can use webmention.app as part of your build process, or more simply if you also generate an RSS feed for you website you can provide a "deploy notification".</p>
+        <p>Netlify is a great platform for hosting static sites, and you can use webmention.app as part of your build
+          process, or more simply if you also generate an RSS feed for you website you can provide a "deploy
+          notification".</p>
         <p>
           Navigate to your Netlify project, and from the
           <strong>Build &amp; Deploy</strong> menu, find
@@ -63,13 +67,13 @@
           <strong>Outgoing webhook</strong>:
         </p>
         <p>
-          <img src="/netlify.png">
+          <img src="/_public/netlify.png">
         </p>
         <p>
           Select the
           <strong>Deploy succeeded</strong> event, and the URL to send outgoing webmentions is:
         </p>
-        <pre><code><span>https://webmention.app/check?token=</span><n-link to="/token">[your-token]</n-link>&limit=1&url=[your-feed-url]</code></pre>
+        <pre><code><span>https://webmention.app/check?token=</span><a href="/token">[your-token]</a>&limit=1&url=[your-feed-url]</code></pre>
         <p>Now upon every new post you release, webmention.app will automatically handle your webmentions for you.</p>
       </div>
     </details>
@@ -79,14 +83,12 @@
         <h2>Using IFTTT to trigger checks</h2>
       </summary>
       <div>
-        <p>If you have an RSS feed on your website, then you can configure IFTTT the trigger a call to webmention.app when new posts are published.</p>
+        <p>If you have an RSS feed on your website, then you can configure IFTTT the trigger a call to webmention.app
+          when new posts are published.</p>
         <ol>
           <li>
             Start by
-            <a
-              target="_blank"
-              href="https://ifttt.com/create"
-            >creating a new applet on ifttt.com</a>
+            <a target="_blank" href="https://ifttt.com/create">creating a new applet on ifttt.com</a>
           </li>
           <li>
             Click on
@@ -106,7 +108,7 @@
             For the URL, enter:
             <code>
               <strong v-pre>https://webmention.app/check?url={{EntryUrl}}&token=</strong>
-              <n-link to="/token">[your-token]</n-link>
+              <a href="/token">[your-token]</a>
             </code>
           </li>
           <li>
@@ -120,7 +122,8 @@
           </li>
         </ol>
 
-        <p>Now when you publish a post, IFTTT will tell webmention.app to check the new URL for webmentions and automatically send them out.</p>
+        <p>Now when you publish a post, IFTTT will tell webmention.app to check the new URL for webmentions and
+          automatically send them out.</p>
       </div>
     </details>
 
@@ -129,14 +132,12 @@
         <h2>Scheduling repeating checks</h2>
       </summary>
       <div>
-        <p>If you publish your content to a URL that's constant, like your homepage, or mysite.com/articles, when you can use IFTTT to set up a regular check - either weekly, daily or hourly.</p>
+        <p>If you publish your content to a URL that's constant, like your homepage, or mysite.com/articles, when you
+          can use IFTTT to set up a regular check - either weekly, daily or hourly.</p>
         <ol>
           <li>
             Start by
-            <a
-              target="_blank"
-              href="https://ifttt.com/create"
-            >creating a new applet on ifttt.com</a>
+            <a target="_blank" href="https://ifttt.com/create">creating a new applet on ifttt.com</a>
           </li>
           <li>
             Click on
@@ -154,7 +155,7 @@
             For the URL, enter:
             <code>
               <strong v-pre>https://webmention.app/check?url={YOUR_URL}&token=</strong>
-              <n-link to="/token">[your-token]</n-link>
+              <a href="/token">[your-token]</a>
             </code> (remember to swap
             <code>{YOUR_URL}</code> for your
             <em>actual</em> URL!)
@@ -179,13 +180,12 @@
         <h2>Supported feed types</h2>
       </summary>
       <div>
-        <p>You can use either the web service or the command line method to request a feed. You pass the URL of the feed to webmention.app just as you would any other URL.</p>
+        <p>You can use either the web service or the command line method to request a feed. You pass the URL of the feed
+          to webmention.app just as you would any other URL.</p>
 
         <p>
           Note that both RSS and Atom feeds are supported. If you have another format in mind, please
-          <a
-            href="https://github.com/remy/wm/issues/new"
-          >open an issue with details</a>.
+          <a href="https://github.com/remy/wm/issues/new">open an issue with details</a>.
         </p>
 
         <p>
@@ -201,7 +201,8 @@
         <h2>Using the command line</h2>
       </summary>
       <div>
-        <p>The command line doesn't rely on webmention.app at all and doesn't require a token - so you can run it locally with the knowledge that if your site outlives this one, the tool will still work.</p>
+        <p>The command line doesn't rely on webmention.app at all and doesn't require a token - so you can run it
+          locally with the knowledge that if your site outlives this one, the tool will still work.</p>
         <p>
           The tool uses
           <a href="https://nodejs.com">nodejs</a> and once nodejs is installed, you can install the tool using:
@@ -210,12 +211,14 @@
         <p>
           This provides an executable under the command
           <code>webmention</code> (also available as
-          <code>wm</code>). Default usage allows you to pass a filename (like a newly generated RSS feed) or a specific URL. It will default to the 10 most recent entries found (using
+          <code>wm</code>). Default usage allows you to pass a filename (like a newly generated RSS feed) or a specific
+          URL. It will default to the 10 most recent entries found (using
           <code>item</code> for RSS and
           <code>h-entry</code> for HTML).
         </p>
         <p>
-          By default, the command will perform a dry-run/discovery only. To complete the notification of webmentions use the
+          By default, the command will perform a dry-run/discovery only. To complete the notification of webmentions use
+          the
           <code>--send</code> flag.
         </p>
         <p>The options available are:</p>
@@ -276,19 +279,21 @@
         </h2>
       </summary>
       <div>
-        <p>webmention.app is only used to notify of outgoing webmentions. However, I can recommend the following websites:</p>
+        <p>webmention.app is only used to notify of outgoing webmentions. However, I can recommend the following
+          websites:</p>
         <ul>
           <li>
-            <a href="https://webmention.io">webmention.io</a> - a service you can use to accept inbound webmention notifications (I use this on
-            <a
-              href="https://remysharp.com"
-            >my own blog</a>)
+            <a href="https://webmention.io">webmention.io</a> - a service you can use to accept inbound webmention
+            notifications (I use this on
+            <a href="https://remysharp.com">my own blog</a>)
           </li>
           <li>
-            <a href="https://brid.gy/">bridgy</a> - a service to gather and send notifications from sources such as Twitter
+            <a href="https://brid.gy/">bridgy</a> - a service to gather and send notifications from sources such as
+            Twitter
           </li>
           <li>
-            <a href="https://mxb.dev/blog/using-webmentions-on-static-sites">Using Webmentions</a> - Max Böck's excellent article on how to start showing webmentions on your own website
+            <a href="https://mxb.dev/blog/using-webmentions-on-static-sites">Using Webmentions</a> - Max Böck's
+            excellent article on how to start showing webmentions on your own website
           </li>
         </ul>
       </div>
@@ -301,12 +306,10 @@
       <div>
         <ul>
           <li>
-            <n-link to="/docs/todo">TODO / Work in progress</n-link>
+            <a href="/docs/todo">TODO / Work in progress</a>
           </li>
           <li>
-            <a
-              href="https://github.com/remy/wm/issues"
-            >Found an issue or want to make an improvement?</a>
+            <a href="https://github.com/remy/wm/issues">Found an issue or want to make an improvement?</a>
           </li>
           <li>
             <a href="https://github.com/remy/wm/">Source code on Github</a>
@@ -315,45 +318,37 @@
       </div>
     </details>
   </div>
-</template>
+</app-layout>
 
-<style scoped>
-img {
-  max-width: 100%;
-  border-radius: 4px;
-}
+<style>
+  img {
+    max-width: 100%;
+    border-radius: 4px;
+  }
 
-details[open] summary h2 {
-  color: black;
-}
+  details[open] summary h2 {
+    color: black;
+  }
 
-details[open] div {
-  margin-bottom: 64px;
-}
+  details[open] div {
+    margin-bottom: 64px;
+  }
 </style>
 
-
 <script>
-export default {
-  mounted() {
-    if (window.location.hash) {
-      const details = document.querySelector(window.location.hash);
+  if (window.location.hash) {
+    const details = document.querySelector(window.location.hash);
 
-      if (details) {
-        details.open = true;
-        details.scrollIntoView();
-      }
+    if (details) {
+      details.open = true;
+      details.scrollIntoView({ behavior: "smooth" });
     }
-  },
-  methods: {
-    handleToggle(e) {
-      if (e.target.nodeName === "DETAILS" && e.target.open) {
-        window.history.replaceState("", "", "#" + e.target.id);
-      }
-    }
-  },
-  head() {
-    return { bodyAttrs: { id: "docs" }, title: "docs :: webmention.app" };
   }
-};
+  document.querySelector('app-layout').addEventListener('toggle', (e) => {
+    if (e.target.nodeName === "DETAILS" && e.target.open) {
+      window.history.replaceState("", "", "#" + e.target.id);
+      e.target.scrollIntoView({ behavior: "smooth" });
+    }
+  }, { capture: true })
+
 </script>
