@@ -93,7 +93,9 @@ export default function CheckMention({ html, state }) {
   const { sent = false, error = false, mentions = [] } = store;
   const hasResult = mentions.length > 0;
 
-  return html` <script
+  console.log('render <check-mention>');
+
+  return html`<script
       type="module"
       src="/_public/browser/check-mention.mjs"
     ></script>
