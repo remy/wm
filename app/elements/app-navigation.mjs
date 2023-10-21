@@ -10,7 +10,7 @@ export default function AppNavigation({ html }) {
         <a href="/token">Get token</a>
       </li>
       <li>
-        <a href="/test">Test a URL</a>
+        <a href="/check">Test a URL</a>
       </li>
       <li>
         <a href="/docs">Docs</a>

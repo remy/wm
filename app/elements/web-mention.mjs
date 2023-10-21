@@ -1,7 +1,6 @@
 export default function WebMention({ html, state }) {
   const { attrs = {} } = state;
-  const { webmention } = attrs;
-  const { source = '', status = null, error = false, target = '' } = webmention;
+  const { source = '', status = null, error = false, target = '' } = attrs;
 
   let statusClassName = '';
 
@@ -17,18 +16,17 @@ export default function WebMention({ html, state }) {
     <a href="${source}">${source}</a>
     <br />
     <span>target=</span>
-    ${status &&
-    `<span>
-      <span
-        class="${statusClassName}"
-        >${status}</span
-      >
-    </span>`}
+    ${(status &&
+      html`<span>
+        <span class="${statusClassName}">${status}</span>
+      </span>`) ||
+    ''}
     <a href="${target}">${target}</a>
-    ${error &&
-    `<span>
-      <br />
-      ${error}
-    </span>`}
+    ${(error &&
+      html`<span>
+        <br />
+        ${error}
+      </span>`) ||
+    ''}
   </li>`;
 }

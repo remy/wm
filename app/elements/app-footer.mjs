@@ -1,6 +1,3 @@
-// eslint-disable-next-line
-import pkg from '../../package.json' assert { type: 'json' };
-
 export default function AppFooter({ html }) {
   return html`
     <ul>
@@ -19,7 +16,7 @@ export default function AppFooter({ html }) {
       <li>
         <a href="https://github.com/remy/wm">
           Version:
-          <span>${pkg.version}</span>
+          <span>${'1.4.6'}</span>
         </a>
       </li>
     </ul>

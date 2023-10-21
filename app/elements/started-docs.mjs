@@ -55,7 +55,7 @@ function complicated(html) {
       found, you'll be able to send those outgoing notifications.
     </p>
     <p>
-      <a href="/test">Use the manual test and send tool.</a>
+      <a href="/check">Use the manual test and send tool.</a>
     </p>
   </div>`;
 }
