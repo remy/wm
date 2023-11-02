@@ -1,10 +1,10 @@
 const tap = require('tap');
 const fs = require('fs');
-const read = f => fs.readFileSync(__dirname + f, 'utf8');
+const read = (f) => fs.readFileSync(__dirname + f, 'utf8');
 const parse = require('../lib/rss/dom');
 const { links } = require('../lib/links');
 
-tap.test('compile dom for atom', async t => {
+tap.test('compile dom for atom', async (t) => {
   t.plan(1);
 
   const xml = read('/fixtures/summary.atom');
@@ -12,7 +12,7 @@ tap.test('compile dom for atom', async t => {
   t.pass('worked');
 });
 
-tap.test('detected escaped links in atom', async t => {
+tap.test('detected escaped links in atom', async (t) => {
   t.plan(2);
 
   const xml = read('/fixtures/summary.atom');

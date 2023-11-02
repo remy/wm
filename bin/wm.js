@@ -1,6 +1,5 @@
 #!/usr/bin/env node
 /* eslint-disable no-process-exit */
-/* eslint-disable node/no-unpublished-bin */
 const pkg = require('../package.json');
 const opts = require('optimist')
   .usage(
@@ -13,7 +12,7 @@ const opts = require('optimist')
   .default('send', false)
   .describe('limit', 'int: entries to discover')
   .describe('version')
-  .describe('debug');
+  .boolean('debug');
 
 const argv = opts.argv;
 
@@ -53,8 +52,8 @@ if (debug) {
   console.log('send = ' + send);
 }
 
-wm.on('error', e => console.log(e));
-wm.on('progress', e => {
+wm.on('error', (e) => console.error(e));
+wm.on('progress', (e) => {
   const [[key, value]] = Object.entries(e);
 
   if (key === 'endpoints') {
@@ -76,10 +75,10 @@ wm.on('progress', e => {
     );
   }
 });
-if (debug) wm.on('log', e => console.log(e));
+if (debug) wm.on('log', (e) => console.log(e));
 wm.on('endpoints', clearLine);
 if (!send) {
-  wm.on('endpoints', res => {
+  wm.on('endpoints', (res) => {
     if (res.length === 0) {
       if (wm.mentions.length) {
         console.log(
@@ -91,7 +90,7 @@ if (!send) {
       }
     }
 
-    res.map(res => {
+    res.map((res) => {
       console.log('source = ' + res.source);
       console.log('target = ' + res.target);
       console.log(`endpoint = ${res.endpoint.url} (${res.endpoint.type})`);
@@ -100,7 +99,7 @@ if (!send) {
   });
 }
 
-wm.on('sent', res => {
+wm.on('sent', (res) => {
   console.log('source   = ' + res.source);
   console.log(`endpoint = ${res.endpoint.url} (${res.endpoint.type})`);
   console.log('target   = ' + res.target);
@@ -110,7 +109,9 @@ wm.on('sent', res => {
 });
 
 if (existsSync(target)) {
-  wm.load(readFileSync(argv._[0], 'utf8'));
+  wm.load(readFileSync(argv._[0], 'utf8')).catch((e) => {
+    console.log('wm error', e.message);
+  });
 } else {
   wm.fetch(target);
 }

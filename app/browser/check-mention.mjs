@@ -12,10 +12,13 @@ class CheckMention extends HTMLElement {
   set loading(value) {
     if (value) {
       this.setAttribute('loading', true);
-      this.mentions.innerHTML = '';
     } else {
       this.removeAttribute('loading');
     }
+  }
+
+  clear() {
+    this.mentions.innerHTML = '';
   }
 
   constructor() {
@@ -24,9 +27,10 @@ class CheckMention extends HTMLElement {
     this.input = $('input', this);
     this.mentions = $('#mention-wrapper', this);
 
-    $('form', this).on('submit', (e) => {
+    this.addEventListener('submit', (e) => {
       e.preventDefault();
-      this.check(this.url);
+      console.log('submit', e.target);
+      this.check(this.url, e.target.method.toLowerCase() === 'post');
     });
   }
 
@@ -35,6 +39,7 @@ class CheckMention extends HTMLElement {
    * @param {boolean} [send=false]
    */
   async check(url, send = false) {
+    if (!send) this.clear();
     this.loading = true;
     const query = new URLSearchParams();
     query.append('url', url);
@@ -44,7 +49,6 @@ class CheckMention extends HTMLElement {
     });
     const json = await res.json();
     this.loading = false;
-    console.log({ json });
 
     this.mentions.innerHTML = mentionWrapper({
       html(strings, ...values) {

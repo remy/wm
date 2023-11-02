@@ -15,18 +15,23 @@ export default function CheckMention({ html, state }) {
         <input required name="url" type="text" value="${url}" />
         <button id="submit-button" type="submit" class="btn">Start</button>
       </div>
-      <div id="mention-wrapper">
-        ${mentionWrapper({ html, sent, urls, error, url })}
-      </div>
-    </form>`;
+    </form>
+    <div id="mention-wrapper">
+      ${mentionWrapper({ html, sent, urls, error, url })}
+    </div> `;
 }
 
 export function mentionWrapper({ html, sent, urls, error, url }) {
   const hasResult = urls.length > 0;
   const webMentions = urls
     .map(
-      ({ source, target }) =>
-        html`<web-mention source="${source}" target="${target}"></web-mention>`
+      ({ source, target, status, error }) =>
+        html`<web-mention
+          status="${status || ''}"
+          error="${error ? 'Failed to send' : ''}"
+          source="${source}"
+          target="${target}"
+        ></web-mention>`
     )
     .join('');
 
@@ -40,14 +45,18 @@ export function mentionWrapper({ html, sent, urls, error, url }) {
       </p>`
     : '';
 
+  const foundCount =
+    url && !sent
+      ? html`<p>
+          <strong>
+            ${urls.length === 0 ? 'No' : urls.length} webmention supported links
+            found.
+          </strong>
+        </p>`
+      : '';
+
   return html`${sentNotifications}
-    ${url &&
-    html`<p>
-      <strong>
-        ${urls.length === 0 ? 'No' : urls.length} webmention supported links
-        found.
-      </strong>
-    </p>`}
+    ${foundCount}
     ${errorMessage}
 
     <ol id="mentions">
@@ -55,6 +64,9 @@ export function mentionWrapper({ html, sent, urls, error, url }) {
     </ol>
 
     <p id="send-mentions" ${!hasResult && 'hidden'}>
-      <button class="btn cta">Send all webmentions</button>
+      <form method="post" action="/check">
+        <input type="hidden" name="url" value="${url}">
+        <button class="btn cta">Send all webmentions</button>
+      </form>
     </p>`;
 }

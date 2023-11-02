@@ -1,6 +1,8 @@
 module.exports = {
+  root: true,
   env: {
     node: true,
+    es6: true,
   },
   extends: 'eslint:recommended',
   rules: {
@@ -9,6 +11,6 @@ module.exports = {
   ignorePatterns: [],
   parserOptions: {
     sourceType: 'module',
-    ecmaVersion: 2022,
+    ecmaVersion: 'latest',
   },
 };

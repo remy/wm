@@ -7,8 +7,8 @@ import db from '../../lib/db.js';
 
 const rateWindow = 1000 * 60; // * 60 * 4; // 4 hours
 
-export async function get(req) {
-  let { url, token, limit } = req.query;
+async function handleRequest(req) {
+  let { url, token, limit = 10 } = req.query;
   const method = req.method.toLowerCase();
 
   const now = new Date();
@@ -64,7 +64,6 @@ export async function get(req) {
     }
   }
 
-  // eslint-disable-next-line no-undef
   return new Promise((resolve) => {
     const dbUpdate = db
       .updateRequestCount(url)
@@ -74,7 +73,6 @@ export async function get(req) {
       .catch((e) => console.log(e));
 
     const send = (data) => {
-      console.log('+ send', data);
       data.url = url;
       return dbUpdate
         .then(() => {
@@ -102,13 +100,16 @@ export async function get(req) {
       send({ error: true, message: e.message });
     });
 
-    wm.on('log', (a) => console.log(a));
+    // wm.on('log', (a) => console.log(a));
+    wm.on('progress', (e) => {
+      const [[key, value]] = Object.entries(e);
+      console.log('progress', key, value);
+    });
 
     wm.on('endpoints', (urls) => {
       timings.webmention = Date.now() - now.getTime();
 
       if (method === 'post') {
-        // eslint-disable-next-line no-undef
         return Promise.all(urls.map(sendMention)).then((reply) => {
           if (reply.length)
             db.updateRequestCount(
@@ -116,7 +117,7 @@ export async function get(req) {
               reply.filter((_) => _.status < 400).length
             ).catch((E) => console.log('error updating __sent count', E));
           timings.send = Date.now() - now.getTime();
-          send({ urls: reply });
+          return send({ urls: reply });
         });
       }
 
@@ -135,3 +136,6 @@ export async function get(req) {
     wm.fetch(url);
   });
 }
+
+export const get = handleRequest;
+export const post = handleRequest;

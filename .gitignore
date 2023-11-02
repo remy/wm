@@ -7,9 +7,11 @@ dist
 .env.*
 tmp
 .now
-
+.tap
 # Enhance temp files
 .enhance/
+
+coverage/
 
 # Generated assets
 public/static.json

@@ -7,7 +7,6 @@ passport.use('github', github);
 
 export async function get(req) {
   console.log('/auth/get');
-  // eslint-disable-next-line no-undef
   return new Promise((resolve) => {
     let location = '';
     passport.authenticate('github', (err, user) => {

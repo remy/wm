@@ -12,7 +12,6 @@ class NodeListArray extends Array {
     super();
 
     // allow setting any node property via proxy
-    // eslint-disable-next-line no-undef
     return new Proxy(this, {
       get(obj, prop) {
         const type = obj[0];

@@ -1,23 +1,23 @@
 const tap = require('tap');
 const fs = require('fs');
 const Webmention = require('../lib/webmention');
-const read = f => fs.readFileSync(__dirname + f, 'utf8');
+const read = (f) => fs.readFileSync(__dirname + f, 'utf8');
 
-tap.test('atom', t => {
+tap.test('atom', (t) => {
   t.plan(1);
   const wm = new Webmention({ limit: 2 });
   wm.on('end', () => {
-    t.notEqual(wm.mentions.length, 0);
+    t.not(wm.mentions.length, 0);
     t.end();
   });
   wm.load(read('/fixtures/simon-links-atom.xml'));
 });
 
-tap.test('xml', t => {
+tap.test('xml', (t) => {
   t.plan(1);
   const wm = new Webmention({ limit: 2 });
   wm.on('end', () => {
-    t.notEqual(wm.mentions.length, 0);
+    t.not(wm.mentions.length, 0);
     t.end();
   });
   wm.load(read('/fixtures/fsis.xml'));
@@ -40,12 +40,14 @@ tap.test('xml', t => {
 //   wm.load(read('/fixtures/but.html'));
 // });
 
-tap.test('local rss', t => {
+tap.test('local rss', (t) => {
   t.plan(3);
   const wm = new Webmention();
   wm.on('end', () => {
     t.equal(wm.mentions.length, 10);
-    const found = wm.endpoints.find(_ => _.target.includes('paulrobertlloyd'));
+    const found = wm.endpoints.find((_) =>
+      _.target.includes('paulrobertlloyd')
+    );
     t.equal(found.endpoint.type, 'webmention');
     t.equal(
       found.endpoint.url,
@@ -67,10 +69,10 @@ tap.test('local rss', t => {
 //   wm.load(read('/fixtures/alt-but.html'));
 // });
 
-tap.test('local h-feed nested', t => {
+tap.test('local h-feed nested', (t) => {
   t.plan(1);
   const wm = new Webmention();
-  wm.on('endpoints', endpoints => {
+  wm.on('endpoints', (endpoints) => {
     t.equal(endpoints.length, 10);
     t.end();
   });

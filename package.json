@@ -1,6 +1,6 @@
 {
   "name": "@remy/webmention",
-  "version": "1.4.6",
+  "version": "1.5.0",
   "description": "Web Mentions sender",
   "main": "./lib/webmention.js",
   "repository": "github:remy/wm",
@@ -10,9 +10,9 @@
   },
   "files": [
     "lib/**/*",
-    "bin/wm.js",
-    "generated/*"
+    "bin/wm.js"
   ],
+  "types": "./index.d.ts",
   "scripts": {
     "start": "npx enhance dev --no-warnings",
     "lint": "eslint ./app/**/*.mjs --fix",
@@ -38,7 +38,6 @@
     "node-fetch": "^2.6.1",
     "optimist": "^0.6.1",
     "rss-parser": "^3.7.0",
-    "serve-handler": "^6.1.5",
     "uuid": "^3.3.2"
   },
   "devDependencies": {
@@ -54,6 +53,6 @@
     "markdown-it-task-lists": "^2.1.1",
     "passport": "^0.4.0",
     "passport-github2": "^0.1.11",
-    "tap": "^14.2.0"
+    "tap": "^16.3.9"
   }
 }
