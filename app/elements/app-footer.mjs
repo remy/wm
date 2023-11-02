@@ -16,7 +16,7 @@ export default function AppFooter({ html }) {
       <li>
         <a href="https://github.com/remy/wm">
           Version:
-          <span>${'1.4.6'}</span>
+          <span>${'1.5.0'}</span>
         </a>
       </li>
     </ul>
