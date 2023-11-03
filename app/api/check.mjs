@@ -1,9 +1,9 @@
 import '@remy/envy';
 import ms from 'ms';
 import { parse } from 'url';
-import Webmention from '../../lib/webmention.js';
-import sendMention from '../../lib/send/index.js';
-import db from '../../lib/db.js';
+import Webmention from '../lib/webmention.js';
+import sendMention from '../lib/send/index.js';
+import db from '../lib/db.js';
 
 const rateWindow = 1000 * 60; // * 60 * 4; // 4 hours
 

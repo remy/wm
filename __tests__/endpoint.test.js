@@ -1,7 +1,7 @@
 const tap = require('tap');
 const fs = require('fs');
 const read = (f) => fs.readFileSync(__dirname + f, 'utf8');
-const endpoint = require('../lib/endpoint');
+const endpoint = require('../app/lib/endpoint');
 
 tap.test('atom', (t) => {
   const source = read('/fixtures/pingback-first.html');

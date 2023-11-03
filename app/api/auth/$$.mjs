@@ -1,7 +1,7 @@
 /* eslint-env node */
 import '@remy/envy';
 import passport from 'passport';
-import { github } from '../../../lib/passport.js';
+import { github } from '../../lib/passport.js';
 
 passport.use('github', github);
 

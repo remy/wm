@@ -1,6 +1,6 @@
 const tap = require('tap');
 const fs = require('fs');
-const Webmention = require('../lib/webmention');
+const Webmention = require('../app/lib/webmention');
 const read = (f) => fs.readFileSync(__dirname + f, 'utf8');
 
 tap.test('microformat', (t) => {

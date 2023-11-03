@@ -1,5 +1,5 @@
 const tap = require('tap');
-const request = require('../lib/request');
+const request = require('../app/lib/request');
 
 tap.test('request a duff domain', (t) => {
   t.plan(1);

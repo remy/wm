@@ -1,4 +1,4 @@
-const pingback = require('../lib/send/pingback');
+const pingback = require('../app/lib/send/pingback');
 const tap = require('tap');
 
 tap.test('pingback', (t) => {

@@ -32,7 +32,7 @@ const progressBar = new Progress(20);
 const existsSync = require('fs').existsSync;
 const readFileSync = require('fs').readFileSync;
 const target = argv._[0];
-const Webmention = require('../lib/webmention');
+const Webmention = require('../app/lib/webmention');
 
 const { limit, debug, send } = argv;
 const wm = new Webmention({ limit, send });

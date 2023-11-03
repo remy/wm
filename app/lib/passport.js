@@ -1,6 +1,6 @@
 const Strategy = require('passport-github2').Strategy;
 const uuid = require('./uuid');
-const db = require('../lib/db');
+const db = require('./db');
 
 const config = {
   clientID: process.env.GITHUB_CLIENT_ID,
