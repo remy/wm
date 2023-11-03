@@ -1,6 +1,5 @@
 const { http, https } = require('follow-redirects');
-const version = require('../package.json').version;
-const headers = { 'User-Agent': `webmention.app@/${version}` };
+const headers = { 'User-Agent': 'webmention.app' };
 
 // by default timeout at 5 seconds
 function main(url, timeout = 500) {

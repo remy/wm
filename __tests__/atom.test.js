@@ -1,8 +1,8 @@
 const tap = require('tap');
 const fs = require('fs');
 const read = (f) => fs.readFileSync(__dirname + f, 'utf8');
-const parse = require('../app/lib/rss/dom');
-const { links } = require('../app/lib/links');
+const parse = require('../shared/lib/rss/dom');
+const { links } = require('../shared/lib/links');
 
 tap.test('compile dom for atom', async (t) => {
   t.plan(1);

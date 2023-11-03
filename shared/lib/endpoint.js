@@ -3,7 +3,6 @@ const { http, https } = require('follow-redirects');
 const li = require('li');
 const cheerio = require('cheerio');
 const url = require('url');
-const version = require('../package.json').version;
 
 const cache = new Map();
 
@@ -79,7 +78,7 @@ function getWebmentionUrl(opts, realCallback) {
   }
 
   parsed.headers = {
-    'user-agent': 'webmention.app@' + version,
+    'user-agent': 'webmention.app',
   };
 
   parsed.timeout = 300; //5 * 1000;

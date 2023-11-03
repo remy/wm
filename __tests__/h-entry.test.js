@@ -1,5 +1,5 @@
 const tap = require('tap');
-const { findEntries } = require('../app/lib/microformat/dom');
+const { findEntries } = require('../shared/lib/microformat/dom');
 
 const fixture = {
   items: [
