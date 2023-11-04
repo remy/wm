@@ -137,5 +137,19 @@ async function handleRequest(req) {
   });
 }
 
-export const get = handleRequest;
-export const post = handleRequest;
+export const get = (req) => {
+  return handleRequest(req).catch((e) => {
+    console.log(e.stack);
+    return {
+      json: { error: true, message: e.message, stack: e.stack },
+    };
+  });
+};
+export const post = (req) => {
+  return handleRequest(req).catch((e) => {
+    console.log(e.stack);
+    return {
+      json: { error: true, message: e.message, stack: e.stack },
+    };
+  });
+};
