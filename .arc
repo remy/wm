@@ -1,5 +1,5 @@
 @app
-enhance-app
+webmention-app
 
 @static
 prune true
