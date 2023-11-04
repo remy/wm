@@ -81,7 +81,7 @@ function getWebmentionUrl(opts, realCallback) {
     'user-agent': 'webmention.app',
   };
 
-  parsed.timeout = 300; //5 * 1000;
+  parsed.timeout = 5 * 1000;
 
   const client = parsed.protocol === 'http:' ? http : https;
 
