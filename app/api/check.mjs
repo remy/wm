@@ -77,11 +77,6 @@ async function handleRequest(req) {
       return dbUpdate
         .then(() => {
           return {
-            headers: {
-              'Server-Timing': Object.keys(timings).map((key) => {
-                return `${key};dur=${timings[key].toFixed(2)}`;
-              }),
-            },
             json: data,
           };
         })
@@ -101,10 +96,10 @@ async function handleRequest(req) {
     });
 
     // wm.on('log', (a) => console.log(a));
-    wm.on('progress', (e) => {
-      const [[key, value]] = Object.entries(e);
-      console.log('progress', key, value);
-    });
+    // wm.on('progress', (e) => {
+    //   const [[key, value]] = Object.entries(e);
+    //   console.log('progress', key, value);
+    // });
 
     wm.on('endpoints', (urls) => {
       timings.webmention = Date.now() - now.getTime();
@@ -137,19 +132,5 @@ async function handleRequest(req) {
   });
 }
 
-export const get = (req) => {
-  return handleRequest(req).catch((e) => {
-    console.log(e.stack);
-    return {
-      json: { error: true, message: e.message, stack: e.stack },
-    };
-  });
-};
-export const post = (req) => {
-  return handleRequest(req).catch((e) => {
-    console.log(e.stack);
-    return {
-      json: { error: true, message: e.message, stack: e.stack },
-    };
-  });
-};
+export const get = handleRequest;
+export const post = handleRequest;
