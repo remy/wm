@@ -1,48 +1,46 @@
 export default function GettingStarted({ html }) {
   return html`
-    <style scope="global">
-      getting-started {
-        .highlight {
-          border: 1px solid #616161;
-          padding: 0 20px;
-          border-radius: 2px;
-          margin-bottom: 36px;
-        }
+    <style>
+      .highlight {
+        border: 1px solid #616161;
+        padding: 0 20px;
+        border-radius: 2px;
+        margin-bottom: 36px;
+      }
 
-        .center {
-          display: flex;
-          align-items: center;
-          justify-content: space-around;
-        }
+      .center {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+      }
 
-        input:checked + span {
-          font-weight: bold;
-        }
+      input:checked + span {
+        font-weight: bold;
+      }
 
-        label input {
-          margin-right: 8px;
-        }
+      label input {
+        margin-right: 8px;
+      }
 
-        label {
-          cursor: pointer;
-        }
+      label {
+        cursor: pointer;
+      }
 
-        & ul {
-          list-style: none;
-          padding: 0;
-        }
+      ul {
+        list-style: none;
+        padding: 0;
+      }
 
-        [data-name] {
-          display: none;
-        }
+      [data-name] {
+        display: none;
+      }
 
-        [selected='feed'] [data-name='feed'],
-        [selected='url'] [data-name='url'],
-        [selected='cli'] [data-name='cli'],
-        [selected='complicated'] [data-name='complicated'],
-        [selected='docs'] [data-name='docs'] {
-          display: block;
-        }
+      [selected='feed'] [data-name='feed'],
+      [selected='url'] [data-name='url'],
+      [selected='cli'] [data-name='cli'],
+      [selected='complicated'] [data-name='complicated'],
+      [selected='docs'] [data-name='docs'] {
+        display: block;
       }
     </style>
 
