@@ -122,6 +122,7 @@ p.summary {
 footer,
 footer * {
   font-size: 12px;
+  line-height: 22px;
 }
 
 html,
@@ -149,7 +150,7 @@ main > div.content {
 }
 
 main > footer {
-  /* margin: 20px 0; */
+  margin: 20px 0;
 }
 
 #navigation ul {
@@ -413,6 +414,10 @@ input:hover {
   color: #9e9e9e;
 }
 
+#mentions:empty {
+  margin: 0;
+}
+
 li {
   margin: 8px 0;
 }
@@ -458,6 +463,11 @@ footer li:last-child:after {
 #navigation a {
   font-size: 14px;
 }
+
+#navigation li {
+  line-height: 22px;
+}
+
 #navigation .logo a {
   border: 0;
   display: flex;

@@ -1,6 +1,7 @@
 export default function CheckMention({ html, state }) {
   const { store = {} } = state;
   const { urls = [], url = '', sent = false } = store;
+  const hasResult = urls.length > 0;
 
   const error = false;
 
@@ -18,11 +19,15 @@ export default function CheckMention({ html, state }) {
     </form>
     <div id="mention-wrapper">
       ${mentionWrapper({ html, sent, urls, error, url })}
-    </div> `;
+    </div>
+
+    <form ${hasResult || sent ? '' : 'hidden'} method="post" action="/check">
+      <input type="hidden" name="url" value="${url}" />
+      <button class="btn cta">Send all webmentions</button>
+    </form> `;
 }
 
 export function mentionWrapper({ html, sent, urls, error, url }) {
-  const hasResult = urls.length > 0;
   const webMentions = urls
     .map(
       ({ source, target, status, error }) =>
@@ -55,18 +60,8 @@ export function mentionWrapper({ html, sent, urls, error, url }) {
         </p>`
       : '';
 
-  return html`${sentNotifications}
-    ${foundCount}
-    ${errorMessage}
-
-    <ol id="mentions">
-      ${webMentions}
-    </ol>
-
-    <p id="send-mentions" ${!hasResult && 'hidden'}>
-      <form method="post" action="/check">
-        <input type="hidden" name="url" value="${url}">
-        <button class="btn cta">Send all webmentions</button>
-      </form>
-    </p>`;
+  // Note: this form is part of the partial because _only_ this part of the
+  // component gets updated, so the `hasResult` and `sent` are changed
+  return html`${sentNotifications} ${foundCount} ${errorMessage}
+  ${`<ol id="mentions">${webMentions}</ol>`}`;
 }

@@ -2,6 +2,8 @@
 import $ from './$.mjs';
 import { mentionWrapper } from '../elements/check-mention.mjs';
 
+window.$ = $;
+
 class CheckMention extends HTMLElement {
   static observedAttributes = ['loading'];
 
@@ -26,10 +28,10 @@ class CheckMention extends HTMLElement {
     this.button = $('button', this);
     this.input = $('input', this);
     this.mentions = $('#mention-wrapper', this);
+    this.sendForm = $('form[method="post"]', this);
 
     this.addEventListener('submit', (e) => {
       e.preventDefault();
-      console.log('submit', e.target);
       this.check(this.url, e.target.method.toLowerCase() === 'post');
     });
   }
@@ -58,6 +60,8 @@ class CheckMention extends HTMLElement {
       urls: json.urls || [],
       url: json.url,
     });
+
+    this.sendForm.hidden = send;
 
     // if (!json.error) {
     //   this.mentions = json.urls;

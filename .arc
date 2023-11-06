@@ -1,5 +1,5 @@
 @app
-webmention-app
+webmention-dot-app
 
 @static
 prune true
@@ -10,6 +10,4 @@ enhance/arc-plugin-enhance
 
 @aws
 timeout 30
-
-@begin
-appID 7SV4Z17P
+profile arc.code
