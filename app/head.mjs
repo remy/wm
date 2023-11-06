@@ -31,7 +31,7 @@ export default function Head(state) {
         <meta name="twitter:domain" content="webmention.app">
         <meta
           name="twitter:image:src"
-          content="https://webmention.app/webmention-app-card.jpg"
+          content="https://webmention.app/_public/webmention-app-card.jpg"
        >
         <meta name="twitter:card" content="summary_large_image">
       </head>
