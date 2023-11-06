@@ -31,7 +31,8 @@ h2 {
   color: rgb(148, 146, 146);
 }
 
-#index h2 {
+#index h2,
+#index h3 {
   text-align: center;
 }
 
