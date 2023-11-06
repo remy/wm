@@ -2,14 +2,14 @@
   "name": "@remy/webmention",
   "version": "1.5.0",
   "description": "Web Mentions sender",
-  "main": "./lib/webmention.js",
+  "main": "./shared/lib/webmention.js",
   "repository": "github:remy/wm",
   "bin": {
     "wm": "./bin/wm.js",
     "webmention": "./bin/wm.js"
   },
   "files": [
-    "lib/**/*",
+    "shared/lib/**/*",
     "bin/wm.js"
   ],
   "types": "./index.d.ts",
